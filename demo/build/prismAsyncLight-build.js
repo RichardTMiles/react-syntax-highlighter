@@ -213,7 +213,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/react.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
-
 var ExamplesLinks = function ExamplesLinks() {
   var demos = [{
     label: 'Highlight.js (default)',
@@ -238,7 +237,7 @@ var ExamplesLinks = function ExamplesLinks() {
     className: "demo-nav__ul"
   }, demos.map(function (demo) {
     var label = demo.label,
-        path = demo.path;
+      path = demo.path;
     var currentPath = new URL(window.location.href).pathname.split('/').filter(Boolean).pop();
     var isCurrent = path === "./".concat(currentPath) || !path && currentPath === 'demo';
     var itemClass = isCurrent ? "".concat(baseLiClass, " ").concat(baseLiClass, "--current") : baseLiClass;
@@ -250,7 +249,6 @@ var ExamplesLinks = function ExamplesLinks() {
     }, label));
   })));
 };
-
 /* harmony default export */ __webpack_exports__["default"] = (ExamplesLinks);
 
 /***/ }),
@@ -268,12 +266,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "./node_modules/@babel/runtime/helpers/createClass.js");
 /* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/inherits */ "./node_modules/@babel/runtime/helpers/inherits.js");
-/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/inherits */ "./node_modules/@babel/runtime/helpers/inherits.js");
+/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/react.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
@@ -291,11 +289,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4___default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4___default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3___default()(this, result); }; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
+function _callSuper(t, o, e) { return o = _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3___default()(o), _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2___default()(t, _isNativeReflectConstruct() ? Reflect.construct(o, e || [], _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3___default()(t).constructor) : o.apply(t, e)); }
+function _isNativeReflectConstruct() { try { var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); } catch (t) {} return (_isNativeReflectConstruct = function _isNativeReflectConstruct() { return !!t; })(); }
 
 
 
@@ -313,18 +308,12 @@ _src_prism_async_light__WEBPACK_IMPORTED_MODULE_7__["default"].registerLanguage(
 _src_prism_async_light__WEBPACK_IMPORTED_MODULE_7__["default"].registerLanguage('markup-templating', _src_languages_prism_markup_templating__WEBPACK_IMPORTED_MODULE_14__["default"]);
 var availableStyles = _styles_prism__WEBPACK_IMPORTED_MODULE_8__["default"];
 var availableLanguages = ['clike', 'javascript', 'jsx', 'markup', 'markup-templating'];
-
 var Component = /*#__PURE__*/function (_React$Component) {
-  _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_2___default()(Component, _React$Component);
-
-  var _super = _createSuper(Component);
-
+  _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default()(Component, _React$Component);
   function Component() {
     var _this;
-
     _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default()(this, Component);
-
-    _this = _super.call(this);
+    _this = _callSuper(this, Component);
     var initialCodeString = "function createStyleObject(classNames, style) {\n  return classNames.reduce((styleObject, className) => {\n    return {...styleObject, ...style[className]};\n  }, {});\n}\n\nfunction createClassNameString(classNames) {\n  return classNames.join(' ');\n}\n\n// this comment is here to demonstrate an extremely long line length, well beyond what you should probably allow in your own code, though sometimes you'll be highlighting code you can't refactor, which is unfortunate but should be handled gracefully\n\nfunction createChildren(style, useInlineStyles) {\n  let childrenCount = 0;\n  return children => {\n    childrenCount += 1;\n    return children.map((child, i) => createElement({\n      node: child,\n      style,\n      useInlineStyles,\n      key:`code-segment-${childrenCount}-${i}`\n    }));\n  }\n}\n\nfunction createElement({ node, style, useInlineStyles, key }) {\n  const { properties, type, tagName, value } = node;\n  if (type === \"text\") {\n    return value;\n  } else if (tagName) {\n    const TagName = tagName;\n    const childrenCreator = createChildren(style, useInlineStyles);\n    const props = (\n      useInlineStyles\n      ?\n      { style: createStyleObject(properties.className, style) }\n      :\n      { className: createClassNameString(properties.className) }\n    );\n    const children = childrenCreator(node.children);\n    return <TagName key={key} {...props}>{children}</TagName>;\n  }\n}\n  ";
     _this.state = {
       code: initialCodeString,
@@ -337,12 +326,10 @@ var Component = /*#__PURE__*/function (_React$Component) {
     };
     return _this;
   }
-
   _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1___default()(Component, [{
     key: "render",
     value: function render() {
       var _this2 = this;
-
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         className: "demo__root demo__root--prism-async-light"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h1", null, "React Syntax Highlighter Demo"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_examples_links__WEBPACK_IMPORTED_MODULE_9__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("aside", {
@@ -449,10 +436,8 @@ var Component = /*#__PURE__*/function (_React$Component) {
       }, this.state.code))));
     }
   }]);
-
   return Component;
 }(react__WEBPACK_IMPORTED_MODULE_5___default.a.Component);
-
 Object(react_dom__WEBPACK_IMPORTED_MODULE_6__["render"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(Component, null), document.getElementById('app'));
 
 /***/ }),
@@ -469,6 +454,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 // This file has been auto-generated by the `npm run build-styles-prism` task
 //
+
 /* harmony default export */ __webpack_exports__["default"] = (['a11y-dark', 'atom-dark', 'base16-ateliersulphurpool.light', 'cb', 'coldark-cold', 'coldark-dark', 'coy', 'coy-without-shadows', 'darcula', 'dark', 'dracula', 'duotone-dark', 'duotone-earth', 'duotone-forest', 'duotone-light', 'duotone-sea', 'duotone-space', 'funky', 'ghcolors', 'gruvbox-dark', 'gruvbox-light', 'holi-theme', 'hopscotch', 'lucario', 'material-dark', 'material-light', 'material-oceanic', 'night-owl', 'nord', 'okaidia', 'one-dark', 'one-light', 'pojoaque', 'prism', 'shades-of-purple', 'solarized-dark-atom', 'solarizedlight', 'synthwave84', 'tomorrow', 'twilight', 'vs', 'vsc-dark-plus', 'xonokai', 'z-touch']);
 
 /***/ }),
@@ -482,14 +468,9 @@ __webpack_require__.r(__webpack_exports__);
 
 function _arrayLikeToArray(arr, len) {
   if (len == null || len > arr.length) len = arr.length;
-
-  for (var i = 0, arr2 = new Array(len); i < len; i++) {
-    arr2[i] = arr[i];
-  }
-
+  for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
   return arr2;
 }
-
 module.exports = _arrayLikeToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
@@ -502,11 +483,9 @@ module.exports = _arrayLikeToArray, module.exports.__esModule = true, module.exp
 /***/ (function(module, exports, __webpack_require__) {
 
 var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray.js */ "./node_modules/@babel/runtime/helpers/arrayLikeToArray.js");
-
 function _arrayWithoutHoles(arr) {
   if (Array.isArray(arr)) return arrayLikeToArray(arr);
 }
-
 module.exports = _arrayWithoutHoles, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
@@ -522,10 +501,8 @@ function _assertThisInitialized(self) {
   if (self === void 0) {
     throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
   }
-
   return self;
 }
-
 module.exports = _assertThisInitialized, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
@@ -545,34 +522,28 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
     reject(error);
     return;
   }
-
   if (info.done) {
     resolve(value);
   } else {
     Promise.resolve(value).then(_next, _throw);
   }
 }
-
 function _asyncToGenerator(fn) {
   return function () {
     var self = this,
-        args = arguments;
+      args = arguments;
     return new Promise(function (resolve, reject) {
       var gen = fn.apply(self, args);
-
       function _next(value) {
         asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);
       }
-
       function _throw(err) {
         asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);
       }
-
       _next(undefined);
     });
   };
 }
-
 module.exports = _asyncToGenerator, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
@@ -589,7 +560,6 @@ function _classCallCheck(instance, Constructor) {
     throw new TypeError("Cannot call a class as a function");
   }
 }
-
 module.exports = _classCallCheck, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
@@ -599,18 +569,18 @@ module.exports = _classCallCheck, module.exports.__esModule = true, module.expor
   !*** ./node_modules/@babel/runtime/helpers/createClass.js ***!
   \************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
+var toPropertyKey = __webpack_require__(/*! ./toPropertyKey.js */ "./node_modules/@babel/runtime/helpers/toPropertyKey.js");
 function _defineProperties(target, props) {
   for (var i = 0; i < props.length; i++) {
     var descriptor = props[i];
     descriptor.enumerable = descriptor.enumerable || false;
     descriptor.configurable = true;
     if ("value" in descriptor) descriptor.writable = true;
-    Object.defineProperty(target, descriptor.key, descriptor);
+    Object.defineProperty(target, toPropertyKey(descriptor.key), descriptor);
   }
 }
-
 function _createClass(Constructor, protoProps, staticProps) {
   if (protoProps) _defineProperties(Constructor.prototype, protoProps);
   if (staticProps) _defineProperties(Constructor, staticProps);
@@ -619,7 +589,6 @@ function _createClass(Constructor, protoProps, staticProps) {
   });
   return Constructor;
 }
-
 module.exports = _createClass, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
@@ -629,9 +598,11 @@ module.exports = _createClass, module.exports.__esModule = true, module.exports[
   !*** ./node_modules/@babel/runtime/helpers/defineProperty.js ***!
   \***************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
+var toPropertyKey = __webpack_require__(/*! ./toPropertyKey.js */ "./node_modules/@babel/runtime/helpers/toPropertyKey.js");
 function _defineProperty(obj, key, value) {
+  key = toPropertyKey(key);
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -642,10 +613,8 @@ function _defineProperty(obj, key, value) {
   } else {
     obj[key] = value;
   }
-
   return obj;
 }
-
 module.exports = _defineProperty, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
@@ -658,22 +627,19 @@ module.exports = _defineProperty, module.exports.__esModule = true, module.expor
 /***/ (function(module, exports) {
 
 function _extends() {
-  module.exports = _extends = Object.assign || function (target) {
+  module.exports = _extends = Object.assign ? Object.assign.bind() : function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
-
       for (var key in source) {
         if (Object.prototype.hasOwnProperty.call(source, key)) {
           target[key] = source[key];
         }
       }
     }
-
     return target;
   }, module.exports.__esModule = true, module.exports["default"] = module.exports;
   return _extends.apply(this, arguments);
 }
-
 module.exports = _extends, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
@@ -686,12 +652,11 @@ module.exports = _extends, module.exports.__esModule = true, module.exports["def
 /***/ (function(module, exports) {
 
 function _getPrototypeOf(o) {
-  module.exports = _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+  module.exports = _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) {
     return o.__proto__ || Object.getPrototypeOf(o);
   }, module.exports.__esModule = true, module.exports["default"] = module.exports;
   return _getPrototypeOf(o);
 }
-
 module.exports = _getPrototypeOf, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
@@ -704,12 +669,10 @@ module.exports = _getPrototypeOf, module.exports.__esModule = true, module.expor
 /***/ (function(module, exports, __webpack_require__) {
 
 var setPrototypeOf = __webpack_require__(/*! ./setPrototypeOf.js */ "./node_modules/@babel/runtime/helpers/setPrototypeOf.js");
-
 function _inherits(subClass, superClass) {
   if (typeof superClass !== "function" && superClass !== null) {
     throw new TypeError("Super expression must either be null or a function");
   }
-
   subClass.prototype = Object.create(superClass && superClass.prototype, {
     constructor: {
       value: subClass,
@@ -722,7 +685,6 @@ function _inherits(subClass, superClass) {
   });
   if (superClass) setPrototypeOf(subClass, superClass);
 }
-
 module.exports = _inherits, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
@@ -737,7 +699,6 @@ module.exports = _inherits, module.exports.__esModule = true, module.exports["de
 function _iterableToArray(iter) {
   if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter);
 }
-
 module.exports = _iterableToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
@@ -752,7 +713,6 @@ module.exports = _iterableToArray, module.exports.__esModule = true, module.expo
 function _nonIterableSpread() {
   throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
-
 module.exports = _nonIterableSpread, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
@@ -765,15 +725,12 @@ module.exports = _nonIterableSpread, module.exports.__esModule = true, module.ex
 /***/ (function(module, exports, __webpack_require__) {
 
 var objectWithoutPropertiesLoose = __webpack_require__(/*! ./objectWithoutPropertiesLoose.js */ "./node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js");
-
 function _objectWithoutProperties(source, excluded) {
   if (source == null) return {};
   var target = objectWithoutPropertiesLoose(source, excluded);
   var key, i;
-
   if (Object.getOwnPropertySymbols) {
     var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
-
     for (i = 0; i < sourceSymbolKeys.length; i++) {
       key = sourceSymbolKeys[i];
       if (excluded.indexOf(key) >= 0) continue;
@@ -781,10 +738,8 @@ function _objectWithoutProperties(source, excluded) {
       target[key] = source[key];
     }
   }
-
   return target;
 }
-
 module.exports = _objectWithoutProperties, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
@@ -801,16 +756,13 @@ function _objectWithoutPropertiesLoose(source, excluded) {
   var target = {};
   var sourceKeys = Object.keys(source);
   var key, i;
-
   for (i = 0; i < sourceKeys.length; i++) {
     key = sourceKeys[i];
     if (excluded.indexOf(key) >= 0) continue;
     target[key] = source[key];
   }
-
   return target;
 }
-
 module.exports = _objectWithoutPropertiesLoose, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
@@ -823,20 +775,330 @@ module.exports = _objectWithoutPropertiesLoose, module.exports.__esModule = true
 /***/ (function(module, exports, __webpack_require__) {
 
 var _typeof = __webpack_require__(/*! ./typeof.js */ "./node_modules/@babel/runtime/helpers/typeof.js")["default"];
-
 var assertThisInitialized = __webpack_require__(/*! ./assertThisInitialized.js */ "./node_modules/@babel/runtime/helpers/assertThisInitialized.js");
-
 function _possibleConstructorReturn(self, call) {
   if (call && (_typeof(call) === "object" || typeof call === "function")) {
     return call;
   } else if (call !== void 0) {
     throw new TypeError("Derived constructors may only return object or undefined");
   }
-
   return assertThisInitialized(self);
 }
-
 module.exports = _possibleConstructorReturn, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/regeneratorRuntime.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/regeneratorRuntime.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _typeof = __webpack_require__(/*! ./typeof.js */ "./node_modules/@babel/runtime/helpers/typeof.js")["default"];
+function _regeneratorRuntime() {
+  "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
+  module.exports = _regeneratorRuntime = function _regeneratorRuntime() {
+    return e;
+  }, module.exports.__esModule = true, module.exports["default"] = module.exports;
+  var t,
+    e = {},
+    r = Object.prototype,
+    n = r.hasOwnProperty,
+    o = Object.defineProperty || function (t, e, r) {
+      t[e] = r.value;
+    },
+    i = "function" == typeof Symbol ? Symbol : {},
+    a = i.iterator || "@@iterator",
+    c = i.asyncIterator || "@@asyncIterator",
+    u = i.toStringTag || "@@toStringTag";
+  function define(t, e, r) {
+    return Object.defineProperty(t, e, {
+      value: r,
+      enumerable: !0,
+      configurable: !0,
+      writable: !0
+    }), t[e];
+  }
+  try {
+    define({}, "");
+  } catch (t) {
+    define = function define(t, e, r) {
+      return t[e] = r;
+    };
+  }
+  function wrap(t, e, r, n) {
+    var i = e && e.prototype instanceof Generator ? e : Generator,
+      a = Object.create(i.prototype),
+      c = new Context(n || []);
+    return o(a, "_invoke", {
+      value: makeInvokeMethod(t, r, c)
+    }), a;
+  }
+  function tryCatch(t, e, r) {
+    try {
+      return {
+        type: "normal",
+        arg: t.call(e, r)
+      };
+    } catch (t) {
+      return {
+        type: "throw",
+        arg: t
+      };
+    }
+  }
+  e.wrap = wrap;
+  var h = "suspendedStart",
+    l = "suspendedYield",
+    f = "executing",
+    s = "completed",
+    y = {};
+  function Generator() {}
+  function GeneratorFunction() {}
+  function GeneratorFunctionPrototype() {}
+  var p = {};
+  define(p, a, function () {
+    return this;
+  });
+  var d = Object.getPrototypeOf,
+    v = d && d(d(values([])));
+  v && v !== r && n.call(v, a) && (p = v);
+  var g = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(p);
+  function defineIteratorMethods(t) {
+    ["next", "throw", "return"].forEach(function (e) {
+      define(t, e, function (t) {
+        return this._invoke(e, t);
+      });
+    });
+  }
+  function AsyncIterator(t, e) {
+    function invoke(r, o, i, a) {
+      var c = tryCatch(t[r], t, o);
+      if ("throw" !== c.type) {
+        var u = c.arg,
+          h = u.value;
+        return h && "object" == _typeof(h) && n.call(h, "__await") ? e.resolve(h.__await).then(function (t) {
+          invoke("next", t, i, a);
+        }, function (t) {
+          invoke("throw", t, i, a);
+        }) : e.resolve(h).then(function (t) {
+          u.value = t, i(u);
+        }, function (t) {
+          return invoke("throw", t, i, a);
+        });
+      }
+      a(c.arg);
+    }
+    var r;
+    o(this, "_invoke", {
+      value: function value(t, n) {
+        function callInvokeWithMethodAndArg() {
+          return new e(function (e, r) {
+            invoke(t, n, e, r);
+          });
+        }
+        return r = r ? r.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg();
+      }
+    });
+  }
+  function makeInvokeMethod(e, r, n) {
+    var o = h;
+    return function (i, a) {
+      if (o === f) throw new Error("Generator is already running");
+      if (o === s) {
+        if ("throw" === i) throw a;
+        return {
+          value: t,
+          done: !0
+        };
+      }
+      for (n.method = i, n.arg = a;;) {
+        var c = n.delegate;
+        if (c) {
+          var u = maybeInvokeDelegate(c, n);
+          if (u) {
+            if (u === y) continue;
+            return u;
+          }
+        }
+        if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) {
+          if (o === h) throw o = s, n.arg;
+          n.dispatchException(n.arg);
+        } else "return" === n.method && n.abrupt("return", n.arg);
+        o = f;
+        var p = tryCatch(e, r, n);
+        if ("normal" === p.type) {
+          if (o = n.done ? s : l, p.arg === y) continue;
+          return {
+            value: p.arg,
+            done: n.done
+          };
+        }
+        "throw" === p.type && (o = s, n.method = "throw", n.arg = p.arg);
+      }
+    };
+  }
+  function maybeInvokeDelegate(e, r) {
+    var n = r.method,
+      o = e.iterator[n];
+    if (o === t) return r.delegate = null, "throw" === n && e.iterator["return"] && (r.method = "return", r.arg = t, maybeInvokeDelegate(e, r), "throw" === r.method) || "return" !== n && (r.method = "throw", r.arg = new TypeError("The iterator does not provide a '" + n + "' method")), y;
+    var i = tryCatch(o, e.iterator, r.arg);
+    if ("throw" === i.type) return r.method = "throw", r.arg = i.arg, r.delegate = null, y;
+    var a = i.arg;
+    return a ? a.done ? (r[e.resultName] = a.value, r.next = e.nextLoc, "return" !== r.method && (r.method = "next", r.arg = t), r.delegate = null, y) : a : (r.method = "throw", r.arg = new TypeError("iterator result is not an object"), r.delegate = null, y);
+  }
+  function pushTryEntry(t) {
+    var e = {
+      tryLoc: t[0]
+    };
+    1 in t && (e.catchLoc = t[1]), 2 in t && (e.finallyLoc = t[2], e.afterLoc = t[3]), this.tryEntries.push(e);
+  }
+  function resetTryEntry(t) {
+    var e = t.completion || {};
+    e.type = "normal", delete e.arg, t.completion = e;
+  }
+  function Context(t) {
+    this.tryEntries = [{
+      tryLoc: "root"
+    }], t.forEach(pushTryEntry, this), this.reset(!0);
+  }
+  function values(e) {
+    if (e || "" === e) {
+      var r = e[a];
+      if (r) return r.call(e);
+      if ("function" == typeof e.next) return e;
+      if (!isNaN(e.length)) {
+        var o = -1,
+          i = function next() {
+            for (; ++o < e.length;) if (n.call(e, o)) return next.value = e[o], next.done = !1, next;
+            return next.value = t, next.done = !0, next;
+          };
+        return i.next = i;
+      }
+    }
+    throw new TypeError(_typeof(e) + " is not iterable");
+  }
+  return GeneratorFunction.prototype = GeneratorFunctionPrototype, o(g, "constructor", {
+    value: GeneratorFunctionPrototype,
+    configurable: !0
+  }), o(GeneratorFunctionPrototype, "constructor", {
+    value: GeneratorFunction,
+    configurable: !0
+  }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, u, "GeneratorFunction"), e.isGeneratorFunction = function (t) {
+    var e = "function" == typeof t && t.constructor;
+    return !!e && (e === GeneratorFunction || "GeneratorFunction" === (e.displayName || e.name));
+  }, e.mark = function (t) {
+    return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, define(t, u, "GeneratorFunction")), t.prototype = Object.create(g), t;
+  }, e.awrap = function (t) {
+    return {
+      __await: t
+    };
+  }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, c, function () {
+    return this;
+  }), e.AsyncIterator = AsyncIterator, e.async = function (t, r, n, o, i) {
+    void 0 === i && (i = Promise);
+    var a = new AsyncIterator(wrap(t, r, n, o), i);
+    return e.isGeneratorFunction(r) ? a : a.next().then(function (t) {
+      return t.done ? t.value : a.next();
+    });
+  }, defineIteratorMethods(g), define(g, u, "Generator"), define(g, a, function () {
+    return this;
+  }), define(g, "toString", function () {
+    return "[object Generator]";
+  }), e.keys = function (t) {
+    var e = Object(t),
+      r = [];
+    for (var n in e) r.push(n);
+    return r.reverse(), function next() {
+      for (; r.length;) {
+        var t = r.pop();
+        if (t in e) return next.value = t, next.done = !1, next;
+      }
+      return next.done = !0, next;
+    };
+  }, e.values = values, Context.prototype = {
+    constructor: Context,
+    reset: function reset(e) {
+      if (this.prev = 0, this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(resetTryEntry), !e) for (var r in this) "t" === r.charAt(0) && n.call(this, r) && !isNaN(+r.slice(1)) && (this[r] = t);
+    },
+    stop: function stop() {
+      this.done = !0;
+      var t = this.tryEntries[0].completion;
+      if ("throw" === t.type) throw t.arg;
+      return this.rval;
+    },
+    dispatchException: function dispatchException(e) {
+      if (this.done) throw e;
+      var r = this;
+      function handle(n, o) {
+        return a.type = "throw", a.arg = e, r.next = n, o && (r.method = "next", r.arg = t), !!o;
+      }
+      for (var o = this.tryEntries.length - 1; o >= 0; --o) {
+        var i = this.tryEntries[o],
+          a = i.completion;
+        if ("root" === i.tryLoc) return handle("end");
+        if (i.tryLoc <= this.prev) {
+          var c = n.call(i, "catchLoc"),
+            u = n.call(i, "finallyLoc");
+          if (c && u) {
+            if (this.prev < i.catchLoc) return handle(i.catchLoc, !0);
+            if (this.prev < i.finallyLoc) return handle(i.finallyLoc);
+          } else if (c) {
+            if (this.prev < i.catchLoc) return handle(i.catchLoc, !0);
+          } else {
+            if (!u) throw new Error("try statement without catch or finally");
+            if (this.prev < i.finallyLoc) return handle(i.finallyLoc);
+          }
+        }
+      }
+    },
+    abrupt: function abrupt(t, e) {
+      for (var r = this.tryEntries.length - 1; r >= 0; --r) {
+        var o = this.tryEntries[r];
+        if (o.tryLoc <= this.prev && n.call(o, "finallyLoc") && this.prev < o.finallyLoc) {
+          var i = o;
+          break;
+        }
+      }
+      i && ("break" === t || "continue" === t) && i.tryLoc <= e && e <= i.finallyLoc && (i = null);
+      var a = i ? i.completion : {};
+      return a.type = t, a.arg = e, i ? (this.method = "next", this.next = i.finallyLoc, y) : this.complete(a);
+    },
+    complete: function complete(t, e) {
+      if ("throw" === t.type) throw t.arg;
+      return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && e && (this.next = e), y;
+    },
+    finish: function finish(t) {
+      for (var e = this.tryEntries.length - 1; e >= 0; --e) {
+        var r = this.tryEntries[e];
+        if (r.finallyLoc === t) return this.complete(r.completion, r.afterLoc), resetTryEntry(r), y;
+      }
+    },
+    "catch": function _catch(t) {
+      for (var e = this.tryEntries.length - 1; e >= 0; --e) {
+        var r = this.tryEntries[e];
+        if (r.tryLoc === t) {
+          var n = r.completion;
+          if ("throw" === n.type) {
+            var o = n.arg;
+            resetTryEntry(r);
+          }
+          return o;
+        }
+      }
+      throw new Error("illegal catch attempt");
+    },
+    delegateYield: function delegateYield(e, r, n) {
+      return this.delegate = {
+        iterator: values(e),
+        resultName: r,
+        nextLoc: n
+      }, "next" === this.method && (this.arg = t), y;
+    }
+  }, e;
+}
+module.exports = _regeneratorRuntime, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
 
@@ -848,13 +1110,12 @@ module.exports = _possibleConstructorReturn, module.exports.__esModule = true, m
 /***/ (function(module, exports) {
 
 function _setPrototypeOf(o, p) {
-  module.exports = _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+  module.exports = _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) {
     o.__proto__ = p;
     return o;
   }, module.exports.__esModule = true, module.exports["default"] = module.exports;
   return _setPrototypeOf(o, p);
 }
-
 module.exports = _setPrototypeOf, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
@@ -867,18 +1128,52 @@ module.exports = _setPrototypeOf, module.exports.__esModule = true, module.expor
 /***/ (function(module, exports, __webpack_require__) {
 
 var arrayWithoutHoles = __webpack_require__(/*! ./arrayWithoutHoles.js */ "./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js");
-
 var iterableToArray = __webpack_require__(/*! ./iterableToArray.js */ "./node_modules/@babel/runtime/helpers/iterableToArray.js");
-
 var unsupportedIterableToArray = __webpack_require__(/*! ./unsupportedIterableToArray.js */ "./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js");
-
 var nonIterableSpread = __webpack_require__(/*! ./nonIterableSpread.js */ "./node_modules/@babel/runtime/helpers/nonIterableSpread.js");
-
 function _toConsumableArray(arr) {
   return arrayWithoutHoles(arr) || iterableToArray(arr) || unsupportedIterableToArray(arr) || nonIterableSpread();
 }
-
 module.exports = _toConsumableArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/toPrimitive.js":
+/*!************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/toPrimitive.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _typeof = __webpack_require__(/*! ./typeof.js */ "./node_modules/@babel/runtime/helpers/typeof.js")["default"];
+function toPrimitive(t, r) {
+  if ("object" != _typeof(t) || !t) return t;
+  var e = t[Symbol.toPrimitive];
+  if (void 0 !== e) {
+    var i = e.call(t, r || "default");
+    if ("object" != _typeof(i)) return i;
+    throw new TypeError("@@toPrimitive must return a primitive value.");
+  }
+  return ("string" === r ? String : Number)(t);
+}
+module.exports = toPrimitive, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/toPropertyKey.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/toPropertyKey.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _typeof = __webpack_require__(/*! ./typeof.js */ "./node_modules/@babel/runtime/helpers/typeof.js")["default"];
+var toPrimitive = __webpack_require__(/*! ./toPrimitive.js */ "./node_modules/@babel/runtime/helpers/toPrimitive.js");
+function toPropertyKey(t) {
+  var i = toPrimitive(t, "string");
+  return "symbol" == _typeof(i) ? i : String(i);
+}
+module.exports = toPropertyKey, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
 
@@ -889,16 +1184,15 @@ module.exports = _toConsumableArray, module.exports.__esModule = true, module.ex
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-function _typeof(obj) {
+function _typeof(o) {
   "@babel/helpers - typeof";
 
-  return (module.exports = _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) {
-    return typeof obj;
-  } : function (obj) {
-    return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-  }, module.exports.__esModule = true, module.exports["default"] = module.exports), _typeof(obj);
+  return (module.exports = _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) {
+    return typeof o;
+  } : function (o) {
+    return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o;
+  }, module.exports.__esModule = true, module.exports["default"] = module.exports), _typeof(o);
 }
-
 module.exports = _typeof, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
@@ -911,7 +1205,6 @@ module.exports = _typeof, module.exports.__esModule = true, module.exports["defa
 /***/ (function(module, exports, __webpack_require__) {
 
 var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray.js */ "./node_modules/@babel/runtime/helpers/arrayLikeToArray.js");
-
 function _unsupportedIterableToArray(o, minLen) {
   if (!o) return;
   if (typeof o === "string") return arrayLikeToArray(o, minLen);
@@ -920,7 +1213,6 @@ function _unsupportedIterableToArray(o, minLen) {
   if (n === "Map" || n === "Set") return Array.from(o);
   if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return arrayLikeToArray(o, minLen);
 }
-
 module.exports = _unsupportedIterableToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
@@ -932,7 +1224,21 @@ module.exports = _unsupportedIterableToArray, module.exports.__esModule = true, 
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! regenerator-runtime */ "./node_modules/regenerator-runtime/runtime.js");
+// TODO(Babel 8): Remove this file.
+
+var runtime = __webpack_require__(/*! ../helpers/regeneratorRuntime */ "./node_modules/@babel/runtime/helpers/regeneratorRuntime.js")();
+module.exports = runtime;
+
+// Copied from https://github.com/facebook/regenerator/blob/main/packages/runtime/runtime.js#L736=
+try {
+  regeneratorRuntime = runtime;
+} catch (accidentalStrictMode) {
+  if (typeof globalThis === "object") {
+    globalThis.regeneratorRuntime = runtime;
+  } else {
+    Function("r", "regeneratorRuntime = r")(runtime);
+  }
+}
 
 
 /***/ }),
@@ -4349,7 +4655,10 @@ Prism.languages.markup = {
 							pattern: /^=/,
 							alias: 'attr-equals'
 						},
-						/"|'/
+						{
+							pattern: /^(\s*)["']|["']$/,
+							lookbehind: true
+						}
 					]
 				}
 			},
@@ -4492,7 +4801,7 @@ Prism.languages.rss = Prism.languages.xml;
 	Prism.languages.css = {
 		'comment': /\/\*[\s\S]*?\*\//,
 		'atrule': {
-			pattern: /@[\w-](?:[^;{\s]|\s+(?![\s{]))*(?:;|(?=\s*\{))/,
+			pattern: RegExp('@[\\w-](?:' + /[^;{\s"']|\s+(?!\s)/.source + '|' + string.source + ')*?' + /(?:;|(?=\s*\{))/.source),
 			inside: {
 				'rule': /^@[\w-]+/,
 				'selector-function-argument': {
@@ -4647,8 +4956,24 @@ Prism.languages.javascript['class-name'][0].pattern = /(\b(?:class|extends|imple
 
 Prism.languages.insertBefore('javascript', 'keyword', {
 	'regex': {
-		// eslint-disable-next-line regexp/no-dupe-characters-character-class
-		pattern: /((?:^|[^$\w\xA0-\uFFFF."'\])\s]|\b(?:return|yield))\s*)\/(?:\[(?:[^\]\\\r\n]|\\.)*\]|\\.|[^/\\\[\r\n])+\/[dgimyus]{0,7}(?=(?:\s|\/\*(?:[^*]|\*(?!\/))*\*\/)*(?:$|[\r\n,.;:})\]]|\/\/))/,
+		pattern: RegExp(
+			// lookbehind
+			// eslint-disable-next-line regexp/no-dupe-characters-character-class
+			/((?:^|[^$\w\xA0-\uFFFF."'\])\s]|\b(?:return|yield))\s*)/.source +
+			// Regex pattern:
+			// There are 2 regex patterns here. The RegExp set notation proposal added support for nested character
+			// classes if the `v` flag is present. Unfortunately, nested CCs are both context-free and incompatible
+			// with the only syntax, so we have to define 2 different regex patterns.
+			/\//.source +
+			'(?:' +
+			/(?:\[(?:[^\]\\\r\n]|\\.)*\]|\\.|[^/\\\[\r\n])+\/[dgimyus]{0,7}/.source +
+			'|' +
+			// `v` flag syntax. This supports 3 levels of nested character classes.
+			/(?:\[(?:[^[\]\\\r\n]|\\.|\[(?:[^[\]\\\r\n]|\\.|\[(?:[^[\]\\\r\n]|\\.)*\])*\])*\]|\\.|[^/\\\[\r\n])+\/[dgimyus]{0,7}v[dgimyus]{0,7}/.source +
+			')' +
+			// lookahead
+			/(?=(?:\s|\/\*(?:[^*]|\*(?!\/))*\*\/)*(?:$|[\r\n,.;:})\]]|\/\/))/.source
+		),
 		lookbehind: true,
 		greedy: true,
 		inside: {
@@ -5247,7 +5572,7 @@ module.exports = function(isValidElement) {
 
 
 
-var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
+var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/prop-types/node_modules/react-is/index.js");
 var assign = __webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js");
 
 var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./node_modules/prop-types/lib/ReactPropTypesSecret.js");
@@ -5841,6 +6166,50 @@ module.exports = ReactPropTypesSecret;
 /***/ (function(module, exports) {
 
 module.exports = Function.call.bind(Object.prototype.hasOwnProperty);
+
+
+/***/ }),
+
+/***/ "./node_modules/prop-types/node_modules/react-is/cjs/react-is.production.min.js":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/prop-types/node_modules/react-is/cjs/react-is.production.min.js ***!
+  \**************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/** @license React v16.13.1
+ * react-is.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+var b="function"===typeof Symbol&&Symbol.for,c=b?Symbol.for("react.element"):60103,d=b?Symbol.for("react.portal"):60106,e=b?Symbol.for("react.fragment"):60107,f=b?Symbol.for("react.strict_mode"):60108,g=b?Symbol.for("react.profiler"):60114,h=b?Symbol.for("react.provider"):60109,k=b?Symbol.for("react.context"):60110,l=b?Symbol.for("react.async_mode"):60111,m=b?Symbol.for("react.concurrent_mode"):60111,n=b?Symbol.for("react.forward_ref"):60112,p=b?Symbol.for("react.suspense"):60113,q=b?
+Symbol.for("react.suspense_list"):60120,r=b?Symbol.for("react.memo"):60115,t=b?Symbol.for("react.lazy"):60116,v=b?Symbol.for("react.block"):60121,w=b?Symbol.for("react.fundamental"):60117,x=b?Symbol.for("react.responder"):60118,y=b?Symbol.for("react.scope"):60119;
+function z(a){if("object"===typeof a&&null!==a){var u=a.$$typeof;switch(u){case c:switch(a=a.type,a){case l:case m:case e:case g:case f:case p:return a;default:switch(a=a&&a.$$typeof,a){case k:case n:case t:case r:case h:return a;default:return u}}case d:return u}}}function A(a){return z(a)===m}exports.AsyncMode=l;exports.ConcurrentMode=m;exports.ContextConsumer=k;exports.ContextProvider=h;exports.Element=c;exports.ForwardRef=n;exports.Fragment=e;exports.Lazy=t;exports.Memo=r;exports.Portal=d;
+exports.Profiler=g;exports.StrictMode=f;exports.Suspense=p;exports.isAsyncMode=function(a){return A(a)||z(a)===l};exports.isConcurrentMode=A;exports.isContextConsumer=function(a){return z(a)===k};exports.isContextProvider=function(a){return z(a)===h};exports.isElement=function(a){return"object"===typeof a&&null!==a&&a.$$typeof===c};exports.isForwardRef=function(a){return z(a)===n};exports.isFragment=function(a){return z(a)===e};exports.isLazy=function(a){return z(a)===t};
+exports.isMemo=function(a){return z(a)===r};exports.isPortal=function(a){return z(a)===d};exports.isProfiler=function(a){return z(a)===g};exports.isStrictMode=function(a){return z(a)===f};exports.isSuspense=function(a){return z(a)===p};
+exports.isValidElementType=function(a){return"string"===typeof a||"function"===typeof a||a===e||a===m||a===g||a===f||a===p||a===q||"object"===typeof a&&null!==a&&(a.$$typeof===t||a.$$typeof===r||a.$$typeof===h||a.$$typeof===k||a.$$typeof===n||a.$$typeof===w||a.$$typeof===x||a.$$typeof===y||a.$$typeof===v)};exports.typeOf=z;
+
+
+/***/ }),
+
+/***/ "./node_modules/prop-types/node_modules/react-is/index.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/prop-types/node_modules/react-is/index.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+if (true) {
+  module.exports = __webpack_require__(/*! ./cjs/react-is.production.min.js */ "./node_modules/prop-types/node_modules/react-is/cjs/react-is.production.min.js");
+} else {}
 
 
 /***/ }),
@@ -20780,50 +21149,6 @@ var validateDOMNesting = emptyFunction;
 if (false) { var didWarn, findOwnerStack, findInvalidAncestorForTag, isTagValidWithParent, updatedAncestorInfo, emptyAncestorInfo, impliedEndTags, buttonScopeTags, inScopeTags, specialTags; }
 
 module.exports = validateDOMNesting;
-
-/***/ }),
-
-/***/ "./node_modules/react-is/cjs/react-is.production.min.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/react-is/cjs/react-is.production.min.js ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/** @license React v16.13.1
- * react-is.production.min.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-var b="function"===typeof Symbol&&Symbol.for,c=b?Symbol.for("react.element"):60103,d=b?Symbol.for("react.portal"):60106,e=b?Symbol.for("react.fragment"):60107,f=b?Symbol.for("react.strict_mode"):60108,g=b?Symbol.for("react.profiler"):60114,h=b?Symbol.for("react.provider"):60109,k=b?Symbol.for("react.context"):60110,l=b?Symbol.for("react.async_mode"):60111,m=b?Symbol.for("react.concurrent_mode"):60111,n=b?Symbol.for("react.forward_ref"):60112,p=b?Symbol.for("react.suspense"):60113,q=b?
-Symbol.for("react.suspense_list"):60120,r=b?Symbol.for("react.memo"):60115,t=b?Symbol.for("react.lazy"):60116,v=b?Symbol.for("react.block"):60121,w=b?Symbol.for("react.fundamental"):60117,x=b?Symbol.for("react.responder"):60118,y=b?Symbol.for("react.scope"):60119;
-function z(a){if("object"===typeof a&&null!==a){var u=a.$$typeof;switch(u){case c:switch(a=a.type,a){case l:case m:case e:case g:case f:case p:return a;default:switch(a=a&&a.$$typeof,a){case k:case n:case t:case r:case h:return a;default:return u}}case d:return u}}}function A(a){return z(a)===m}exports.AsyncMode=l;exports.ConcurrentMode=m;exports.ContextConsumer=k;exports.ContextProvider=h;exports.Element=c;exports.ForwardRef=n;exports.Fragment=e;exports.Lazy=t;exports.Memo=r;exports.Portal=d;
-exports.Profiler=g;exports.StrictMode=f;exports.Suspense=p;exports.isAsyncMode=function(a){return A(a)||z(a)===l};exports.isConcurrentMode=A;exports.isContextConsumer=function(a){return z(a)===k};exports.isContextProvider=function(a){return z(a)===h};exports.isElement=function(a){return"object"===typeof a&&null!==a&&a.$$typeof===c};exports.isForwardRef=function(a){return z(a)===n};exports.isFragment=function(a){return z(a)===e};exports.isLazy=function(a){return z(a)===t};
-exports.isMemo=function(a){return z(a)===r};exports.isPortal=function(a){return z(a)===d};exports.isProfiler=function(a){return z(a)===g};exports.isStrictMode=function(a){return z(a)===f};exports.isSuspense=function(a){return z(a)===p};
-exports.isValidElementType=function(a){return"string"===typeof a||"function"===typeof a||a===e||a===m||a===g||a===f||a===p||a===q||"object"===typeof a&&null!==a&&(a.$$typeof===t||a.$$typeof===r||a.$$typeof===h||a.$$typeof===k||a.$$typeof===n||a.$$typeof===w||a.$$typeof===x||a.$$typeof===y||a.$$typeof===v)};exports.typeOf=z;
-
-
-/***/ }),
-
-/***/ "./node_modules/react-is/index.js":
-/*!****************************************!*\
-  !*** ./node_modules/react-is/index.js ***!
-  \****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-if (true) {
-  module.exports = __webpack_require__(/*! ./cjs/react-is.production.min.js */ "./node_modules/react-is/cjs/react-is.production.min.js");
-} else {}
-
 
 /***/ }),
 
@@ -47951,771 +48276,6 @@ function zig(Prism) {
 
 /***/ }),
 
-/***/ "./node_modules/regenerator-runtime/runtime.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/regenerator-runtime/runtime.js ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/**
- * Copyright (c) 2014-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-var runtime = (function (exports) {
-  "use strict";
-
-  var Op = Object.prototype;
-  var hasOwn = Op.hasOwnProperty;
-  var undefined; // More compressible than void 0.
-  var $Symbol = typeof Symbol === "function" ? Symbol : {};
-  var iteratorSymbol = $Symbol.iterator || "@@iterator";
-  var asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator";
-  var toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag";
-
-  function define(obj, key, value) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-    return obj[key];
-  }
-  try {
-    // IE 8 has a broken Object.defineProperty that only works on DOM objects.
-    define({}, "");
-  } catch (err) {
-    define = function(obj, key, value) {
-      return obj[key] = value;
-    };
-  }
-
-  function wrap(innerFn, outerFn, self, tryLocsList) {
-    // If outerFn provided and outerFn.prototype is a Generator, then outerFn.prototype instanceof Generator.
-    var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator;
-    var generator = Object.create(protoGenerator.prototype);
-    var context = new Context(tryLocsList || []);
-
-    // The ._invoke method unifies the implementations of the .next,
-    // .throw, and .return methods.
-    generator._invoke = makeInvokeMethod(innerFn, self, context);
-
-    return generator;
-  }
-  exports.wrap = wrap;
-
-  // Try/catch helper to minimize deoptimizations. Returns a completion
-  // record like context.tryEntries[i].completion. This interface could
-  // have been (and was previously) designed to take a closure to be
-  // invoked without arguments, but in all the cases we care about we
-  // already have an existing method we want to call, so there's no need
-  // to create a new function object. We can even get away with assuming
-  // the method takes exactly one argument, since that happens to be true
-  // in every case, so we don't have to touch the arguments object. The
-  // only additional allocation required is the completion record, which
-  // has a stable shape and so hopefully should be cheap to allocate.
-  function tryCatch(fn, obj, arg) {
-    try {
-      return { type: "normal", arg: fn.call(obj, arg) };
-    } catch (err) {
-      return { type: "throw", arg: err };
-    }
-  }
-
-  var GenStateSuspendedStart = "suspendedStart";
-  var GenStateSuspendedYield = "suspendedYield";
-  var GenStateExecuting = "executing";
-  var GenStateCompleted = "completed";
-
-  // Returning this object from the innerFn has the same effect as
-  // breaking out of the dispatch switch statement.
-  var ContinueSentinel = {};
-
-  // Dummy constructor functions that we use as the .constructor and
-  // .constructor.prototype properties for functions that return Generator
-  // objects. For full spec compliance, you may wish to configure your
-  // minifier not to mangle the names of these two functions.
-  function Generator() {}
-  function GeneratorFunction() {}
-  function GeneratorFunctionPrototype() {}
-
-  // This is a polyfill for %IteratorPrototype% for environments that
-  // don't natively support it.
-  var IteratorPrototype = {};
-  define(IteratorPrototype, iteratorSymbol, function () {
-    return this;
-  });
-
-  var getProto = Object.getPrototypeOf;
-  var NativeIteratorPrototype = getProto && getProto(getProto(values([])));
-  if (NativeIteratorPrototype &&
-      NativeIteratorPrototype !== Op &&
-      hasOwn.call(NativeIteratorPrototype, iteratorSymbol)) {
-    // This environment has a native %IteratorPrototype%; use it instead
-    // of the polyfill.
-    IteratorPrototype = NativeIteratorPrototype;
-  }
-
-  var Gp = GeneratorFunctionPrototype.prototype =
-    Generator.prototype = Object.create(IteratorPrototype);
-  GeneratorFunction.prototype = GeneratorFunctionPrototype;
-  define(Gp, "constructor", GeneratorFunctionPrototype);
-  define(GeneratorFunctionPrototype, "constructor", GeneratorFunction);
-  GeneratorFunction.displayName = define(
-    GeneratorFunctionPrototype,
-    toStringTagSymbol,
-    "GeneratorFunction"
-  );
-
-  // Helper for defining the .next, .throw, and .return methods of the
-  // Iterator interface in terms of a single ._invoke method.
-  function defineIteratorMethods(prototype) {
-    ["next", "throw", "return"].forEach(function(method) {
-      define(prototype, method, function(arg) {
-        return this._invoke(method, arg);
-      });
-    });
-  }
-
-  exports.isGeneratorFunction = function(genFun) {
-    var ctor = typeof genFun === "function" && genFun.constructor;
-    return ctor
-      ? ctor === GeneratorFunction ||
-        // For the native GeneratorFunction constructor, the best we can
-        // do is to check its .name property.
-        (ctor.displayName || ctor.name) === "GeneratorFunction"
-      : false;
-  };
-
-  exports.mark = function(genFun) {
-    if (Object.setPrototypeOf) {
-      Object.setPrototypeOf(genFun, GeneratorFunctionPrototype);
-    } else {
-      genFun.__proto__ = GeneratorFunctionPrototype;
-      define(genFun, toStringTagSymbol, "GeneratorFunction");
-    }
-    genFun.prototype = Object.create(Gp);
-    return genFun;
-  };
-
-  // Within the body of any async function, `await x` is transformed to
-  // `yield regeneratorRuntime.awrap(x)`, so that the runtime can test
-  // `hasOwn.call(value, "__await")` to determine if the yielded value is
-  // meant to be awaited.
-  exports.awrap = function(arg) {
-    return { __await: arg };
-  };
-
-  function AsyncIterator(generator, PromiseImpl) {
-    function invoke(method, arg, resolve, reject) {
-      var record = tryCatch(generator[method], generator, arg);
-      if (record.type === "throw") {
-        reject(record.arg);
-      } else {
-        var result = record.arg;
-        var value = result.value;
-        if (value &&
-            typeof value === "object" &&
-            hasOwn.call(value, "__await")) {
-          return PromiseImpl.resolve(value.__await).then(function(value) {
-            invoke("next", value, resolve, reject);
-          }, function(err) {
-            invoke("throw", err, resolve, reject);
-          });
-        }
-
-        return PromiseImpl.resolve(value).then(function(unwrapped) {
-          // When a yielded Promise is resolved, its final value becomes
-          // the .value of the Promise<{value,done}> result for the
-          // current iteration.
-          result.value = unwrapped;
-          resolve(result);
-        }, function(error) {
-          // If a rejected Promise was yielded, throw the rejection back
-          // into the async generator function so it can be handled there.
-          return invoke("throw", error, resolve, reject);
-        });
-      }
-    }
-
-    var previousPromise;
-
-    function enqueue(method, arg) {
-      function callInvokeWithMethodAndArg() {
-        return new PromiseImpl(function(resolve, reject) {
-          invoke(method, arg, resolve, reject);
-        });
-      }
-
-      return previousPromise =
-        // If enqueue has been called before, then we want to wait until
-        // all previous Promises have been resolved before calling invoke,
-        // so that results are always delivered in the correct order. If
-        // enqueue has not been called before, then it is important to
-        // call invoke immediately, without waiting on a callback to fire,
-        // so that the async generator function has the opportunity to do
-        // any necessary setup in a predictable way. This predictability
-        // is why the Promise constructor synchronously invokes its
-        // executor callback, and why async functions synchronously
-        // execute code before the first await. Since we implement simple
-        // async functions in terms of async generators, it is especially
-        // important to get this right, even though it requires care.
-        previousPromise ? previousPromise.then(
-          callInvokeWithMethodAndArg,
-          // Avoid propagating failures to Promises returned by later
-          // invocations of the iterator.
-          callInvokeWithMethodAndArg
-        ) : callInvokeWithMethodAndArg();
-    }
-
-    // Define the unified helper method that is used to implement .next,
-    // .throw, and .return (see defineIteratorMethods).
-    this._invoke = enqueue;
-  }
-
-  defineIteratorMethods(AsyncIterator.prototype);
-  define(AsyncIterator.prototype, asyncIteratorSymbol, function () {
-    return this;
-  });
-  exports.AsyncIterator = AsyncIterator;
-
-  // Note that simple async functions are implemented on top of
-  // AsyncIterator objects; they just return a Promise for the value of
-  // the final result produced by the iterator.
-  exports.async = function(innerFn, outerFn, self, tryLocsList, PromiseImpl) {
-    if (PromiseImpl === void 0) PromiseImpl = Promise;
-
-    var iter = new AsyncIterator(
-      wrap(innerFn, outerFn, self, tryLocsList),
-      PromiseImpl
-    );
-
-    return exports.isGeneratorFunction(outerFn)
-      ? iter // If outerFn is a generator, return the full iterator.
-      : iter.next().then(function(result) {
-          return result.done ? result.value : iter.next();
-        });
-  };
-
-  function makeInvokeMethod(innerFn, self, context) {
-    var state = GenStateSuspendedStart;
-
-    return function invoke(method, arg) {
-      if (state === GenStateExecuting) {
-        throw new Error("Generator is already running");
-      }
-
-      if (state === GenStateCompleted) {
-        if (method === "throw") {
-          throw arg;
-        }
-
-        // Be forgiving, per 25.3.3.3.3 of the spec:
-        // https://people.mozilla.org/~jorendorff/es6-draft.html#sec-generatorresume
-        return doneResult();
-      }
-
-      context.method = method;
-      context.arg = arg;
-
-      while (true) {
-        var delegate = context.delegate;
-        if (delegate) {
-          var delegateResult = maybeInvokeDelegate(delegate, context);
-          if (delegateResult) {
-            if (delegateResult === ContinueSentinel) continue;
-            return delegateResult;
-          }
-        }
-
-        if (context.method === "next") {
-          // Setting context._sent for legacy support of Babel's
-          // function.sent implementation.
-          context.sent = context._sent = context.arg;
-
-        } else if (context.method === "throw") {
-          if (state === GenStateSuspendedStart) {
-            state = GenStateCompleted;
-            throw context.arg;
-          }
-
-          context.dispatchException(context.arg);
-
-        } else if (context.method === "return") {
-          context.abrupt("return", context.arg);
-        }
-
-        state = GenStateExecuting;
-
-        var record = tryCatch(innerFn, self, context);
-        if (record.type === "normal") {
-          // If an exception is thrown from innerFn, we leave state ===
-          // GenStateExecuting and loop back for another invocation.
-          state = context.done
-            ? GenStateCompleted
-            : GenStateSuspendedYield;
-
-          if (record.arg === ContinueSentinel) {
-            continue;
-          }
-
-          return {
-            value: record.arg,
-            done: context.done
-          };
-
-        } else if (record.type === "throw") {
-          state = GenStateCompleted;
-          // Dispatch the exception by looping back around to the
-          // context.dispatchException(context.arg) call above.
-          context.method = "throw";
-          context.arg = record.arg;
-        }
-      }
-    };
-  }
-
-  // Call delegate.iterator[context.method](context.arg) and handle the
-  // result, either by returning a { value, done } result from the
-  // delegate iterator, or by modifying context.method and context.arg,
-  // setting context.delegate to null, and returning the ContinueSentinel.
-  function maybeInvokeDelegate(delegate, context) {
-    var method = delegate.iterator[context.method];
-    if (method === undefined) {
-      // A .throw or .return when the delegate iterator has no .throw
-      // method always terminates the yield* loop.
-      context.delegate = null;
-
-      if (context.method === "throw") {
-        // Note: ["return"] must be used for ES3 parsing compatibility.
-        if (delegate.iterator["return"]) {
-          // If the delegate iterator has a return method, give it a
-          // chance to clean up.
-          context.method = "return";
-          context.arg = undefined;
-          maybeInvokeDelegate(delegate, context);
-
-          if (context.method === "throw") {
-            // If maybeInvokeDelegate(context) changed context.method from
-            // "return" to "throw", let that override the TypeError below.
-            return ContinueSentinel;
-          }
-        }
-
-        context.method = "throw";
-        context.arg = new TypeError(
-          "The iterator does not provide a 'throw' method");
-      }
-
-      return ContinueSentinel;
-    }
-
-    var record = tryCatch(method, delegate.iterator, context.arg);
-
-    if (record.type === "throw") {
-      context.method = "throw";
-      context.arg = record.arg;
-      context.delegate = null;
-      return ContinueSentinel;
-    }
-
-    var info = record.arg;
-
-    if (! info) {
-      context.method = "throw";
-      context.arg = new TypeError("iterator result is not an object");
-      context.delegate = null;
-      return ContinueSentinel;
-    }
-
-    if (info.done) {
-      // Assign the result of the finished delegate to the temporary
-      // variable specified by delegate.resultName (see delegateYield).
-      context[delegate.resultName] = info.value;
-
-      // Resume execution at the desired location (see delegateYield).
-      context.next = delegate.nextLoc;
-
-      // If context.method was "throw" but the delegate handled the
-      // exception, let the outer generator proceed normally. If
-      // context.method was "next", forget context.arg since it has been
-      // "consumed" by the delegate iterator. If context.method was
-      // "return", allow the original .return call to continue in the
-      // outer generator.
-      if (context.method !== "return") {
-        context.method = "next";
-        context.arg = undefined;
-      }
-
-    } else {
-      // Re-yield the result returned by the delegate method.
-      return info;
-    }
-
-    // The delegate iterator is finished, so forget it and continue with
-    // the outer generator.
-    context.delegate = null;
-    return ContinueSentinel;
-  }
-
-  // Define Generator.prototype.{next,throw,return} in terms of the
-  // unified ._invoke helper method.
-  defineIteratorMethods(Gp);
-
-  define(Gp, toStringTagSymbol, "Generator");
-
-  // A Generator should always return itself as the iterator object when the
-  // @@iterator function is called on it. Some browsers' implementations of the
-  // iterator prototype chain incorrectly implement this, causing the Generator
-  // object to not be returned from this call. This ensures that doesn't happen.
-  // See https://github.com/facebook/regenerator/issues/274 for more details.
-  define(Gp, iteratorSymbol, function() {
-    return this;
-  });
-
-  define(Gp, "toString", function() {
-    return "[object Generator]";
-  });
-
-  function pushTryEntry(locs) {
-    var entry = { tryLoc: locs[0] };
-
-    if (1 in locs) {
-      entry.catchLoc = locs[1];
-    }
-
-    if (2 in locs) {
-      entry.finallyLoc = locs[2];
-      entry.afterLoc = locs[3];
-    }
-
-    this.tryEntries.push(entry);
-  }
-
-  function resetTryEntry(entry) {
-    var record = entry.completion || {};
-    record.type = "normal";
-    delete record.arg;
-    entry.completion = record;
-  }
-
-  function Context(tryLocsList) {
-    // The root entry object (effectively a try statement without a catch
-    // or a finally block) gives us a place to store values thrown from
-    // locations where there is no enclosing try statement.
-    this.tryEntries = [{ tryLoc: "root" }];
-    tryLocsList.forEach(pushTryEntry, this);
-    this.reset(true);
-  }
-
-  exports.keys = function(object) {
-    var keys = [];
-    for (var key in object) {
-      keys.push(key);
-    }
-    keys.reverse();
-
-    // Rather than returning an object with a next method, we keep
-    // things simple and return the next function itself.
-    return function next() {
-      while (keys.length) {
-        var key = keys.pop();
-        if (key in object) {
-          next.value = key;
-          next.done = false;
-          return next;
-        }
-      }
-
-      // To avoid creating an additional object, we just hang the .value
-      // and .done properties off the next function object itself. This
-      // also ensures that the minifier will not anonymize the function.
-      next.done = true;
-      return next;
-    };
-  };
-
-  function values(iterable) {
-    if (iterable) {
-      var iteratorMethod = iterable[iteratorSymbol];
-      if (iteratorMethod) {
-        return iteratorMethod.call(iterable);
-      }
-
-      if (typeof iterable.next === "function") {
-        return iterable;
-      }
-
-      if (!isNaN(iterable.length)) {
-        var i = -1, next = function next() {
-          while (++i < iterable.length) {
-            if (hasOwn.call(iterable, i)) {
-              next.value = iterable[i];
-              next.done = false;
-              return next;
-            }
-          }
-
-          next.value = undefined;
-          next.done = true;
-
-          return next;
-        };
-
-        return next.next = next;
-      }
-    }
-
-    // Return an iterator with no values.
-    return { next: doneResult };
-  }
-  exports.values = values;
-
-  function doneResult() {
-    return { value: undefined, done: true };
-  }
-
-  Context.prototype = {
-    constructor: Context,
-
-    reset: function(skipTempReset) {
-      this.prev = 0;
-      this.next = 0;
-      // Resetting context._sent for legacy support of Babel's
-      // function.sent implementation.
-      this.sent = this._sent = undefined;
-      this.done = false;
-      this.delegate = null;
-
-      this.method = "next";
-      this.arg = undefined;
-
-      this.tryEntries.forEach(resetTryEntry);
-
-      if (!skipTempReset) {
-        for (var name in this) {
-          // Not sure about the optimal order of these conditions:
-          if (name.charAt(0) === "t" &&
-              hasOwn.call(this, name) &&
-              !isNaN(+name.slice(1))) {
-            this[name] = undefined;
-          }
-        }
-      }
-    },
-
-    stop: function() {
-      this.done = true;
-
-      var rootEntry = this.tryEntries[0];
-      var rootRecord = rootEntry.completion;
-      if (rootRecord.type === "throw") {
-        throw rootRecord.arg;
-      }
-
-      return this.rval;
-    },
-
-    dispatchException: function(exception) {
-      if (this.done) {
-        throw exception;
-      }
-
-      var context = this;
-      function handle(loc, caught) {
-        record.type = "throw";
-        record.arg = exception;
-        context.next = loc;
-
-        if (caught) {
-          // If the dispatched exception was caught by a catch block,
-          // then let that catch block handle the exception normally.
-          context.method = "next";
-          context.arg = undefined;
-        }
-
-        return !! caught;
-      }
-
-      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
-        var entry = this.tryEntries[i];
-        var record = entry.completion;
-
-        if (entry.tryLoc === "root") {
-          // Exception thrown outside of any try block that could handle
-          // it, so set the completion value of the entire function to
-          // throw the exception.
-          return handle("end");
-        }
-
-        if (entry.tryLoc <= this.prev) {
-          var hasCatch = hasOwn.call(entry, "catchLoc");
-          var hasFinally = hasOwn.call(entry, "finallyLoc");
-
-          if (hasCatch && hasFinally) {
-            if (this.prev < entry.catchLoc) {
-              return handle(entry.catchLoc, true);
-            } else if (this.prev < entry.finallyLoc) {
-              return handle(entry.finallyLoc);
-            }
-
-          } else if (hasCatch) {
-            if (this.prev < entry.catchLoc) {
-              return handle(entry.catchLoc, true);
-            }
-
-          } else if (hasFinally) {
-            if (this.prev < entry.finallyLoc) {
-              return handle(entry.finallyLoc);
-            }
-
-          } else {
-            throw new Error("try statement without catch or finally");
-          }
-        }
-      }
-    },
-
-    abrupt: function(type, arg) {
-      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
-        var entry = this.tryEntries[i];
-        if (entry.tryLoc <= this.prev &&
-            hasOwn.call(entry, "finallyLoc") &&
-            this.prev < entry.finallyLoc) {
-          var finallyEntry = entry;
-          break;
-        }
-      }
-
-      if (finallyEntry &&
-          (type === "break" ||
-           type === "continue") &&
-          finallyEntry.tryLoc <= arg &&
-          arg <= finallyEntry.finallyLoc) {
-        // Ignore the finally entry if control is not jumping to a
-        // location outside the try/catch block.
-        finallyEntry = null;
-      }
-
-      var record = finallyEntry ? finallyEntry.completion : {};
-      record.type = type;
-      record.arg = arg;
-
-      if (finallyEntry) {
-        this.method = "next";
-        this.next = finallyEntry.finallyLoc;
-        return ContinueSentinel;
-      }
-
-      return this.complete(record);
-    },
-
-    complete: function(record, afterLoc) {
-      if (record.type === "throw") {
-        throw record.arg;
-      }
-
-      if (record.type === "break" ||
-          record.type === "continue") {
-        this.next = record.arg;
-      } else if (record.type === "return") {
-        this.rval = this.arg = record.arg;
-        this.method = "return";
-        this.next = "end";
-      } else if (record.type === "normal" && afterLoc) {
-        this.next = afterLoc;
-      }
-
-      return ContinueSentinel;
-    },
-
-    finish: function(finallyLoc) {
-      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
-        var entry = this.tryEntries[i];
-        if (entry.finallyLoc === finallyLoc) {
-          this.complete(entry.completion, entry.afterLoc);
-          resetTryEntry(entry);
-          return ContinueSentinel;
-        }
-      }
-    },
-
-    "catch": function(tryLoc) {
-      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
-        var entry = this.tryEntries[i];
-        if (entry.tryLoc === tryLoc) {
-          var record = entry.completion;
-          if (record.type === "throw") {
-            var thrown = record.arg;
-            resetTryEntry(entry);
-          }
-          return thrown;
-        }
-      }
-
-      // The context.catch method must only be called with a location
-      // argument that corresponds to a known catch block.
-      throw new Error("illegal catch attempt");
-    },
-
-    delegateYield: function(iterable, resultName, nextLoc) {
-      this.delegate = {
-        iterator: values(iterable),
-        resultName: resultName,
-        nextLoc: nextLoc
-      };
-
-      if (this.method === "next") {
-        // Deliberately forget the last sent value so that we don't
-        // accidentally pass it on to the delegate.
-        this.arg = undefined;
-      }
-
-      return ContinueSentinel;
-    }
-  };
-
-  // Regardless of whether this script is executing as a CommonJS module
-  // or not, return the runtime object so that we can declare the variable
-  // regeneratorRuntime in the outer scope, which allows this module to be
-  // injected easily by `bin/regenerator --include-runtime script.js`.
-  return exports;
-
-}(
-  // If this script is executing as a CommonJS module, use module.exports
-  // as the regeneratorRuntime namespace. Otherwise create a new empty
-  // object. Either way, the resulting object will be used to initialize
-  // the regeneratorRuntime variable at the top of this file.
-   true ? module.exports : undefined
-));
-
-try {
-  regeneratorRuntime = runtime;
-} catch (accidentalStrictMode) {
-  // This module should not be running in strict mode, so the above
-  // assignment should always work unless something is misconfigured. Just
-  // in case runtime.js accidentally runs in strict mode, in modern engines
-  // we can explicitly access globalThis. In older engines we can escape
-  // strict mode using a global Function call. This could conceivably fail
-  // if a Content Security Policy forbids using Function, but in that case
-  // the proper solution is to fix the accidental strict mode problem. If
-  // you've misconfigured your bundler to force strict mode and applied a
-  // CSP to forbid Function, and you're not willing to fix either of those
-  // problems, please detail your unique predicament in a GitHub issue.
-  if (typeof globalThis === "object") {
-    globalThis.regeneratorRuntime = runtime;
-  } else {
-    Function("r", "regeneratorRuntime = r")(runtime);
-  }
-}
-
-
-/***/ }),
-
 /***/ "./node_modules/webpack/buildin/global.js":
 /*!***********************************!*\
   !*** (webpack)/buildin/global.js ***!
@@ -48747,6 +48307,6377 @@ module.exports = g;
 
 /***/ }),
 
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/abap\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/abap\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/abap\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/abnf\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/abnf\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/abnf\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/actionscript\\.js$":
+/*!*****************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/actionscript\.js$ namespace object ***!
+  \*****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/actionscript\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/ada\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/ada\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/ada\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/agda\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/agda\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/agda\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/al\\.js$":
+/*!*******************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/al\.js$ namespace object ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/al\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/antlr4\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/antlr4\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/antlr4\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/apacheconf\\.js$":
+/*!***************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/apacheconf\.js$ namespace object ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/apacheconf\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/apex\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/apex\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/apex\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/apl\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/apl\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/apl\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/applescript\\.js$":
+/*!****************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/applescript\.js$ namespace object ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/applescript\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/aql\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/aql\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/aql\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/arduino\\.js$":
+/*!************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/arduino\.js$ namespace object ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/arduino\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/arff\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/arff\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/arff\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/asciidoc\\.js$":
+/*!*************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/asciidoc\.js$ namespace object ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/asciidoc\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/asm6502\\.js$":
+/*!************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/asm6502\.js$ namespace object ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/asm6502\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/asmatmel\\.js$":
+/*!*************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/asmatmel\.js$ namespace object ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/asmatmel\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/aspnet\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/aspnet\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/aspnet\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/autohotkey\\.js$":
+/*!***************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/autohotkey\.js$ namespace object ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/autohotkey\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/autoit\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/autoit\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/autoit\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/avisynth\\.js$":
+/*!*************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/avisynth\.js$ namespace object ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/avisynth\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/avro\\-idl\\.js$":
+/*!**************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/avro\-idl\.js$ namespace object ***!
+  \**************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/avro\\-idl\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/bash\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/bash\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/bash\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/basic\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/basic\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/basic\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/batch\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/batch\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/batch\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/bbcode\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/bbcode\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/bbcode\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/bicep\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/bicep\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/bicep\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/birb\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/birb\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/birb\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/bison\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/bison\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/bison\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/bnf\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/bnf\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/bnf\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/brainfuck\\.js$":
+/*!**************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/brainfuck\.js$ namespace object ***!
+  \**************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/brainfuck\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/brightscript\\.js$":
+/*!*****************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/brightscript\.js$ namespace object ***!
+  \*****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/brightscript\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/bro\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/bro\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/bro\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/bsl\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/bsl\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/bsl\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/c\\.js$":
+/*!******************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/c\.js$ namespace object ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/c\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/cfscript\\.js$":
+/*!*************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/cfscript\.js$ namespace object ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/cfscript\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/chaiscript\\.js$":
+/*!***************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/chaiscript\.js$ namespace object ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/chaiscript\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/cil\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/cil\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/cil\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/clike\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/clike\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/clike\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/clojure\\.js$":
+/*!************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/clojure\.js$ namespace object ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/clojure\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/cmake\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/cmake\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/cmake\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/cobol\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/cobol\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/cobol\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/coffeescript\\.js$":
+/*!*****************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/coffeescript\.js$ namespace object ***!
+  \*****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/coffeescript\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/concurnas\\.js$":
+/*!**************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/concurnas\.js$ namespace object ***!
+  \**************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/concurnas\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/coq\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/coq\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/coq\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/cpp\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/cpp\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/cpp\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/crystal\\.js$":
+/*!************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/crystal\.js$ namespace object ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/crystal\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/csharp\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/csharp\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/csharp\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/cshtml\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/cshtml\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/cshtml\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/csp\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/csp\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/csp\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/css\\-extras\\.js$":
+/*!****************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/css\-extras\.js$ namespace object ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/css\\-extras\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/css\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/css\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/css\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/csv\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/csv\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/csv\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/cypher\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/cypher\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/cypher\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/d\\.js$":
+/*!******************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/d\.js$ namespace object ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/d\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/dart\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/dart\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/dart\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/dataweave\\.js$":
+/*!**************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/dataweave\.js$ namespace object ***!
+  \**************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/dataweave\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/dax\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/dax\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/dax\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/dhall\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/dhall\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/dhall\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/diff\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/diff\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/diff\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/django\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/django\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/django\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/dns\\-zone\\-file\\.js$":
+/*!********************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/dns\-zone\-file\.js$ namespace object ***!
+  \********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/dns\\-zone\\-file\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/docker\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/docker\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/docker\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/dot\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/dot\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/dot\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/ebnf\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/ebnf\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/ebnf\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/editorconfig\\.js$":
+/*!*****************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/editorconfig\.js$ namespace object ***!
+  \*****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/editorconfig\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/eiffel\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/eiffel\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/eiffel\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/ejs\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/ejs\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/ejs\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/elixir\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/elixir\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/elixir\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/elm\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/elm\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/elm\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/erb\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/erb\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/erb\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/erlang\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/erlang\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/erlang\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/etlua\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/etlua\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/etlua\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/excel\\-formula\\.js$":
+/*!*******************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/excel\-formula\.js$ namespace object ***!
+  \*******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/excel\\-formula\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/factor\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/factor\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/factor\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/false\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/false\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/false\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/firestore\\-security\\-rules\\.js$":
+/*!*******************************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/firestore\-security\-rules\.js$ namespace object ***!
+  \*******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/firestore\\-security\\-rules\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/flow\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/flow\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/flow\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/fortran\\.js$":
+/*!************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/fortran\.js$ namespace object ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/fortran\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/fsharp\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/fsharp\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/fsharp\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/ftl\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/ftl\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/ftl\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/gap\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/gap\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/gap\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/gcode\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/gcode\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/gcode\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/gdscript\\.js$":
+/*!*************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/gdscript\.js$ namespace object ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/gdscript\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/gedcom\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/gedcom\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/gedcom\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/gherkin\\.js$":
+/*!************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/gherkin\.js$ namespace object ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/gherkin\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/git\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/git\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/git\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/glsl\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/glsl\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/glsl\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/gml\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/gml\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/gml\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/gn\\.js$":
+/*!*******************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/gn\.js$ namespace object ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/gn\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/go\\-module\\.js$":
+/*!***************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/go\-module\.js$ namespace object ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/go\\-module\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/go\\.js$":
+/*!*******************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/go\.js$ namespace object ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/go\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/graphql\\.js$":
+/*!************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/graphql\.js$ namespace object ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/graphql\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/groovy\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/groovy\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/groovy\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/haml\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/haml\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/haml\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/handlebars\\.js$":
+/*!***************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/handlebars\.js$ namespace object ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/handlebars\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/haskell\\.js$":
+/*!************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/haskell\.js$ namespace object ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/haskell\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/haxe\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/haxe\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/haxe\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/hcl\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/hcl\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/hcl\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/hlsl\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/hlsl\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/hlsl\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/hoon\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/hoon\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/hoon\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/hpkp\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/hpkp\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/hpkp\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/hsts\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/hsts\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/hsts\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/http\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/http\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/http\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/ichigojam\\.js$":
+/*!**************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/ichigojam\.js$ namespace object ***!
+  \**************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/ichigojam\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/icon\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/icon\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/icon\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/icu\\-message\\-format\\.js$":
+/*!*************************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/icu\-message\-format\.js$ namespace object ***!
+  \*************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/icu\\-message\\-format\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/idris\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/idris\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/idris\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/iecst\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/iecst\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/iecst\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/ignore\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/ignore\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/ignore\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/inform7\\.js$":
+/*!************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/inform7\.js$ namespace object ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/inform7\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/ini\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/ini\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/ini\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/io\\.js$":
+/*!*******************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/io\.js$ namespace object ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/io\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/j\\.js$":
+/*!******************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/j\.js$ namespace object ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/j\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/java\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/java\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/java\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/javadoc\\.js$":
+/*!************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/javadoc\.js$ namespace object ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/javadoc\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/javadoclike\\.js$":
+/*!****************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/javadoclike\.js$ namespace object ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/javadoclike\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/javascript\\.js$":
+/*!***************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/javascript\.js$ namespace object ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/javascript\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/javastacktrace\\.js$":
+/*!*******************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/javastacktrace\.js$ namespace object ***!
+  \*******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/javastacktrace\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/jexl\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/jexl\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/jexl\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/jolie\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/jolie\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/jolie\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/jq\\.js$":
+/*!*******************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/jq\.js$ namespace object ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/jq\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/js\\-extras\\.js$":
+/*!***************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/js\-extras\.js$ namespace object ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/js\\-extras\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/js\\-templates\\.js$":
+/*!******************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/js\-templates\.js$ namespace object ***!
+  \******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/js\\-templates\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/jsdoc\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/jsdoc\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/jsdoc\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/json5\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/json5\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/json5\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/json\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/json\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/json\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/jsonp\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/jsonp\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/jsonp\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/jsstacktrace\\.js$":
+/*!*****************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/jsstacktrace\.js$ namespace object ***!
+  \*****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/jsstacktrace\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/jsx\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/jsx\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/jsx\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/julia\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/julia\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/julia\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/keepalived\\.js$":
+/*!***************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/keepalived\.js$ namespace object ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/keepalived\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/keyman\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/keyman\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/keyman\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/kotlin\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/kotlin\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/kotlin\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/kumir\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/kumir\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/kumir\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/kusto\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/kusto\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/kusto\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/latex\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/latex\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/latex\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/latte\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/latte\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/latte\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/less\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/less\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/less\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/lilypond\\.js$":
+/*!*************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/lilypond\.js$ namespace object ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/lilypond\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/liquid\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/liquid\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/liquid\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/lisp\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/lisp\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/lisp\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/livescript\\.js$":
+/*!***************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/livescript\.js$ namespace object ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/livescript\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/llvm\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/llvm\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/llvm\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/log\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/log\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/log\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/lolcode\\.js$":
+/*!************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/lolcode\.js$ namespace object ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/lolcode\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/lua\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/lua\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/lua\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/magma\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/magma\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/magma\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/makefile\\.js$":
+/*!*************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/makefile\.js$ namespace object ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/makefile\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/markdown\\.js$":
+/*!*************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/markdown\.js$ namespace object ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/markdown\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/markup\\-templating\\.js$":
+/*!***********************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/markup\-templating\.js$ namespace object ***!
+  \***********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/markup\\-templating\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/markup\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/markup\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/markup\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/matlab\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/matlab\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/matlab\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/maxscript\\.js$":
+/*!**************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/maxscript\.js$ namespace object ***!
+  \**************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/maxscript\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/mel\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/mel\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/mel\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/mermaid\\.js$":
+/*!************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/mermaid\.js$ namespace object ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/mermaid\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/mizar\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/mizar\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/mizar\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/mongodb\\.js$":
+/*!************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/mongodb\.js$ namespace object ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/mongodb\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/monkey\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/monkey\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/monkey\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/moonscript\\.js$":
+/*!***************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/moonscript\.js$ namespace object ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/moonscript\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/n1ql\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/n1ql\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/n1ql\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/n4js\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/n4js\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/n4js\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/nand2tetris\\-hdl\\.js$":
+/*!*********************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/nand2tetris\-hdl\.js$ namespace object ***!
+  \*********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/nand2tetris\\-hdl\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/naniscript\\.js$":
+/*!***************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/naniscript\.js$ namespace object ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/naniscript\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/nasm\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/nasm\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/nasm\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/neon\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/neon\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/neon\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/nevod\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/nevod\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/nevod\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/nginx\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/nginx\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/nginx\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/nim\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/nim\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/nim\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/nix\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/nix\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/nix\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/nsis\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/nsis\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/nsis\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/objectivec\\.js$":
+/*!***************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/objectivec\.js$ namespace object ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/objectivec\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/ocaml\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/ocaml\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/ocaml\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/opencl\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/opencl\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/opencl\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/openqasm\\.js$":
+/*!*************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/openqasm\.js$ namespace object ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/openqasm\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/oz\\.js$":
+/*!*******************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/oz\.js$ namespace object ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/oz\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/parigp\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/parigp\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/parigp\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/parser\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/parser\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/parser\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/pascal\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/pascal\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/pascal\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/pascaligo\\.js$":
+/*!**************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/pascaligo\.js$ namespace object ***!
+  \**************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/pascaligo\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/pcaxis\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/pcaxis\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/pcaxis\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/peoplecode\\.js$":
+/*!***************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/peoplecode\.js$ namespace object ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/peoplecode\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/perl\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/perl\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/perl\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/php\\-extras\\.js$":
+/*!****************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/php\-extras\.js$ namespace object ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/php\\-extras\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/php\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/php\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/php\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/phpdoc\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/phpdoc\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/phpdoc\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/plsql\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/plsql\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/plsql\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/powerquery\\.js$":
+/*!***************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/powerquery\.js$ namespace object ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/powerquery\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/powershell\\.js$":
+/*!***************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/powershell\.js$ namespace object ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/powershell\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/processing\\.js$":
+/*!***************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/processing\.js$ namespace object ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/processing\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/prolog\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/prolog\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/prolog\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/promql\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/promql\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/promql\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/properties\\.js$":
+/*!***************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/properties\.js$ namespace object ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/properties\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/protobuf\\.js$":
+/*!*************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/protobuf\.js$ namespace object ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/protobuf\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/psl\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/psl\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/psl\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/pug\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/pug\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/pug\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/puppet\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/puppet\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/puppet\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/pure\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/pure\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/pure\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/purebasic\\.js$":
+/*!**************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/purebasic\.js$ namespace object ***!
+  \**************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/purebasic\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/purescript\\.js$":
+/*!***************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/purescript\.js$ namespace object ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/purescript\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/python\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/python\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/python\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/q\\.js$":
+/*!******************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/q\.js$ namespace object ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/q\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/qml\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/qml\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/qml\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/qore\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/qore\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/qore\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/qsharp\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/qsharp\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/qsharp\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/r\\.js$":
+/*!******************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/r\.js$ namespace object ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/r\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/racket\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/racket\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/racket\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/reason\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/reason\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/reason\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/regex\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/regex\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/regex\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/rego\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/rego\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/rego\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/renpy\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/renpy\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/renpy\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/rest\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/rest\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/rest\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/rip\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/rip\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/rip\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/roboconf\\.js$":
+/*!*************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/roboconf\.js$ namespace object ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/roboconf\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/robotframework\\.js$":
+/*!*******************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/robotframework\.js$ namespace object ***!
+  \*******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/robotframework\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/ruby\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/ruby\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/ruby\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/rust\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/rust\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/rust\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/sas\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/sas\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/sas\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/sass\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/sass\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/sass\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/scala\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/scala\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/scala\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/scheme\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/scheme\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/scheme\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/scss\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/scss\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/scss\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/shell\\-session\\.js$":
+/*!*******************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/shell\-session\.js$ namespace object ***!
+  \*******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/shell\\-session\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/smali\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/smali\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/smali\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/smalltalk\\.js$":
+/*!**************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/smalltalk\.js$ namespace object ***!
+  \**************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/smalltalk\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/smarty\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/smarty\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/smarty\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/sml\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/sml\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/sml\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/solidity\\.js$":
+/*!*************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/solidity\.js$ namespace object ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/solidity\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/solution\\-file\\.js$":
+/*!*******************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/solution\-file\.js$ namespace object ***!
+  \*******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/solution\\-file\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/soy\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/soy\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/soy\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/sparql\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/sparql\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/sparql\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/splunk\\-spl\\.js$":
+/*!****************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/splunk\-spl\.js$ namespace object ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/splunk\\-spl\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/sqf\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/sqf\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/sqf\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/sql\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/sql\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/sql\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/squirrel\\.js$":
+/*!*************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/squirrel\.js$ namespace object ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/squirrel\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/stan\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/stan\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/stan\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/stylus\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/stylus\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/stylus\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/swift\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/swift\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/swift\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/systemd\\.js$":
+/*!************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/systemd\.js$ namespace object ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/systemd\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/t4\\-cs\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/t4\-cs\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/t4\\-cs\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/t4\\-templating\\.js$":
+/*!*******************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/t4\-templating\.js$ namespace object ***!
+  \*******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/t4\\-templating\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/t4\\-vb\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/t4\-vb\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/t4\\-vb\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/tap\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/tap\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/tap\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/tcl\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/tcl\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/tcl\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/textile\\.js$":
+/*!************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/textile\.js$ namespace object ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/textile\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/toml\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/toml\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/toml\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/tremor\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/tremor\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/tremor\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/tsx\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/tsx\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/tsx\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/tt2\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/tt2\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/tt2\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/turtle\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/turtle\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/turtle\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/twig\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/twig\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/twig\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/typescript\\.js$":
+/*!***************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/typescript\.js$ namespace object ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/typescript\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/typoscript\\.js$":
+/*!***************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/typoscript\.js$ namespace object ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/typoscript\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/unrealscript\\.js$":
+/*!*****************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/unrealscript\.js$ namespace object ***!
+  \*****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/unrealscript\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/uorazor\\.js$":
+/*!************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/uorazor\.js$ namespace object ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/uorazor\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/uri\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/uri\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/uri\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/v\\.js$":
+/*!******************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/v\.js$ namespace object ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/v\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/vala\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/vala\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/vala\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/vbnet\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/vbnet\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/vbnet\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/velocity\\.js$":
+/*!*************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/velocity\.js$ namespace object ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/velocity\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/verilog\\.js$":
+/*!************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/verilog\.js$ namespace object ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/verilog\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/vhdl\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/vhdl\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/vhdl\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/vim\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/vim\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/vim\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/visual\\-basic\\.js$":
+/*!******************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/visual\-basic\.js$ namespace object ***!
+  \******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/visual\\-basic\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/warpscript\\.js$":
+/*!***************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/warpscript\.js$ namespace object ***!
+  \***************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/warpscript\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/wasm\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/wasm\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/wasm\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/web\\-idl\\.js$":
+/*!*************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/web\-idl\.js$ namespace object ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/web\\-idl\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/wiki\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/wiki\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/wiki\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/wolfram\\.js$":
+/*!************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/wolfram\.js$ namespace object ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/wolfram\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/wren\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/wren\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/wren\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/xeora\\.js$":
+/*!**********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/xeora\.js$ namespace object ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/xeora\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/xml\\-doc\\.js$":
+/*!*************************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/xml\-doc\.js$ namespace object ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/xml\\-doc\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/xojo\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/xojo\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/xojo\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/xquery\\.js$":
+/*!***********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/xquery\.js$ namespace object ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/xquery\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/yaml\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/yaml\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/yaml\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/yang\\.js$":
+/*!*********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/yang\.js$ namespace object ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/yang\\.js$";
+
+/***/ }),
+
+/***/ "./src/async-languages lazy recursive ^.*refractor\\/lang\\/zig\\.js$":
+/*!********************************************************************************!*\
+  !*** ./src/async-languages lazy ^.*refractor\/lang\/zig\.js$ namespace object ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/async-languages lazy recursive ^.*refractor\\/lang\\/zig\\.js$";
+
+/***/ }),
+
 /***/ "./src/async-languages/create-language-async-loader.js":
 /*!*************************************************************!*\
   !*** ./src/async-languages/create-language-async-loader.js ***!
@@ -48767,24 +54698,19 @@ __webpack_require__.r(__webpack_exports__);
     var _ref = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee(registerLanguage) {
       var module;
       return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee$(_context) {
-        while (1) {
-          switch (_context.prev = _context.next) {
-            case 0:
-              _context.next = 2;
-              return loader();
-
-            case 2:
-              module = _context.sent;
-              registerLanguage(name, module["default"] || module);
-
-            case 4:
-            case "end":
-              return _context.stop();
-          }
+        while (1) switch (_context.prev = _context.next) {
+          case 0:
+            _context.next = 2;
+            return loader();
+          case 2:
+            module = _context.sent;
+            registerLanguage(name, module["default"] || module);
+          case 4:
+          case "end":
+            return _context.stop();
         }
       }, _callee);
     }));
-
     return function (_x) {
       return _ref.apply(this, arguments);
     };
@@ -48802,841 +54728,842 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./create-language-async-loader */ "./src/async-languages/create-language-async-loader.js");
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var _create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./create-language-async-loader */ "./src/async-languages/create-language-async-loader.js");
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   abap: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("abap", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/abap.js */ "./node_modules/refractor/lang/abap.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/abap\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/abap.js");
   }),
   abnf: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("abnf", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/abnf.js */ "./node_modules/refractor/lang/abnf.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/abnf\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/abnf.js");
   }),
   actionscript: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("actionscript", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/actionscript.js */ "./node_modules/refractor/lang/actionscript.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/actionscript\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/actionscript.js");
   }),
   ada: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("ada", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/ada.js */ "./node_modules/refractor/lang/ada.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/ada\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/ada.js");
   }),
   agda: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("agda", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/agda.js */ "./node_modules/refractor/lang/agda.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/agda\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/agda.js");
   }),
   al: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("al", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/al.js */ "./node_modules/refractor/lang/al.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/al\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/al.js");
   }),
   antlr4: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("antlr4", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/antlr4.js */ "./node_modules/refractor/lang/antlr4.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/antlr4\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/antlr4.js");
   }),
   apacheconf: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("apacheconf", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/apacheconf.js */ "./node_modules/refractor/lang/apacheconf.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/apacheconf\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/apacheconf.js");
   }),
   apex: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("apex", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/apex.js */ "./node_modules/refractor/lang/apex.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/apex\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/apex.js");
   }),
   apl: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("apl", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/apl.js */ "./node_modules/refractor/lang/apl.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/apl\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/apl.js");
   }),
   applescript: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("applescript", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/applescript.js */ "./node_modules/refractor/lang/applescript.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/applescript\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/applescript.js");
   }),
   aql: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("aql", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/aql.js */ "./node_modules/refractor/lang/aql.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/aql\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/aql.js");
   }),
   arduino: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("arduino", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/arduino.js */ "./node_modules/refractor/lang/arduino.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/arduino\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/arduino.js");
   }),
   arff: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("arff", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/arff.js */ "./node_modules/refractor/lang/arff.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/arff\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/arff.js");
   }),
   asciidoc: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("asciidoc", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/asciidoc.js */ "./node_modules/refractor/lang/asciidoc.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/asciidoc\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/asciidoc.js");
   }),
   asm6502: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("asm6502", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/asm6502.js */ "./node_modules/refractor/lang/asm6502.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/asm6502\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/asm6502.js");
   }),
   asmatmel: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("asmatmel", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/asmatmel.js */ "./node_modules/refractor/lang/asmatmel.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/asmatmel\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/asmatmel.js");
   }),
   aspnet: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("aspnet", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/aspnet.js */ "./node_modules/refractor/lang/aspnet.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/aspnet\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/aspnet.js");
   }),
   autohotkey: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("autohotkey", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/autohotkey.js */ "./node_modules/refractor/lang/autohotkey.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/autohotkey\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/autohotkey.js");
   }),
   autoit: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("autoit", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/autoit.js */ "./node_modules/refractor/lang/autoit.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/autoit\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/autoit.js");
   }),
   avisynth: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("avisynth", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/avisynth.js */ "./node_modules/refractor/lang/avisynth.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/avisynth\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/avisynth.js");
   }),
   avroIdl: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("avroIdl", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/avro-idl.js */ "./node_modules/refractor/lang/avro-idl.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/avro\\-idl\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/avro-idl.js");
   }),
   bash: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("bash", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/bash.js */ "./node_modules/refractor/lang/bash.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/bash\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/bash.js");
   }),
   basic: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("basic", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/basic.js */ "./node_modules/refractor/lang/basic.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/basic\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/basic.js");
   }),
   batch: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("batch", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/batch.js */ "./node_modules/refractor/lang/batch.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/batch\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/batch.js");
   }),
   bbcode: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("bbcode", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/bbcode.js */ "./node_modules/refractor/lang/bbcode.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/bbcode\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/bbcode.js");
   }),
   bicep: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("bicep", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/bicep.js */ "./node_modules/refractor/lang/bicep.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/bicep\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/bicep.js");
   }),
   birb: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("birb", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/birb.js */ "./node_modules/refractor/lang/birb.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/birb\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/birb.js");
   }),
   bison: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("bison", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/bison.js */ "./node_modules/refractor/lang/bison.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/bison\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/bison.js");
   }),
   bnf: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("bnf", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/bnf.js */ "./node_modules/refractor/lang/bnf.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/bnf\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/bnf.js");
   }),
   brainfuck: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("brainfuck", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/brainfuck.js */ "./node_modules/refractor/lang/brainfuck.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/brainfuck\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/brainfuck.js");
   }),
   brightscript: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("brightscript", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/brightscript.js */ "./node_modules/refractor/lang/brightscript.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/brightscript\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/brightscript.js");
   }),
   bro: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("bro", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/bro.js */ "./node_modules/refractor/lang/bro.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/bro\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/bro.js");
   }),
   bsl: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("bsl", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/bsl.js */ "./node_modules/refractor/lang/bsl.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/bsl\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/bsl.js");
   }),
   c: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("c", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/c.js */ "./node_modules/refractor/lang/c.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/c\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/c.js");
   }),
   cfscript: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("cfscript", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/cfscript.js */ "./node_modules/refractor/lang/cfscript.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/cfscript\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/cfscript.js");
   }),
   chaiscript: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("chaiscript", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/chaiscript.js */ "./node_modules/refractor/lang/chaiscript.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/chaiscript\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/chaiscript.js");
   }),
   cil: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("cil", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/cil.js */ "./node_modules/refractor/lang/cil.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/cil\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/cil.js");
   }),
   clike: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("clike", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/clike.js */ "./node_modules/refractor/lang/clike.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/clike\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/clike.js");
   }),
   clojure: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("clojure", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/clojure.js */ "./node_modules/refractor/lang/clojure.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/clojure\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/clojure.js");
   }),
   cmake: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("cmake", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/cmake.js */ "./node_modules/refractor/lang/cmake.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/cmake\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/cmake.js");
   }),
   cobol: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("cobol", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/cobol.js */ "./node_modules/refractor/lang/cobol.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/cobol\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/cobol.js");
   }),
   coffeescript: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("coffeescript", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/coffeescript.js */ "./node_modules/refractor/lang/coffeescript.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/coffeescript\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/coffeescript.js");
   }),
   concurnas: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("concurnas", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/concurnas.js */ "./node_modules/refractor/lang/concurnas.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/concurnas\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/concurnas.js");
   }),
   coq: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("coq", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/coq.js */ "./node_modules/refractor/lang/coq.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/coq\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/coq.js");
   }),
   cpp: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("cpp", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/cpp.js */ "./node_modules/refractor/lang/cpp.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/cpp\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/cpp.js");
   }),
   crystal: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("crystal", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/crystal.js */ "./node_modules/refractor/lang/crystal.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/crystal\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/crystal.js");
   }),
   csharp: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("csharp", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/csharp.js */ "./node_modules/refractor/lang/csharp.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/csharp\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/csharp.js");
   }),
   cshtml: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("cshtml", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/cshtml.js */ "./node_modules/refractor/lang/cshtml.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/cshtml\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/cshtml.js");
   }),
   csp: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("csp", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/csp.js */ "./node_modules/refractor/lang/csp.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/csp\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/csp.js");
   }),
   cssExtras: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("cssExtras", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/css-extras.js */ "./node_modules/refractor/lang/css-extras.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/css\\-extras\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/css-extras.js");
   }),
   css: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("css", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/css.js */ "./node_modules/refractor/lang/css.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/css\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/css.js");
   }),
   csv: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("csv", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/csv.js */ "./node_modules/refractor/lang/csv.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/csv\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/csv.js");
   }),
   cypher: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("cypher", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/cypher.js */ "./node_modules/refractor/lang/cypher.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/cypher\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/cypher.js");
   }),
   d: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("d", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/d.js */ "./node_modules/refractor/lang/d.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/d\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/d.js");
   }),
   dart: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("dart", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/dart.js */ "./node_modules/refractor/lang/dart.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/dart\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/dart.js");
   }),
   dataweave: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("dataweave", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/dataweave.js */ "./node_modules/refractor/lang/dataweave.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/dataweave\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/dataweave.js");
   }),
   dax: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("dax", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/dax.js */ "./node_modules/refractor/lang/dax.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/dax\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/dax.js");
   }),
   dhall: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("dhall", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/dhall.js */ "./node_modules/refractor/lang/dhall.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/dhall\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/dhall.js");
   }),
   diff: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("diff", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/diff.js */ "./node_modules/refractor/lang/diff.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/diff\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/diff.js");
   }),
   django: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("django", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/django.js */ "./node_modules/refractor/lang/django.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/django\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/django.js");
   }),
   dnsZoneFile: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("dnsZoneFile", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/dns-zone-file.js */ "./node_modules/refractor/lang/dns-zone-file.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/dns\\-zone\\-file\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/dns-zone-file.js");
   }),
   docker: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("docker", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/docker.js */ "./node_modules/refractor/lang/docker.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/docker\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/docker.js");
   }),
   dot: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("dot", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/dot.js */ "./node_modules/refractor/lang/dot.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/dot\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/dot.js");
   }),
   ebnf: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("ebnf", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/ebnf.js */ "./node_modules/refractor/lang/ebnf.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/ebnf\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/ebnf.js");
   }),
   editorconfig: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("editorconfig", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/editorconfig.js */ "./node_modules/refractor/lang/editorconfig.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/editorconfig\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/editorconfig.js");
   }),
   eiffel: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("eiffel", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/eiffel.js */ "./node_modules/refractor/lang/eiffel.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/eiffel\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/eiffel.js");
   }),
   ejs: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("ejs", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/ejs.js */ "./node_modules/refractor/lang/ejs.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/ejs\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/ejs.js");
   }),
   elixir: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("elixir", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/elixir.js */ "./node_modules/refractor/lang/elixir.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/elixir\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/elixir.js");
   }),
   elm: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("elm", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/elm.js */ "./node_modules/refractor/lang/elm.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/elm\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/elm.js");
   }),
   erb: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("erb", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/erb.js */ "./node_modules/refractor/lang/erb.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/erb\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/erb.js");
   }),
   erlang: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("erlang", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/erlang.js */ "./node_modules/refractor/lang/erlang.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/erlang\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/erlang.js");
   }),
   etlua: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("etlua", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/etlua.js */ "./node_modules/refractor/lang/etlua.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/etlua\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/etlua.js");
   }),
   excelFormula: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("excelFormula", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/excel-formula.js */ "./node_modules/refractor/lang/excel-formula.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/excel\\-formula\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/excel-formula.js");
   }),
   factor: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("factor", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/factor.js */ "./node_modules/refractor/lang/factor.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/factor\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/factor.js");
   }),
   falselang: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("falselang", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/false.js */ "./node_modules/refractor/lang/false.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/false\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/false.js");
   }),
   firestoreSecurityRules: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("firestoreSecurityRules", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/firestore-security-rules.js */ "./node_modules/refractor/lang/firestore-security-rules.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/firestore\\-security\\-rules\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/firestore-security-rules.js");
   }),
   flow: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("flow", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/flow.js */ "./node_modules/refractor/lang/flow.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/flow\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/flow.js");
   }),
   fortran: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("fortran", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/fortran.js */ "./node_modules/refractor/lang/fortran.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/fortran\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/fortran.js");
   }),
   fsharp: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("fsharp", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/fsharp.js */ "./node_modules/refractor/lang/fsharp.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/fsharp\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/fsharp.js");
   }),
   ftl: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("ftl", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/ftl.js */ "./node_modules/refractor/lang/ftl.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/ftl\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/ftl.js");
   }),
   gap: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("gap", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/gap.js */ "./node_modules/refractor/lang/gap.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/gap\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/gap.js");
   }),
   gcode: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("gcode", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/gcode.js */ "./node_modules/refractor/lang/gcode.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/gcode\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/gcode.js");
   }),
   gdscript: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("gdscript", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/gdscript.js */ "./node_modules/refractor/lang/gdscript.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/gdscript\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/gdscript.js");
   }),
   gedcom: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("gedcom", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/gedcom.js */ "./node_modules/refractor/lang/gedcom.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/gedcom\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/gedcom.js");
   }),
   gherkin: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("gherkin", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/gherkin.js */ "./node_modules/refractor/lang/gherkin.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/gherkin\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/gherkin.js");
   }),
   git: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("git", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/git.js */ "./node_modules/refractor/lang/git.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/git\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/git.js");
   }),
   glsl: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("glsl", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/glsl.js */ "./node_modules/refractor/lang/glsl.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/glsl\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/glsl.js");
   }),
   gml: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("gml", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/gml.js */ "./node_modules/refractor/lang/gml.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/gml\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/gml.js");
   }),
   gn: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("gn", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/gn.js */ "./node_modules/refractor/lang/gn.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/gn\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/gn.js");
   }),
   goModule: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("goModule", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/go-module.js */ "./node_modules/refractor/lang/go-module.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/go\\-module\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/go-module.js");
   }),
   go: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("go", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/go.js */ "./node_modules/refractor/lang/go.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/go\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/go.js");
   }),
   graphql: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("graphql", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/graphql.js */ "./node_modules/refractor/lang/graphql.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/graphql\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/graphql.js");
   }),
   groovy: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("groovy", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/groovy.js */ "./node_modules/refractor/lang/groovy.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/groovy\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/groovy.js");
   }),
   haml: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("haml", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/haml.js */ "./node_modules/refractor/lang/haml.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/haml\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/haml.js");
   }),
   handlebars: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("handlebars", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/handlebars.js */ "./node_modules/refractor/lang/handlebars.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/handlebars\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/handlebars.js");
   }),
   haskell: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("haskell", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/haskell.js */ "./node_modules/refractor/lang/haskell.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/haskell\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/haskell.js");
   }),
   haxe: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("haxe", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/haxe.js */ "./node_modules/refractor/lang/haxe.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/haxe\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/haxe.js");
   }),
   hcl: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("hcl", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/hcl.js */ "./node_modules/refractor/lang/hcl.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/hcl\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/hcl.js");
   }),
   hlsl: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("hlsl", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/hlsl.js */ "./node_modules/refractor/lang/hlsl.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/hlsl\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/hlsl.js");
   }),
   hoon: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("hoon", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/hoon.js */ "./node_modules/refractor/lang/hoon.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/hoon\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/hoon.js");
   }),
   hpkp: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("hpkp", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/hpkp.js */ "./node_modules/refractor/lang/hpkp.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/hpkp\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/hpkp.js");
   }),
   hsts: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("hsts", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/hsts.js */ "./node_modules/refractor/lang/hsts.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/hsts\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/hsts.js");
   }),
   http: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("http", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/http.js */ "./node_modules/refractor/lang/http.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/http\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/http.js");
   }),
   ichigojam: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("ichigojam", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/ichigojam.js */ "./node_modules/refractor/lang/ichigojam.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/ichigojam\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/ichigojam.js");
   }),
   icon: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("icon", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/icon.js */ "./node_modules/refractor/lang/icon.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/icon\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/icon.js");
   }),
   icuMessageFormat: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("icuMessageFormat", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/icu-message-format.js */ "./node_modules/refractor/lang/icu-message-format.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/icu\\-message\\-format\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/icu-message-format.js");
   }),
   idris: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("idris", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/idris.js */ "./node_modules/refractor/lang/idris.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/idris\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/idris.js");
   }),
   iecst: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("iecst", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/iecst.js */ "./node_modules/refractor/lang/iecst.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/iecst\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/iecst.js");
   }),
   ignore: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("ignore", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/ignore.js */ "./node_modules/refractor/lang/ignore.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/ignore\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/ignore.js");
   }),
   inform7: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("inform7", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/inform7.js */ "./node_modules/refractor/lang/inform7.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/inform7\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/inform7.js");
   }),
   ini: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("ini", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/ini.js */ "./node_modules/refractor/lang/ini.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/ini\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/ini.js");
   }),
   io: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("io", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/io.js */ "./node_modules/refractor/lang/io.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/io\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/io.js");
   }),
   j: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("j", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/j.js */ "./node_modules/refractor/lang/j.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/j\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/j.js");
   }),
   java: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("java", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/java.js */ "./node_modules/refractor/lang/java.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/java\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/java.js");
   }),
   javadoc: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("javadoc", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/javadoc.js */ "./node_modules/refractor/lang/javadoc.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/javadoc\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/javadoc.js");
   }),
   javadoclike: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("javadoclike", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/javadoclike.js */ "./node_modules/refractor/lang/javadoclike.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/javadoclike\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/javadoclike.js");
   }),
   javascript: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("javascript", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/javascript.js */ "./node_modules/refractor/lang/javascript.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/javascript\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/javascript.js");
   }),
   javastacktrace: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("javastacktrace", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/javastacktrace.js */ "./node_modules/refractor/lang/javastacktrace.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/javastacktrace\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/javastacktrace.js");
   }),
   jexl: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("jexl", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/jexl.js */ "./node_modules/refractor/lang/jexl.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/jexl\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/jexl.js");
   }),
   jolie: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("jolie", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/jolie.js */ "./node_modules/refractor/lang/jolie.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/jolie\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/jolie.js");
   }),
   jq: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("jq", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/jq.js */ "./node_modules/refractor/lang/jq.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/jq\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/jq.js");
   }),
   jsExtras: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("jsExtras", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/js-extras.js */ "./node_modules/refractor/lang/js-extras.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/js\\-extras\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/js-extras.js");
   }),
   jsTemplates: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("jsTemplates", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/js-templates.js */ "./node_modules/refractor/lang/js-templates.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/js\\-templates\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/js-templates.js");
   }),
   jsdoc: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("jsdoc", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/jsdoc.js */ "./node_modules/refractor/lang/jsdoc.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/jsdoc\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/jsdoc.js");
   }),
   json: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("json", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/json.js */ "./node_modules/refractor/lang/json.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/json\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/json.js");
   }),
   json5: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("json5", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/json5.js */ "./node_modules/refractor/lang/json5.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/json5\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/json5.js");
   }),
   jsonp: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("jsonp", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/jsonp.js */ "./node_modules/refractor/lang/jsonp.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/jsonp\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/jsonp.js");
   }),
   jsstacktrace: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("jsstacktrace", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/jsstacktrace.js */ "./node_modules/refractor/lang/jsstacktrace.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/jsstacktrace\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/jsstacktrace.js");
   }),
   jsx: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("jsx", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/jsx.js */ "./node_modules/refractor/lang/jsx.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/jsx\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/jsx.js");
   }),
   julia: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("julia", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/julia.js */ "./node_modules/refractor/lang/julia.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/julia\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/julia.js");
   }),
   keepalived: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("keepalived", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/keepalived.js */ "./node_modules/refractor/lang/keepalived.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/keepalived\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/keepalived.js");
   }),
   keyman: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("keyman", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/keyman.js */ "./node_modules/refractor/lang/keyman.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/keyman\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/keyman.js");
   }),
   kotlin: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("kotlin", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/kotlin.js */ "./node_modules/refractor/lang/kotlin.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/kotlin\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/kotlin.js");
   }),
   kumir: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("kumir", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/kumir.js */ "./node_modules/refractor/lang/kumir.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/kumir\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/kumir.js");
   }),
   kusto: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("kusto", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/kusto.js */ "./node_modules/refractor/lang/kusto.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/kusto\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/kusto.js");
   }),
   latex: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("latex", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/latex.js */ "./node_modules/refractor/lang/latex.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/latex\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/latex.js");
   }),
   latte: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("latte", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/latte.js */ "./node_modules/refractor/lang/latte.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/latte\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/latte.js");
   }),
   less: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("less", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/less.js */ "./node_modules/refractor/lang/less.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/less\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/less.js");
   }),
   lilypond: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("lilypond", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/lilypond.js */ "./node_modules/refractor/lang/lilypond.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/lilypond\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/lilypond.js");
   }),
   liquid: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("liquid", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/liquid.js */ "./node_modules/refractor/lang/liquid.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/liquid\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/liquid.js");
   }),
   lisp: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("lisp", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/lisp.js */ "./node_modules/refractor/lang/lisp.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/lisp\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/lisp.js");
   }),
   livescript: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("livescript", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/livescript.js */ "./node_modules/refractor/lang/livescript.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/livescript\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/livescript.js");
   }),
   llvm: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("llvm", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/llvm.js */ "./node_modules/refractor/lang/llvm.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/llvm\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/llvm.js");
   }),
   log: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("log", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/log.js */ "./node_modules/refractor/lang/log.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/log\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/log.js");
   }),
   lolcode: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("lolcode", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/lolcode.js */ "./node_modules/refractor/lang/lolcode.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/lolcode\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/lolcode.js");
   }),
   lua: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("lua", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/lua.js */ "./node_modules/refractor/lang/lua.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/lua\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/lua.js");
   }),
   magma: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("magma", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/magma.js */ "./node_modules/refractor/lang/magma.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/magma\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/magma.js");
   }),
   makefile: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("makefile", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/makefile.js */ "./node_modules/refractor/lang/makefile.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/makefile\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/makefile.js");
   }),
   markdown: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("markdown", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/markdown.js */ "./node_modules/refractor/lang/markdown.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/markdown\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/markdown.js");
   }),
   markupTemplating: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("markupTemplating", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/markup-templating.js */ "./node_modules/refractor/lang/markup-templating.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/markup\\-templating\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/markup-templating.js");
   }),
   markup: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("markup", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/markup.js */ "./node_modules/refractor/lang/markup.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/markup\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/markup.js");
   }),
   matlab: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("matlab", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/matlab.js */ "./node_modules/refractor/lang/matlab.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/matlab\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/matlab.js");
   }),
   maxscript: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("maxscript", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/maxscript.js */ "./node_modules/refractor/lang/maxscript.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/maxscript\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/maxscript.js");
   }),
   mel: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("mel", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/mel.js */ "./node_modules/refractor/lang/mel.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/mel\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/mel.js");
   }),
   mermaid: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("mermaid", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/mermaid.js */ "./node_modules/refractor/lang/mermaid.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/mermaid\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/mermaid.js");
   }),
   mizar: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("mizar", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/mizar.js */ "./node_modules/refractor/lang/mizar.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/mizar\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/mizar.js");
   }),
   mongodb: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("mongodb", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/mongodb.js */ "./node_modules/refractor/lang/mongodb.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/mongodb\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/mongodb.js");
   }),
   monkey: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("monkey", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/monkey.js */ "./node_modules/refractor/lang/monkey.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/monkey\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/monkey.js");
   }),
   moonscript: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("moonscript", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/moonscript.js */ "./node_modules/refractor/lang/moonscript.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/moonscript\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/moonscript.js");
   }),
   n1ql: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("n1ql", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/n1ql.js */ "./node_modules/refractor/lang/n1ql.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/n1ql\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/n1ql.js");
   }),
   n4js: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("n4js", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/n4js.js */ "./node_modules/refractor/lang/n4js.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/n4js\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/n4js.js");
   }),
   nand2tetrisHdl: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("nand2tetrisHdl", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/nand2tetris-hdl.js */ "./node_modules/refractor/lang/nand2tetris-hdl.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/nand2tetris\\-hdl\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/nand2tetris-hdl.js");
   }),
   naniscript: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("naniscript", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/naniscript.js */ "./node_modules/refractor/lang/naniscript.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/naniscript\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/naniscript.js");
   }),
   nasm: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("nasm", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/nasm.js */ "./node_modules/refractor/lang/nasm.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/nasm\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/nasm.js");
   }),
   neon: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("neon", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/neon.js */ "./node_modules/refractor/lang/neon.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/neon\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/neon.js");
   }),
   nevod: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("nevod", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/nevod.js */ "./node_modules/refractor/lang/nevod.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/nevod\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/nevod.js");
   }),
   nginx: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("nginx", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/nginx.js */ "./node_modules/refractor/lang/nginx.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/nginx\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/nginx.js");
   }),
   nim: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("nim", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/nim.js */ "./node_modules/refractor/lang/nim.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/nim\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/nim.js");
   }),
   nix: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("nix", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/nix.js */ "./node_modules/refractor/lang/nix.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/nix\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/nix.js");
   }),
   nsis: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("nsis", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/nsis.js */ "./node_modules/refractor/lang/nsis.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/nsis\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/nsis.js");
   }),
   objectivec: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("objectivec", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/objectivec.js */ "./node_modules/refractor/lang/objectivec.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/objectivec\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/objectivec.js");
   }),
   ocaml: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("ocaml", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/ocaml.js */ "./node_modules/refractor/lang/ocaml.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/ocaml\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/ocaml.js");
   }),
   opencl: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("opencl", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/opencl.js */ "./node_modules/refractor/lang/opencl.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/opencl\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/opencl.js");
   }),
   openqasm: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("openqasm", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/openqasm.js */ "./node_modules/refractor/lang/openqasm.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/openqasm\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/openqasm.js");
   }),
   oz: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("oz", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/oz.js */ "./node_modules/refractor/lang/oz.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/oz\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/oz.js");
   }),
   parigp: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("parigp", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/parigp.js */ "./node_modules/refractor/lang/parigp.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/parigp\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/parigp.js");
   }),
   parser: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("parser", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/parser.js */ "./node_modules/refractor/lang/parser.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/parser\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/parser.js");
   }),
   pascal: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("pascal", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/pascal.js */ "./node_modules/refractor/lang/pascal.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/pascal\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/pascal.js");
   }),
   pascaligo: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("pascaligo", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/pascaligo.js */ "./node_modules/refractor/lang/pascaligo.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/pascaligo\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/pascaligo.js");
   }),
   pcaxis: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("pcaxis", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/pcaxis.js */ "./node_modules/refractor/lang/pcaxis.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/pcaxis\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/pcaxis.js");
   }),
   peoplecode: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("peoplecode", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/peoplecode.js */ "./node_modules/refractor/lang/peoplecode.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/peoplecode\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/peoplecode.js");
   }),
   perl: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("perl", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/perl.js */ "./node_modules/refractor/lang/perl.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/perl\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/perl.js");
   }),
   phpExtras: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("phpExtras", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/php-extras.js */ "./node_modules/refractor/lang/php-extras.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/php\\-extras\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/php-extras.js");
   }),
   php: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("php", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/php.js */ "./node_modules/refractor/lang/php.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/php\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/php.js");
   }),
   phpdoc: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("phpdoc", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/phpdoc.js */ "./node_modules/refractor/lang/phpdoc.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/phpdoc\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/phpdoc.js");
   }),
   plsql: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("plsql", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/plsql.js */ "./node_modules/refractor/lang/plsql.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/plsql\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/plsql.js");
   }),
   powerquery: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("powerquery", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/powerquery.js */ "./node_modules/refractor/lang/powerquery.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/powerquery\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/powerquery.js");
   }),
   powershell: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("powershell", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/powershell.js */ "./node_modules/refractor/lang/powershell.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/powershell\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/powershell.js");
   }),
   processing: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("processing", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/processing.js */ "./node_modules/refractor/lang/processing.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/processing\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/processing.js");
   }),
   prolog: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("prolog", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/prolog.js */ "./node_modules/refractor/lang/prolog.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/prolog\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/prolog.js");
   }),
   promql: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("promql", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/promql.js */ "./node_modules/refractor/lang/promql.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/promql\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/promql.js");
   }),
   properties: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("properties", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/properties.js */ "./node_modules/refractor/lang/properties.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/properties\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/properties.js");
   }),
   protobuf: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("protobuf", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/protobuf.js */ "./node_modules/refractor/lang/protobuf.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/protobuf\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/protobuf.js");
   }),
   psl: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("psl", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/psl.js */ "./node_modules/refractor/lang/psl.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/psl\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/psl.js");
   }),
   pug: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("pug", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/pug.js */ "./node_modules/refractor/lang/pug.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/pug\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/pug.js");
   }),
   puppet: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("puppet", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/puppet.js */ "./node_modules/refractor/lang/puppet.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/puppet\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/puppet.js");
   }),
   pure: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("pure", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/pure.js */ "./node_modules/refractor/lang/pure.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/pure\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/pure.js");
   }),
   purebasic: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("purebasic", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/purebasic.js */ "./node_modules/refractor/lang/purebasic.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/purebasic\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/purebasic.js");
   }),
   purescript: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("purescript", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/purescript.js */ "./node_modules/refractor/lang/purescript.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/purescript\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/purescript.js");
   }),
   python: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("python", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/python.js */ "./node_modules/refractor/lang/python.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/python\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/python.js");
   }),
   q: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("q", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/q.js */ "./node_modules/refractor/lang/q.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/q\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/q.js");
   }),
   qml: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("qml", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/qml.js */ "./node_modules/refractor/lang/qml.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/qml\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/qml.js");
   }),
   qore: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("qore", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/qore.js */ "./node_modules/refractor/lang/qore.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/qore\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/qore.js");
   }),
   qsharp: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("qsharp", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/qsharp.js */ "./node_modules/refractor/lang/qsharp.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/qsharp\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/qsharp.js");
   }),
   r: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("r", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/r.js */ "./node_modules/refractor/lang/r.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/r\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/r.js");
   }),
   racket: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("racket", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/racket.js */ "./node_modules/refractor/lang/racket.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/racket\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/racket.js");
   }),
   reason: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("reason", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/reason.js */ "./node_modules/refractor/lang/reason.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/reason\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/reason.js");
   }),
   regex: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("regex", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/regex.js */ "./node_modules/refractor/lang/regex.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/regex\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/regex.js");
   }),
   rego: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("rego", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/rego.js */ "./node_modules/refractor/lang/rego.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/rego\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/rego.js");
   }),
   renpy: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("renpy", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/renpy.js */ "./node_modules/refractor/lang/renpy.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/renpy\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/renpy.js");
   }),
   rest: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("rest", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/rest.js */ "./node_modules/refractor/lang/rest.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/rest\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/rest.js");
   }),
   rip: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("rip", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/rip.js */ "./node_modules/refractor/lang/rip.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/rip\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/rip.js");
   }),
   roboconf: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("roboconf", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/roboconf.js */ "./node_modules/refractor/lang/roboconf.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/roboconf\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/roboconf.js");
   }),
   robotframework: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("robotframework", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/robotframework.js */ "./node_modules/refractor/lang/robotframework.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/robotframework\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/robotframework.js");
   }),
   ruby: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("ruby", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/ruby.js */ "./node_modules/refractor/lang/ruby.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/ruby\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/ruby.js");
   }),
   rust: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("rust", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/rust.js */ "./node_modules/refractor/lang/rust.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/rust\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/rust.js");
   }),
   sas: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("sas", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/sas.js */ "./node_modules/refractor/lang/sas.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/sas\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/sas.js");
   }),
   sass: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("sass", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/sass.js */ "./node_modules/refractor/lang/sass.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/sass\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/sass.js");
   }),
   scala: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("scala", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/scala.js */ "./node_modules/refractor/lang/scala.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/scala\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/scala.js");
   }),
   scheme: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("scheme", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/scheme.js */ "./node_modules/refractor/lang/scheme.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/scheme\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/scheme.js");
   }),
   scss: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("scss", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/scss.js */ "./node_modules/refractor/lang/scss.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/scss\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/scss.js");
   }),
   shellSession: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("shellSession", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/shell-session.js */ "./node_modules/refractor/lang/shell-session.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/shell\\-session\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/shell-session.js");
   }),
   smali: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("smali", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/smali.js */ "./node_modules/refractor/lang/smali.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/smali\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/smali.js");
   }),
   smalltalk: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("smalltalk", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/smalltalk.js */ "./node_modules/refractor/lang/smalltalk.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/smalltalk\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/smalltalk.js");
   }),
   smarty: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("smarty", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/smarty.js */ "./node_modules/refractor/lang/smarty.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/smarty\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/smarty.js");
   }),
   sml: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("sml", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/sml.js */ "./node_modules/refractor/lang/sml.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/sml\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/sml.js");
   }),
   solidity: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("solidity", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/solidity.js */ "./node_modules/refractor/lang/solidity.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/solidity\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/solidity.js");
   }),
   solutionFile: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("solutionFile", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/solution-file.js */ "./node_modules/refractor/lang/solution-file.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/solution\\-file\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/solution-file.js");
   }),
   soy: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("soy", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/soy.js */ "./node_modules/refractor/lang/soy.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/soy\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/soy.js");
   }),
   sparql: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("sparql", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/sparql.js */ "./node_modules/refractor/lang/sparql.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/sparql\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/sparql.js");
   }),
   splunkSpl: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("splunkSpl", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/splunk-spl.js */ "./node_modules/refractor/lang/splunk-spl.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/splunk\\-spl\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/splunk-spl.js");
   }),
   sqf: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("sqf", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/sqf.js */ "./node_modules/refractor/lang/sqf.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/sqf\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/sqf.js");
   }),
   sql: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("sql", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/sql.js */ "./node_modules/refractor/lang/sql.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/sql\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/sql.js");
   }),
   squirrel: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("squirrel", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/squirrel.js */ "./node_modules/refractor/lang/squirrel.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/squirrel\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/squirrel.js");
   }),
   stan: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("stan", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/stan.js */ "./node_modules/refractor/lang/stan.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/stan\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/stan.js");
   }),
   stylus: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("stylus", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/stylus.js */ "./node_modules/refractor/lang/stylus.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/stylus\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/stylus.js");
   }),
   swift: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("swift", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/swift.js */ "./node_modules/refractor/lang/swift.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/swift\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/swift.js");
   }),
   systemd: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("systemd", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/systemd.js */ "./node_modules/refractor/lang/systemd.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/systemd\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/systemd.js");
   }),
   t4Cs: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("t4Cs", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/t4-cs.js */ "./node_modules/refractor/lang/t4-cs.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/t4\\-cs\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/t4-cs.js");
   }),
   t4Templating: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("t4Templating", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/t4-templating.js */ "./node_modules/refractor/lang/t4-templating.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/t4\\-templating\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/t4-templating.js");
   }),
   t4Vb: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("t4Vb", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/t4-vb.js */ "./node_modules/refractor/lang/t4-vb.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/t4\\-vb\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/t4-vb.js");
   }),
   tap: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("tap", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/tap.js */ "./node_modules/refractor/lang/tap.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/tap\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/tap.js");
   }),
   tcl: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("tcl", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/tcl.js */ "./node_modules/refractor/lang/tcl.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/tcl\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/tcl.js");
   }),
   textile: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("textile", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/textile.js */ "./node_modules/refractor/lang/textile.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/textile\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/textile.js");
   }),
   toml: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("toml", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/toml.js */ "./node_modules/refractor/lang/toml.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/toml\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/toml.js");
   }),
   tremor: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("tremor", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/tremor.js */ "./node_modules/refractor/lang/tremor.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/tremor\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/tremor.js");
   }),
   tsx: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("tsx", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/tsx.js */ "./node_modules/refractor/lang/tsx.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/tsx\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/tsx.js");
   }),
   tt2: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("tt2", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/tt2.js */ "./node_modules/refractor/lang/tt2.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/tt2\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/tt2.js");
   }),
   turtle: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("turtle", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/turtle.js */ "./node_modules/refractor/lang/turtle.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/turtle\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/turtle.js");
   }),
   twig: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("twig", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/twig.js */ "./node_modules/refractor/lang/twig.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/twig\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/twig.js");
   }),
   typescript: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("typescript", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/typescript.js */ "./node_modules/refractor/lang/typescript.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/typescript\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/typescript.js");
   }),
   typoscript: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("typoscript", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/typoscript.js */ "./node_modules/refractor/lang/typoscript.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/typoscript\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/typoscript.js");
   }),
   unrealscript: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("unrealscript", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/unrealscript.js */ "./node_modules/refractor/lang/unrealscript.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/unrealscript\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/unrealscript.js");
   }),
   uorazor: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("uorazor", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/uorazor.js */ "./node_modules/refractor/lang/uorazor.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/uorazor\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/uorazor.js");
   }),
   uri: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("uri", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/uri.js */ "./node_modules/refractor/lang/uri.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/uri\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/uri.js");
   }),
   v: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("v", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/v.js */ "./node_modules/refractor/lang/v.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/v\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/v.js");
   }),
   vala: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("vala", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/vala.js */ "./node_modules/refractor/lang/vala.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/vala\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/vala.js");
   }),
   vbnet: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("vbnet", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/vbnet.js */ "./node_modules/refractor/lang/vbnet.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/vbnet\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/vbnet.js");
   }),
   velocity: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("velocity", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/velocity.js */ "./node_modules/refractor/lang/velocity.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/velocity\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/velocity.js");
   }),
   verilog: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("verilog", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/verilog.js */ "./node_modules/refractor/lang/verilog.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/verilog\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/verilog.js");
   }),
   vhdl: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("vhdl", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/vhdl.js */ "./node_modules/refractor/lang/vhdl.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/vhdl\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/vhdl.js");
   }),
   vim: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("vim", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/vim.js */ "./node_modules/refractor/lang/vim.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/vim\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/vim.js");
   }),
   visualBasic: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("visualBasic", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/visual-basic.js */ "./node_modules/refractor/lang/visual-basic.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/visual\\-basic\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/visual-basic.js");
   }),
   warpscript: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("warpscript", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/warpscript.js */ "./node_modules/refractor/lang/warpscript.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/warpscript\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/warpscript.js");
   }),
   wasm: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("wasm", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/wasm.js */ "./node_modules/refractor/lang/wasm.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/wasm\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/wasm.js");
   }),
   webIdl: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("webIdl", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/web-idl.js */ "./node_modules/refractor/lang/web-idl.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/web\\-idl\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/web-idl.js");
   }),
   wiki: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("wiki", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/wiki.js */ "./node_modules/refractor/lang/wiki.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/wiki\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/wiki.js");
   }),
   wolfram: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("wolfram", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/wolfram.js */ "./node_modules/refractor/lang/wolfram.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/wolfram\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/wolfram.js");
   }),
   wren: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("wren", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/wren.js */ "./node_modules/refractor/lang/wren.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/wren\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/wren.js");
   }),
   xeora: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("xeora", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/xeora.js */ "./node_modules/refractor/lang/xeora.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/xeora\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/xeora.js");
   }),
   xmlDoc: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("xmlDoc", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/xml-doc.js */ "./node_modules/refractor/lang/xml-doc.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/xml\\-doc\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/xml-doc.js");
   }),
   xojo: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("xojo", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/xojo.js */ "./node_modules/refractor/lang/xojo.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/xojo\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/xojo.js");
   }),
   xquery: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("xquery", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/xquery.js */ "./node_modules/refractor/lang/xquery.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/xquery\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/xquery.js");
   }),
   yaml: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("yaml", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/yaml.js */ "./node_modules/refractor/lang/yaml.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/yaml\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/yaml.js");
   }),
   yang: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("yang", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/yang.js */ "./node_modules/refractor/lang/yang.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/yang\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/yang.js");
   }),
   zig: Object(_create_language_async_loader__WEBPACK_IMPORTED_MODULE_0__["default"])("zig", function () {
-    return Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(null, /*! refractor/lang/zig.js */ "./node_modules/refractor/lang/zig.js", 7));
+    return __webpack_require__("./src/async-languages lazy recursive ^.*refractor\\/lang\\/zig\\.js$")(process.env.REACT_APP_PUBLIC_URL + "refractor/lang/zig.js");
   })
 });
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/process/browser.js */ "./node_modules/process/browser.js")))
 
 /***/ }),
 
@@ -49657,12 +55584,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "./node_modules/@babel/runtime/helpers/createClass.js");
 /* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/inherits */ "./node_modules/@babel/runtime/helpers/inherits.js");
-/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/inherits */ "./node_modules/@babel/runtime/helpers/inherits.js");
+/* harmony import */ var _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js");
 /* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
@@ -49679,31 +55606,23 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6___default()(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6___default()(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5___default()(this, result); }; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
+function _callSuper(t, o, e) { return o = _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5___default()(o), _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4___default()(t, _isNativeReflectConstruct() ? Reflect.construct(o, e || [], _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5___default()(t).constructor) : o.apply(t, e)); }
+function _isNativeReflectConstruct() { try { var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); } catch (t) {} return (_isNativeReflectConstruct = function _isNativeReflectConstruct() { return !!t; })(); }
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function (options) {
+  var _ReactAsyncHighlighter;
   var loader = options.loader,
-      isLanguageRegistered = options.isLanguageRegistered,
-      registerLanguage = options.registerLanguage,
-      languageLoaders = options.languageLoaders,
-      noAsyncLoadingLanguages = options.noAsyncLoadingLanguages;
-
+    isLanguageRegistered = options.isLanguageRegistered,
+    registerLanguage = options.registerLanguage,
+    languageLoaders = options.languageLoaders,
+    noAsyncLoadingLanguages = options.noAsyncLoadingLanguages;
   var ReactAsyncHighlighter = /*#__PURE__*/function (_React$PureComponent) {
-    _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_4___default()(ReactAsyncHighlighter, _React$PureComponent);
-
-    var _super = _createSuper(ReactAsyncHighlighter);
-
+    _babel_runtime_helpers_inherits__WEBPACK_IMPORTED_MODULE_6___default()(ReactAsyncHighlighter, _React$PureComponent);
     function ReactAsyncHighlighter() {
       _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_2___default()(this, ReactAsyncHighlighter);
-
-      return _super.apply(this, arguments);
+      return _callSuper(this, ReactAsyncHighlighter, arguments);
     }
-
     _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_3___default()(ReactAsyncHighlighter, [{
       key: "componentDidUpdate",
       value: function componentDidUpdate() {
@@ -49715,17 +55634,14 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
       key: "componentDidMount",
       value: function componentDidMount() {
         var _this = this;
-
         if (!ReactAsyncHighlighter.astGeneratorPromise) {
           ReactAsyncHighlighter.loadAstGenerator();
         }
-
         if (!ReactAsyncHighlighter.astGenerator) {
           ReactAsyncHighlighter.astGeneratorPromise.then(function () {
             _this.forceUpdate();
           });
         }
-
         if (!ReactAsyncHighlighter.isRegistered(this.props.language) && languageLoaders) {
           this.loadLanguage();
         }
@@ -49734,13 +55650,10 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
       key: "loadLanguage",
       value: function loadLanguage() {
         var _this2 = this;
-
         var language = this.props.language;
-
         if (language === 'text') {
           return;
         }
-
         ReactAsyncHighlighter.loadLanguage(language).then(function () {
           return _this2.forceUpdate();
         })["catch"](function () {});
@@ -49769,33 +55682,25 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
         var _loadLanguage = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_8___default.a.mark(function _callee(language) {
           var languageLoader;
           return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_8___default.a.wrap(function _callee$(_context) {
-            while (1) {
-              switch (_context.prev = _context.next) {
-                case 0:
-                  languageLoader = languageLoaders[language];
-
-                  if (!(typeof languageLoader === 'function')) {
-                    _context.next = 5;
-                    break;
-                  }
-
-                  return _context.abrupt("return", languageLoader(ReactAsyncHighlighter.registerLanguage));
-
-                case 5:
-                  throw new Error("Language ".concat(language, " not supported"));
-
-                case 6:
-                case "end":
-                  return _context.stop();
-              }
+            while (1) switch (_context.prev = _context.next) {
+              case 0:
+                languageLoader = languageLoaders[language];
+                if (!(typeof languageLoader === 'function')) {
+                  _context.next = 5;
+                  break;
+                }
+                return _context.abrupt("return", languageLoader(ReactAsyncHighlighter.registerLanguage));
+              case 5:
+                throw new Error("Language ".concat(language, " not supported"));
+              case 6:
+              case "end":
+                return _context.stop();
             }
           }, _callee);
         }));
-
         function loadLanguage(_x) {
           return _loadLanguage.apply(this, arguments);
         }
-
         return loadLanguage;
       }()
     }, {
@@ -49808,7 +55713,6 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
       value: function loadAstGenerator() {
         ReactAsyncHighlighter.astGeneratorPromise = loader().then(function (astGenerator) {
           ReactAsyncHighlighter.astGenerator = astGenerator;
-
           if (registerLanguage) {
             ReactAsyncHighlighter.languages.forEach(function (language, name) {
               return registerLanguage(astGenerator, name, language);
@@ -49818,49 +55722,37 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
         return ReactAsyncHighlighter.astGeneratorPromise;
       }
     }]);
-
     return ReactAsyncHighlighter;
   }(react__WEBPACK_IMPORTED_MODULE_9___default.a.PureComponent);
-
+  _ReactAsyncHighlighter = ReactAsyncHighlighter;
   _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_7___default()(ReactAsyncHighlighter, "astGenerator", null);
-
   _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_7___default()(ReactAsyncHighlighter, "highlightInstance", Object(_highlight__WEBPACK_IMPORTED_MODULE_10__["default"])(null, {}));
-
   _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_7___default()(ReactAsyncHighlighter, "astGeneratorPromise", null);
-
   _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_7___default()(ReactAsyncHighlighter, "languages", new Map());
-
   _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_7___default()(ReactAsyncHighlighter, "supportedLanguages", options.supportedLanguages || Object.keys(languageLoaders || {}));
-
   _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_7___default()(ReactAsyncHighlighter, "isRegistered", function (language) {
     if (noAsyncLoadingLanguages) {
       return true;
     }
-
     if (!registerLanguage) {
       throw new Error("Current syntax highlighter doesn't support registration of languages");
     }
-
-    if (!ReactAsyncHighlighter.astGenerator) {
+    if (!_ReactAsyncHighlighter.astGenerator) {
       // Ast generator not available yet, but language will be registered once it is.
-      return ReactAsyncHighlighter.languages.has(language);
+      return _ReactAsyncHighlighter.languages.has(language);
     }
-
-    return isLanguageRegistered(ReactAsyncHighlighter.astGenerator, language);
+    return isLanguageRegistered(_ReactAsyncHighlighter.astGenerator, language);
   });
-
   _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_7___default()(ReactAsyncHighlighter, "registerLanguage", function (name, language) {
     if (!registerLanguage) {
       throw new Error("Current syntax highlighter doesn't support registration of languages");
     }
-
-    if (ReactAsyncHighlighter.astGenerator) {
-      return registerLanguage(ReactAsyncHighlighter.astGenerator, name, language);
+    if (_ReactAsyncHighlighter.astGenerator) {
+      return registerLanguage(_ReactAsyncHighlighter.astGenerator, name, language);
     } else {
-      ReactAsyncHighlighter.languages.set(name, language);
+      _ReactAsyncHighlighter.languages.set(name, language);
     }
   });
-
   return ReactAsyncHighlighter;
 });
 
@@ -49903,49 +55795,39 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 
 
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
 
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_1___default()(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-
- // Get all possible permutations of all power sets
+// Get all possible permutations of all power sets
 //
 // Super simple, non-algorithmic solution since the
 // number of class names will not be greater than 4
-
 function powerSetPermutations(arr) {
   var arrLength = arr.length;
   if (arrLength === 0 || arrLength === 1) return arr;
-
   if (arrLength === 2) {
     // prettier-ignore
     return [arr[0], arr[1], "".concat(arr[0], ".").concat(arr[1]), "".concat(arr[1], ".").concat(arr[0])];
   }
-
   if (arrLength === 3) {
     return [arr[0], arr[1], arr[2], "".concat(arr[0], ".").concat(arr[1]), "".concat(arr[0], ".").concat(arr[2]), "".concat(arr[1], ".").concat(arr[0]), "".concat(arr[1], ".").concat(arr[2]), "".concat(arr[2], ".").concat(arr[0]), "".concat(arr[2], ".").concat(arr[1]), "".concat(arr[0], ".").concat(arr[1], ".").concat(arr[2]), "".concat(arr[0], ".").concat(arr[2], ".").concat(arr[1]), "".concat(arr[1], ".").concat(arr[0], ".").concat(arr[2]), "".concat(arr[1], ".").concat(arr[2], ".").concat(arr[0]), "".concat(arr[2], ".").concat(arr[0], ".").concat(arr[1]), "".concat(arr[2], ".").concat(arr[1], ".").concat(arr[0])];
   }
-
   if (arrLength >= 4) {
     // Currently does not support more than 4 extra
     // class names (after `.token` has been removed)
     return [arr[0], arr[1], arr[2], arr[3], "".concat(arr[0], ".").concat(arr[1]), "".concat(arr[0], ".").concat(arr[2]), "".concat(arr[0], ".").concat(arr[3]), "".concat(arr[1], ".").concat(arr[0]), "".concat(arr[1], ".").concat(arr[2]), "".concat(arr[1], ".").concat(arr[3]), "".concat(arr[2], ".").concat(arr[0]), "".concat(arr[2], ".").concat(arr[1]), "".concat(arr[2], ".").concat(arr[3]), "".concat(arr[3], ".").concat(arr[0]), "".concat(arr[3], ".").concat(arr[1]), "".concat(arr[3], ".").concat(arr[2]), "".concat(arr[0], ".").concat(arr[1], ".").concat(arr[2]), "".concat(arr[0], ".").concat(arr[1], ".").concat(arr[3]), "".concat(arr[0], ".").concat(arr[2], ".").concat(arr[1]), "".concat(arr[0], ".").concat(arr[2], ".").concat(arr[3]), "".concat(arr[0], ".").concat(arr[3], ".").concat(arr[1]), "".concat(arr[0], ".").concat(arr[3], ".").concat(arr[2]), "".concat(arr[1], ".").concat(arr[0], ".").concat(arr[2]), "".concat(arr[1], ".").concat(arr[0], ".").concat(arr[3]), "".concat(arr[1], ".").concat(arr[2], ".").concat(arr[0]), "".concat(arr[1], ".").concat(arr[2], ".").concat(arr[3]), "".concat(arr[1], ".").concat(arr[3], ".").concat(arr[0]), "".concat(arr[1], ".").concat(arr[3], ".").concat(arr[2]), "".concat(arr[2], ".").concat(arr[0], ".").concat(arr[1]), "".concat(arr[2], ".").concat(arr[0], ".").concat(arr[3]), "".concat(arr[2], ".").concat(arr[1], ".").concat(arr[0]), "".concat(arr[2], ".").concat(arr[1], ".").concat(arr[3]), "".concat(arr[2], ".").concat(arr[3], ".").concat(arr[0]), "".concat(arr[2], ".").concat(arr[3], ".").concat(arr[1]), "".concat(arr[3], ".").concat(arr[0], ".").concat(arr[1]), "".concat(arr[3], ".").concat(arr[0], ".").concat(arr[2]), "".concat(arr[3], ".").concat(arr[1], ".").concat(arr[0]), "".concat(arr[3], ".").concat(arr[1], ".").concat(arr[2]), "".concat(arr[3], ".").concat(arr[2], ".").concat(arr[0]), "".concat(arr[3], ".").concat(arr[2], ".").concat(arr[1]), "".concat(arr[0], ".").concat(arr[1], ".").concat(arr[2], ".").concat(arr[3]), "".concat(arr[0], ".").concat(arr[1], ".").concat(arr[3], ".").concat(arr[2]), "".concat(arr[0], ".").concat(arr[2], ".").concat(arr[1], ".").concat(arr[3]), "".concat(arr[0], ".").concat(arr[2], ".").concat(arr[3], ".").concat(arr[1]), "".concat(arr[0], ".").concat(arr[3], ".").concat(arr[1], ".").concat(arr[2]), "".concat(arr[0], ".").concat(arr[3], ".").concat(arr[2], ".").concat(arr[1]), "".concat(arr[1], ".").concat(arr[0], ".").concat(arr[2], ".").concat(arr[3]), "".concat(arr[1], ".").concat(arr[0], ".").concat(arr[3], ".").concat(arr[2]), "".concat(arr[1], ".").concat(arr[2], ".").concat(arr[0], ".").concat(arr[3]), "".concat(arr[1], ".").concat(arr[2], ".").concat(arr[3], ".").concat(arr[0]), "".concat(arr[1], ".").concat(arr[3], ".").concat(arr[0], ".").concat(arr[2]), "".concat(arr[1], ".").concat(arr[3], ".").concat(arr[2], ".").concat(arr[0]), "".concat(arr[2], ".").concat(arr[0], ".").concat(arr[1], ".").concat(arr[3]), "".concat(arr[2], ".").concat(arr[0], ".").concat(arr[3], ".").concat(arr[1]), "".concat(arr[2], ".").concat(arr[1], ".").concat(arr[0], ".").concat(arr[3]), "".concat(arr[2], ".").concat(arr[1], ".").concat(arr[3], ".").concat(arr[0]), "".concat(arr[2], ".").concat(arr[3], ".").concat(arr[0], ".").concat(arr[1]), "".concat(arr[2], ".").concat(arr[3], ".").concat(arr[1], ".").concat(arr[0]), "".concat(arr[3], ".").concat(arr[0], ".").concat(arr[1], ".").concat(arr[2]), "".concat(arr[3], ".").concat(arr[0], ".").concat(arr[2], ".").concat(arr[1]), "".concat(arr[3], ".").concat(arr[1], ".").concat(arr[0], ".").concat(arr[2]), "".concat(arr[3], ".").concat(arr[1], ".").concat(arr[2], ".").concat(arr[0]), "".concat(arr[3], ".").concat(arr[2], ".").concat(arr[0], ".").concat(arr[1]), "".concat(arr[3], ".").concat(arr[2], ".").concat(arr[1], ".").concat(arr[0])];
   }
 }
-
 var classNameCombinations = {};
-
 function getClassNameCombinations(classNames) {
   if (classNames.length === 0 || classNames.length === 1) return classNames;
   var key = classNames.join('.');
-
   if (!classNameCombinations[key]) {
     classNameCombinations[key] = powerSetPermutations(classNames);
   }
-
   return classNameCombinations[key];
 }
-
 function createStyleObject(classNames) {
   var elementStyle = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
   var stylesheet = arguments.length > 2 ? arguments[2] : undefined;
@@ -49976,22 +55858,20 @@ function createChildren(stylesheet, useInlineStyles) {
 }
 function createElement(_ref) {
   var node = _ref.node,
-      stylesheet = _ref.stylesheet,
-      _ref$style = _ref.style,
-      style = _ref$style === void 0 ? {} : _ref$style,
-      useInlineStyles = _ref.useInlineStyles,
-      key = _ref.key;
+    stylesheet = _ref.stylesheet,
+    _ref$style = _ref.style,
+    style = _ref$style === void 0 ? {} : _ref$style,
+    useInlineStyles = _ref.useInlineStyles,
+    key = _ref.key;
   var properties = node.properties,
-      type = node.type,
-      TagName = node.tagName,
-      value = node.value;
-
+    type = node.type,
+    TagName = node.tagName,
+    value = node.value;
   if (type === 'text') {
     return value;
   } else if (TagName) {
     var childrenCreator = createChildren(stylesheet, useInlineStyles);
     var props;
-
     if (!useInlineStyles) {
       props = _objectSpread(_objectSpread({}, properties), {}, {
         className: createClassNameString(properties.className)
@@ -50002,8 +55882,9 @@ function createElement(_ref) {
           if (!classes.includes(className)) classes.push(className);
         });
         return classes;
-      }, []); // For compatibility with older versions of react-syntax-highlighter
+      }, []);
 
+      // For compatibility with older versions of react-syntax-highlighter
       var startingClassName = properties.className && properties.className.includes('token') ? ['token'] : [];
       var className = properties.className && startingClassName.concat(properties.className.filter(function (className) {
         return !allStylesheetSelectors.includes(className);
@@ -50013,7 +55894,6 @@ function createElement(_ref) {
         style: createStyleObject(properties.className, Object.assign({}, properties.style, style), stylesheet)
       });
     }
-
     var children = childrenCreator(node.children);
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(TagName, _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({
       key: key
@@ -50046,24 +55926,19 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _excluded = ["language", "children", "style", "customStyle", "codeTagProps", "useInlineStyles", "showLineNumbers", "showInlineLineNumbers", "startingLineNumber", "lineNumberContainerStyle", "lineNumberStyle", "wrapLines", "wrapLongLines", "lineProps", "renderer", "PreTag", "CodeTag", "code", "astGenerator"];
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
 
 
 
 var newLineRegex = /\n/g;
-
 function getNewLines(str) {
   return str.match(newLineRegex);
 }
-
 function getAllLineNumbers(_ref) {
   var lines = _ref.lines,
-      startingLineNumber = _ref.startingLineNumber,
-      style = _ref.style;
+    startingLineNumber = _ref.startingLineNumber,
+    style = _ref.style;
   return lines.map(function (_, i) {
     var number = i + startingLineNumber;
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("span", {
@@ -50073,18 +55948,17 @@ function getAllLineNumbers(_ref) {
     }, "".concat(number, "\n"));
   });
 }
-
 function AllLineNumbers(_ref2) {
   var codeString = _ref2.codeString,
-      codeStyle = _ref2.codeStyle,
-      _ref2$containerStyle = _ref2.containerStyle,
-      containerStyle = _ref2$containerStyle === void 0 ? {
-    "float": 'left',
-    paddingRight: '10px'
-  } : _ref2$containerStyle,
-      _ref2$numberStyle = _ref2.numberStyle,
-      numberStyle = _ref2$numberStyle === void 0 ? {} : _ref2$numberStyle,
-      startingLineNumber = _ref2.startingLineNumber;
+    codeStyle = _ref2.codeStyle,
+    _ref2$containerStyle = _ref2.containerStyle,
+    containerStyle = _ref2$containerStyle === void 0 ? {
+      "float": 'left',
+      paddingRight: '10px'
+    } : _ref2$containerStyle,
+    _ref2$numberStyle = _ref2.numberStyle,
+    numberStyle = _ref2$numberStyle === void 0 ? {} : _ref2$numberStyle,
+    startingLineNumber = _ref2.startingLineNumber;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("code", {
     style: Object.assign({}, codeStyle, containerStyle)
   }, getAllLineNumbers({
@@ -50093,11 +55967,9 @@ function AllLineNumbers(_ref2) {
     startingLineNumber: startingLineNumber
   }));
 }
-
 function getEmWidthOfNumber(num) {
   return "".concat(num.toString().length, ".25em");
 }
-
 function getInlineLineNumber(lineNumber, inlineLineNumberStyle) {
   return {
     type: 'element',
@@ -50113,7 +55985,6 @@ function getInlineLineNumber(lineNumber, inlineLineNumberStyle) {
     }]
   };
 }
-
 function assembleLineNumberStyles(lineNumberStyle, lineNumber, largestLineNumber) {
   // minimally necessary styling for line numbers
   var defaultLineNumberStyle = {
@@ -50122,41 +55993,36 @@ function assembleLineNumberStyles(lineNumberStyle, lineNumber, largestLineNumber
     paddingRight: '1em',
     textAlign: 'right',
     userSelect: 'none'
-  }; // prep custom styling
-
-  var customLineNumberStyle = typeof lineNumberStyle === 'function' ? lineNumberStyle(lineNumber) : lineNumberStyle; // combine
-
+  };
+  // prep custom styling
+  var customLineNumberStyle = typeof lineNumberStyle === 'function' ? lineNumberStyle(lineNumber) : lineNumberStyle;
+  // combine
   var assembledStyle = _objectSpread(_objectSpread({}, defaultLineNumberStyle), customLineNumberStyle);
-
   return assembledStyle;
 }
-
 function createLineElement(_ref3) {
   var children = _ref3.children,
-      lineNumber = _ref3.lineNumber,
-      lineNumberStyle = _ref3.lineNumberStyle,
-      largestLineNumber = _ref3.largestLineNumber,
-      showInlineLineNumbers = _ref3.showInlineLineNumbers,
-      _ref3$lineProps = _ref3.lineProps,
-      lineProps = _ref3$lineProps === void 0 ? {} : _ref3$lineProps,
-      _ref3$className = _ref3.className,
-      className = _ref3$className === void 0 ? [] : _ref3$className,
-      showLineNumbers = _ref3.showLineNumbers,
-      wrapLongLines = _ref3.wrapLongLines;
+    lineNumber = _ref3.lineNumber,
+    lineNumberStyle = _ref3.lineNumberStyle,
+    largestLineNumber = _ref3.largestLineNumber,
+    showInlineLineNumbers = _ref3.showInlineLineNumbers,
+    _ref3$lineProps = _ref3.lineProps,
+    lineProps = _ref3$lineProps === void 0 ? {} : _ref3$lineProps,
+    _ref3$className = _ref3.className,
+    className = _ref3$className === void 0 ? [] : _ref3$className,
+    showLineNumbers = _ref3.showLineNumbers,
+    wrapLongLines = _ref3.wrapLongLines;
   var properties = typeof lineProps === 'function' ? lineProps(lineNumber) : lineProps;
   properties['className'] = className;
-
   if (lineNumber && showInlineLineNumbers) {
     var inlineLineNumberStyle = assembleLineNumberStyles(lineNumberStyle, lineNumber, largestLineNumber);
     children.unshift(getInlineLineNumber(lineNumber, inlineLineNumberStyle));
   }
-
   if (wrapLongLines & showLineNumbers) {
     properties.style = _objectSpread(_objectSpread({}, properties.style), {}, {
       display: 'flex'
     });
   }
-
   return {
     type: 'element',
     tagName: 'span',
@@ -50164,14 +56030,11 @@ function createLineElement(_ref3) {
     children: children
   };
 }
-
 function flattenCodeTree(tree) {
   var className = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
   var newTree = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : [];
-
   for (var i = 0; i < tree.length; i++) {
     var node = tree[i];
-
     if (node.type === 'text') {
       newTree.push(createLineElement({
         children: [node],
@@ -50184,18 +56047,14 @@ function flattenCodeTree(tree) {
       });
     }
   }
-
   return newTree;
 }
-
 function processLines(codeTree, wrapLines, lineProps, showLineNumbers, showInlineLineNumbers, startingLineNumber, largestLineNumber, lineNumberStyle, wrapLongLines) {
   var _ref4;
-
   var tree = flattenCodeTree(codeTree.value);
   var newTree = [];
   var lastLineBreakIndex = -1;
   var index = 0;
-
   function createWrappedLine(children, lineNumber) {
     var className = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : [];
     return createLineElement({
@@ -50210,26 +56069,21 @@ function processLines(codeTree, wrapLines, lineProps, showLineNumbers, showInlin
       wrapLongLines: wrapLongLines
     });
   }
-
   function createUnwrappedLine(children, lineNumber) {
     if (showLineNumbers && lineNumber && showInlineLineNumbers) {
       var inlineLineNumberStyle = assembleLineNumberStyles(lineNumberStyle, lineNumber, largestLineNumber);
       children.unshift(getInlineLineNumber(lineNumber, inlineLineNumberStyle));
     }
-
     return children;
   }
-
   function createLine(children, lineNumber) {
     var className = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : [];
     return wrapLines || className.length > 0 ? createWrappedLine(children, lineNumber, className) : createUnwrappedLine(children, lineNumber);
   }
-
   var _loop = function _loop() {
     var node = tree[index];
     var value = node.children[0].value;
     var newLines = getNewLines(value);
-
     if (newLines) {
       var splitValue = value.split('\n');
       splitValue.forEach(function (text, i) {
@@ -50237,24 +56091,24 @@ function processLines(codeTree, wrapLines, lineProps, showLineNumbers, showInlin
         var newChild = {
           type: 'text',
           value: "".concat(text, "\n")
-        }; // if it's the first line
+        };
 
+        // if it's the first line
         if (i === 0) {
           var _children = tree.slice(lastLineBreakIndex + 1, index).concat(createLineElement({
             children: [newChild],
             className: node.properties.className
           }));
-
           var _line = createLine(_children, lineNumber);
+          newTree.push(_line);
 
-          newTree.push(_line); // if it's the last line
+          // if it's the last line
         } else if (i === splitValue.length - 1) {
           var stringChild = tree[index + 1] && tree[index + 1].children && tree[index + 1].children[0];
           var lastLineInPreviousSpan = {
             type: 'text',
             value: "".concat(text)
           };
-
           if (stringChild) {
             var newElem = createLineElement({
               children: [lastLineInPreviousSpan],
@@ -50263,47 +56117,38 @@ function processLines(codeTree, wrapLines, lineProps, showLineNumbers, showInlin
             tree.splice(index + 1, 0, newElem);
           } else {
             var _children2 = [lastLineInPreviousSpan];
-
             var _line2 = createLine(_children2, lineNumber, node.properties.className);
-
             newTree.push(_line2);
-          } // if it's neither the first nor the last line
+          }
 
+          // if it's neither the first nor the last line
         } else {
           var _children3 = [newChild];
-
           var _line3 = createLine(_children3, lineNumber, node.properties.className);
-
           newTree.push(_line3);
         }
       });
       lastLineBreakIndex = index;
     }
-
     index++;
   };
-
   while (index < tree.length) {
     _loop();
   }
-
   if (lastLineBreakIndex !== tree.length - 1) {
     var children = tree.slice(lastLineBreakIndex + 1, tree.length);
-
     if (children && children.length) {
       var lineNumber = showLineNumbers && newTree.length + startingLineNumber;
       var line = createLine(children, lineNumber);
       newTree.push(line);
     }
   }
-
   return wrapLines ? newTree : (_ref4 = []).concat.apply(_ref4, newTree);
 }
-
 function defaultRenderer(_ref5) {
   var rows = _ref5.rows,
-      stylesheet = _ref5.stylesheet,
-      useInlineStyles = _ref5.useInlineStyles;
+    stylesheet = _ref5.stylesheet,
+    useInlineStyles = _ref5.useInlineStyles;
   return rows.map(function (node, i) {
     return Object(_create_element__WEBPACK_IMPORTED_MODULE_4__["default"])({
       node: node,
@@ -50312,25 +56157,23 @@ function defaultRenderer(_ref5) {
       key: "code-segement".concat(i)
     });
   });
-} // only highlight.js has the highlightAuto method
+}
 
-
+// only highlight.js has the highlightAuto method
 function isHighlightJs(astGenerator) {
   return astGenerator && typeof astGenerator.highlightAuto !== 'undefined';
 }
-
 function getCodeTree(_ref6) {
   var astGenerator = _ref6.astGenerator,
-      language = _ref6.language,
-      code = _ref6.code,
-      defaultCodeValue = _ref6.defaultCodeValue;
-
+    language = _ref6.language,
+    code = _ref6.code,
+    defaultCodeValue = _ref6.defaultCodeValue;
   // figure out whether we're using lowlight/highlight or refractor/prism
   // then attempt highlighting accordingly
+
   // lowlight/highlight?
   if (isHighlightJs(astGenerator)) {
     var hasLanguage = Object(_checkForListedLanguage__WEBPACK_IMPORTED_MODULE_5__["default"])(astGenerator, language);
-
     if (language === 'text') {
       return {
         value: defaultCodeValue,
@@ -50341,9 +56184,9 @@ function getCodeTree(_ref6) {
     } else {
       return astGenerator.highlightAuto(code);
     }
-  } // must be refractor/prism, then
+  }
 
-
+  // must be refractor/prism, then
   try {
     return language && language !== 'text' ? {
       value: astGenerator.highlight(code, language)
@@ -50356,46 +56199,44 @@ function getCodeTree(_ref6) {
     };
   }
 }
-
 /* harmony default export */ __webpack_exports__["default"] = (function (defaultAstGenerator, defaultStyle) {
   return function SyntaxHighlighter(_ref7) {
     var language = _ref7.language,
-        children = _ref7.children,
-        _ref7$style = _ref7.style,
-        style = _ref7$style === void 0 ? defaultStyle : _ref7$style,
-        _ref7$customStyle = _ref7.customStyle,
-        customStyle = _ref7$customStyle === void 0 ? {} : _ref7$customStyle,
-        _ref7$codeTagProps = _ref7.codeTagProps,
-        codeTagProps = _ref7$codeTagProps === void 0 ? {
-      className: language ? "language-".concat(language) : undefined,
-      style: _objectSpread(_objectSpread({}, style['code[class*="language-"]']), style["code[class*=\"language-".concat(language, "\"]")])
-    } : _ref7$codeTagProps,
-        _ref7$useInlineStyles = _ref7.useInlineStyles,
-        useInlineStyles = _ref7$useInlineStyles === void 0 ? true : _ref7$useInlineStyles,
-        _ref7$showLineNumbers = _ref7.showLineNumbers,
-        showLineNumbers = _ref7$showLineNumbers === void 0 ? false : _ref7$showLineNumbers,
-        _ref7$showInlineLineN = _ref7.showInlineLineNumbers,
-        showInlineLineNumbers = _ref7$showInlineLineN === void 0 ? true : _ref7$showInlineLineN,
-        _ref7$startingLineNum = _ref7.startingLineNumber,
-        startingLineNumber = _ref7$startingLineNum === void 0 ? 1 : _ref7$startingLineNum,
-        lineNumberContainerStyle = _ref7.lineNumberContainerStyle,
-        _ref7$lineNumberStyle = _ref7.lineNumberStyle,
-        lineNumberStyle = _ref7$lineNumberStyle === void 0 ? {} : _ref7$lineNumberStyle,
-        wrapLines = _ref7.wrapLines,
-        _ref7$wrapLongLines = _ref7.wrapLongLines,
-        wrapLongLines = _ref7$wrapLongLines === void 0 ? false : _ref7$wrapLongLines,
-        _ref7$lineProps = _ref7.lineProps,
-        lineProps = _ref7$lineProps === void 0 ? {} : _ref7$lineProps,
-        renderer = _ref7.renderer,
-        _ref7$PreTag = _ref7.PreTag,
-        PreTag = _ref7$PreTag === void 0 ? 'pre' : _ref7$PreTag,
-        _ref7$CodeTag = _ref7.CodeTag,
-        CodeTag = _ref7$CodeTag === void 0 ? 'code' : _ref7$CodeTag,
-        _ref7$code = _ref7.code,
-        code = _ref7$code === void 0 ? (Array.isArray(children) ? children[0] : children) || '' : _ref7$code,
-        astGenerator = _ref7.astGenerator,
-        rest = _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0___default()(_ref7, _excluded);
-
+      children = _ref7.children,
+      _ref7$style = _ref7.style,
+      style = _ref7$style === void 0 ? defaultStyle : _ref7$style,
+      _ref7$customStyle = _ref7.customStyle,
+      customStyle = _ref7$customStyle === void 0 ? {} : _ref7$customStyle,
+      _ref7$codeTagProps = _ref7.codeTagProps,
+      codeTagProps = _ref7$codeTagProps === void 0 ? {
+        className: language ? "language-".concat(language) : undefined,
+        style: _objectSpread(_objectSpread({}, style['code[class*="language-"]']), style["code[class*=\"language-".concat(language, "\"]")])
+      } : _ref7$codeTagProps,
+      _ref7$useInlineStyles = _ref7.useInlineStyles,
+      useInlineStyles = _ref7$useInlineStyles === void 0 ? true : _ref7$useInlineStyles,
+      _ref7$showLineNumbers = _ref7.showLineNumbers,
+      showLineNumbers = _ref7$showLineNumbers === void 0 ? false : _ref7$showLineNumbers,
+      _ref7$showInlineLineN = _ref7.showInlineLineNumbers,
+      showInlineLineNumbers = _ref7$showInlineLineN === void 0 ? true : _ref7$showInlineLineN,
+      _ref7$startingLineNum = _ref7.startingLineNumber,
+      startingLineNumber = _ref7$startingLineNum === void 0 ? 1 : _ref7$startingLineNum,
+      lineNumberContainerStyle = _ref7.lineNumberContainerStyle,
+      _ref7$lineNumberStyle = _ref7.lineNumberStyle,
+      lineNumberStyle = _ref7$lineNumberStyle === void 0 ? {} : _ref7$lineNumberStyle,
+      wrapLines = _ref7.wrapLines,
+      _ref7$wrapLongLines = _ref7.wrapLongLines,
+      wrapLongLines = _ref7$wrapLongLines === void 0 ? false : _ref7$wrapLongLines,
+      _ref7$lineProps = _ref7.lineProps,
+      lineProps = _ref7$lineProps === void 0 ? {} : _ref7$lineProps,
+      renderer = _ref7.renderer,
+      _ref7$PreTag = _ref7.PreTag,
+      PreTag = _ref7$PreTag === void 0 ? 'pre' : _ref7$PreTag,
+      _ref7$CodeTag = _ref7.CodeTag,
+      CodeTag = _ref7$CodeTag === void 0 ? 'code' : _ref7$CodeTag,
+      _ref7$code = _ref7.code,
+      code = _ref7$code === void 0 ? (Array.isArray(children) ? children[0] : children) || '' : _ref7$code,
+      astGenerator = _ref7.astGenerator,
+      rest = _babel_runtime_helpers_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_0___default()(_ref7, _excluded);
     astGenerator = astGenerator || defaultAstGenerator;
     var allLineNumbers = showLineNumbers ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(AllLineNumbers, {
       containerStyle: lineNumberContainerStyle,
@@ -50414,7 +56255,6 @@ function getCodeTree(_ref6) {
       className: rest.className ? "".concat(generatorClassName, " ").concat(rest.className) : generatorClassName,
       style: Object.assign({}, customStyle)
     });
-
     if (wrapLongLines) {
       codeTagProps.style = _objectSpread(_objectSpread({}, codeTagProps.style), {}, {
         whiteSpace: 'pre-wrap'
@@ -50424,16 +56264,14 @@ function getCodeTree(_ref6) {
         whiteSpace: 'pre'
       });
     }
-
     if (!astGenerator) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(PreTag, preProps, allLineNumbers, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(CodeTag, codeTagProps, code));
     }
+
     /*
      * Some custom renderers rely on individual row elements so we need to turn wrapLines on
      * if renderer is provided and wrapLines is undefined.
      */
-
-
     if (wrapLines === undefined && renderer || wrapLongLines) wrapLines = true;
     renderer = renderer || defaultRenderer;
     var defaultCodeValue = [{
@@ -50446,13 +56284,17 @@ function getCodeTree(_ref6) {
       code: code,
       defaultCodeValue: defaultCodeValue
     });
-
     if (codeTree.language === null) {
       codeTree.value = defaultCodeValue;
-    } // determine largest line number so that we can force minWidth on all linenumber elements
+    }
 
-
-    var largestLineNumber = codeTree.value.length + startingLineNumber;
+    // determine largest line number so that we can force minWidth on all linenumber elements
+    var lineCount = codeTree.value.length;
+    if (lineCount === 1 && codeTree.value[0].type === 'text') {
+      // Since codeTree for an unparsable text (e.g. 'a\na\na') is [{ type: 'text', value: 'a\na\na' }]
+      lineCount = codeTree.value[0].value.split('\n').length;
+    }
+    var largestLineNumber = lineCount + startingLineNumber;
     var rows = processLines(codeTree, wrapLines, lineProps, showLineNumbers, showInlineLineNumbers, startingLineNumber, largestLineNumber, lineNumberStyle, wrapLongLines);
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(PreTag, preProps, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(CodeTag, codeTagProps, !showInlineLineNumbers && allLineNumbers, renderer({
       rows: rows,
@@ -56234,6 +62076,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 // This file has been auto-generated by the `npm run build-languages-prism` task
 //
+
 /* harmony default export */ __webpack_exports__["default"] = (['abap', 'abnf', 'actionscript', 'ada', 'agda', 'al', 'antlr4', 'apacheconf', 'apex', 'apl', 'applescript', 'aql', 'arduino', 'arff', 'asciidoc', 'asm6502', 'asmatmel', 'aspnet', 'autohotkey', 'autoit', 'avisynth', 'avro-idl', 'bash', 'basic', 'batch', 'bbcode', 'bicep', 'birb', 'bison', 'bnf', 'brainfuck', 'brightscript', 'bro', 'bsl', 'c', 'cfscript', 'chaiscript', 'cil', 'clike', 'clojure', 'cmake', 'cobol', 'coffeescript', 'concurnas', 'coq', 'cpp', 'crystal', 'csharp', 'cshtml', 'csp', 'css-extras', 'css', 'csv', 'cypher', 'd', 'dart', 'dataweave', 'dax', 'dhall', 'diff', 'django', 'dns-zone-file', 'docker', 'dot', 'ebnf', 'editorconfig', 'eiffel', 'ejs', 'elixir', 'elm', 'erb', 'erlang', 'etlua', 'excel-formula', 'factor', 'false', 'firestore-security-rules', 'flow', 'fortran', 'fsharp', 'ftl', 'gap', 'gcode', 'gdscript', 'gedcom', 'gherkin', 'git', 'glsl', 'gml', 'gn', 'go-module', 'go', 'graphql', 'groovy', 'haml', 'handlebars', 'haskell', 'haxe', 'hcl', 'hlsl', 'hoon', 'hpkp', 'hsts', 'http', 'ichigojam', 'icon', 'icu-message-format', 'idris', 'iecst', 'ignore', 'inform7', 'ini', 'io', 'j', 'java', 'javadoc', 'javadoclike', 'javascript', 'javastacktrace', 'jexl', 'jolie', 'jq', 'js-extras', 'js-templates', 'jsdoc', 'json', 'json5', 'jsonp', 'jsstacktrace', 'jsx', 'julia', 'keepalived', 'keyman', 'kotlin', 'kumir', 'kusto', 'latex', 'latte', 'less', 'lilypond', 'liquid', 'lisp', 'livescript', 'llvm', 'log', 'lolcode', 'lua', 'magma', 'makefile', 'markdown', 'markup-templating', 'markup', 'matlab', 'maxscript', 'mel', 'mermaid', 'mizar', 'mongodb', 'monkey', 'moonscript', 'n1ql', 'n4js', 'nand2tetris-hdl', 'naniscript', 'nasm', 'neon', 'nevod', 'nginx', 'nim', 'nix', 'nsis', 'objectivec', 'ocaml', 'opencl', 'openqasm', 'oz', 'parigp', 'parser', 'pascal', 'pascaligo', 'pcaxis', 'peoplecode', 'perl', 'php-extras', 'php', 'phpdoc', 'plsql', 'powerquery', 'powershell', 'processing', 'prolog', 'promql', 'properties', 'protobuf', 'psl', 'pug', 'puppet', 'pure', 'purebasic', 'purescript', 'python', 'q', 'qml', 'qore', 'qsharp', 'r', 'racket', 'reason', 'regex', 'rego', 'renpy', 'rest', 'rip', 'roboconf', 'robotframework', 'ruby', 'rust', 'sas', 'sass', 'scala', 'scheme', 'scss', 'shell-session', 'smali', 'smalltalk', 'smarty', 'sml', 'solidity', 'solution-file', 'soy', 'sparql', 'splunk-spl', 'sqf', 'sql', 'squirrel', 'stan', 'stylus', 'swift', 'systemd', 't4-cs', 't4-templating', 't4-vb', 'tap', 'tcl', 'textile', 'toml', 'tremor', 'tsx', 'tt2', 'turtle', 'twig', 'typescript', 'typoscript', 'unrealscript', 'uorazor', 'uri', 'v', 'vala', 'vbnet', 'velocity', 'verilog', 'vhdl', 'vim', 'visual-basic', 'warpscript', 'wasm', 'web-idl', 'wiki', 'wolfram', 'wren', 'xeora', 'xml-doc', 'xojo', 'xquery', 'yaml', 'yang', 'zig']);
 
 /***/ }),
@@ -56960,184 +62803,96 @@ var map = {
 	"./": "./src/styles/prism/index.js",
 	"./a11y-dark": "./src/styles/prism/a11y-dark.js",
 	"./a11y-dark.js": "./src/styles/prism/a11y-dark.js",
-	"./a11y-dark.min": "./src/styles/prism/a11y-dark.min.js",
-	"./a11y-dark.min.js": "./src/styles/prism/a11y-dark.min.js",
 	"./atom-dark": "./src/styles/prism/atom-dark.js",
 	"./atom-dark.js": "./src/styles/prism/atom-dark.js",
-	"./atom-dark.min": "./src/styles/prism/atom-dark.min.js",
-	"./atom-dark.min.js": "./src/styles/prism/atom-dark.min.js",
 	"./base16-ateliersulphurpool.light": "./src/styles/prism/base16-ateliersulphurpool.light.js",
 	"./base16-ateliersulphurpool.light.js": "./src/styles/prism/base16-ateliersulphurpool.light.js",
-	"./base16-ateliersulphurpool.light.min": "./src/styles/prism/base16-ateliersulphurpool.light.min.js",
-	"./base16-ateliersulphurpool.light.min.js": "./src/styles/prism/base16-ateliersulphurpool.light.min.js",
 	"./cb": "./src/styles/prism/cb.js",
 	"./cb.js": "./src/styles/prism/cb.js",
-	"./cb.min": "./src/styles/prism/cb.min.js",
-	"./cb.min.js": "./src/styles/prism/cb.min.js",
 	"./coldark-cold": "./src/styles/prism/coldark-cold.js",
 	"./coldark-cold.js": "./src/styles/prism/coldark-cold.js",
-	"./coldark-cold.min": "./src/styles/prism/coldark-cold.min.js",
-	"./coldark-cold.min.js": "./src/styles/prism/coldark-cold.min.js",
 	"./coldark-dark": "./src/styles/prism/coldark-dark.js",
 	"./coldark-dark.js": "./src/styles/prism/coldark-dark.js",
-	"./coldark-dark.min": "./src/styles/prism/coldark-dark.min.js",
-	"./coldark-dark.min.js": "./src/styles/prism/coldark-dark.min.js",
 	"./coy": "./src/styles/prism/coy.js",
 	"./coy-without-shadows": "./src/styles/prism/coy-without-shadows.js",
 	"./coy-without-shadows.js": "./src/styles/prism/coy-without-shadows.js",
-	"./coy-without-shadows.min": "./src/styles/prism/coy-without-shadows.min.js",
-	"./coy-without-shadows.min.js": "./src/styles/prism/coy-without-shadows.min.js",
 	"./coy.js": "./src/styles/prism/coy.js",
-	"./coy.min": "./src/styles/prism/coy.min.js",
-	"./coy.min.js": "./src/styles/prism/coy.min.js",
 	"./darcula": "./src/styles/prism/darcula.js",
 	"./darcula.js": "./src/styles/prism/darcula.js",
-	"./darcula.min": "./src/styles/prism/darcula.min.js",
-	"./darcula.min.js": "./src/styles/prism/darcula.min.js",
 	"./dark": "./src/styles/prism/dark.js",
 	"./dark.js": "./src/styles/prism/dark.js",
-	"./dark.min": "./src/styles/prism/dark.min.js",
-	"./dark.min.js": "./src/styles/prism/dark.min.js",
 	"./dracula": "./src/styles/prism/dracula.js",
 	"./dracula.js": "./src/styles/prism/dracula.js",
-	"./dracula.min": "./src/styles/prism/dracula.min.js",
-	"./dracula.min.js": "./src/styles/prism/dracula.min.js",
 	"./duotone-dark": "./src/styles/prism/duotone-dark.js",
 	"./duotone-dark.js": "./src/styles/prism/duotone-dark.js",
-	"./duotone-dark.min": "./src/styles/prism/duotone-dark.min.js",
-	"./duotone-dark.min.js": "./src/styles/prism/duotone-dark.min.js",
 	"./duotone-earth": "./src/styles/prism/duotone-earth.js",
 	"./duotone-earth.js": "./src/styles/prism/duotone-earth.js",
-	"./duotone-earth.min": "./src/styles/prism/duotone-earth.min.js",
-	"./duotone-earth.min.js": "./src/styles/prism/duotone-earth.min.js",
 	"./duotone-forest": "./src/styles/prism/duotone-forest.js",
 	"./duotone-forest.js": "./src/styles/prism/duotone-forest.js",
-	"./duotone-forest.min": "./src/styles/prism/duotone-forest.min.js",
-	"./duotone-forest.min.js": "./src/styles/prism/duotone-forest.min.js",
 	"./duotone-light": "./src/styles/prism/duotone-light.js",
 	"./duotone-light.js": "./src/styles/prism/duotone-light.js",
-	"./duotone-light.min": "./src/styles/prism/duotone-light.min.js",
-	"./duotone-light.min.js": "./src/styles/prism/duotone-light.min.js",
 	"./duotone-sea": "./src/styles/prism/duotone-sea.js",
 	"./duotone-sea.js": "./src/styles/prism/duotone-sea.js",
-	"./duotone-sea.min": "./src/styles/prism/duotone-sea.min.js",
-	"./duotone-sea.min.js": "./src/styles/prism/duotone-sea.min.js",
 	"./duotone-space": "./src/styles/prism/duotone-space.js",
 	"./duotone-space.js": "./src/styles/prism/duotone-space.js",
-	"./duotone-space.min": "./src/styles/prism/duotone-space.min.js",
-	"./duotone-space.min.js": "./src/styles/prism/duotone-space.min.js",
 	"./funky": "./src/styles/prism/funky.js",
 	"./funky.js": "./src/styles/prism/funky.js",
-	"./funky.min": "./src/styles/prism/funky.min.js",
-	"./funky.min.js": "./src/styles/prism/funky.min.js",
 	"./ghcolors": "./src/styles/prism/ghcolors.js",
 	"./ghcolors.js": "./src/styles/prism/ghcolors.js",
-	"./ghcolors.min": "./src/styles/prism/ghcolors.min.js",
-	"./ghcolors.min.js": "./src/styles/prism/ghcolors.min.js",
 	"./gruvbox-dark": "./src/styles/prism/gruvbox-dark.js",
 	"./gruvbox-dark.js": "./src/styles/prism/gruvbox-dark.js",
-	"./gruvbox-dark.min": "./src/styles/prism/gruvbox-dark.min.js",
-	"./gruvbox-dark.min.js": "./src/styles/prism/gruvbox-dark.min.js",
 	"./gruvbox-light": "./src/styles/prism/gruvbox-light.js",
 	"./gruvbox-light.js": "./src/styles/prism/gruvbox-light.js",
-	"./gruvbox-light.min": "./src/styles/prism/gruvbox-light.min.js",
-	"./gruvbox-light.min.js": "./src/styles/prism/gruvbox-light.min.js",
 	"./holi-theme": "./src/styles/prism/holi-theme.js",
 	"./holi-theme.js": "./src/styles/prism/holi-theme.js",
-	"./holi-theme.min": "./src/styles/prism/holi-theme.min.js",
-	"./holi-theme.min.js": "./src/styles/prism/holi-theme.min.js",
 	"./hopscotch": "./src/styles/prism/hopscotch.js",
 	"./hopscotch.js": "./src/styles/prism/hopscotch.js",
-	"./hopscotch.min": "./src/styles/prism/hopscotch.min.js",
-	"./hopscotch.min.js": "./src/styles/prism/hopscotch.min.js",
 	"./index": "./src/styles/prism/index.js",
 	"./index.js": "./src/styles/prism/index.js",
 	"./lucario": "./src/styles/prism/lucario.js",
 	"./lucario.js": "./src/styles/prism/lucario.js",
-	"./lucario.min": "./src/styles/prism/lucario.min.js",
-	"./lucario.min.js": "./src/styles/prism/lucario.min.js",
 	"./material-dark": "./src/styles/prism/material-dark.js",
 	"./material-dark.js": "./src/styles/prism/material-dark.js",
-	"./material-dark.min": "./src/styles/prism/material-dark.min.js",
-	"./material-dark.min.js": "./src/styles/prism/material-dark.min.js",
 	"./material-light": "./src/styles/prism/material-light.js",
 	"./material-light.js": "./src/styles/prism/material-light.js",
-	"./material-light.min": "./src/styles/prism/material-light.min.js",
-	"./material-light.min.js": "./src/styles/prism/material-light.min.js",
 	"./material-oceanic": "./src/styles/prism/material-oceanic.js",
 	"./material-oceanic.js": "./src/styles/prism/material-oceanic.js",
-	"./material-oceanic.min": "./src/styles/prism/material-oceanic.min.js",
-	"./material-oceanic.min.js": "./src/styles/prism/material-oceanic.min.js",
 	"./night-owl": "./src/styles/prism/night-owl.js",
 	"./night-owl.js": "./src/styles/prism/night-owl.js",
-	"./night-owl.min": "./src/styles/prism/night-owl.min.js",
-	"./night-owl.min.js": "./src/styles/prism/night-owl.min.js",
 	"./nord": "./src/styles/prism/nord.js",
 	"./nord.js": "./src/styles/prism/nord.js",
-	"./nord.min": "./src/styles/prism/nord.min.js",
-	"./nord.min.js": "./src/styles/prism/nord.min.js",
 	"./okaidia": "./src/styles/prism/okaidia.js",
 	"./okaidia.js": "./src/styles/prism/okaidia.js",
-	"./okaidia.min": "./src/styles/prism/okaidia.min.js",
-	"./okaidia.min.js": "./src/styles/prism/okaidia.min.js",
 	"./one-dark": "./src/styles/prism/one-dark.js",
 	"./one-dark.js": "./src/styles/prism/one-dark.js",
-	"./one-dark.min": "./src/styles/prism/one-dark.min.js",
-	"./one-dark.min.js": "./src/styles/prism/one-dark.min.js",
 	"./one-light": "./src/styles/prism/one-light.js",
 	"./one-light.js": "./src/styles/prism/one-light.js",
-	"./one-light.min": "./src/styles/prism/one-light.min.js",
-	"./one-light.min.js": "./src/styles/prism/one-light.min.js",
 	"./pojoaque": "./src/styles/prism/pojoaque.js",
 	"./pojoaque.js": "./src/styles/prism/pojoaque.js",
-	"./pojoaque.min": "./src/styles/prism/pojoaque.min.js",
-	"./pojoaque.min.js": "./src/styles/prism/pojoaque.min.js",
 	"./prism": "./src/styles/prism/prism.js",
 	"./prism.js": "./src/styles/prism/prism.js",
-	"./prism.min": "./src/styles/prism/prism.min.js",
-	"./prism.min.js": "./src/styles/prism/prism.min.js",
 	"./shades-of-purple": "./src/styles/prism/shades-of-purple.js",
 	"./shades-of-purple.js": "./src/styles/prism/shades-of-purple.js",
-	"./shades-of-purple.min": "./src/styles/prism/shades-of-purple.min.js",
-	"./shades-of-purple.min.js": "./src/styles/prism/shades-of-purple.min.js",
 	"./solarized-dark-atom": "./src/styles/prism/solarized-dark-atom.js",
 	"./solarized-dark-atom.js": "./src/styles/prism/solarized-dark-atom.js",
-	"./solarized-dark-atom.min": "./src/styles/prism/solarized-dark-atom.min.js",
-	"./solarized-dark-atom.min.js": "./src/styles/prism/solarized-dark-atom.min.js",
 	"./solarizedlight": "./src/styles/prism/solarizedlight.js",
 	"./solarizedlight.js": "./src/styles/prism/solarizedlight.js",
-	"./solarizedlight.min": "./src/styles/prism/solarizedlight.min.js",
-	"./solarizedlight.min.js": "./src/styles/prism/solarizedlight.min.js",
 	"./synthwave84": "./src/styles/prism/synthwave84.js",
 	"./synthwave84.js": "./src/styles/prism/synthwave84.js",
-	"./synthwave84.min": "./src/styles/prism/synthwave84.min.js",
-	"./synthwave84.min.js": "./src/styles/prism/synthwave84.min.js",
 	"./tomorrow": "./src/styles/prism/tomorrow.js",
 	"./tomorrow.js": "./src/styles/prism/tomorrow.js",
-	"./tomorrow.min": "./src/styles/prism/tomorrow.min.js",
-	"./tomorrow.min.js": "./src/styles/prism/tomorrow.min.js",
 	"./twilight": "./src/styles/prism/twilight.js",
 	"./twilight.js": "./src/styles/prism/twilight.js",
-	"./twilight.min": "./src/styles/prism/twilight.min.js",
-	"./twilight.min.js": "./src/styles/prism/twilight.min.js",
 	"./vs": "./src/styles/prism/vs.js",
 	"./vs-dark": "./src/styles/prism/vs-dark.js",
 	"./vs-dark.js": "./src/styles/prism/vs-dark.js",
 	"./vs.js": "./src/styles/prism/vs.js",
-	"./vs.min": "./src/styles/prism/vs.min.js",
-	"./vs.min.js": "./src/styles/prism/vs.min.js",
 	"./vsc-dark-plus": "./src/styles/prism/vsc-dark-plus.js",
 	"./vsc-dark-plus.js": "./src/styles/prism/vsc-dark-plus.js",
-	"./vsc-dark-plus.min": "./src/styles/prism/vsc-dark-plus.min.js",
-	"./vsc-dark-plus.min.js": "./src/styles/prism/vsc-dark-plus.min.js",
 	"./xonokai": "./src/styles/prism/xonokai.js",
 	"./xonokai.js": "./src/styles/prism/xonokai.js",
-	"./xonokai.min": "./src/styles/prism/xonokai.min.js",
-	"./xonokai.min.js": "./src/styles/prism/xonokai.min.js",
 	"./z-touch": "./src/styles/prism/z-touch.js",
-	"./z-touch.js": "./src/styles/prism/z-touch.js",
-	"./z-touch.min": "./src/styles/prism/z-touch.min.js",
-	"./z-touch.min.js": "./src/styles/prism/z-touch.min.js"
+	"./z-touch.js": "./src/styles/prism/z-touch.js"
 };
 
 
@@ -57320,164 +63075,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/styles/prism/a11y-dark.min.js":
-/*!*******************************************!*\
-  !*** ./src/styles/prism/a11y-dark.min.js ***!
-  \*******************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "color": "#f8f8f2",
-    "background": "0 0",
-    "fontFamily": "Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none"
-  },
-  "pre[class*=language-]": {
-    "color": "#f8f8f2",
-    "background": "#2b2b2b",
-    "fontFamily": "Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "padding": "1em",
-    "margin": ".5em 0",
-    "overflow": "auto",
-    "borderRadius": ".3em"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "background": "#2b2b2b",
-    "padding": ".1em",
-    "borderRadius": ".3em",
-    "whiteSpace": "normal"
-  },
-  "cdata": {
-    "color": "#d4d0ab"
-  },
-  "comment": {
-    "color": "#d4d0ab"
-  },
-  "doctype": {
-    "color": "#d4d0ab"
-  },
-  "prolog": {
-    "color": "#d4d0ab"
-  },
-  "punctuation": {
-    "color": "#fefefe"
-  },
-  "constant": {
-    "color": "#ffa07a"
-  },
-  "deleted": {
-    "color": "#ffa07a"
-  },
-  "property": {
-    "color": "#ffa07a"
-  },
-  "symbol": {
-    "color": "#ffa07a"
-  },
-  "tag": {
-    "color": "#ffa07a"
-  },
-  "boolean": {
-    "color": "#00e0e0"
-  },
-  "number": {
-    "color": "#00e0e0"
-  },
-  "attr-name": {
-    "color": "#abe338"
-  },
-  "builtin": {
-    "color": "#abe338"
-  },
-  "char": {
-    "color": "#abe338"
-  },
-  "inserted": {
-    "color": "#abe338"
-  },
-  "selector": {
-    "color": "#abe338"
-  },
-  "string": {
-    "color": "#abe338"
-  },
-  ".language-css .token.string": {
-    "color": "#00e0e0"
-  },
-  ".style .token.string": {
-    "color": "#00e0e0"
-  },
-  "entity": {
-    "color": "#00e0e0",
-    "cursor": "help"
-  },
-  "operator": {
-    "color": "#00e0e0"
-  },
-  "url": {
-    "color": "#00e0e0"
-  },
-  "variable": {
-    "color": "#00e0e0"
-  },
-  "atrule": {
-    "color": "gold"
-  },
-  "attr-value": {
-    "color": "gold"
-  },
-  "function": {
-    "color": "gold"
-  },
-  "keyword": {
-    "color": "#00e0e0"
-  },
-  "important": {
-    "color": "gold",
-    "fontWeight": "700"
-  },
-  "regex": {
-    "color": "gold"
-  },
-  "bold": {
-    "fontWeight": "700"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  }
-});
-
-/***/ }),
-
 /***/ "./src/styles/prism/atom-dark.js":
 /*!***************************************!*\
   !*** ./src/styles/prism/atom-dark.js ***!
@@ -57635,171 +63232,6 @@ __webpack_require__.r(__webpack_exports__);
   },
   "bold": {
     "fontWeight": "bold"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  }
-});
-
-/***/ }),
-
-/***/ "./src/styles/prism/atom-dark.min.js":
-/*!*******************************************!*\
-  !*** ./src/styles/prism/atom-dark.min.js ***!
-  \*******************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "color": "#c5c8c6",
-    "textShadow": "0 1px rgba(0,0,0,.3)",
-    "fontFamily": "Inconsolata,Monaco,Consolas,'Courier New',Courier,monospace",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none"
-  },
-  "pre[class*=language-]": {
-    "color": "#c5c8c6",
-    "textShadow": "0 1px rgba(0,0,0,.3)",
-    "fontFamily": "Inconsolata,Monaco,Consolas,'Courier New',Courier,monospace",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "padding": "1em",
-    "margin": ".5em 0",
-    "overflow": "auto",
-    "borderRadius": ".3em",
-    "background": "#1d1f21"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "background": "#1d1f21",
-    "padding": ".1em",
-    "borderRadius": ".3em"
-  },
-  "cdata": {
-    "color": "#7c7c7c"
-  },
-  "comment": {
-    "color": "#7c7c7c"
-  },
-  "doctype": {
-    "color": "#7c7c7c"
-  },
-  "prolog": {
-    "color": "#7c7c7c"
-  },
-  "punctuation": {
-    "color": "#c5c8c6"
-  },
-  ".namespace": {
-    "Opacity": ".7"
-  },
-  "keyword": {
-    "color": "#96cbfe"
-  },
-  "property": {
-    "color": "#96cbfe"
-  },
-  "tag": {
-    "color": "#96cbfe"
-  },
-  "class-name": {
-    "color": "#ffffb6",
-    "textDecoration": "underline"
-  },
-  "boolean": {
-    "color": "#9c9"
-  },
-  "constant": {
-    "color": "#9c9"
-  },
-  "deleted": {
-    "color": "#f92672"
-  },
-  "symbol": {
-    "color": "#f92672"
-  },
-  "number": {
-    "color": "#ff73fd"
-  },
-  "attr-name": {
-    "color": "#a8ff60"
-  },
-  "builtin": {
-    "color": "#a8ff60"
-  },
-  "char": {
-    "color": "#a8ff60"
-  },
-  "inserted": {
-    "color": "#a8ff60"
-  },
-  "selector": {
-    "color": "#a8ff60"
-  },
-  "string": {
-    "color": "#a8ff60"
-  },
-  "variable": {
-    "color": "#c6c5fe"
-  },
-  "operator": {
-    "color": "#ededed"
-  },
-  "entity": {
-    "color": "#ffffb6",
-    "cursor": "help"
-  },
-  "url": {
-    "color": "#96cbfe"
-  },
-  ".language-css .token.string": {
-    "color": "#87c38a"
-  },
-  ".style .token.string": {
-    "color": "#87c38a"
-  },
-  "atrule": {
-    "color": "#f9ee98"
-  },
-  "attr-value": {
-    "color": "#f9ee98"
-  },
-  "function": {
-    "color": "#dad085"
-  },
-  "regex": {
-    "color": "#e9c062"
-  },
-  "important": {
-    "color": "#fd971f",
-    "fontWeight": "700"
-  },
-  "bold": {
-    "fontWeight": "700"
   },
   "italic": {
     "fontStyle": "italic"
@@ -58017,215 +63449,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/styles/prism/base16-ateliersulphurpool.light.min.js":
-/*!*****************************************************************!*\
-  !*** ./src/styles/prism/base16-ateliersulphurpool.light.min.js ***!
-  \*****************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "fontFamily": "Consolas,Menlo,Monaco,\"Andale Mono WT\",\"Andale Mono\",\"Lucida Console\",\"Lucida Sans Typewriter\",\"DejaVu Sans Mono\",\"Bitstream Vera Sans Mono\",\"Liberation Mono\",\"Nimbus Mono L\",\"Courier New\",Courier,monospace",
-    "fontSize": "14px",
-    "lineHeight": "1.375",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "background": "#f5f7ff",
-    "color": "#5e6687"
-  },
-  "pre[class*=language-]": {
-    "fontFamily": "Consolas,Menlo,Monaco,\"Andale Mono WT\",\"Andale Mono\",\"Lucida Console\",\"Lucida Sans Typewriter\",\"DejaVu Sans Mono\",\"Bitstream Vera Sans Mono\",\"Liberation Mono\",\"Nimbus Mono L\",\"Courier New\",Courier,monospace",
-    "fontSize": "14px",
-    "lineHeight": "1.375",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "background": "#f5f7ff",
-    "color": "#5e6687",
-    "padding": "1em",
-    "margin": ".5em 0",
-    "overflow": "auto"
-  },
-  "pre>code[class*=language-]": {
-    "fontSize": "1em"
-  },
-  "code[class*=language-] ::-moz-selection": {
-    "textShadow": "none",
-    "background": "#dfe2f1"
-  },
-  "code[class*=language-]::-moz-selection": {
-    "textShadow": "none",
-    "background": "#dfe2f1"
-  },
-  "pre[class*=language-] ::-moz-selection": {
-    "textShadow": "none",
-    "background": "#dfe2f1"
-  },
-  "pre[class*=language-]::-moz-selection": {
-    "textShadow": "none",
-    "background": "#dfe2f1"
-  },
-  "code[class*=language-] ::selection": {
-    "textShadow": "none",
-    "background": "#dfe2f1"
-  },
-  "code[class*=language-]::selection": {
-    "textShadow": "none",
-    "background": "#dfe2f1"
-  },
-  "pre[class*=language-] ::selection": {
-    "textShadow": "none",
-    "background": "#dfe2f1"
-  },
-  "pre[class*=language-]::selection": {
-    "textShadow": "none",
-    "background": "#dfe2f1"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "padding": ".1em",
-    "borderRadius": ".3em"
-  },
-  "cdata": {
-    "color": "#898ea4"
-  },
-  "comment": {
-    "color": "#898ea4"
-  },
-  "doctype": {
-    "color": "#898ea4"
-  },
-  "prolog": {
-    "color": "#898ea4"
-  },
-  "punctuation": {
-    "color": "#5e6687"
-  },
-  "namespace": {
-    "Opacity": ".7"
-  },
-  "boolean": {
-    "color": "#c76b29"
-  },
-  "number": {
-    "color": "#c76b29"
-  },
-  "operator": {
-    "color": "#c76b29"
-  },
-  "property": {
-    "color": "#c08b30"
-  },
-  "tag": {
-    "color": "#3d8fd1"
-  },
-  "string": {
-    "color": "#22a2c9"
-  },
-  "selector": {
-    "color": "#6679cc"
-  },
-  "attr-name": {
-    "color": "#c76b29"
-  },
-  ".language-css .token.string": {
-    "color": "#22a2c9"
-  },
-  ".style .token.string": {
-    "color": "#22a2c9"
-  },
-  "entity": {
-    "color": "#22a2c9",
-    "cursor": "help"
-  },
-  "url": {
-    "color": "#22a2c9"
-  },
-  "attr-value": {
-    "color": "#ac9739"
-  },
-  "control": {
-    "color": "#ac9739"
-  },
-  "directive": {
-    "color": "#ac9739"
-  },
-  "keyword": {
-    "color": "#ac9739"
-  },
-  "unit": {
-    "color": "#ac9739"
-  },
-  "atrule": {
-    "color": "#22a2c9"
-  },
-  "regex": {
-    "color": "#22a2c9"
-  },
-  "statement": {
-    "color": "#22a2c9"
-  },
-  "placeholder": {
-    "color": "#3d8fd1"
-  },
-  "variable": {
-    "color": "#3d8fd1"
-  },
-  "deleted": {
-    "textDecoration": "line-through"
-  },
-  "inserted": {
-    "borderBottom": "1px dotted #202746",
-    "textDecoration": "none"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  },
-  "bold": {
-    "fontWeight": "700"
-  },
-  "important": {
-    "fontWeight": "700",
-    "color": "#c94922"
-  },
-  "pre>code.highlight": {
-    "Outline": ".4em solid #c94922",
-    "OutlineOffset": ".4em"
-  },
-  ".line-numbers.line-numbers .line-numbers-rows": {
-    "borderRightColor": "#dfe2f1"
-  },
-  ".line-numbers .line-numbers-rows>span:before": {
-    "color": "#979db4"
-  },
-  ".line-highlight.line-highlight": {
-    "background": "linear-gradient(to right,rgba(107,115,148,.2) 70%,rgba(107,115,148,0))"
-  }
-});
-
-/***/ }),
-
 /***/ "./src/styles/prism/cb.js":
 /*!********************************!*\
   !*** ./src/styles/prism/cb.js ***!
@@ -58393,179 +63616,6 @@ __webpack_require__.r(__webpack_exports__);
     "borderRadius": "8px"
   },
   ".line-numbers .line-numbers-rows > span": {
-    "borderRight": "3px #d9d336 solid"
-  }
-});
-
-/***/ }),
-
-/***/ "./src/styles/prism/cb.min.js":
-/*!************************************!*\
-  !*** ./src/styles/prism/cb.min.js ***!
-  \************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "color": "#fff",
-    "textShadow": "0 1px 1px #000",
-    "fontFamily": "Menlo,Monaco,\"Courier New\",monospace",
-    "direction": "ltr",
-    "textAlign": "left",
-    "wordSpacing": "normal",
-    "whiteSpace": "pre",
-    "wordWrap": "normal",
-    "lineHeight": "1.4",
-    "background": "0 0",
-    "border": "0",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none"
-  },
-  "pre[class*=language-]": {
-    "color": "#fff",
-    "textShadow": "0 1px 1px #000",
-    "fontFamily": "Menlo,Monaco,\"Courier New\",monospace",
-    "direction": "ltr",
-    "textAlign": "left",
-    "wordSpacing": "normal",
-    "whiteSpace": "pre",
-    "wordWrap": "normal",
-    "lineHeight": "1.4",
-    "background": "#222",
-    "border": "0",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "padding": "15px",
-    "margin": "1em 0",
-    "overflow": "auto",
-    "MozBorderRadius": "8px",
-    "WebkitBorderRadius": "8px",
-    "borderRadius": "8px"
-  },
-  "pre[class*=language-] code": {
-    "float": "left",
-    "padding": "0 15px 0 0"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "background": "#222",
-    "padding": "5px 10px",
-    "lineHeight": "1",
-    "MozBorderRadius": "3px",
-    "WebkitBorderRadius": "3px",
-    "borderRadius": "3px"
-  },
-  "cdata": {
-    "color": "#797979"
-  },
-  "comment": {
-    "color": "#797979"
-  },
-  "doctype": {
-    "color": "#797979"
-  },
-  "prolog": {
-    "color": "#797979"
-  },
-  "operator": {
-    "color": "#fff"
-  },
-  "punctuation": {
-    "color": "#fff"
-  },
-  "selector": {
-    "color": "#fff"
-  },
-  "namespace": {
-    "Opacity": ".7"
-  },
-  "boolean": {
-    "color": "#ffd893"
-  },
-  "tag": {
-    "color": "#ffd893"
-  },
-  "atrule": {
-    "color": "#b0c975"
-  },
-  "attr-value": {
-    "color": "#b0c975"
-  },
-  "hex": {
-    "color": "#b0c975"
-  },
-  "string": {
-    "color": "#b0c975"
-  },
-  "attr-name": {
-    "color": "#c27628"
-  },
-  "entity": {
-    "color": "#c27628",
-    "cursor": "help"
-  },
-  "keyword": {
-    "color": "#c27628"
-  },
-  "property": {
-    "color": "#c27628"
-  },
-  "url": {
-    "color": "#c27628"
-  },
-  "regex": {
-    "color": "#9b71c6"
-  },
-  "constant": {
-    "color": "#e5a638"
-  },
-  "function": {
-    "color": "#e5a638"
-  },
-  "variable": {
-    "color": "#fdfba8"
-  },
-  "number": {
-    "color": "#8799b0"
-  },
-  "deliminator": {
-    "color": "#e45734"
-  },
-  "important": {
-    "color": "#e45734"
-  },
-  ".line-highlight.line-highlight": {
-    "background": "rgba(255,255,255,.2)"
-  },
-  ".line-highlight.line-highlight:before": {
-    "top": ".3em",
-    "backgroundColor": "rgba(255,255,255,.3)",
-    "color": "#fff",
-    "MozBorderRadius": "8px",
-    "WebkitBorderRadius": "8px",
-    "borderRadius": "8px"
-  },
-  ".line-highlight.line-highlight[data-end]:after": {
-    "top": ".3em",
-    "backgroundColor": "rgba(255,255,255,.3)",
-    "color": "#fff",
-    "MozBorderRadius": "8px",
-    "WebkitBorderRadius": "8px",
-    "borderRadius": "8px"
-  },
-  ".line-numbers .line-numbers-rows>span": {
     "borderRight": "3px #d9d336 solid"
   }
 });
@@ -58970,404 +64020,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/styles/prism/coldark-cold.min.js":
-/*!**********************************************!*\
-  !*** ./src/styles/prism/coldark-cold.min.js ***!
-  \**********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "color": "#111b27",
-    "background": "0 0",
-    "fontFamily": "Consolas,Monaco,\"Andale Mono\",\"Ubuntu Mono\",monospace",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none"
-  },
-  "pre[class*=language-]": {
-    "color": "#111b27",
-    "background": "#e3eaf2",
-    "fontFamily": "Consolas,Monaco,\"Andale Mono\",\"Ubuntu Mono\",monospace",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "padding": "1em",
-    "margin": ".5em 0",
-    "overflow": "auto"
-  },
-  "code[class*=language-] ::-moz-selection": {
-    "background": "#8da1b9"
-  },
-  "code[class*=language-]::-moz-selection": {
-    "background": "#8da1b9"
-  },
-  "pre[class*=language-] ::-moz-selection": {
-    "background": "#8da1b9"
-  },
-  "pre[class*=language-]::-moz-selection": {
-    "background": "#8da1b9"
-  },
-  "code[class*=language-] ::selection": {
-    "background": "#8da1b9"
-  },
-  "code[class*=language-]::selection": {
-    "background": "#8da1b9"
-  },
-  "pre[class*=language-] ::selection": {
-    "background": "#8da1b9"
-  },
-  "pre[class*=language-]::selection": {
-    "background": "#8da1b9"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "background": "#e3eaf2",
-    "padding": ".1em .3em",
-    "borderRadius": ".3em",
-    "whiteSpace": "normal"
-  },
-  "cdata": {
-    "color": "#3c526d"
-  },
-  "comment": {
-    "color": "#3c526d"
-  },
-  "doctype": {
-    "color": "#3c526d"
-  },
-  "prolog": {
-    "color": "#3c526d"
-  },
-  "punctuation": {
-    "color": "#111b27"
-  },
-  "delimiter.important": {
-    "color": "#006d6d",
-    "fontWeight": "inherit"
-  },
-  "selector.parent": {
-    "color": "#006d6d"
-  },
-  "tag": {
-    "color": "#006d6d"
-  },
-  "tag.punctuation": {
-    "color": "#006d6d"
-  },
-  "attr-name": {
-    "color": "#755f00"
-  },
-  "boolean": {
-    "color": "#755f00"
-  },
-  "boolean.important": {
-    "color": "#755f00"
-  },
-  "constant": {
-    "color": "#755f00"
-  },
-  "number": {
-    "color": "#755f00"
-  },
-  "selector.attribute": {
-    "color": "#755f00"
-  },
-  "class-name": {
-    "color": "#005a8e"
-  },
-  "key": {
-    "color": "#005a8e"
-  },
-  "parameter": {
-    "color": "#005a8e"
-  },
-  "property": {
-    "color": "#005a8e"
-  },
-  "property-access": {
-    "color": "#005a8e"
-  },
-  "variable": {
-    "color": "#005a8e"
-  },
-  "attr-value": {
-    "color": "#116b00"
-  },
-  "color": {
-    "color": "#116b00"
-  },
-  "inserted": {
-    "color": "#116b00"
-  },
-  "selector.value": {
-    "color": "#116b00"
-  },
-  "string": {
-    "color": "#116b00"
-  },
-  "string.url-link": {
-    "color": "#116b00"
-  },
-  "builtin": {
-    "color": "#af00af"
-  },
-  "keyword-array": {
-    "color": "#af00af"
-  },
-  "package": {
-    "color": "#af00af"
-  },
-  "regex": {
-    "color": "#af00af"
-  },
-  "function": {
-    "color": "#7c00aa"
-  },
-  "selector.class": {
-    "color": "#7c00aa"
-  },
-  "selector.id": {
-    "color": "#7c00aa"
-  },
-  "atrule.rule": {
-    "color": "#a04900"
-  },
-  "combinator": {
-    "color": "#a04900"
-  },
-  "keyword": {
-    "color": "#a04900"
-  },
-  "operator": {
-    "color": "#a04900"
-  },
-  "pseudo-class": {
-    "color": "#a04900"
-  },
-  "pseudo-element": {
-    "color": "#a04900"
-  },
-  "selector": {
-    "color": "#a04900"
-  },
-  "unit": {
-    "color": "#a04900"
-  },
-  "deleted": {
-    "color": "#c22f2e"
-  },
-  "important": {
-    "color": "#c22f2e",
-    "fontWeight": "700"
-  },
-  "keyword-this": {
-    "color": "#005a8e",
-    "fontWeight": "700"
-  },
-  "this": {
-    "color": "#005a8e",
-    "fontWeight": "700"
-  },
-  "bold": {
-    "fontWeight": "700"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  },
-  "entity": {
-    "cursor": "help"
-  },
-  ".language-markdown .token.title": {
-    "color": "#005a8e",
-    "fontWeight": "700"
-  },
-  ".language-markdown .token.title .token.punctuation": {
-    "color": "#005a8e",
-    "fontWeight": "700"
-  },
-  ".language-markdown .token.blockquote.punctuation": {
-    "color": "#af00af"
-  },
-  ".language-markdown .token.code": {
-    "color": "#006d6d"
-  },
-  ".language-markdown .token.hr.punctuation": {
-    "color": "#005a8e"
-  },
-  ".language-markdown .token.url>.token.content": {
-    "color": "#116b00"
-  },
-  ".language-markdown .token.url-link": {
-    "color": "#755f00"
-  },
-  ".language-markdown .token.list.punctuation": {
-    "color": "#af00af"
-  },
-  ".language-markdown .token.table-header": {
-    "color": "#111b27"
-  },
-  ".language-json .token.operator": {
-    "color": "#111b27"
-  },
-  ".language-scss .token.variable": {
-    "color": "#006d6d"
-  },
-  "token.cr:before": {
-    "color": "#3c526d"
-  },
-  "token.lf:before": {
-    "color": "#3c526d"
-  },
-  "token.space:before": {
-    "color": "#3c526d"
-  },
-  "token.tab:not(:empty):before": {
-    "color": "#3c526d"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>a": {
-    "color": "#e3eaf2",
-    "background": "#005a8e"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>button": {
-    "color": "#e3eaf2",
-    "background": "#005a8e"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>a:focus": {
-    "color": "#e3eaf2",
-    "background": "#005a8eda",
-    "textDecoration": "none"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>a:hover": {
-    "color": "#e3eaf2",
-    "background": "#005a8eda",
-    "textDecoration": "none"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>button:focus": {
-    "color": "#e3eaf2",
-    "background": "#005a8eda",
-    "textDecoration": "none"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>button:hover": {
-    "color": "#e3eaf2",
-    "background": "#005a8eda",
-    "textDecoration": "none"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>span": {
-    "color": "#e3eaf2",
-    "background": "#3c526d"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>span:focus": {
-    "color": "#e3eaf2",
-    "background": "#3c526d"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>span:hover": {
-    "color": "#e3eaf2",
-    "background": "#3c526d"
-  },
-  ".line-highlight.line-highlight": {
-    "background": "linear-gradient(to right,#8da1b92f 70%,#8da1b925)"
-  },
-  ".line-highlight.line-highlight:before": {
-    "backgroundColor": "#3c526d",
-    "color": "#e3eaf2",
-    "boxShadow": "0 1px #8da1b9"
-  },
-  ".line-highlight.line-highlight[data-end]:after": {
-    "backgroundColor": "#3c526d",
-    "color": "#e3eaf2",
-    "boxShadow": "0 1px #8da1b9"
-  },
-  "pre[id].linkable-line-numbers.linkable-line-numbers span.line-numbers-rows>span:hover:before": {
-    "backgroundColor": "#3c526d1f"
-  },
-  ".line-numbers.line-numbers .line-numbers-rows": {
-    "borderRight": "1px solid #8da1b97a",
-    "background": "#d0dae77a"
-  },
-  ".line-numbers .line-numbers-rows>span:before": {
-    "color": "#3c526dda"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-1": {
-    "color": "#755f00"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-5": {
-    "color": "#755f00"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-9": {
-    "color": "#755f00"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-10": {
-    "color": "#af00af"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-2": {
-    "color": "#af00af"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-6": {
-    "color": "#af00af"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-11": {
-    "color": "#005a8e"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-3": {
-    "color": "#005a8e"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-7": {
-    "color": "#005a8e"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-12": {
-    "color": "#7c00aa"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-4": {
-    "color": "#7c00aa"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-8": {
-    "color": "#7c00aa"
-  },
-  "pre.diff-highlight>code .token.token.deleted:not(.prefix)": {
-    "backgroundColor": "#c22f2e1f"
-  },
-  "pre>code.diff-highlight .token.token.deleted:not(.prefix)": {
-    "backgroundColor": "#c22f2e1f"
-  },
-  "pre.diff-highlight>code .token.token.inserted:not(.prefix)": {
-    "backgroundColor": "#116b001f"
-  },
-  "pre>code.diff-highlight .token.token.inserted:not(.prefix)": {
-    "backgroundColor": "#116b001f"
-  },
-  ".command-line .command-line-prompt": {
-    "borderRight": "1px solid #8da1b97a"
-  },
-  ".command-line .command-line-prompt>span:before": {
-    "color": "#3c526dda"
-  }
-});
-
-/***/ }),
-
 /***/ "./src/styles/prism/coldark-dark.js":
 /*!******************************************!*\
   !*** ./src/styles/prism/coldark-dark.js ***!
@@ -59766,404 +64418,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/styles/prism/coldark-dark.min.js":
-/*!**********************************************!*\
-  !*** ./src/styles/prism/coldark-dark.min.js ***!
-  \**********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "color": "#e3eaf2",
-    "background": "0 0",
-    "fontFamily": "Consolas,Monaco,\"Andale Mono\",\"Ubuntu Mono\",monospace",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none"
-  },
-  "pre[class*=language-]": {
-    "color": "#e3eaf2",
-    "background": "#111b27",
-    "fontFamily": "Consolas,Monaco,\"Andale Mono\",\"Ubuntu Mono\",monospace",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "padding": "1em",
-    "margin": ".5em 0",
-    "overflow": "auto"
-  },
-  "code[class*=language-] ::-moz-selection": {
-    "background": "#3c526d"
-  },
-  "code[class*=language-]::-moz-selection": {
-    "background": "#3c526d"
-  },
-  "pre[class*=language-] ::-moz-selection": {
-    "background": "#3c526d"
-  },
-  "pre[class*=language-]::-moz-selection": {
-    "background": "#3c526d"
-  },
-  "code[class*=language-] ::selection": {
-    "background": "#3c526d"
-  },
-  "code[class*=language-]::selection": {
-    "background": "#3c526d"
-  },
-  "pre[class*=language-] ::selection": {
-    "background": "#3c526d"
-  },
-  "pre[class*=language-]::selection": {
-    "background": "#3c526d"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "background": "#111b27",
-    "padding": ".1em .3em",
-    "borderRadius": ".3em",
-    "whiteSpace": "normal"
-  },
-  "cdata": {
-    "color": "#8da1b9"
-  },
-  "comment": {
-    "color": "#8da1b9"
-  },
-  "doctype": {
-    "color": "#8da1b9"
-  },
-  "prolog": {
-    "color": "#8da1b9"
-  },
-  "punctuation": {
-    "color": "#e3eaf2"
-  },
-  "delimiter.important": {
-    "color": "#6cc",
-    "fontWeight": "inherit"
-  },
-  "selector.parent": {
-    "color": "#6cc"
-  },
-  "tag": {
-    "color": "#6cc"
-  },
-  "tag.punctuation": {
-    "color": "#6cc"
-  },
-  "attr-name": {
-    "color": "#e6d37a"
-  },
-  "boolean": {
-    "color": "#e6d37a"
-  },
-  "boolean.important": {
-    "color": "#e6d37a"
-  },
-  "constant": {
-    "color": "#e6d37a"
-  },
-  "number": {
-    "color": "#e6d37a"
-  },
-  "selector.attribute": {
-    "color": "#e6d37a"
-  },
-  "class-name": {
-    "color": "#6cb8e6"
-  },
-  "key": {
-    "color": "#6cb8e6"
-  },
-  "parameter": {
-    "color": "#6cb8e6"
-  },
-  "property": {
-    "color": "#6cb8e6"
-  },
-  "property-access": {
-    "color": "#6cb8e6"
-  },
-  "variable": {
-    "color": "#6cb8e6"
-  },
-  "attr-value": {
-    "color": "#91d076"
-  },
-  "color": {
-    "color": "#91d076"
-  },
-  "inserted": {
-    "color": "#91d076"
-  },
-  "selector.value": {
-    "color": "#91d076"
-  },
-  "string": {
-    "color": "#91d076"
-  },
-  "string.url-link": {
-    "color": "#91d076"
-  },
-  "builtin": {
-    "color": "#f4adf4"
-  },
-  "keyword-array": {
-    "color": "#f4adf4"
-  },
-  "package": {
-    "color": "#f4adf4"
-  },
-  "regex": {
-    "color": "#f4adf4"
-  },
-  "function": {
-    "color": "#c699e3"
-  },
-  "selector.class": {
-    "color": "#c699e3"
-  },
-  "selector.id": {
-    "color": "#c699e3"
-  },
-  "atrule.rule": {
-    "color": "#e9ae7e"
-  },
-  "combinator": {
-    "color": "#e9ae7e"
-  },
-  "keyword": {
-    "color": "#e9ae7e"
-  },
-  "operator": {
-    "color": "#e9ae7e"
-  },
-  "pseudo-class": {
-    "color": "#e9ae7e"
-  },
-  "pseudo-element": {
-    "color": "#e9ae7e"
-  },
-  "selector": {
-    "color": "#e9ae7e"
-  },
-  "unit": {
-    "color": "#e9ae7e"
-  },
-  "deleted": {
-    "color": "#cd6660"
-  },
-  "important": {
-    "color": "#cd6660",
-    "fontWeight": "700"
-  },
-  "keyword-this": {
-    "color": "#6cb8e6",
-    "fontWeight": "700"
-  },
-  "this": {
-    "color": "#6cb8e6",
-    "fontWeight": "700"
-  },
-  "bold": {
-    "fontWeight": "700"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  },
-  "entity": {
-    "cursor": "help"
-  },
-  ".language-markdown .token.title": {
-    "color": "#6cb8e6",
-    "fontWeight": "700"
-  },
-  ".language-markdown .token.title .token.punctuation": {
-    "color": "#6cb8e6",
-    "fontWeight": "700"
-  },
-  ".language-markdown .token.blockquote.punctuation": {
-    "color": "#f4adf4"
-  },
-  ".language-markdown .token.code": {
-    "color": "#6cc"
-  },
-  ".language-markdown .token.hr.punctuation": {
-    "color": "#6cb8e6"
-  },
-  ".language-markdown .token.url .token.content": {
-    "color": "#91d076"
-  },
-  ".language-markdown .token.url-link": {
-    "color": "#e6d37a"
-  },
-  ".language-markdown .token.list.punctuation": {
-    "color": "#f4adf4"
-  },
-  ".language-markdown .token.table-header": {
-    "color": "#e3eaf2"
-  },
-  ".language-json .token.operator": {
-    "color": "#e3eaf2"
-  },
-  ".language-scss .token.variable": {
-    "color": "#6cc"
-  },
-  "token.cr:before": {
-    "color": "#8da1b9"
-  },
-  "token.lf:before": {
-    "color": "#8da1b9"
-  },
-  "token.space:before": {
-    "color": "#8da1b9"
-  },
-  "token.tab:not(:empty):before": {
-    "color": "#8da1b9"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>a": {
-    "color": "#111b27",
-    "background": "#6cb8e6"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>button": {
-    "color": "#111b27",
-    "background": "#6cb8e6"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>a:focus": {
-    "color": "#111b27",
-    "background": "#6cb8e6da",
-    "textDecoration": "none"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>a:hover": {
-    "color": "#111b27",
-    "background": "#6cb8e6da",
-    "textDecoration": "none"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>button:focus": {
-    "color": "#111b27",
-    "background": "#6cb8e6da",
-    "textDecoration": "none"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>button:hover": {
-    "color": "#111b27",
-    "background": "#6cb8e6da",
-    "textDecoration": "none"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>span": {
-    "color": "#111b27",
-    "background": "#8da1b9"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>span:focus": {
-    "color": "#111b27",
-    "background": "#8da1b9"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>span:hover": {
-    "color": "#111b27",
-    "background": "#8da1b9"
-  },
-  ".line-highlight.line-highlight": {
-    "background": "linear-gradient(to right,#3c526d5f 70%,#3c526d55)"
-  },
-  ".line-highlight.line-highlight:before": {
-    "backgroundColor": "#8da1b9",
-    "color": "#111b27",
-    "boxShadow": "0 1px #3c526d"
-  },
-  ".line-highlight.line-highlight[data-end]:after": {
-    "backgroundColor": "#8da1b9",
-    "color": "#111b27",
-    "boxShadow": "0 1px #3c526d"
-  },
-  "pre[id].linkable-line-numbers.linkable-line-numbers span.line-numbers-rows>span:hover:before": {
-    "backgroundColor": "#8da1b918"
-  },
-  ".line-numbers.line-numbers .line-numbers-rows": {
-    "borderRight": "1px solid #0b121b",
-    "background": "#0b121b7a"
-  },
-  ".line-numbers .line-numbers-rows>span:before": {
-    "color": "#8da1b9da"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-1": {
-    "color": "#e6d37a"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-5": {
-    "color": "#e6d37a"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-9": {
-    "color": "#e6d37a"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-10": {
-    "color": "#f4adf4"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-2": {
-    "color": "#f4adf4"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-6": {
-    "color": "#f4adf4"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-11": {
-    "color": "#6cb8e6"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-3": {
-    "color": "#6cb8e6"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-7": {
-    "color": "#6cb8e6"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-12": {
-    "color": "#c699e3"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-4": {
-    "color": "#c699e3"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-8": {
-    "color": "#c699e3"
-  },
-  "pre.diff-highlight>code .token.token.deleted:not(.prefix)": {
-    "backgroundColor": "#cd66601f"
-  },
-  "pre>code.diff-highlight .token.token.deleted:not(.prefix)": {
-    "backgroundColor": "#cd66601f"
-  },
-  "pre.diff-highlight>code .token.token.inserted:not(.prefix)": {
-    "backgroundColor": "#91d0761f"
-  },
-  "pre>code.diff-highlight .token.token.inserted:not(.prefix)": {
-    "backgroundColor": "#91d0761f"
-  },
-  ".command-line .command-line-prompt": {
-    "borderRight": "1px solid #0b121b"
-  },
-  ".command-line .command-line-prompt>span:before": {
-    "color": "#8da1b9da"
-  }
-});
-
-/***/ }),
-
 /***/ "./src/styles/prism/coy-without-shadows.js":
 /*!*************************************************!*\
   !*** ./src/styles/prism/coy-without-shadows.js ***!
@@ -60347,200 +64601,6 @@ __webpack_require__.r(__webpack_exports__);
   },
   "bold": {
     "fontWeight": "bold"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  },
-  "namespace": {
-    "Opacity": ".7"
-  }
-});
-
-/***/ }),
-
-/***/ "./src/styles/prism/coy-without-shadows.min.js":
-/*!*****************************************************!*\
-  !*** ./src/styles/prism/coy-without-shadows.min.js ***!
-  \*****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "color": "#000",
-    "background": "0 0",
-    "fontFamily": "Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace",
-    "fontSize": "1em",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none"
-  },
-  "pre[class*=language-]": {
-    "color": "#000",
-    "background": "0 0",
-    "fontFamily": "Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace",
-    "fontSize": "1em",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "position": "relative",
-    "borderLeft": "10px solid #358ccb",
-    "boxShadow": "-1px 0 0 0 #358ccb,0 0 0 1px #dfdfdf",
-    "backgroundColor": "#fdfdfd",
-    "backgroundImage": "linear-gradient(transparent 50%,rgba(69,142,209,.04) 50%)",
-    "backgroundSize": "3em 3em",
-    "backgroundOrigin": "content-box",
-    "backgroundAttachment": "local",
-    "margin": ".5em 0",
-    "padding": "0 1em"
-  },
-  "pre[class*=language-]>code": {
-    "display": "block"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "position": "relative",
-    "padding": ".2em",
-    "borderRadius": ".3em",
-    "color": "#c92c2c",
-    "border": "1px solid rgba(0,0,0,.1)",
-    "display": "inline",
-    "whiteSpace": "normal",
-    "backgroundColor": "#fdfdfd",
-    "WebkitBoxSizing": "border-box",
-    "MozBoxSizing": "border-box",
-    "boxSizing": "border-box"
-  },
-  "block-comment": {
-    "color": "#7d8b99"
-  },
-  "cdata": {
-    "color": "#7d8b99"
-  },
-  "comment": {
-    "color": "#7d8b99"
-  },
-  "doctype": {
-    "color": "#7d8b99"
-  },
-  "prolog": {
-    "color": "#7d8b99"
-  },
-  "punctuation": {
-    "color": "#5f6364"
-  },
-  "boolean": {
-    "color": "#c92c2c"
-  },
-  "constant": {
-    "color": "#c92c2c"
-  },
-  "deleted": {
-    "color": "#c92c2c"
-  },
-  "function-name": {
-    "color": "#c92c2c"
-  },
-  "number": {
-    "color": "#c92c2c"
-  },
-  "property": {
-    "color": "#c92c2c"
-  },
-  "symbol": {
-    "color": "#c92c2c"
-  },
-  "tag": {
-    "color": "#c92c2c"
-  },
-  "attr-name": {
-    "color": "#2f9c0a"
-  },
-  "builtin": {
-    "color": "#2f9c0a"
-  },
-  "char": {
-    "color": "#2f9c0a"
-  },
-  "function": {
-    "color": "#2f9c0a"
-  },
-  "inserted": {
-    "color": "#2f9c0a"
-  },
-  "selector": {
-    "color": "#2f9c0a"
-  },
-  "string": {
-    "color": "#2f9c0a"
-  },
-  "entity": {
-    "color": "#a67f59",
-    "background": "rgba(255,255,255,.5)",
-    "cursor": "help"
-  },
-  "operator": {
-    "color": "#a67f59",
-    "background": "rgba(255,255,255,.5)"
-  },
-  "url": {
-    "color": "#a67f59",
-    "background": "rgba(255,255,255,.5)"
-  },
-  "variable": {
-    "color": "#a67f59",
-    "background": "rgba(255,255,255,.5)"
-  },
-  "atrule": {
-    "color": "#1990b8"
-  },
-  "attr-value": {
-    "color": "#1990b8"
-  },
-  "class-name": {
-    "color": "#1990b8"
-  },
-  "keyword": {
-    "color": "#1990b8"
-  },
-  "important": {
-    "color": "#e90",
-    "fontWeight": "400"
-  },
-  "regex": {
-    "color": "#e90"
-  },
-  ".language-css .token.string": {
-    "color": "#a67f59",
-    "background": "rgba(255,255,255,.5)"
-  },
-  ".style .token.string": {
-    "color": "#a67f59",
-    "background": "rgba(255,255,255,.5)"
-  },
-  "bold": {
-    "fontWeight": "700"
   },
   "italic": {
     "fontStyle": "italic"
@@ -60813,267 +64873,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/styles/prism/coy.min.js":
-/*!*************************************!*\
-  !*** ./src/styles/prism/coy.min.js ***!
-  \*************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "color": "#000",
-    "background": "0 0",
-    "fontFamily": "Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace",
-    "fontSize": "1em",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "maxHeight": "inherit",
-    "height": "inherit",
-    "padding": "0 1em",
-    "display": "block",
-    "overflow": "auto"
-  },
-  "pre[class*=language-]": {
-    "color": "#000",
-    "background": "0 0",
-    "fontFamily": "Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace",
-    "fontSize": "1em",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "position": "relative",
-    "margin": ".5em 0",
-    "overflow": "visible",
-    "padding": "1px",
-    "backgroundColor": "#fdfdfd",
-    "WebkitBoxSizing": "border-box",
-    "MozBoxSizing": "border-box",
-    "boxSizing": "border-box",
-    "marginBottom": "1em"
-  },
-  "pre[class*=language-]>code": {
-    "position": "relative",
-    "zIndex": "1",
-    "borderLeft": "10px solid #358ccb",
-    "boxShadow": "-1px 0 0 0 #358ccb,0 0 0 1px #dfdfdf",
-    "backgroundColor": "#fdfdfd",
-    "backgroundImage": "linear-gradient(transparent 50%,rgba(69,142,209,.04) 50%)",
-    "backgroundSize": "3em 3em",
-    "backgroundOrigin": "content-box",
-    "backgroundAttachment": "local"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "backgroundColor": "#fdfdfd",
-    "WebkitBoxSizing": "border-box",
-    "MozBoxSizing": "border-box",
-    "boxSizing": "border-box",
-    "marginBottom": "1em",
-    "position": "relative",
-    "padding": ".2em",
-    "borderRadius": ".3em",
-    "color": "#c92c2c",
-    "border": "1px solid rgba(0,0,0,.1)",
-    "display": "inline",
-    "whiteSpace": "normal"
-  },
-  "pre[class*=language-]:after": {
-    "content": "''",
-    "display": "block",
-    "position": "absolute",
-    "bottom": ".75em",
-    "left": "auto",
-    "width": "40%",
-    "height": "20%",
-    "maxHeight": "13em",
-    "boxShadow": "0 13px 8px #979797",
-    "WebkitTransform": "rotate(2deg)",
-    "MozTransform": "rotate(2deg)",
-    "msTransform": "rotate(2deg)",
-    "OTransform": "rotate(2deg)",
-    "transform": "rotate(2deg)",
-    "right": ".75em"
-  },
-  "pre[class*=language-]:before": {
-    "content": "''",
-    "display": "block",
-    "position": "absolute",
-    "bottom": ".75em",
-    "left": ".18em",
-    "width": "40%",
-    "height": "20%",
-    "maxHeight": "13em",
-    "boxShadow": "0 13px 8px #979797",
-    "WebkitTransform": "rotate(-2deg)",
-    "MozTransform": "rotate(-2deg)",
-    "msTransform": "rotate(-2deg)",
-    "OTransform": "rotate(-2deg)",
-    "transform": "rotate(-2deg)"
-  },
-  "block-comment": {
-    "color": "#7d8b99"
-  },
-  "cdata": {
-    "color": "#7d8b99"
-  },
-  "comment": {
-    "color": "#7d8b99"
-  },
-  "doctype": {
-    "color": "#7d8b99"
-  },
-  "prolog": {
-    "color": "#7d8b99"
-  },
-  "punctuation": {
-    "color": "#5f6364"
-  },
-  "boolean": {
-    "color": "#c92c2c"
-  },
-  "constant": {
-    "color": "#c92c2c"
-  },
-  "deleted": {
-    "color": "#c92c2c"
-  },
-  "function-name": {
-    "color": "#c92c2c"
-  },
-  "number": {
-    "color": "#c92c2c"
-  },
-  "property": {
-    "color": "#c92c2c"
-  },
-  "symbol": {
-    "color": "#c92c2c"
-  },
-  "tag": {
-    "color": "#c92c2c"
-  },
-  "attr-name": {
-    "color": "#2f9c0a"
-  },
-  "builtin": {
-    "color": "#2f9c0a"
-  },
-  "char": {
-    "color": "#2f9c0a"
-  },
-  "function": {
-    "color": "#2f9c0a"
-  },
-  "inserted": {
-    "color": "#2f9c0a"
-  },
-  "selector": {
-    "color": "#2f9c0a"
-  },
-  "string": {
-    "color": "#2f9c0a"
-  },
-  "entity": {
-    "color": "#a67f59",
-    "background": "rgba(255,255,255,.5)",
-    "cursor": "help"
-  },
-  "operator": {
-    "color": "#a67f59",
-    "background": "rgba(255,255,255,.5)"
-  },
-  "url": {
-    "color": "#a67f59",
-    "background": "rgba(255,255,255,.5)"
-  },
-  "variable": {
-    "color": "#a67f59",
-    "background": "rgba(255,255,255,.5)"
-  },
-  "atrule": {
-    "color": "#1990b8"
-  },
-  "attr-value": {
-    "color": "#1990b8"
-  },
-  "class-name": {
-    "color": "#1990b8"
-  },
-  "keyword": {
-    "color": "#1990b8"
-  },
-  "important": {
-    "color": "#e90",
-    "fontWeight": "400"
-  },
-  "regex": {
-    "color": "#e90"
-  },
-  ".language-css .token.string": {
-    "color": "#a67f59",
-    "background": "rgba(255,255,255,.5)"
-  },
-  ".style .token.string": {
-    "color": "#a67f59",
-    "background": "rgba(255,255,255,.5)"
-  },
-  "bold": {
-    "fontWeight": "700"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  },
-  "namespace": {
-    "Opacity": ".7"
-  },
-  "pre[class*=language-].line-numbers.line-numbers": {
-    "paddingLeft": "0"
-  },
-  "pre[class*=language-].line-numbers.line-numbers code": {
-    "paddingLeft": "3.8em"
-  },
-  "pre[class*=language-].line-numbers.line-numbers .line-numbers-rows": {
-    "left": "0"
-  },
-  "pre[class*=language-][data-line]": {
-    "paddingTop": "0",
-    "paddingBottom": "0",
-    "paddingLeft": "0"
-  },
-  "pre[data-line] code": {
-    "position": "relative",
-    "paddingLeft": "4em"
-  },
-  "pre .line-highlight": {
-    "marginTop": "0"
-  }
-});
-
-/***/ }),
-
 /***/ "./src/styles/prism/darcula.js":
 /*!*************************************!*\
   !*** ./src/styles/prism/darcula.js ***!
@@ -61287,219 +65086,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/styles/prism/darcula.min.js":
-/*!*****************************************!*\
-  !*** ./src/styles/prism/darcula.min.js ***!
-  \*****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "color": "#a9b7c6",
-    "fontFamily": "Consolas,Monaco,'Andale Mono',monospace",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none"
-  },
-  "pre[class*=language-]": {
-    "color": "#a9b7c6",
-    "fontFamily": "Consolas,Monaco,'Andale Mono',monospace",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "padding": "1em",
-    "margin": ".5em 0",
-    "overflow": "auto",
-    "background": "#2b2b2b"
-  },
-  "code[class*=language-] ::-moz-selection": {
-    "color": "inherit",
-    "background": "rgba(33,66,131,.85)"
-  },
-  "code[class*=language-]::-moz-selection": {
-    "color": "inherit",
-    "background": "rgba(33,66,131,.85)"
-  },
-  "pre[class*=language-] ::-moz-selection": {
-    "color": "inherit",
-    "background": "rgba(33,66,131,.85)"
-  },
-  "pre[class*=language-]::-moz-selection": {
-    "color": "inherit",
-    "background": "rgba(33,66,131,.85)"
-  },
-  "code[class*=language-] ::selection": {
-    "color": "inherit",
-    "background": "rgba(33,66,131,.85)"
-  },
-  "code[class*=language-]::selection": {
-    "color": "inherit",
-    "background": "rgba(33,66,131,.85)"
-  },
-  "pre[class*=language-] ::selection": {
-    "color": "inherit",
-    "background": "rgba(33,66,131,.85)"
-  },
-  "pre[class*=language-]::selection": {
-    "color": "inherit",
-    "background": "rgba(33,66,131,.85)"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "background": "#2b2b2b",
-    "padding": ".1em",
-    "borderRadius": ".3em"
-  },
-  "cdata": {
-    "color": "grey"
-  },
-  "comment": {
-    "color": "grey"
-  },
-  "prolog": {
-    "color": "grey"
-  },
-  "atrule": {
-    "color": "#cc7832"
-  },
-  "boolean": {
-    "color": "#cc7832"
-  },
-  "delimiter": {
-    "color": "#cc7832"
-  },
-  "important": {
-    "color": "#cc7832"
-  },
-  "keyword": {
-    "color": "#cc7832"
-  },
-  "selector": {
-    "color": "#cc7832"
-  },
-  "attr-name": {
-    "color": "#a9b7c6"
-  },
-  "operator": {
-    "color": "#a9b7c6"
-  },
-  "punctuation": {
-    "color": "#a9b7c6"
-  },
-  "builtin": {
-    "color": "#e8bf6a"
-  },
-  "doctype": {
-    "color": "#e8bf6a"
-  },
-  "tag": {
-    "color": "#e8bf6a"
-  },
-  "tag.punctuation": {
-    "color": "#e8bf6a"
-  },
-  "entity": {
-    "color": "#6897bb"
-  },
-  "number": {
-    "color": "#6897bb"
-  },
-  "symbol": {
-    "color": "#6897bb"
-  },
-  "constant": {
-    "color": "#9876aa"
-  },
-  "property": {
-    "color": "#9876aa"
-  },
-  "variable": {
-    "color": "#9876aa"
-  },
-  "char": {
-    "color": "#6a8759"
-  },
-  "string": {
-    "color": "#6a8759"
-  },
-  "attr-value": {
-    "color": "#a5c261"
-  },
-  "attr-value.punctuation": {
-    "color": "#a5c261"
-  },
-  "attr-value.punctuation:first-child": {
-    "color": "#a9b7c6"
-  },
-  "url": {
-    "color": "#287bde",
-    "textDecoration": "underline"
-  },
-  "function": {
-    "color": "#ffc66d"
-  },
-  "regex": {
-    "background": "#364135"
-  },
-  "bold": {
-    "fontWeight": "700"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  },
-  "inserted": {
-    "background": "#294436"
-  },
-  "deleted": {
-    "background": "#484a4a"
-  },
-  "code.language-css .token.property": {
-    "color": "#a9b7c6"
-  },
-  "code.language-css .token.property+.token.punctuation": {
-    "color": "#a9b7c6"
-  },
-  "code.language-css .token.id": {
-    "color": "#ffc66d"
-  },
-  "code.language-css .token.selector>.token.attribute": {
-    "color": "#ffc66d"
-  },
-  "code.language-css .token.selector>.token.class": {
-    "color": "#ffc66d"
-  },
-  "code.language-css .token.selector>.token.pseudo-class": {
-    "color": "#ffc66d"
-  },
-  "code.language-css .token.selector>.token.pseudo-element": {
-    "color": "#ffc66d"
-  }
-});
-
-/***/ }),
-
 /***/ "./src/styles/prism/dark.js":
 /*!**********************************!*\
   !*** ./src/styles/prism/dark.js ***!
@@ -61655,172 +65241,6 @@ __webpack_require__.r(__webpack_exports__);
   },
   "bold": {
     "fontWeight": "bold"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  },
-  "deleted": {
-    "color": "red"
-  }
-});
-
-/***/ }),
-
-/***/ "./src/styles/prism/dark.min.js":
-/*!**************************************!*\
-  !*** ./src/styles/prism/dark.min.js ***!
-  \**************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "color": "#fff",
-    "background": "0 0",
-    "textShadow": "0 -.1em .2em #000",
-    "fontFamily": "Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace",
-    "fontSize": "1em",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none"
-  },
-  "pre[class*=language-]": {
-    "color": "#fff",
-    "background": "#4c3f33",
-    "textShadow": "0 -.1em .2em #000",
-    "fontFamily": "Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace",
-    "fontSize": "1em",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "padding": "1em",
-    "margin": ".5em 0",
-    "overflow": "auto",
-    "border": ".3em solid #7a6651",
-    "borderRadius": ".5em",
-    "boxShadow": "1px 1px .5em #000 inset"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "background": "#4c3f33",
-    "padding": ".15em .2em .05em",
-    "borderRadius": ".3em",
-    "border": ".13em solid #7a6651",
-    "boxShadow": "1px 1px .3em -.1em #000 inset",
-    "whiteSpace": "normal"
-  },
-  "cdata": {
-    "color": "#997f66"
-  },
-  "comment": {
-    "color": "#997f66"
-  },
-  "doctype": {
-    "color": "#997f66"
-  },
-  "prolog": {
-    "color": "#997f66"
-  },
-  "punctuation": {
-    "Opacity": ".7"
-  },
-  "namespace": {
-    "Opacity": ".7"
-  },
-  "boolean": {
-    "color": "#d1939e"
-  },
-  "constant": {
-    "color": "#d1939e"
-  },
-  "number": {
-    "color": "#d1939e"
-  },
-  "property": {
-    "color": "#d1939e"
-  },
-  "symbol": {
-    "color": "#d1939e"
-  },
-  "tag": {
-    "color": "#d1939e"
-  },
-  "attr-name": {
-    "color": "#bce051"
-  },
-  "builtin": {
-    "color": "#bce051"
-  },
-  "char": {
-    "color": "#bce051"
-  },
-  "inserted": {
-    "color": "#bce051"
-  },
-  "selector": {
-    "color": "#bce051"
-  },
-  "string": {
-    "color": "#bce051"
-  },
-  ".language-css .token.string": {
-    "color": "#f4b73d"
-  },
-  ".style .token.string": {
-    "color": "#f4b73d"
-  },
-  "entity": {
-    "color": "#f4b73d",
-    "cursor": "help"
-  },
-  "operator": {
-    "color": "#f4b73d"
-  },
-  "url": {
-    "color": "#f4b73d"
-  },
-  "variable": {
-    "color": "#f4b73d"
-  },
-  "atrule": {
-    "color": "#d1939e"
-  },
-  "attr-value": {
-    "color": "#d1939e"
-  },
-  "keyword": {
-    "color": "#d1939e"
-  },
-  "important": {
-    "color": "#e90",
-    "fontWeight": "700"
-  },
-  "regex": {
-    "color": "#e90"
-  },
-  "bold": {
-    "fontWeight": "700"
   },
   "italic": {
     "fontStyle": "italic"
@@ -61990,172 +65410,6 @@ __webpack_require__.r(__webpack_exports__);
   },
   "bold": {
     "fontWeight": "bold"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  }
-});
-
-/***/ }),
-
-/***/ "./src/styles/prism/dracula.min.js":
-/*!*****************************************!*\
-  !*** ./src/styles/prism/dracula.min.js ***!
-  \*****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "color": "#f8f8f2",
-    "background": "0 0",
-    "textShadow": "0 1px rgba(0,0,0,.3)",
-    "fontFamily": "Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none"
-  },
-  "pre[class*=language-]": {
-    "color": "#f8f8f2",
-    "background": "#282a36",
-    "textShadow": "0 1px rgba(0,0,0,.3)",
-    "fontFamily": "Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "padding": "1em",
-    "margin": ".5em 0",
-    "overflow": "auto",
-    "borderRadius": ".3em"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "background": "#282a36",
-    "padding": ".1em",
-    "borderRadius": ".3em",
-    "whiteSpace": "normal"
-  },
-  "cdata": {
-    "color": "#6272a4"
-  },
-  "comment": {
-    "color": "#6272a4"
-  },
-  "doctype": {
-    "color": "#6272a4"
-  },
-  "prolog": {
-    "color": "#6272a4"
-  },
-  "punctuation": {
-    "color": "#f8f8f2"
-  },
-  ".namespace": {
-    "Opacity": ".7"
-  },
-  "constant": {
-    "color": "#ff79c6"
-  },
-  "deleted": {
-    "color": "#ff79c6"
-  },
-  "property": {
-    "color": "#ff79c6"
-  },
-  "symbol": {
-    "color": "#ff79c6"
-  },
-  "tag": {
-    "color": "#ff79c6"
-  },
-  "boolean": {
-    "color": "#bd93f9"
-  },
-  "number": {
-    "color": "#bd93f9"
-  },
-  "attr-name": {
-    "color": "#50fa7b"
-  },
-  "builtin": {
-    "color": "#50fa7b"
-  },
-  "char": {
-    "color": "#50fa7b"
-  },
-  "inserted": {
-    "color": "#50fa7b"
-  },
-  "selector": {
-    "color": "#50fa7b"
-  },
-  "string": {
-    "color": "#50fa7b"
-  },
-  ".language-css .token.string": {
-    "color": "#f8f8f2"
-  },
-  ".style .token.string": {
-    "color": "#f8f8f2"
-  },
-  "entity": {
-    "color": "#f8f8f2",
-    "cursor": "help"
-  },
-  "operator": {
-    "color": "#f8f8f2"
-  },
-  "url": {
-    "color": "#f8f8f2"
-  },
-  "variable": {
-    "color": "#f8f8f2"
-  },
-  "atrule": {
-    "color": "#f1fa8c"
-  },
-  "attr-value": {
-    "color": "#f1fa8c"
-  },
-  "class-name": {
-    "color": "#f1fa8c"
-  },
-  "function": {
-    "color": "#f1fa8c"
-  },
-  "keyword": {
-    "color": "#8be9fd"
-  },
-  "important": {
-    "color": "#ffb86c",
-    "fontWeight": "700"
-  },
-  "regex": {
-    "color": "#ffb86c"
-  },
-  "bold": {
-    "fontWeight": "700"
   },
   "italic": {
     "fontStyle": "italic"
@@ -62394,236 +65648,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/styles/prism/duotone-dark.min.js":
-/*!**********************************************!*\
-  !*** ./src/styles/prism/duotone-dark.min.js ***!
-  \**********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "fontFamily": "Consolas,Menlo,Monaco,\"Andale Mono WT\",\"Andale Mono\",\"Lucida Console\",\"Lucida Sans Typewriter\",\"DejaVu Sans Mono\",\"Bitstream Vera Sans Mono\",\"Liberation Mono\",\"Nimbus Mono L\",\"Courier New\",Courier,monospace",
-    "fontSize": "14px",
-    "lineHeight": "1.375",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "background": "#2a2734",
-    "color": "#9a86fd"
-  },
-  "pre[class*=language-]": {
-    "fontFamily": "Consolas,Menlo,Monaco,\"Andale Mono WT\",\"Andale Mono\",\"Lucida Console\",\"Lucida Sans Typewriter\",\"DejaVu Sans Mono\",\"Bitstream Vera Sans Mono\",\"Liberation Mono\",\"Nimbus Mono L\",\"Courier New\",Courier,monospace",
-    "fontSize": "14px",
-    "lineHeight": "1.375",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "background": "#2a2734",
-    "color": "#9a86fd",
-    "padding": "1em",
-    "margin": ".5em 0",
-    "overflow": "auto"
-  },
-  "pre>code[class*=language-]": {
-    "fontSize": "1em"
-  },
-  "code[class*=language-] ::-moz-selection": {
-    "textShadow": "none",
-    "background": "#6a51e6"
-  },
-  "code[class*=language-]::-moz-selection": {
-    "textShadow": "none",
-    "background": "#6a51e6"
-  },
-  "pre[class*=language-] ::-moz-selection": {
-    "textShadow": "none",
-    "background": "#6a51e6"
-  },
-  "pre[class*=language-]::-moz-selection": {
-    "textShadow": "none",
-    "background": "#6a51e6"
-  },
-  "code[class*=language-] ::selection": {
-    "textShadow": "none",
-    "background": "#6a51e6"
-  },
-  "code[class*=language-]::selection": {
-    "textShadow": "none",
-    "background": "#6a51e6"
-  },
-  "pre[class*=language-] ::selection": {
-    "textShadow": "none",
-    "background": "#6a51e6"
-  },
-  "pre[class*=language-]::selection": {
-    "textShadow": "none",
-    "background": "#6a51e6"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "padding": ".1em",
-    "borderRadius": ".3em"
-  },
-  "cdata": {
-    "color": "#6c6783"
-  },
-  "comment": {
-    "color": "#6c6783"
-  },
-  "doctype": {
-    "color": "#6c6783"
-  },
-  "prolog": {
-    "color": "#6c6783"
-  },
-  "punctuation": {
-    "color": "#6c6783"
-  },
-  "namespace": {
-    "Opacity": ".7"
-  },
-  "number": {
-    "color": "#e09142"
-  },
-  "operator": {
-    "color": "#e09142"
-  },
-  "tag": {
-    "color": "#e09142"
-  },
-  "function": {
-    "color": "#9a86fd"
-  },
-  "property": {
-    "color": "#9a86fd"
-  },
-  "atrule-id": {
-    "color": "#eeebff"
-  },
-  "selector": {
-    "color": "#eeebff"
-  },
-  "tag-id": {
-    "color": "#eeebff"
-  },
-  "attr-name": {
-    "color": "#c4b9fe"
-  },
-  "code.language-javascript": {
-    "color": "#c4b9fe"
-  },
-  ".language-css .token.string": {
-    "color": "#fc9"
-  },
-  ".language-scss .token.string": {
-    "color": "#fc9"
-  },
-  ".style .token.string": {
-    "color": "#fc9"
-  },
-  "atrule": {
-    "color": "#fc9"
-  },
-  "attr-value": {
-    "color": "#fc9"
-  },
-  "boolean": {
-    "color": "#fc9"
-  },
-  "control": {
-    "color": "#fc9"
-  },
-  "directive": {
-    "color": "#fc9"
-  },
-  "entity": {
-    "color": "#fc9",
-    "cursor": "help"
-  },
-  "keyword": {
-    "color": "#fc9"
-  },
-  "regex": {
-    "color": "#fc9"
-  },
-  "statement": {
-    "color": "#fc9"
-  },
-  "string": {
-    "color": "#fc9"
-  },
-  "unit": {
-    "color": "#fc9"
-  },
-  "url": {
-    "color": "#fc9"
-  },
-  "code.language-css": {
-    "color": "#fc9"
-  },
-  "code.language-scss": {
-    "color": "#fc9"
-  },
-  "placeholder": {
-    "color": "#fc9"
-  },
-  "variable": {
-    "color": "#fc9"
-  },
-  "deleted": {
-    "textDecoration": "line-through"
-  },
-  "inserted": {
-    "borderBottom": "1px dotted #eeebff",
-    "textDecoration": "none"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  },
-  "bold": {
-    "fontWeight": "700"
-  },
-  "important": {
-    "fontWeight": "700",
-    "color": "#c4b9fe"
-  },
-  "pre>code.highlight": {
-    "Outline": ".4em solid #8a75f5",
-    "OutlineOffset": ".4em"
-  },
-  ".line-numbers.line-numbers .line-numbers-rows": {
-    "borderRightColor": "#2c2937"
-  },
-  ".line-numbers .line-numbers-rows>span:before": {
-    "color": "#3c3949"
-  },
-  ".line-highlight.line-highlight": {
-    "background": "linear-gradient(to right,rgba(224,145,66,.2) 70%,rgba(224,145,66,0))"
-  }
-});
-
-/***/ }),
-
 /***/ "./src/styles/prism/duotone-earth.js":
 /*!*******************************************!*\
   !*** ./src/styles/prism/duotone-earth.js ***!
@@ -62849,236 +65873,6 @@ __webpack_require__.r(__webpack_exports__);
   },
   ".line-highlight.line-highlight": {
     "background": "linear-gradient(to right, rgba(191, 160, 90, 0.2) 70%, rgba(191, 160, 90, 0))"
-  }
-});
-
-/***/ }),
-
-/***/ "./src/styles/prism/duotone-earth.min.js":
-/*!***********************************************!*\
-  !*** ./src/styles/prism/duotone-earth.min.js ***!
-  \***********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "fontFamily": "Consolas,Menlo,Monaco,\"Andale Mono WT\",\"Andale Mono\",\"Lucida Console\",\"Lucida Sans Typewriter\",\"DejaVu Sans Mono\",\"Bitstream Vera Sans Mono\",\"Liberation Mono\",\"Nimbus Mono L\",\"Courier New\",Courier,monospace",
-    "fontSize": "14px",
-    "lineHeight": "1.375",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "background": "#322d29",
-    "color": "#88786d"
-  },
-  "pre[class*=language-]": {
-    "fontFamily": "Consolas,Menlo,Monaco,\"Andale Mono WT\",\"Andale Mono\",\"Lucida Console\",\"Lucida Sans Typewriter\",\"DejaVu Sans Mono\",\"Bitstream Vera Sans Mono\",\"Liberation Mono\",\"Nimbus Mono L\",\"Courier New\",Courier,monospace",
-    "fontSize": "14px",
-    "lineHeight": "1.375",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "background": "#322d29",
-    "color": "#88786d",
-    "padding": "1em",
-    "margin": ".5em 0",
-    "overflow": "auto"
-  },
-  "pre>code[class*=language-]": {
-    "fontSize": "1em"
-  },
-  "code[class*=language-] ::-moz-selection": {
-    "textShadow": "none",
-    "background": "#6f5849"
-  },
-  "code[class*=language-]::-moz-selection": {
-    "textShadow": "none",
-    "background": "#6f5849"
-  },
-  "pre[class*=language-] ::-moz-selection": {
-    "textShadow": "none",
-    "background": "#6f5849"
-  },
-  "pre[class*=language-]::-moz-selection": {
-    "textShadow": "none",
-    "background": "#6f5849"
-  },
-  "code[class*=language-] ::selection": {
-    "textShadow": "none",
-    "background": "#6f5849"
-  },
-  "code[class*=language-]::selection": {
-    "textShadow": "none",
-    "background": "#6f5849"
-  },
-  "pre[class*=language-] ::selection": {
-    "textShadow": "none",
-    "background": "#6f5849"
-  },
-  "pre[class*=language-]::selection": {
-    "textShadow": "none",
-    "background": "#6f5849"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "padding": ".1em",
-    "borderRadius": ".3em"
-  },
-  "cdata": {
-    "color": "#6a5f58"
-  },
-  "comment": {
-    "color": "#6a5f58"
-  },
-  "doctype": {
-    "color": "#6a5f58"
-  },
-  "prolog": {
-    "color": "#6a5f58"
-  },
-  "punctuation": {
-    "color": "#6a5f58"
-  },
-  "namespace": {
-    "Opacity": ".7"
-  },
-  "number": {
-    "color": "#bfa05a"
-  },
-  "operator": {
-    "color": "#bfa05a"
-  },
-  "tag": {
-    "color": "#bfa05a"
-  },
-  "function": {
-    "color": "#88786d"
-  },
-  "property": {
-    "color": "#88786d"
-  },
-  "atrule-id": {
-    "color": "#fff3eb"
-  },
-  "selector": {
-    "color": "#fff3eb"
-  },
-  "tag-id": {
-    "color": "#fff3eb"
-  },
-  "attr-name": {
-    "color": "#a48774"
-  },
-  "code.language-javascript": {
-    "color": "#a48774"
-  },
-  ".language-css .token.string": {
-    "color": "#fcc440"
-  },
-  ".language-scss .token.string": {
-    "color": "#fcc440"
-  },
-  ".style .token.string": {
-    "color": "#fcc440"
-  },
-  "atrule": {
-    "color": "#fcc440"
-  },
-  "attr-value": {
-    "color": "#fcc440"
-  },
-  "boolean": {
-    "color": "#fcc440"
-  },
-  "control": {
-    "color": "#fcc440"
-  },
-  "directive": {
-    "color": "#fcc440"
-  },
-  "entity": {
-    "color": "#fcc440",
-    "cursor": "help"
-  },
-  "keyword": {
-    "color": "#fcc440"
-  },
-  "regex": {
-    "color": "#fcc440"
-  },
-  "statement": {
-    "color": "#fcc440"
-  },
-  "string": {
-    "color": "#fcc440"
-  },
-  "unit": {
-    "color": "#fcc440"
-  },
-  "url": {
-    "color": "#fcc440"
-  },
-  "code.language-css": {
-    "color": "#fcc440"
-  },
-  "code.language-scss": {
-    "color": "#fcc440"
-  },
-  "placeholder": {
-    "color": "#fcc440"
-  },
-  "variable": {
-    "color": "#fcc440"
-  },
-  "deleted": {
-    "textDecoration": "line-through"
-  },
-  "inserted": {
-    "borderBottom": "1px dotted #fff3eb",
-    "textDecoration": "none"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  },
-  "bold": {
-    "fontWeight": "700"
-  },
-  "important": {
-    "fontWeight": "700",
-    "color": "#a48774"
-  },
-  "pre>code.highlight": {
-    "Outline": ".4em solid #816d5f",
-    "OutlineOffset": ".4em"
-  },
-  ".line-numbers.line-numbers .line-numbers-rows": {
-    "borderRightColor": "#35302b"
-  },
-  ".line-numbers .line-numbers-rows>span:before": {
-    "color": "#46403d"
-  },
-  ".line-highlight.line-highlight": {
-    "background": "linear-gradient(to right,rgba(191,160,90,.2) 70%,rgba(191,160,90,0))"
   }
 });
 
@@ -63314,236 +66108,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/styles/prism/duotone-forest.min.js":
-/*!************************************************!*\
-  !*** ./src/styles/prism/duotone-forest.min.js ***!
-  \************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "fontFamily": "Consolas,Menlo,Monaco,\"Andale Mono WT\",\"Andale Mono\",\"Lucida Console\",\"Lucida Sans Typewriter\",\"DejaVu Sans Mono\",\"Bitstream Vera Sans Mono\",\"Liberation Mono\",\"Nimbus Mono L\",\"Courier New\",Courier,monospace",
-    "fontSize": "14px",
-    "lineHeight": "1.375",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "background": "#2a2d2a",
-    "color": "#687d68"
-  },
-  "pre[class*=language-]": {
-    "fontFamily": "Consolas,Menlo,Monaco,\"Andale Mono WT\",\"Andale Mono\",\"Lucida Console\",\"Lucida Sans Typewriter\",\"DejaVu Sans Mono\",\"Bitstream Vera Sans Mono\",\"Liberation Mono\",\"Nimbus Mono L\",\"Courier New\",Courier,monospace",
-    "fontSize": "14px",
-    "lineHeight": "1.375",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "background": "#2a2d2a",
-    "color": "#687d68",
-    "padding": "1em",
-    "margin": ".5em 0",
-    "overflow": "auto"
-  },
-  "pre>code[class*=language-]": {
-    "fontSize": "1em"
-  },
-  "code[class*=language-] ::-moz-selection": {
-    "textShadow": "none",
-    "background": "#435643"
-  },
-  "code[class*=language-]::-moz-selection": {
-    "textShadow": "none",
-    "background": "#435643"
-  },
-  "pre[class*=language-] ::-moz-selection": {
-    "textShadow": "none",
-    "background": "#435643"
-  },
-  "pre[class*=language-]::-moz-selection": {
-    "textShadow": "none",
-    "background": "#435643"
-  },
-  "code[class*=language-] ::selection": {
-    "textShadow": "none",
-    "background": "#435643"
-  },
-  "code[class*=language-]::selection": {
-    "textShadow": "none",
-    "background": "#435643"
-  },
-  "pre[class*=language-] ::selection": {
-    "textShadow": "none",
-    "background": "#435643"
-  },
-  "pre[class*=language-]::selection": {
-    "textShadow": "none",
-    "background": "#435643"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "padding": ".1em",
-    "borderRadius": ".3em"
-  },
-  "cdata": {
-    "color": "#535f53"
-  },
-  "comment": {
-    "color": "#535f53"
-  },
-  "doctype": {
-    "color": "#535f53"
-  },
-  "prolog": {
-    "color": "#535f53"
-  },
-  "punctuation": {
-    "color": "#535f53"
-  },
-  "namespace": {
-    "Opacity": ".7"
-  },
-  "number": {
-    "color": "#a2b34d"
-  },
-  "operator": {
-    "color": "#a2b34d"
-  },
-  "tag": {
-    "color": "#a2b34d"
-  },
-  "function": {
-    "color": "#687d68"
-  },
-  "property": {
-    "color": "#687d68"
-  },
-  "atrule-id": {
-    "color": "#f0fff0"
-  },
-  "selector": {
-    "color": "#f0fff0"
-  },
-  "tag-id": {
-    "color": "#f0fff0"
-  },
-  "attr-name": {
-    "color": "#b3d6b3"
-  },
-  "code.language-javascript": {
-    "color": "#b3d6b3"
-  },
-  ".language-css .token.string": {
-    "color": "#e5fb79"
-  },
-  ".language-scss .token.string": {
-    "color": "#e5fb79"
-  },
-  ".style .token.string": {
-    "color": "#e5fb79"
-  },
-  "atrule": {
-    "color": "#e5fb79"
-  },
-  "attr-value": {
-    "color": "#e5fb79"
-  },
-  "boolean": {
-    "color": "#e5fb79"
-  },
-  "control": {
-    "color": "#e5fb79"
-  },
-  "directive": {
-    "color": "#e5fb79"
-  },
-  "entity": {
-    "color": "#e5fb79",
-    "cursor": "help"
-  },
-  "keyword": {
-    "color": "#e5fb79"
-  },
-  "regex": {
-    "color": "#e5fb79"
-  },
-  "statement": {
-    "color": "#e5fb79"
-  },
-  "string": {
-    "color": "#e5fb79"
-  },
-  "unit": {
-    "color": "#e5fb79"
-  },
-  "url": {
-    "color": "#e5fb79"
-  },
-  "code.language-css": {
-    "color": "#e5fb79"
-  },
-  "code.language-scss": {
-    "color": "#e5fb79"
-  },
-  "placeholder": {
-    "color": "#e5fb79"
-  },
-  "variable": {
-    "color": "#e5fb79"
-  },
-  "deleted": {
-    "textDecoration": "line-through"
-  },
-  "inserted": {
-    "borderBottom": "1px dotted #f0fff0",
-    "textDecoration": "none"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  },
-  "bold": {
-    "fontWeight": "700"
-  },
-  "important": {
-    "fontWeight": "700",
-    "color": "#b3d6b3"
-  },
-  "pre>code.highlight": {
-    "Outline": ".4em solid #5c705c",
-    "OutlineOffset": ".4em"
-  },
-  ".line-numbers.line-numbers .line-numbers-rows": {
-    "borderRightColor": "#2c302c"
-  },
-  ".line-numbers .line-numbers-rows>span:before": {
-    "color": "#3b423b"
-  },
-  ".line-highlight.line-highlight": {
-    "background": "linear-gradient(to right,rgba(162,179,77,.2) 70%,rgba(162,179,77,0))"
-  }
-});
-
-/***/ }),
-
 /***/ "./src/styles/prism/duotone-light.js":
 /*!*******************************************!*\
   !*** ./src/styles/prism/duotone-light.js ***!
@@ -63769,236 +66333,6 @@ __webpack_require__.r(__webpack_exports__);
   },
   ".line-highlight.line-highlight": {
     "background": "linear-gradient(to right, rgba(45, 32, 6, 0.2) 70%, rgba(45, 32, 6, 0))"
-  }
-});
-
-/***/ }),
-
-/***/ "./src/styles/prism/duotone-light.min.js":
-/*!***********************************************!*\
-  !*** ./src/styles/prism/duotone-light.min.js ***!
-  \***********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "fontFamily": "Consolas,Menlo,Monaco,\"Andale Mono WT\",\"Andale Mono\",\"Lucida Console\",\"Lucida Sans Typewriter\",\"DejaVu Sans Mono\",\"Bitstream Vera Sans Mono\",\"Liberation Mono\",\"Nimbus Mono L\",\"Courier New\",Courier,monospace",
-    "fontSize": "14px",
-    "lineHeight": "1.375",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "background": "#faf8f5",
-    "color": "#728fcb"
-  },
-  "pre[class*=language-]": {
-    "fontFamily": "Consolas,Menlo,Monaco,\"Andale Mono WT\",\"Andale Mono\",\"Lucida Console\",\"Lucida Sans Typewriter\",\"DejaVu Sans Mono\",\"Bitstream Vera Sans Mono\",\"Liberation Mono\",\"Nimbus Mono L\",\"Courier New\",Courier,monospace",
-    "fontSize": "14px",
-    "lineHeight": "1.375",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "background": "#faf8f5",
-    "color": "#728fcb",
-    "padding": "1em",
-    "margin": ".5em 0",
-    "overflow": "auto"
-  },
-  "pre>code[class*=language-]": {
-    "fontSize": "1em"
-  },
-  "code[class*=language-] ::-moz-selection": {
-    "textShadow": "none",
-    "background": "#faf8f5"
-  },
-  "code[class*=language-]::-moz-selection": {
-    "textShadow": "none",
-    "background": "#faf8f5"
-  },
-  "pre[class*=language-] ::-moz-selection": {
-    "textShadow": "none",
-    "background": "#faf8f5"
-  },
-  "pre[class*=language-]::-moz-selection": {
-    "textShadow": "none",
-    "background": "#faf8f5"
-  },
-  "code[class*=language-] ::selection": {
-    "textShadow": "none",
-    "background": "#faf8f5"
-  },
-  "code[class*=language-]::selection": {
-    "textShadow": "none",
-    "background": "#faf8f5"
-  },
-  "pre[class*=language-] ::selection": {
-    "textShadow": "none",
-    "background": "#faf8f5"
-  },
-  "pre[class*=language-]::selection": {
-    "textShadow": "none",
-    "background": "#faf8f5"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "padding": ".1em",
-    "borderRadius": ".3em"
-  },
-  "cdata": {
-    "color": "#b6ad9a"
-  },
-  "comment": {
-    "color": "#b6ad9a"
-  },
-  "doctype": {
-    "color": "#b6ad9a"
-  },
-  "prolog": {
-    "color": "#b6ad9a"
-  },
-  "punctuation": {
-    "color": "#b6ad9a"
-  },
-  "namespace": {
-    "Opacity": ".7"
-  },
-  "number": {
-    "color": "#063289"
-  },
-  "operator": {
-    "color": "#063289"
-  },
-  "tag": {
-    "color": "#063289"
-  },
-  "function": {
-    "color": "#b29762"
-  },
-  "property": {
-    "color": "#b29762"
-  },
-  "atrule-id": {
-    "color": "#2d2006"
-  },
-  "selector": {
-    "color": "#2d2006"
-  },
-  "tag-id": {
-    "color": "#2d2006"
-  },
-  "attr-name": {
-    "color": "#896724"
-  },
-  "code.language-javascript": {
-    "color": "#896724"
-  },
-  ".language-css .token.string": {
-    "color": "#728fcb"
-  },
-  ".language-scss .token.string": {
-    "color": "#728fcb"
-  },
-  ".style .token.string": {
-    "color": "#728fcb"
-  },
-  "atrule": {
-    "color": "#728fcb"
-  },
-  "attr-value": {
-    "color": "#728fcb"
-  },
-  "boolean": {
-    "color": "#728fcb"
-  },
-  "control": {
-    "color": "#728fcb"
-  },
-  "directive": {
-    "color": "#728fcb"
-  },
-  "entity": {
-    "color": "#728fcb",
-    "cursor": "help"
-  },
-  "keyword": {
-    "color": "#728fcb"
-  },
-  "regex": {
-    "color": "#728fcb"
-  },
-  "statement": {
-    "color": "#728fcb"
-  },
-  "string": {
-    "color": "#728fcb"
-  },
-  "unit": {
-    "color": "#728fcb"
-  },
-  "url": {
-    "color": "#728fcb"
-  },
-  "code.language-css": {
-    "color": "#728fcb"
-  },
-  "code.language-scss": {
-    "color": "#728fcb"
-  },
-  "placeholder": {
-    "color": "#93abdc"
-  },
-  "variable": {
-    "color": "#93abdc"
-  },
-  "deleted": {
-    "textDecoration": "line-through"
-  },
-  "inserted": {
-    "borderBottom": "1px dotted #2d2006",
-    "textDecoration": "none"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  },
-  "bold": {
-    "fontWeight": "700"
-  },
-  "important": {
-    "fontWeight": "700",
-    "color": "#896724"
-  },
-  "pre>code.highlight": {
-    "Outline": ".4em solid #896724",
-    "OutlineOffset": ".4em"
-  },
-  ".line-numbers.line-numbers .line-numbers-rows": {
-    "borderRightColor": "#ece8de"
-  },
-  ".line-numbers .line-numbers-rows>span:before": {
-    "color": "#cdc4b1"
-  },
-  ".line-highlight.line-highlight": {
-    "background": "linear-gradient(to right,rgba(45,32,6,.2) 70%,rgba(45,32,6,0))"
   }
 });
 
@@ -64234,236 +66568,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/styles/prism/duotone-sea.min.js":
-/*!*********************************************!*\
-  !*** ./src/styles/prism/duotone-sea.min.js ***!
-  \*********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "fontFamily": "Consolas,Menlo,Monaco,\"Andale Mono WT\",\"Andale Mono\",\"Lucida Console\",\"Lucida Sans Typewriter\",\"DejaVu Sans Mono\",\"Bitstream Vera Sans Mono\",\"Liberation Mono\",\"Nimbus Mono L\",\"Courier New\",Courier,monospace",
-    "fontSize": "14px",
-    "lineHeight": "1.375",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "background": "#1d262f",
-    "color": "#57718e"
-  },
-  "pre[class*=language-]": {
-    "fontFamily": "Consolas,Menlo,Monaco,\"Andale Mono WT\",\"Andale Mono\",\"Lucida Console\",\"Lucida Sans Typewriter\",\"DejaVu Sans Mono\",\"Bitstream Vera Sans Mono\",\"Liberation Mono\",\"Nimbus Mono L\",\"Courier New\",Courier,monospace",
-    "fontSize": "14px",
-    "lineHeight": "1.375",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "background": "#1d262f",
-    "color": "#57718e",
-    "padding": "1em",
-    "margin": ".5em 0",
-    "overflow": "auto"
-  },
-  "pre>code[class*=language-]": {
-    "fontSize": "1em"
-  },
-  "code[class*=language-] ::-moz-selection": {
-    "textShadow": "none",
-    "background": "#004a9e"
-  },
-  "code[class*=language-]::-moz-selection": {
-    "textShadow": "none",
-    "background": "#004a9e"
-  },
-  "pre[class*=language-] ::-moz-selection": {
-    "textShadow": "none",
-    "background": "#004a9e"
-  },
-  "pre[class*=language-]::-moz-selection": {
-    "textShadow": "none",
-    "background": "#004a9e"
-  },
-  "code[class*=language-] ::selection": {
-    "textShadow": "none",
-    "background": "#004a9e"
-  },
-  "code[class*=language-]::selection": {
-    "textShadow": "none",
-    "background": "#004a9e"
-  },
-  "pre[class*=language-] ::selection": {
-    "textShadow": "none",
-    "background": "#004a9e"
-  },
-  "pre[class*=language-]::selection": {
-    "textShadow": "none",
-    "background": "#004a9e"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "padding": ".1em",
-    "borderRadius": ".3em"
-  },
-  "cdata": {
-    "color": "#4a5f78"
-  },
-  "comment": {
-    "color": "#4a5f78"
-  },
-  "doctype": {
-    "color": "#4a5f78"
-  },
-  "prolog": {
-    "color": "#4a5f78"
-  },
-  "punctuation": {
-    "color": "#4a5f78"
-  },
-  "namespace": {
-    "Opacity": ".7"
-  },
-  "number": {
-    "color": "#0aa370"
-  },
-  "operator": {
-    "color": "#0aa370"
-  },
-  "tag": {
-    "color": "#0aa370"
-  },
-  "function": {
-    "color": "#57718e"
-  },
-  "property": {
-    "color": "#57718e"
-  },
-  "atrule-id": {
-    "color": "#ebf4ff"
-  },
-  "selector": {
-    "color": "#ebf4ff"
-  },
-  "tag-id": {
-    "color": "#ebf4ff"
-  },
-  "attr-name": {
-    "color": "#7eb6f6"
-  },
-  "code.language-javascript": {
-    "color": "#7eb6f6"
-  },
-  ".language-css .token.string": {
-    "color": "#47ebb4"
-  },
-  ".language-scss .token.string": {
-    "color": "#47ebb4"
-  },
-  ".style .token.string": {
-    "color": "#47ebb4"
-  },
-  "atrule": {
-    "color": "#47ebb4"
-  },
-  "attr-value": {
-    "color": "#47ebb4"
-  },
-  "boolean": {
-    "color": "#47ebb4"
-  },
-  "control": {
-    "color": "#47ebb4"
-  },
-  "directive": {
-    "color": "#47ebb4"
-  },
-  "entity": {
-    "color": "#47ebb4",
-    "cursor": "help"
-  },
-  "keyword": {
-    "color": "#47ebb4"
-  },
-  "regex": {
-    "color": "#47ebb4"
-  },
-  "statement": {
-    "color": "#47ebb4"
-  },
-  "string": {
-    "color": "#47ebb4"
-  },
-  "unit": {
-    "color": "#47ebb4"
-  },
-  "url": {
-    "color": "#47ebb4"
-  },
-  "code.language-css": {
-    "color": "#47ebb4"
-  },
-  "code.language-scss": {
-    "color": "#47ebb4"
-  },
-  "placeholder": {
-    "color": "#47ebb4"
-  },
-  "variable": {
-    "color": "#47ebb4"
-  },
-  "deleted": {
-    "textDecoration": "line-through"
-  },
-  "inserted": {
-    "borderBottom": "1px dotted #ebf4ff",
-    "textDecoration": "none"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  },
-  "bold": {
-    "fontWeight": "700"
-  },
-  "important": {
-    "fontWeight": "700",
-    "color": "#7eb6f6"
-  },
-  "pre>code.highlight": {
-    "Outline": ".4em solid #34659d",
-    "OutlineOffset": ".4em"
-  },
-  ".line-numbers.line-numbers .line-numbers-rows": {
-    "borderRightColor": "#1f2932"
-  },
-  ".line-numbers .line-numbers-rows>span:before": {
-    "color": "#2c3847"
-  },
-  ".line-highlight.line-highlight": {
-    "background": "linear-gradient(to right,rgba(10,163,112,.2) 70%,rgba(10,163,112,0))"
-  }
-});
-
-/***/ }),
-
 /***/ "./src/styles/prism/duotone-space.js":
 /*!*******************************************!*\
   !*** ./src/styles/prism/duotone-space.js ***!
@@ -64694,236 +66798,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/styles/prism/duotone-space.min.js":
-/*!***********************************************!*\
-  !*** ./src/styles/prism/duotone-space.min.js ***!
-  \***********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "fontFamily": "Consolas,Menlo,Monaco,\"Andale Mono WT\",\"Andale Mono\",\"Lucida Console\",\"Lucida Sans Typewriter\",\"DejaVu Sans Mono\",\"Bitstream Vera Sans Mono\",\"Liberation Mono\",\"Nimbus Mono L\",\"Courier New\",Courier,monospace",
-    "fontSize": "14px",
-    "lineHeight": "1.375",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "background": "#24242e",
-    "color": "#767693"
-  },
-  "pre[class*=language-]": {
-    "fontFamily": "Consolas,Menlo,Monaco,\"Andale Mono WT\",\"Andale Mono\",\"Lucida Console\",\"Lucida Sans Typewriter\",\"DejaVu Sans Mono\",\"Bitstream Vera Sans Mono\",\"Liberation Mono\",\"Nimbus Mono L\",\"Courier New\",Courier,monospace",
-    "fontSize": "14px",
-    "lineHeight": "1.375",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "background": "#24242e",
-    "color": "#767693",
-    "padding": "1em",
-    "margin": ".5em 0",
-    "overflow": "auto"
-  },
-  "pre>code[class*=language-]": {
-    "fontSize": "1em"
-  },
-  "code[class*=language-] ::-moz-selection": {
-    "textShadow": "none",
-    "background": "#5151e6"
-  },
-  "code[class*=language-]::-moz-selection": {
-    "textShadow": "none",
-    "background": "#5151e6"
-  },
-  "pre[class*=language-] ::-moz-selection": {
-    "textShadow": "none",
-    "background": "#5151e6"
-  },
-  "pre[class*=language-]::-moz-selection": {
-    "textShadow": "none",
-    "background": "#5151e6"
-  },
-  "code[class*=language-] ::selection": {
-    "textShadow": "none",
-    "background": "#5151e6"
-  },
-  "code[class*=language-]::selection": {
-    "textShadow": "none",
-    "background": "#5151e6"
-  },
-  "pre[class*=language-] ::selection": {
-    "textShadow": "none",
-    "background": "#5151e6"
-  },
-  "pre[class*=language-]::selection": {
-    "textShadow": "none",
-    "background": "#5151e6"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "padding": ".1em",
-    "borderRadius": ".3em"
-  },
-  "cdata": {
-    "color": "#5b5b76"
-  },
-  "comment": {
-    "color": "#5b5b76"
-  },
-  "doctype": {
-    "color": "#5b5b76"
-  },
-  "prolog": {
-    "color": "#5b5b76"
-  },
-  "punctuation": {
-    "color": "#5b5b76"
-  },
-  "namespace": {
-    "Opacity": ".7"
-  },
-  "number": {
-    "color": "#dd672c"
-  },
-  "operator": {
-    "color": "#dd672c"
-  },
-  "tag": {
-    "color": "#dd672c"
-  },
-  "function": {
-    "color": "#767693"
-  },
-  "property": {
-    "color": "#767693"
-  },
-  "atrule-id": {
-    "color": "#ebebff"
-  },
-  "selector": {
-    "color": "#ebebff"
-  },
-  "tag-id": {
-    "color": "#ebebff"
-  },
-  "attr-name": {
-    "color": "#aaaaca"
-  },
-  "code.language-javascript": {
-    "color": "#aaaaca"
-  },
-  ".language-css .token.string": {
-    "color": "#fe8c52"
-  },
-  ".language-scss .token.string": {
-    "color": "#fe8c52"
-  },
-  ".style .token.string": {
-    "color": "#fe8c52"
-  },
-  "atrule": {
-    "color": "#fe8c52"
-  },
-  "attr-value": {
-    "color": "#fe8c52"
-  },
-  "boolean": {
-    "color": "#fe8c52"
-  },
-  "control": {
-    "color": "#fe8c52"
-  },
-  "directive": {
-    "color": "#fe8c52"
-  },
-  "entity": {
-    "color": "#fe8c52",
-    "cursor": "help"
-  },
-  "keyword": {
-    "color": "#fe8c52"
-  },
-  "regex": {
-    "color": "#fe8c52"
-  },
-  "statement": {
-    "color": "#fe8c52"
-  },
-  "string": {
-    "color": "#fe8c52"
-  },
-  "unit": {
-    "color": "#fe8c52"
-  },
-  "url": {
-    "color": "#fe8c52"
-  },
-  "code.language-css": {
-    "color": "#fe8c52"
-  },
-  "code.language-scss": {
-    "color": "#fe8c52"
-  },
-  "placeholder": {
-    "color": "#fe8c52"
-  },
-  "variable": {
-    "color": "#fe8c52"
-  },
-  "deleted": {
-    "textDecoration": "line-through"
-  },
-  "inserted": {
-    "borderBottom": "1px dotted #ebebff",
-    "textDecoration": "none"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  },
-  "bold": {
-    "fontWeight": "700"
-  },
-  "important": {
-    "fontWeight": "700",
-    "color": "#aaaaca"
-  },
-  "pre>code.highlight": {
-    "Outline": ".4em solid #7676f4",
-    "OutlineOffset": ".4em"
-  },
-  ".line-numbers.line-numbers .line-numbers-rows": {
-    "borderRightColor": "#262631"
-  },
-  ".line-numbers .line-numbers-rows>span:before": {
-    "color": "#393949"
-  },
-  ".line-highlight.line-highlight": {
-    "background": "linear-gradient(to right,rgba(221,103,44,.2) 70%,rgba(221,103,44,0))"
-  }
-});
-
-/***/ }),
-
 /***/ "./src/styles/prism/funky.js":
 /*!***********************************!*\
   !*** ./src/styles/prism/funky.js ***!
@@ -65091,179 +66965,6 @@ __webpack_require__.r(__webpack_exports__);
   },
   "pre > code.diff-highlight.diff-highlight .token.inserted:not(.prefix)": {
     "backgroundColor": "rgba(0, 255, 128, .3)",
-    "display": "inline"
-  }
-});
-
-/***/ }),
-
-/***/ "./src/styles/prism/funky.min.js":
-/*!***************************************!*\
-  !*** ./src/styles/prism/funky.min.js ***!
-  \***************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "fontFamily": "Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace",
-    "fontSize": "1em",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "background": "#000",
-    "color": "#fff",
-    "boxShadow": "-.3em 0 0 .3em #000,.3em 0 0 .3em #000"
-  },
-  "pre[class*=language-]": {
-    "fontFamily": "Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace",
-    "fontSize": "1em",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "padding": ".4em .8em",
-    "margin": ".5em 0",
-    "overflow": "auto",
-    "background": "url('data:image/svg+xml;charset=utf-8,<svg%20version%3D\"1.1\"%20xmlns%3D\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\"%20width%3D\"100\"%20height%3D\"100\"%20fill%3D\"rgba(0%2C0%2C0%2C.2)\">%0D%0A<polygon%20points%3D\"0%2C50%2050%2C0%200%2C0\"%20%2F>%0D%0A<polygon%20points%3D\"0%2C100%2050%2C100%20100%2C50%20100%2C0\"%20%2F>%0D%0A<%2Fsvg>')",
-    "backgroundSize": "1em 1em"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "padding": ".2em",
-    "borderRadius": ".3em",
-    "boxShadow": "none",
-    "whiteSpace": "normal"
-  },
-  "cdata": {
-    "color": "#aaa"
-  },
-  "comment": {
-    "color": "#aaa"
-  },
-  "doctype": {
-    "color": "#aaa"
-  },
-  "prolog": {
-    "color": "#aaa"
-  },
-  "punctuation": {
-    "color": "#999"
-  },
-  "namespace": {
-    "Opacity": ".7"
-  },
-  "boolean": {
-    "color": "#0cf"
-  },
-  "constant": {
-    "color": "#0cf"
-  },
-  "number": {
-    "color": "#0cf"
-  },
-  "property": {
-    "color": "#0cf"
-  },
-  "symbol": {
-    "color": "#0cf"
-  },
-  "tag": {
-    "color": "#0cf"
-  },
-  "attr-name": {
-    "color": "#ff0"
-  },
-  "builtin": {
-    "color": "#ff0"
-  },
-  "char": {
-    "color": "#ff0"
-  },
-  "selector": {
-    "color": "#ff0"
-  },
-  "string": {
-    "color": "#ff0"
-  },
-  ".language-css .token.string": {
-    "color": "#9acd32"
-  },
-  "entity": {
-    "color": "#9acd32",
-    "cursor": "help"
-  },
-  "inserted": {
-    "color": "#9acd32"
-  },
-  "operator": {
-    "color": "#9acd32"
-  },
-  "url": {
-    "color": "#9acd32"
-  },
-  "variable": {
-    "color": "#9acd32"
-  },
-  "atrule": {
-    "color": "#ff1493"
-  },
-  "attr-value": {
-    "color": "#ff1493"
-  },
-  "keyword": {
-    "color": "#ff1493"
-  },
-  "important": {
-    "color": "orange",
-    "fontWeight": "700"
-  },
-  "regex": {
-    "color": "orange"
-  },
-  "bold": {
-    "fontWeight": "700"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  },
-  "deleted": {
-    "color": "red"
-  },
-  "pre.diff-highlight.diff-highlight>code .token.deleted:not(.prefix)": {
-    "backgroundColor": "rgba(255,0,0,.3)",
-    "display": "inline"
-  },
-  "pre>code.diff-highlight.diff-highlight .token.deleted:not(.prefix)": {
-    "backgroundColor": "rgba(255,0,0,.3)",
-    "display": "inline"
-  },
-  "pre.diff-highlight.diff-highlight>code .token.inserted:not(.prefix)": {
-    "backgroundColor": "rgba(0,255,128,.3)",
-    "display": "inline"
-  },
-  "pre>code.diff-highlight.diff-highlight .token.inserted:not(.prefix)": {
-    "backgroundColor": "rgba(0,255,128,.3)",
     "display": "inline"
   }
 });
@@ -65452,196 +67153,6 @@ __webpack_require__.r(__webpack_exports__);
   },
   "bold": {
     "fontWeight": "bold"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  }
-});
-
-/***/ }),
-
-/***/ "./src/styles/prism/ghcolors.min.js":
-/*!******************************************!*\
-  !*** ./src/styles/prism/ghcolors.min.js ***!
-  \******************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "color": "#393a34",
-    "fontFamily": "Consolas,\"Bitstream Vera Sans Mono\",\"Courier New\",Courier,monospace",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "fontSize": ".9em",
-    "lineHeight": "1.2em",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none"
-  },
-  "pre[class*=language-]": {
-    "color": "#393a34",
-    "fontFamily": "Consolas,\"Bitstream Vera Sans Mono\",\"Courier New\",Courier,monospace",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "fontSize": ".9em",
-    "lineHeight": "1.2em",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "padding": "1em",
-    "margin": ".5em 0",
-    "overflow": "auto",
-    "border": "1px solid #ddd",
-    "backgroundColor": "#fff"
-  },
-  "pre>code[class*=language-]": {
-    "fontSize": "1em"
-  },
-  "code[class*=language-] ::-moz-selection": {
-    "background": "#b3d4fc"
-  },
-  "code[class*=language-]::-moz-selection": {
-    "background": "#b3d4fc"
-  },
-  "pre[class*=language-] ::-moz-selection": {
-    "background": "#b3d4fc"
-  },
-  "pre[class*=language-]::-moz-selection": {
-    "background": "#b3d4fc"
-  },
-  "code[class*=language-] ::selection": {
-    "background": "#b3d4fc"
-  },
-  "code[class*=language-]::selection": {
-    "background": "#b3d4fc"
-  },
-  "pre[class*=language-] ::selection": {
-    "background": "#b3d4fc"
-  },
-  "pre[class*=language-]::selection": {
-    "background": "#b3d4fc"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "padding": ".2em",
-    "paddingTop": "1px",
-    "paddingBottom": "1px",
-    "background": "#f8f8f8",
-    "border": "1px solid #ddd"
-  },
-  "cdata": {
-    "color": "#998",
-    "fontStyle": "italic"
-  },
-  "comment": {
-    "color": "#998",
-    "fontStyle": "italic"
-  },
-  "doctype": {
-    "color": "#998",
-    "fontStyle": "italic"
-  },
-  "prolog": {
-    "color": "#998",
-    "fontStyle": "italic"
-  },
-  "namespace": {
-    "Opacity": ".7"
-  },
-  "attr-value": {
-    "color": "#e3116c"
-  },
-  "string": {
-    "color": "#e3116c"
-  },
-  "operator": {
-    "color": "#393a34"
-  },
-  "punctuation": {
-    "color": "#393a34"
-  },
-  "boolean": {
-    "color": "#36acaa"
-  },
-  "constant": {
-    "color": "#36acaa"
-  },
-  "entity": {
-    "color": "#36acaa"
-  },
-  "inserted": {
-    "color": "#36acaa"
-  },
-  "number": {
-    "color": "#36acaa"
-  },
-  "property": {
-    "color": "#36acaa"
-  },
-  "regex": {
-    "color": "#36acaa"
-  },
-  "symbol": {
-    "color": "#36acaa"
-  },
-  "url": {
-    "color": "#36acaa"
-  },
-  "variable": {
-    "color": "#36acaa"
-  },
-  ".language-autohotkey .token.selector": {
-    "color": "#00a4db"
-  },
-  "atrule": {
-    "color": "#00a4db"
-  },
-  "attr-name": {
-    "color": "#00a4db"
-  },
-  "keyword": {
-    "color": "#00a4db"
-  },
-  ".language-autohotkey .token.tag": {
-    "color": "#9a050f"
-  },
-  "deleted": {
-    "color": "#9a050f"
-  },
-  "function": {
-    "color": "#9a050f",
-    "fontWeight": "700"
-  },
-  ".language-autohotkey .token.keyword": {
-    "color": "#00009f"
-  },
-  "selector": {
-    "color": "#00009f"
-  },
-  "tag": {
-    "color": "#00009f"
-  },
-  "bold": {
-    "fontWeight": "700"
-  },
-  "important": {
-    "fontWeight": "700"
   },
   "italic": {
     "fontStyle": "italic"
@@ -65839,195 +67350,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/styles/prism/gruvbox-dark.min.js":
-/*!**********************************************!*\
-  !*** ./src/styles/prism/gruvbox-dark.min.js ***!
-  \**********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "color": "#ebdbb2",
-    "fontFamily": "Consolas,Monaco,\"Andale Mono\",monospace",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none"
-  },
-  "pre[class*=language-]": {
-    "color": "#ebdbb2",
-    "fontFamily": "Consolas,Monaco,\"Andale Mono\",monospace",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "padding": "1em",
-    "margin": ".5em 0",
-    "overflow": "auto",
-    "background": "#1d2021"
-  },
-  "code[class*=language-] ::-moz-selection": {
-    "color": "#fbf1c7",
-    "background": "#7c6f64"
-  },
-  "code[class*=language-]::-moz-selection": {
-    "color": "#fbf1c7",
-    "background": "#7c6f64"
-  },
-  "pre[class*=language-] ::-moz-selection": {
-    "color": "#fbf1c7",
-    "background": "#7c6f64"
-  },
-  "pre[class*=language-]::-moz-selection": {
-    "color": "#fbf1c7",
-    "background": "#7c6f64"
-  },
-  "code[class*=language-] ::selection": {
-    "color": "#fbf1c7",
-    "background": "#7c6f64"
-  },
-  "code[class*=language-]::selection": {
-    "color": "#fbf1c7",
-    "background": "#7c6f64"
-  },
-  "pre[class*=language-] ::selection": {
-    "color": "#fbf1c7",
-    "background": "#7c6f64"
-  },
-  "pre[class*=language-]::selection": {
-    "color": "#fbf1c7",
-    "background": "#7c6f64"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "background": "#1d2021",
-    "padding": ".1em",
-    "borderRadius": ".3em"
-  },
-  "cdata": {
-    "color": "#a89984"
-  },
-  "comment": {
-    "color": "#a89984"
-  },
-  "prolog": {
-    "color": "#a89984"
-  },
-  "atrule": {
-    "color": "#fb4934"
-  },
-  "boolean": {
-    "color": "#fb4934"
-  },
-  "delimiter": {
-    "color": "#fb4934"
-  },
-  "important": {
-    "color": "#fb4934"
-  },
-  "keyword": {
-    "color": "#fb4934"
-  },
-  "selector": {
-    "color": "#fb4934"
-  },
-  "attr-name": {
-    "color": "#a89984"
-  },
-  "operator": {
-    "color": "#a89984"
-  },
-  "punctuation": {
-    "color": "#a89984"
-  },
-  "builtin": {
-    "color": "#fabd2f"
-  },
-  "doctype": {
-    "color": "#fabd2f"
-  },
-  "tag": {
-    "color": "#fabd2f"
-  },
-  "tag.punctuation": {
-    "color": "#fabd2f"
-  },
-  "entity": {
-    "color": "#d3869b"
-  },
-  "number": {
-    "color": "#d3869b"
-  },
-  "symbol": {
-    "color": "#d3869b"
-  },
-  "constant": {
-    "color": "#fb4934"
-  },
-  "property": {
-    "color": "#fb4934"
-  },
-  "variable": {
-    "color": "#fb4934"
-  },
-  "char": {
-    "color": "#b8bb26"
-  },
-  "string": {
-    "color": "#b8bb26"
-  },
-  "attr-value": {
-    "color": "#a89984"
-  },
-  "attr-value.punctuation": {
-    "color": "#a89984"
-  },
-  "url": {
-    "color": "#b8bb26",
-    "textDecoration": "underline"
-  },
-  "function": {
-    "color": "#fabd2f"
-  },
-  "regex": {
-    "background": "#b8bb26"
-  },
-  "bold": {
-    "fontWeight": "700"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  },
-  "inserted": {
-    "background": "#a89984"
-  },
-  "deleted": {
-    "background": "#fb4934"
-  }
-});
-
-/***/ }),
-
 /***/ "./src/styles/prism/gruvbox-light.js":
 /*!*******************************************!*\
   !*** ./src/styles/prism/gruvbox-light.js ***!
@@ -66203,195 +67525,6 @@ __webpack_require__.r(__webpack_exports__);
   },
   "bold": {
     "fontWeight": "bold"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  },
-  "inserted": {
-    "background": "#7c6f64"
-  },
-  "deleted": {
-    "background": "#9d0006"
-  }
-});
-
-/***/ }),
-
-/***/ "./src/styles/prism/gruvbox-light.min.js":
-/*!***********************************************!*\
-  !*** ./src/styles/prism/gruvbox-light.min.js ***!
-  \***********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "color": "#3c3836",
-    "fontFamily": "Consolas,Monaco,\"Andale Mono\",monospace",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none"
-  },
-  "pre[class*=language-]": {
-    "color": "#3c3836",
-    "fontFamily": "Consolas,Monaco,\"Andale Mono\",monospace",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "padding": "1em",
-    "margin": ".5em 0",
-    "overflow": "auto",
-    "background": "#f9f5d7"
-  },
-  "code[class*=language-] ::-moz-selection": {
-    "color": "#282828",
-    "background": "#a89984"
-  },
-  "code[class*=language-]::-moz-selection": {
-    "color": "#282828",
-    "background": "#a89984"
-  },
-  "pre[class*=language-] ::-moz-selection": {
-    "color": "#282828",
-    "background": "#a89984"
-  },
-  "pre[class*=language-]::-moz-selection": {
-    "color": "#282828",
-    "background": "#a89984"
-  },
-  "code[class*=language-] ::selection": {
-    "color": "#282828",
-    "background": "#a89984"
-  },
-  "code[class*=language-]::selection": {
-    "color": "#282828",
-    "background": "#a89984"
-  },
-  "pre[class*=language-] ::selection": {
-    "color": "#282828",
-    "background": "#a89984"
-  },
-  "pre[class*=language-]::selection": {
-    "color": "#282828",
-    "background": "#a89984"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "background": "#f9f5d7",
-    "padding": ".1em",
-    "borderRadius": ".3em"
-  },
-  "cdata": {
-    "color": "#7c6f64"
-  },
-  "comment": {
-    "color": "#7c6f64"
-  },
-  "prolog": {
-    "color": "#7c6f64"
-  },
-  "atrule": {
-    "color": "#9d0006"
-  },
-  "boolean": {
-    "color": "#9d0006"
-  },
-  "delimiter": {
-    "color": "#9d0006"
-  },
-  "important": {
-    "color": "#9d0006"
-  },
-  "keyword": {
-    "color": "#9d0006"
-  },
-  "selector": {
-    "color": "#9d0006"
-  },
-  "attr-name": {
-    "color": "#7c6f64"
-  },
-  "operator": {
-    "color": "#7c6f64"
-  },
-  "punctuation": {
-    "color": "#7c6f64"
-  },
-  "builtin": {
-    "color": "#b57614"
-  },
-  "doctype": {
-    "color": "#b57614"
-  },
-  "tag": {
-    "color": "#b57614"
-  },
-  "tag.punctuation": {
-    "color": "#b57614"
-  },
-  "entity": {
-    "color": "#8f3f71"
-  },
-  "number": {
-    "color": "#8f3f71"
-  },
-  "symbol": {
-    "color": "#8f3f71"
-  },
-  "constant": {
-    "color": "#9d0006"
-  },
-  "property": {
-    "color": "#9d0006"
-  },
-  "variable": {
-    "color": "#9d0006"
-  },
-  "char": {
-    "color": "#797403"
-  },
-  "string": {
-    "color": "#797403"
-  },
-  "attr-value": {
-    "color": "#7c6f64"
-  },
-  "attr-value.punctuation": {
-    "color": "#7c6f64"
-  },
-  "url": {
-    "color": "#797403",
-    "textDecoration": "underline"
-  },
-  "function": {
-    "color": "#b57614"
-  },
-  "regex": {
-    "background": "#797403"
-  },
-  "bold": {
-    "fontWeight": "700"
   },
   "italic": {
     "fontStyle": "italic"
@@ -66612,212 +67745,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/styles/prism/holi-theme.min.js":
-/*!********************************************!*\
-  !*** ./src/styles/prism/holi-theme.min.js ***!
-  \********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "color": "#d6e7ff",
-    "background": "#030314",
-    "textShadow": "none",
-    "fontFamily": "Consolas,Monaco,\"Andale Mono\",\"Ubuntu Mono\",monospace",
-    "fontSize": "1em",
-    "lineHeight": "1.5",
-    "letterSpacing": ".2px",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "textAlign": "left",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none"
-  },
-  "pre[class*=language-]": {
-    "color": "#d6e7ff",
-    "background": "#030314",
-    "textShadow": "none",
-    "fontFamily": "Consolas,Monaco,\"Andale Mono\",\"Ubuntu Mono\",monospace",
-    "fontSize": "1em",
-    "lineHeight": "1.5",
-    "letterSpacing": ".2px",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "textAlign": "left",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "border": "1px solid #2a4555",
-    "borderRadius": "5px",
-    "padding": "1.5em 1em",
-    "margin": "1em 0",
-    "overflow": "auto"
-  },
-  "code[class*=language-] ::-moz-selection": {
-    "color": "inherit",
-    "background": "#1d3b54",
-    "textShadow": "none"
-  },
-  "code[class*=language-] ::selection": {
-    "color": "inherit",
-    "background": "#1d3b54",
-    "textShadow": "none"
-  },
-  "code[class*=language-]::-moz-selection": {
-    "color": "inherit",
-    "background": "#1d3b54",
-    "textShadow": "none"
-  },
-  "code[class*=language-]::selection": {
-    "color": "inherit",
-    "background": "#1d3b54",
-    "textShadow": "none"
-  },
-  "pre[class*=language-] ::-moz-selection": {
-    "color": "inherit",
-    "background": "#1d3b54",
-    "textShadow": "none"
-  },
-  "pre[class*=language-] ::selection": {
-    "color": "inherit",
-    "background": "#1d3b54",
-    "textShadow": "none"
-  },
-  "pre[class*=language-]::-moz-selection": {
-    "color": "inherit",
-    "background": "#1d3b54",
-    "textShadow": "none"
-  },
-  "pre[class*=language-]::selection": {
-    "color": "inherit",
-    "background": "#1d3b54",
-    "textShadow": "none"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "color": "#f0f6f6",
-    "background": "#2a4555",
-    "padding": ".2em .3em",
-    "borderRadius": ".2em",
-    "boxDecorationBreak": "clone"
-  },
-  "cdata": {
-    "color": "#446e69"
-  },
-  "comment": {
-    "color": "#446e69"
-  },
-  "doctype": {
-    "color": "#446e69"
-  },
-  "prolog": {
-    "color": "#446e69"
-  },
-  "punctuation": {
-    "color": "#d6b007"
-  },
-  "boolean": {
-    "color": "#d6e7ff"
-  },
-  "constant": {
-    "color": "#d6e7ff"
-  },
-  "deleted": {
-    "color": "#d6e7ff"
-  },
-  "number": {
-    "color": "#d6e7ff"
-  },
-  "property": {
-    "color": "#d6e7ff"
-  },
-  "symbol": {
-    "color": "#d6e7ff"
-  },
-  "tag": {
-    "color": "#d6e7ff"
-  },
-  "attr-name": {
-    "color": "#e60067"
-  },
-  "builtin": {
-    "color": "#e60067"
-  },
-  "inserted": {
-    "color": "#e60067"
-  },
-  "selector": {
-    "color": "#e60067"
-  },
-  "char": {
-    "color": "#49c6ec"
-  },
-  "string": {
-    "color": "#49c6ec"
-  },
-  ".language-css .token.string": {
-    "color": "#ec8e01",
-    "background": "0 0"
-  },
-  ".style .token.string": {
-    "color": "#ec8e01",
-    "background": "0 0"
-  },
-  "entity": {
-    "color": "#ec8e01",
-    "background": "0 0"
-  },
-  "operator": {
-    "color": "#ec8e01",
-    "background": "0 0"
-  },
-  "url": {
-    "color": "#ec8e01",
-    "background": "0 0"
-  },
-  "atrule": {
-    "color": "#0fe468"
-  },
-  "attr-value": {
-    "color": "#0fe468"
-  },
-  "keyword": {
-    "color": "#0fe468"
-  },
-  "class-name": {
-    "color": "#78f3e9"
-  },
-  "function": {
-    "color": "#78f3e9"
-  },
-  "important": {
-    "color": "#d6e7ff"
-  },
-  "regex": {
-    "color": "#d6e7ff"
-  },
-  "variable": {
-    "color": "#d6e7ff"
-  }
-});
-
-/***/ }),
-
 /***/ "./src/styles/prism/hopscotch.js":
 /*!***************************************!*\
   !*** ./src/styles/prism/hopscotch.js ***!
@@ -66971,166 +67898,6 @@ __webpack_require__.r(__webpack_exports__);
     "fontWeight": "bold"
   },
   "pre > code.highlight": {
-    "Outline": ".4em solid red",
-    "OutlineOffset": ".4em"
-  }
-});
-
-/***/ }),
-
-/***/ "./src/styles/prism/hopscotch.min.js":
-/*!*******************************************!*\
-  !*** ./src/styles/prism/hopscotch.min.js ***!
-  \*******************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "fontFamily": "\"Fira Mono\",Menlo,Monaco,\"Lucida Console\",\"Courier New\",Courier,monospace",
-    "fontSize": "16px",
-    "lineHeight": "1.375",
-    "direction": "ltr",
-    "textAlign": "left",
-    "wordSpacing": "normal",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "whiteSpace": "pre-wrap",
-    "wordBreak": "break-all",
-    "wordWrap": "break-word",
-    "background": "#322931",
-    "color": "#b9b5b8"
-  },
-  "pre[class*=language-]": {
-    "fontFamily": "\"Fira Mono\",Menlo,Monaco,\"Lucida Console\",\"Courier New\",Courier,monospace",
-    "fontSize": "16px",
-    "lineHeight": "1.375",
-    "direction": "ltr",
-    "textAlign": "left",
-    "wordSpacing": "normal",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "whiteSpace": "pre-wrap",
-    "wordBreak": "break-all",
-    "wordWrap": "break-word",
-    "background": "#322931",
-    "color": "#b9b5b8",
-    "padding": "1em",
-    "margin": ".5em 0",
-    "overflow": "auto"
-  },
-  "pre>code[class*=language-]": {
-    "fontSize": "1em"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "padding": ".1em",
-    "borderRadius": ".3em"
-  },
-  "cdata": {
-    "color": "#797379"
-  },
-  "comment": {
-    "color": "#797379"
-  },
-  "doctype": {
-    "color": "#797379"
-  },
-  "prolog": {
-    "color": "#797379"
-  },
-  "punctuation": {
-    "color": "#b9b5b8"
-  },
-  ".namespace": {
-    "Opacity": ".7"
-  },
-  "boolean": {
-    "color": "#fd8b19"
-  },
-  "null": {
-    "color": "#fd8b19"
-  },
-  "number": {
-    "color": "#fd8b19"
-  },
-  "operator": {
-    "color": "#fd8b19"
-  },
-  "property": {
-    "color": "#fdcc59"
-  },
-  "tag": {
-    "color": "#1290bf"
-  },
-  "string": {
-    "color": "#149b93"
-  },
-  "selector": {
-    "color": "#c85e7c"
-  },
-  "attr-name": {
-    "color": "#fd8b19"
-  },
-  ".language-css .token.string": {
-    "color": "#149b93"
-  },
-  ".style .token.string": {
-    "color": "#149b93"
-  },
-  "entity": {
-    "color": "#149b93",
-    "cursor": "help"
-  },
-  "url": {
-    "color": "#149b93"
-  },
-  "attr-value": {
-    "color": "#8fc13e"
-  },
-  "control": {
-    "color": "#8fc13e"
-  },
-  "directive": {
-    "color": "#8fc13e"
-  },
-  "keyword": {
-    "color": "#8fc13e"
-  },
-  "unit": {
-    "color": "#8fc13e"
-  },
-  "atrule": {
-    "color": "#149b93"
-  },
-  "regex": {
-    "color": "#149b93"
-  },
-  "statement": {
-    "color": "#149b93"
-  },
-  "placeholder": {
-    "color": "#1290bf"
-  },
-  "variable": {
-    "color": "#1290bf"
-  },
-  "important": {
-    "color": "#dd464c",
-    "fontWeight": "700"
-  },
-  "pre>code.highlight": {
     "Outline": ".4em solid red",
     "OutlineOffset": ".4em"
   }
@@ -67492,172 +68259,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/styles/prism/lucario.min.js":
-/*!*****************************************!*\
-  !*** ./src/styles/prism/lucario.min.js ***!
-  \*****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "color": "#f8f8f2",
-    "background": "0 0",
-    "textShadow": "0 1px rgba(0,0,0,.3)",
-    "fontFamily": "Monaco,Consolas,'Andale Mono','Ubuntu Mono',monospace",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none"
-  },
-  "pre[class*=language-]": {
-    "color": "#f8f8f2",
-    "background": "#263e52",
-    "textShadow": "0 1px rgba(0,0,0,.3)",
-    "fontFamily": "Monaco,Consolas,'Andale Mono','Ubuntu Mono',monospace",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "padding": "1em",
-    "margin": ".5em 0",
-    "overflow": "auto",
-    "borderRadius": ".3em"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "background": "#263e52",
-    "padding": ".1em",
-    "borderRadius": ".3em",
-    "whiteSpace": "normal"
-  },
-  "cdata": {
-    "color": "#5c98cd"
-  },
-  "comment": {
-    "color": "#5c98cd"
-  },
-  "doctype": {
-    "color": "#5c98cd"
-  },
-  "prolog": {
-    "color": "#5c98cd"
-  },
-  "punctuation": {
-    "color": "#f8f8f2"
-  },
-  ".namespace": {
-    "Opacity": ".7"
-  },
-  "constant": {
-    "color": "#f05e5d"
-  },
-  "deleted": {
-    "color": "#f05e5d"
-  },
-  "property": {
-    "color": "#f05e5d"
-  },
-  "symbol": {
-    "color": "#f05e5d"
-  },
-  "tag": {
-    "color": "#f05e5d"
-  },
-  "boolean": {
-    "color": "#bc94f9"
-  },
-  "number": {
-    "color": "#bc94f9"
-  },
-  "attr-name": {
-    "color": "#fcfcd6"
-  },
-  "builtin": {
-    "color": "#fcfcd6"
-  },
-  "char": {
-    "color": "#fcfcd6"
-  },
-  "inserted": {
-    "color": "#fcfcd6"
-  },
-  "selector": {
-    "color": "#fcfcd6"
-  },
-  "string": {
-    "color": "#fcfcd6"
-  },
-  ".language-css .token.string": {
-    "color": "#f8f8f2"
-  },
-  ".style .token.string": {
-    "color": "#f8f8f2"
-  },
-  "entity": {
-    "color": "#f8f8f2",
-    "cursor": "help"
-  },
-  "operator": {
-    "color": "#f8f8f2"
-  },
-  "url": {
-    "color": "#f8f8f2"
-  },
-  "variable": {
-    "color": "#f8f8f2"
-  },
-  "atrule": {
-    "color": "#66d8ef"
-  },
-  "attr-value": {
-    "color": "#66d8ef"
-  },
-  "class-name": {
-    "color": "#66d8ef"
-  },
-  "function": {
-    "color": "#66d8ef"
-  },
-  "keyword": {
-    "color": "#6eb26e"
-  },
-  "important": {
-    "color": "#f05e5d",
-    "fontWeight": "700"
-  },
-  "regex": {
-    "color": "#f05e5d"
-  },
-  "bold": {
-    "fontWeight": "700"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  }
-});
-
-/***/ }),
-
 /***/ "./src/styles/prism/material-dark.js":
 /*!*******************************************!*\
   !*** ./src/styles/prism/material-dark.js ***!
@@ -67865,213 +68466,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/styles/prism/material-dark.min.js":
-/*!***********************************************!*\
-  !*** ./src/styles/prism/material-dark.min.js ***!
-  \***********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "color": "#eee",
-    "background": "#2f2f2f",
-    "fontFamily": "Roboto Mono,monospace",
-    "fontSize": "1em",
-    "lineHeight": "1.5em",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none"
-  },
-  "pre[class*=language-]": {
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "color": "#eee",
-    "background": "#2f2f2f",
-    "fontFamily": "Roboto Mono,monospace",
-    "fontSize": "1em",
-    "lineHeight": "1.5em",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "overflow": "auto",
-    "position": "relative",
-    "margin": ".5em 0",
-    "padding": "1.25em 1em"
-  },
-  "code[class*=language-] ::-moz-selection": {
-    "background": "#363636"
-  },
-  "code[class*=language-]::-moz-selection": {
-    "background": "#363636"
-  },
-  "pre[class*=language-] ::-moz-selection": {
-    "background": "#363636"
-  },
-  "pre[class*=language-]::-moz-selection": {
-    "background": "#363636"
-  },
-  "code[class*=language-] ::selection": {
-    "background": "#363636"
-  },
-  "code[class*=language-]::selection": {
-    "background": "#363636"
-  },
-  "pre[class*=language-] ::selection": {
-    "background": "#363636"
-  },
-  "pre[class*=language-]::selection": {
-    "background": "#363636"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "whiteSpace": "normal",
-    "borderRadius": ".2em",
-    "padding": ".1em"
-  },
-  ".language-css>code": {
-    "color": "#fd9170"
-  },
-  ".language-sass>code": {
-    "color": "#fd9170"
-  },
-  ".language-scss>code": {
-    "color": "#fd9170"
-  },
-  "[class*=language-] .namespace": {
-    "Opacity": ".7"
-  },
-  "atrule": {
-    "color": "#c792ea"
-  },
-  "attr-name": {
-    "color": "#ffcb6b"
-  },
-  "attr-value": {
-    "color": "#a5e844"
-  },
-  "attribute": {
-    "color": "#a5e844"
-  },
-  "boolean": {
-    "color": "#c792ea"
-  },
-  "builtin": {
-    "color": "#ffcb6b"
-  },
-  "cdata": {
-    "color": "#80cbc4"
-  },
-  "char": {
-    "color": "#80cbc4"
-  },
-  "class": {
-    "color": "#ffcb6b"
-  },
-  "class-name": {
-    "color": "#f2ff00"
-  },
-  "comment": {
-    "color": "#616161"
-  },
-  "constant": {
-    "color": "#c792ea"
-  },
-  "deleted": {
-    "color": "#f66"
-  },
-  "doctype": {
-    "color": "#616161"
-  },
-  "entity": {
-    "color": "#f66"
-  },
-  "function": {
-    "color": "#c792ea"
-  },
-  "hexcode": {
-    "color": "#f2ff00"
-  },
-  "id": {
-    "color": "#c792ea",
-    "fontWeight": "700"
-  },
-  "important": {
-    "color": "#c792ea",
-    "fontWeight": "700"
-  },
-  "inserted": {
-    "color": "#80cbc4"
-  },
-  "keyword": {
-    "color": "#c792ea"
-  },
-  "number": {
-    "color": "#fd9170"
-  },
-  "operator": {
-    "color": "#89ddff"
-  },
-  "prolog": {
-    "color": "#616161"
-  },
-  "property": {
-    "color": "#80cbc4"
-  },
-  "pseudo-class": {
-    "color": "#a5e844"
-  },
-  "pseudo-element": {
-    "color": "#a5e844"
-  },
-  "punctuation": {
-    "color": "#89ddff"
-  },
-  "regex": {
-    "color": "#f2ff00"
-  },
-  "selector": {
-    "color": "#f66"
-  },
-  "string": {
-    "color": "#a5e844"
-  },
-  "symbol": {
-    "color": "#c792ea"
-  },
-  "tag": {
-    "color": "#f66"
-  },
-  "unit": {
-    "color": "#fd9170"
-  },
-  "url": {
-    "color": "#f66"
-  },
-  "variable": {
-    "color": "#f66"
-  }
-});
-
-/***/ }),
-
 /***/ "./src/styles/prism/material-light.js":
 /*!********************************************!*\
   !*** ./src/styles/prism/material-light.js ***!
@@ -68231,221 +68625,6 @@ __webpack_require__.r(__webpack_exports__);
   "important": {
     "color": "#7c4dff",
     "fontWeight": "bold"
-  },
-  "inserted": {
-    "color": "#39adb5"
-  },
-  "keyword": {
-    "color": "#7c4dff"
-  },
-  "number": {
-    "color": "#f76d47"
-  },
-  "operator": {
-    "color": "#39adb5"
-  },
-  "prolog": {
-    "color": "#aabfc9"
-  },
-  "property": {
-    "color": "#39adb5"
-  },
-  "pseudo-class": {
-    "color": "#f6a434"
-  },
-  "pseudo-element": {
-    "color": "#f6a434"
-  },
-  "punctuation": {
-    "color": "#39adb5"
-  },
-  "regex": {
-    "color": "#6182b8"
-  },
-  "selector": {
-    "color": "#e53935"
-  },
-  "string": {
-    "color": "#f6a434"
-  },
-  "symbol": {
-    "color": "#7c4dff"
-  },
-  "tag": {
-    "color": "#e53935"
-  },
-  "unit": {
-    "color": "#f76d47"
-  },
-  "url": {
-    "color": "#e53935"
-  },
-  "variable": {
-    "color": "#e53935"
-  }
-});
-
-/***/ }),
-
-/***/ "./src/styles/prism/material-light.min.js":
-/*!************************************************!*\
-  !*** ./src/styles/prism/material-light.min.js ***!
-  \************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "color": "#90a4ae",
-    "background": "#fafafa",
-    "fontFamily": "Roboto Mono,monospace",
-    "fontSize": "1em",
-    "lineHeight": "1.5em",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none"
-  },
-  "pre[class*=language-]": {
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "color": "#90a4ae",
-    "background": "#fafafa",
-    "fontFamily": "Roboto Mono,monospace",
-    "fontSize": "1em",
-    "lineHeight": "1.5em",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "overflow": "auto",
-    "position": "relative",
-    "margin": ".5em 0",
-    "padding": "1.25em 1em"
-  },
-  "code[class*=language-] ::-moz-selection": {
-    "background": "#cceae7",
-    "color": "#263238"
-  },
-  "code[class*=language-]::-moz-selection": {
-    "background": "#cceae7",
-    "color": "#263238"
-  },
-  "pre[class*=language-] ::-moz-selection": {
-    "background": "#cceae7",
-    "color": "#263238"
-  },
-  "pre[class*=language-]::-moz-selection": {
-    "background": "#cceae7",
-    "color": "#263238"
-  },
-  "code[class*=language-] ::selection": {
-    "background": "#cceae7",
-    "color": "#263238"
-  },
-  "code[class*=language-]::selection": {
-    "background": "#cceae7",
-    "color": "#263238"
-  },
-  "pre[class*=language-] ::selection": {
-    "background": "#cceae7",
-    "color": "#263238"
-  },
-  "pre[class*=language-]::selection": {
-    "background": "#cceae7",
-    "color": "#263238"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "whiteSpace": "normal",
-    "borderRadius": ".2em",
-    "padding": ".1em"
-  },
-  ".language-css>code": {
-    "color": "#f76d47"
-  },
-  ".language-sass>code": {
-    "color": "#f76d47"
-  },
-  ".language-scss>code": {
-    "color": "#f76d47"
-  },
-  "[class*=language-] .namespace": {
-    "Opacity": ".7"
-  },
-  "atrule": {
-    "color": "#7c4dff"
-  },
-  "attr-name": {
-    "color": "#39adb5"
-  },
-  "attr-value": {
-    "color": "#f6a434"
-  },
-  "attribute": {
-    "color": "#f6a434"
-  },
-  "boolean": {
-    "color": "#7c4dff"
-  },
-  "builtin": {
-    "color": "#39adb5"
-  },
-  "cdata": {
-    "color": "#39adb5"
-  },
-  "char": {
-    "color": "#39adb5"
-  },
-  "class": {
-    "color": "#39adb5"
-  },
-  "class-name": {
-    "color": "#6182b8"
-  },
-  "comment": {
-    "color": "#aabfc9"
-  },
-  "constant": {
-    "color": "#7c4dff"
-  },
-  "deleted": {
-    "color": "#e53935"
-  },
-  "doctype": {
-    "color": "#aabfc9"
-  },
-  "entity": {
-    "color": "#e53935"
-  },
-  "function": {
-    "color": "#7c4dff"
-  },
-  "hexcode": {
-    "color": "#f76d47"
-  },
-  "id": {
-    "color": "#7c4dff",
-    "fontWeight": "700"
-  },
-  "important": {
-    "color": "#7c4dff",
-    "fontWeight": "700"
   },
   "inserted": {
     "color": "#39adb5"
@@ -68713,217 +68892,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/styles/prism/material-oceanic.min.js":
-/*!**************************************************!*\
-  !*** ./src/styles/prism/material-oceanic.min.js ***!
-  \**************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "color": "#c3cee3",
-    "background": "#263238",
-    "fontFamily": "Roboto Mono,monospace",
-    "fontSize": "1em",
-    "lineHeight": "1.5em",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none"
-  },
-  "pre[class*=language-]": {
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "color": "#c3cee3",
-    "background": "#263238",
-    "fontFamily": "Roboto Mono,monospace",
-    "fontSize": "1em",
-    "lineHeight": "1.5em",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "overflow": "auto",
-    "position": "relative",
-    "margin": ".5em 0",
-    "padding": "1.25em 1em"
-  },
-  "code[class*=language-] ::-moz-selection": {
-    "background": "#363636"
-  },
-  "code[class*=language-]::-moz-selection": {
-    "background": "#363636"
-  },
-  "pre[class*=language-] ::-moz-selection": {
-    "background": "#363636"
-  },
-  "pre[class*=language-]::-moz-selection": {
-    "background": "#363636"
-  },
-  "code[class*=language-] ::selection": {
-    "background": "#363636"
-  },
-  "code[class*=language-]::selection": {
-    "background": "#363636"
-  },
-  "pre[class*=language-] ::selection": {
-    "background": "#363636"
-  },
-  "pre[class*=language-]::selection": {
-    "background": "#363636"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "whiteSpace": "normal",
-    "borderRadius": ".2em",
-    "padding": ".1em"
-  },
-  ".language-css>code": {
-    "color": "#fd9170"
-  },
-  ".language-sass>code": {
-    "color": "#fd9170"
-  },
-  ".language-scss>code": {
-    "color": "#fd9170"
-  },
-  "[class*=language-] .namespace": {
-    "Opacity": ".7"
-  },
-  "atrule": {
-    "color": "#c792ea"
-  },
-  "attr-name": {
-    "color": "#ffcb6b"
-  },
-  "attr-value": {
-    "color": "#c3e88d"
-  },
-  "attribute": {
-    "color": "#c3e88d"
-  },
-  "boolean": {
-    "color": "#c792ea"
-  },
-  "builtin": {
-    "color": "#ffcb6b"
-  },
-  "cdata": {
-    "color": "#80cbc4"
-  },
-  "char": {
-    "color": "#80cbc4"
-  },
-  "class": {
-    "color": "#ffcb6b"
-  },
-  "class-name": {
-    "color": "#f2ff00"
-  },
-  "color": {
-    "color": "#f2ff00"
-  },
-  "comment": {
-    "color": "#546e7a"
-  },
-  "constant": {
-    "color": "#c792ea"
-  },
-  "deleted": {
-    "color": "#f07178"
-  },
-  "doctype": {
-    "color": "#546e7a"
-  },
-  "entity": {
-    "color": "#f07178"
-  },
-  "function": {
-    "color": "#c792ea"
-  },
-  "hexcode": {
-    "color": "#f2ff00"
-  },
-  "id": {
-    "color": "#c792ea",
-    "fontWeight": "700"
-  },
-  "important": {
-    "color": "#c792ea",
-    "fontWeight": "700"
-  },
-  "inserted": {
-    "color": "#80cbc4"
-  },
-  "keyword": {
-    "color": "#c792ea",
-    "fontStyle": "italic"
-  },
-  "number": {
-    "color": "#fd9170"
-  },
-  "operator": {
-    "color": "#89ddff"
-  },
-  "prolog": {
-    "color": "#546e7a"
-  },
-  "property": {
-    "color": "#80cbc4"
-  },
-  "pseudo-class": {
-    "color": "#c3e88d"
-  },
-  "pseudo-element": {
-    "color": "#c3e88d"
-  },
-  "punctuation": {
-    "color": "#89ddff"
-  },
-  "regex": {
-    "color": "#f2ff00"
-  },
-  "selector": {
-    "color": "#f07178"
-  },
-  "string": {
-    "color": "#c3e88d"
-  },
-  "symbol": {
-    "color": "#c792ea"
-  },
-  "tag": {
-    "color": "#f07178"
-  },
-  "unit": {
-    "color": "#f07178"
-  },
-  "url": {
-    "color": "#fd9170"
-  },
-  "variable": {
-    "color": "#f07178"
-  }
-});
-
-/***/ }),
-
 /***/ "./src/styles/prism/night-owl.js":
 /*!***************************************!*\
   !*** ./src/styles/prism/night-owl.js ***!
@@ -69128,210 +69096,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/styles/prism/night-owl.min.js":
-/*!*******************************************!*\
-  !*** ./src/styles/prism/night-owl.min.js ***!
-  \*******************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "color": "#d6deeb",
-    "fontFamily": "Consolas,Monaco,\"Andale Mono\",\"Ubuntu Mono\",monospace",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "lineHeight": "1.5",
-    "fontSize": "1em",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none"
-  },
-  "pre[class*=language-]": {
-    "color": "#fff",
-    "fontFamily": "Consolas,Monaco,\"Andale Mono\",\"Ubuntu Mono\",monospace",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "lineHeight": "1.5",
-    "fontSize": "1em",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "padding": "1em",
-    "margin": ".5em 0",
-    "overflow": "auto",
-    "background": "#011627"
-  },
-  "code[class*=language-] ::-moz-selection": {
-    "textShadow": "none",
-    "background": "rgba(29,59,83,.99)"
-  },
-  "code[class*=language-]::-moz-selection": {
-    "textShadow": "none",
-    "background": "rgba(29,59,83,.99)"
-  },
-  "pre[class*=language-] ::-moz-selection": {
-    "textShadow": "none",
-    "background": "rgba(29,59,83,.99)"
-  },
-  "pre[class*=language-]::-moz-selection": {
-    "textShadow": "none",
-    "background": "rgba(29,59,83,.99)"
-  },
-  "code[class*=language-] ::selection": {
-    "textShadow": "none",
-    "background": "rgba(29,59,83,.99)"
-  },
-  "code[class*=language-]::selection": {
-    "textShadow": "none",
-    "background": "rgba(29,59,83,.99)"
-  },
-  "pre[class*=language-] ::selection": {
-    "textShadow": "none",
-    "background": "rgba(29,59,83,.99)"
-  },
-  "pre[class*=language-]::selection": {
-    "textShadow": "none",
-    "background": "rgba(29,59,83,.99)"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "color": "#fff",
-    "background": "#011627",
-    "padding": ".1em",
-    "borderRadius": ".3em",
-    "whiteSpace": "normal"
-  },
-  "cdata": {
-    "color": "#637777",
-    "fontStyle": "italic"
-  },
-  "comment": {
-    "color": "#637777",
-    "fontStyle": "italic"
-  },
-  "prolog": {
-    "color": "#637777",
-    "fontStyle": "italic"
-  },
-  "punctuation": {
-    "color": "#c792ea"
-  },
-  ".namespace": {
-    "color": "#b2ccd6"
-  },
-  "deleted": {
-    "color": "rgba(239,83,80,.56)",
-    "fontStyle": "italic"
-  },
-  "property": {
-    "color": "#80cbc4"
-  },
-  "symbol": {
-    "color": "#80cbc4"
-  },
-  "keyword": {
-    "color": "#7fdbca"
-  },
-  "operator": {
-    "color": "#7fdbca"
-  },
-  "tag": {
-    "color": "#7fdbca"
-  },
-  "boolean": {
-    "color": "#ff5874"
-  },
-  "number": {
-    "color": "#f78c6c"
-  },
-  "builtin": {
-    "color": "#82aaff"
-  },
-  "char": {
-    "color": "#82aaff"
-  },
-  "constant": {
-    "color": "#82aaff"
-  },
-  "function": {
-    "color": "#82aaff"
-  },
-  "doctype": {
-    "color": "#c792ea",
-    "fontStyle": "italic"
-  },
-  "selector": {
-    "color": "#c792ea",
-    "fontStyle": "italic"
-  },
-  "attr-name": {
-    "color": "#addb67",
-    "fontStyle": "italic"
-  },
-  "inserted": {
-    "color": "#addb67",
-    "fontStyle": "italic"
-  },
-  ".language-css .token.string": {
-    "color": "#addb67"
-  },
-  ".style .token.string": {
-    "color": "#addb67"
-  },
-  "entity": {
-    "color": "#addb67"
-  },
-  "string": {
-    "color": "#addb67"
-  },
-  "url": {
-    "color": "#addb67"
-  },
-  "atrule": {
-    "color": "#ffcb8b"
-  },
-  "attr-value": {
-    "color": "#ffcb8b"
-  },
-  "class-name": {
-    "color": "#ffcb8b"
-  },
-  "important": {
-    "color": "#d6deeb",
-    "fontWeight": "700"
-  },
-  "regex": {
-    "color": "#d6deeb"
-  },
-  "variable": {
-    "color": "#d6deeb"
-  },
-  "bold": {
-    "fontWeight": "700"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  }
-});
-
-/***/ }),
-
 /***/ "./src/styles/prism/nord.js":
 /*!**********************************!*\
   !*** ./src/styles/prism/nord.js ***!
@@ -69488,170 +69252,6 @@ __webpack_require__.r(__webpack_exports__);
   },
   "bold": {
     "fontWeight": "bold"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  }
-});
-
-/***/ }),
-
-/***/ "./src/styles/prism/nord.min.js":
-/*!**************************************!*\
-  !*** ./src/styles/prism/nord.min.js ***!
-  \**************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "color": "#f8f8f2",
-    "background": "0 0",
-    "fontFamily": "\"Fira Code\",Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none"
-  },
-  "pre[class*=language-]": {
-    "color": "#f8f8f2",
-    "background": "#2e3440",
-    "fontFamily": "\"Fira Code\",Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "padding": "1em",
-    "margin": ".5em 0",
-    "overflow": "auto",
-    "borderRadius": ".3em"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "background": "#2e3440",
-    "padding": ".1em",
-    "borderRadius": ".3em",
-    "whiteSpace": "normal"
-  },
-  "cdata": {
-    "color": "#636f88"
-  },
-  "comment": {
-    "color": "#636f88"
-  },
-  "doctype": {
-    "color": "#636f88"
-  },
-  "prolog": {
-    "color": "#636f88"
-  },
-  "punctuation": {
-    "color": "#81a1c1"
-  },
-  ".namespace": {
-    "Opacity": ".7"
-  },
-  "constant": {
-    "color": "#81a1c1"
-  },
-  "deleted": {
-    "color": "#81a1c1"
-  },
-  "property": {
-    "color": "#81a1c1"
-  },
-  "symbol": {
-    "color": "#81a1c1"
-  },
-  "tag": {
-    "color": "#81a1c1"
-  },
-  "number": {
-    "color": "#b48ead"
-  },
-  "boolean": {
-    "color": "#81a1c1"
-  },
-  "attr-name": {
-    "color": "#a3be8c"
-  },
-  "builtin": {
-    "color": "#a3be8c"
-  },
-  "char": {
-    "color": "#a3be8c"
-  },
-  "inserted": {
-    "color": "#a3be8c"
-  },
-  "selector": {
-    "color": "#a3be8c"
-  },
-  "string": {
-    "color": "#a3be8c"
-  },
-  ".language-css .token.string": {
-    "color": "#81a1c1"
-  },
-  ".style .token.string": {
-    "color": "#81a1c1"
-  },
-  "entity": {
-    "color": "#81a1c1",
-    "cursor": "help"
-  },
-  "operator": {
-    "color": "#81a1c1"
-  },
-  "url": {
-    "color": "#81a1c1"
-  },
-  "variable": {
-    "color": "#81a1c1"
-  },
-  "atrule": {
-    "color": "#88c0d0"
-  },
-  "attr-value": {
-    "color": "#88c0d0"
-  },
-  "class-name": {
-    "color": "#88c0d0"
-  },
-  "function": {
-    "color": "#88c0d0"
-  },
-  "keyword": {
-    "color": "#81a1c1"
-  },
-  "important": {
-    "color": "#ebcb8b",
-    "fontWeight": "700"
-  },
-  "regex": {
-    "color": "#ebcb8b"
-  },
-  "bold": {
-    "fontWeight": "700"
   },
   "italic": {
     "fontStyle": "italic"
@@ -69820,174 +69420,6 @@ __webpack_require__.r(__webpack_exports__);
   },
   "bold": {
     "fontWeight": "bold"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  }
-});
-
-/***/ }),
-
-/***/ "./src/styles/prism/okaidia.min.js":
-/*!*****************************************!*\
-  !*** ./src/styles/prism/okaidia.min.js ***!
-  \*****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "color": "#f8f8f2",
-    "background": "0 0",
-    "textShadow": "0 1px rgba(0,0,0,.3)",
-    "fontFamily": "Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace",
-    "fontSize": "1em",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none"
-  },
-  "pre[class*=language-]": {
-    "color": "#f8f8f2",
-    "background": "#272822",
-    "textShadow": "0 1px rgba(0,0,0,.3)",
-    "fontFamily": "Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace",
-    "fontSize": "1em",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "padding": "1em",
-    "margin": ".5em 0",
-    "overflow": "auto",
-    "borderRadius": ".3em"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "background": "#272822",
-    "padding": ".1em",
-    "borderRadius": ".3em",
-    "whiteSpace": "normal"
-  },
-  "cdata": {
-    "color": "#8292a2"
-  },
-  "comment": {
-    "color": "#8292a2"
-  },
-  "doctype": {
-    "color": "#8292a2"
-  },
-  "prolog": {
-    "color": "#8292a2"
-  },
-  "punctuation": {
-    "color": "#f8f8f2"
-  },
-  "namespace": {
-    "Opacity": ".7"
-  },
-  "constant": {
-    "color": "#f92672"
-  },
-  "deleted": {
-    "color": "#f92672"
-  },
-  "property": {
-    "color": "#f92672"
-  },
-  "symbol": {
-    "color": "#f92672"
-  },
-  "tag": {
-    "color": "#f92672"
-  },
-  "boolean": {
-    "color": "#ae81ff"
-  },
-  "number": {
-    "color": "#ae81ff"
-  },
-  "attr-name": {
-    "color": "#a6e22e"
-  },
-  "builtin": {
-    "color": "#a6e22e"
-  },
-  "char": {
-    "color": "#a6e22e"
-  },
-  "inserted": {
-    "color": "#a6e22e"
-  },
-  "selector": {
-    "color": "#a6e22e"
-  },
-  "string": {
-    "color": "#a6e22e"
-  },
-  ".language-css .token.string": {
-    "color": "#f8f8f2"
-  },
-  ".style .token.string": {
-    "color": "#f8f8f2"
-  },
-  "entity": {
-    "color": "#f8f8f2",
-    "cursor": "help"
-  },
-  "operator": {
-    "color": "#f8f8f2"
-  },
-  "url": {
-    "color": "#f8f8f2"
-  },
-  "variable": {
-    "color": "#f8f8f2"
-  },
-  "atrule": {
-    "color": "#e6db74"
-  },
-  "attr-value": {
-    "color": "#e6db74"
-  },
-  "class-name": {
-    "color": "#e6db74"
-  },
-  "function": {
-    "color": "#e6db74"
-  },
-  "keyword": {
-    "color": "#66d9ef"
-  },
-  "important": {
-    "color": "#fd971f",
-    "fontWeight": "700"
-  },
-  "regex": {
-    "color": "#fd971f"
-  },
-  "bold": {
-    "fontWeight": "700"
   },
   "italic": {
     "fontStyle": "italic"
@@ -70509,519 +69941,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/styles/prism/one-dark.min.js":
-/*!******************************************!*\
-  !*** ./src/styles/prism/one-dark.min.js ***!
-  \******************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "background": "#272b33",
-    "color": "#aab1bf",
-    "textShadow": "0 1px rgba(0,0,0,.3)",
-    "fontFamily": "\"Fira Code\",\"Fira Mono\",Menlo,Consolas,\"DejaVu Sans Mono\",monospace",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "2",
-    "OTabSize": "2",
-    "tabSize": "2",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none"
-  },
-  "pre[class*=language-]": {
-    "background": "#272b33",
-    "color": "#aab1bf",
-    "textShadow": "0 1px rgba(0,0,0,.3)",
-    "fontFamily": "\"Fira Code\",\"Fira Mono\",Menlo,Consolas,\"DejaVu Sans Mono\",monospace",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "2",
-    "OTabSize": "2",
-    "tabSize": "2",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "padding": "1em",
-    "margin": ".5em 0",
-    "overflow": "auto",
-    "borderRadius": ".3em"
-  },
-  "code[class*=language-] ::-moz-selection": {
-    "background": "#3e4450",
-    "color": "inherit",
-    "textShadow": "none"
-  },
-  "code[class*=language-]::-moz-selection": {
-    "background": "#3e4450",
-    "color": "inherit",
-    "textShadow": "none"
-  },
-  "pre[class*=language-] ::-moz-selection": {
-    "background": "#3e4450",
-    "color": "inherit",
-    "textShadow": "none"
-  },
-  "code[class*=language-] ::selection": {
-    "background": "#3e4450",
-    "color": "inherit",
-    "textShadow": "none"
-  },
-  "code[class*=language-]::selection": {
-    "background": "#3e4450",
-    "color": "inherit",
-    "textShadow": "none"
-  },
-  "pre[class*=language-] ::selection": {
-    "background": "#3e4450",
-    "color": "inherit",
-    "textShadow": "none"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "padding": ".2em .3em",
-    "borderRadius": ".3em",
-    "whiteSpace": "normal"
-  },
-  "cdata": {
-    "color": "#5b6270"
-  },
-  "comment": {
-    "color": "#5b6270",
-    "fontStyle": "italic"
-  },
-  "prolog": {
-    "color": "#5b6270"
-  },
-  "doctype": {
-    "color": "#aab1bf"
-  },
-  "entity": {
-    "color": "#aab1bf",
-    "cursor": "help"
-  },
-  "punctuation": {
-    "color": "#aab1bf"
-  },
-  "atrule": {
-    "color": "#d19965"
-  },
-  "attr-name": {
-    "color": "#d19965"
-  },
-  "boolean": {
-    "color": "#d19965"
-  },
-  "class-name": {
-    "color": "#d19965"
-  },
-  "constant": {
-    "color": "#d19965"
-  },
-  "number": {
-    "color": "#d19965"
-  },
-  "keyword": {
-    "color": "#c578dd"
-  },
-  "deleted": {
-    "color": "#df6b75"
-  },
-  "important": {
-    "color": "#df6b75"
-  },
-  "property": {
-    "color": "#df6b75"
-  },
-  "symbol": {
-    "color": "#df6b75"
-  },
-  "tag": {
-    "color": "#df6b75"
-  },
-  "attr-value": {
-    "color": "#97c279"
-  },
-  "attr-value>.token.punctuation": {
-    "color": "#97c279"
-  },
-  "builtin": {
-    "color": "#97c279"
-  },
-  "char": {
-    "color": "#97c279"
-  },
-  "inserted": {
-    "color": "#97c279"
-  },
-  "regex": {
-    "color": "#97c279"
-  },
-  "selector": {
-    "color": "#97c279"
-  },
-  "string": {
-    "color": "#97c279"
-  },
-  "function": {
-    "color": "#61afef"
-  },
-  "operator": {
-    "color": "#61afef"
-  },
-  "variable": {
-    "color": "#61afef"
-  },
-  "url": {
-    "color": "#56b5c2"
-  },
-  "attr-value>.token.punctuation.attr-equals": {
-    "color": "#aab1bf"
-  },
-  "special-attr>.token.attr-value>.token.value.css": {
-    "color": "#aab1bf"
-  },
-  ".language-css .token.selector": {
-    "color": "#df6b75"
-  },
-  ".language-css .token.property": {
-    "color": "#aab1bf"
-  },
-  ".language-css .token.function": {
-    "color": "#56b5c2"
-  },
-  ".language-css .token.url>.token.function": {
-    "color": "#56b5c2"
-  },
-  ".language-css .token.url>.token.string.url": {
-    "color": "#97c279"
-  },
-  ".language-css .token.atrule .token.rule": {
-    "color": "#c578dd"
-  },
-  ".language-css .token.important": {
-    "color": "#c578dd"
-  },
-  ".language-javascript .token.operator": {
-    "color": "#c578dd"
-  },
-  ".language-javascript .token.template-string>.token.interpolation>.token.interpolation-punctuation.punctuation": {
-    "color": "#be5046"
-  },
-  ".language-json .token.operator": {
-    "color": "#aab1bf"
-  },
-  ".language-json .token.null.keyword": {
-    "color": "#d19965"
-  },
-  ".language-markdown .token.url": {
-    "color": "#aab1bf"
-  },
-  ".language-markdown .token.url-reference.url>.token.string": {
-    "color": "#aab1bf"
-  },
-  ".language-markdown .token.url>.token.operator": {
-    "color": "#aab1bf"
-  },
-  ".language-markdown .token.url>.token.content": {
-    "color": "#61afef"
-  },
-  ".language-markdown .token.url-reference.url": {
-    "color": "#56b5c2"
-  },
-  ".language-markdown .token.url>.token.url": {
-    "color": "#56b5c2"
-  },
-  ".language-markdown .token.blockquote.punctuation": {
-    "color": "#5b6270",
-    "fontStyle": "italic"
-  },
-  ".language-markdown .token.hr.punctuation": {
-    "color": "#5b6270",
-    "fontStyle": "italic"
-  },
-  ".language-markdown .token.code-snippet": {
-    "color": "#97c279"
-  },
-  ".language-markdown .token.bold .token.content": {
-    "color": "#d19965"
-  },
-  ".language-markdown .token.italic .token.content": {
-    "color": "#c578dd"
-  },
-  ".language-markdown .token.list.punctuation": {
-    "color": "#df6b75"
-  },
-  ".language-markdown .token.strike .token.content": {
-    "color": "#df6b75"
-  },
-  ".language-markdown .token.strike .token.punctuation": {
-    "color": "#df6b75"
-  },
-  ".language-markdown .token.title.important>.token.punctuation": {
-    "color": "#df6b75"
-  },
-  "bold": {
-    "fontWeight": "700"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  },
-  "namespace": {
-    "Opacity": ".8"
-  },
-  "token.cr:before": {
-    "color": "hsla(220,14%,71%,.15)",
-    "textShadow": "none"
-  },
-  "token.lf:before": {
-    "color": "hsla(220,14%,71%,.15)",
-    "textShadow": "none"
-  },
-  "token.space:before": {
-    "color": "hsla(220,14%,71%,.15)",
-    "textShadow": "none"
-  },
-  "token.tab:not(:empty):before": {
-    "color": "hsla(220,14%,71%,.15)",
-    "textShadow": "none"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item": {
-    "marginRight": ".4em"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>a": {
-    "background": "#393f4a",
-    "color": "#818896",
-    "padding": ".1em .4em",
-    "borderRadius": ".3em"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>button": {
-    "background": "#393f4a",
-    "color": "#818896",
-    "padding": ".1em .4em",
-    "borderRadius": ".3em"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>span": {
-    "background": "#393f4a",
-    "color": "#818896",
-    "padding": ".1em .4em",
-    "borderRadius": ".3em"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>a:focus": {
-    "background": "#3e4450",
-    "color": "#aab1bf"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>a:hover": {
-    "background": "#3e4450",
-    "color": "#aab1bf"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>button:focus": {
-    "background": "#3e4450",
-    "color": "#aab1bf"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>button:hover": {
-    "background": "#3e4450",
-    "color": "#aab1bf"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>span:focus": {
-    "background": "#3e4450",
-    "color": "#aab1bf"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>span:hover": {
-    "background": "#3e4450",
-    "color": "#aab1bf"
-  },
-  ".line-highlight.line-highlight": {
-    "background": "hsla(220,100%,80%,.04)"
-  },
-  ".line-highlight.line-highlight:before": {
-    "background": "#393f4a",
-    "color": "#aab1bf",
-    "padding": ".1em .6em",
-    "borderRadius": ".3em",
-    "boxShadow": "0 2px 0 0 rgba(0,0,0,.2)"
-  },
-  ".line-highlight.line-highlight[data-end]:after": {
-    "background": "#393f4a",
-    "color": "#aab1bf",
-    "padding": ".1em .6em",
-    "borderRadius": ".3em",
-    "boxShadow": "0 2px 0 0 rgba(0,0,0,.2)"
-  },
-  "pre[id].linkable-line-numbers.linkable-line-numbers span.line-numbers-rows>span:hover:before": {
-    "backgroundColor": "hsla(220,100%,80%,.04)"
-  },
-  ".command-line .command-line-prompt": {
-    "borderRightColor": "hsla(220,14%,71%,.15)"
-  },
-  ".line-numbers.line-numbers .line-numbers-rows": {
-    "borderRightColor": "hsla(220,14%,71%,.15)"
-  },
-  ".command-line .command-line-prompt>span:before": {
-    "color": "#626d82"
-  },
-  ".line-numbers .line-numbers-rows>span:before": {
-    "color": "#626d82"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-1": {
-    "color": "#df6b75"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-5": {
-    "color": "#df6b75"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-9": {
-    "color": "#df6b75"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-10": {
-    "color": "#97c279"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-2": {
-    "color": "#97c279"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-6": {
-    "color": "#97c279"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-11": {
-    "color": "#61afef"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-3": {
-    "color": "#61afef"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-7": {
-    "color": "#61afef"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-12": {
-    "color": "#c578dd"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-4": {
-    "color": "#c578dd"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-8": {
-    "color": "#c578dd"
-  },
-  "pre.diff-highlight>code .token.token.deleted:not(.prefix)": {
-    "backgroundColor": "hsla(353,100%,66%,.15)"
-  },
-  "pre>code.diff-highlight .token.token.deleted:not(.prefix)": {
-    "backgroundColor": "hsla(353,100%,66%,.15)"
-  },
-  "pre.diff-highlight>code .token.token.deleted:not(.prefix) ::-moz-selection": {
-    "backgroundColor": "hsla(353,95%,66%,.25)"
-  },
-  "pre.diff-highlight>code .token.token.deleted:not(.prefix)::-moz-selection": {
-    "backgroundColor": "hsla(353,95%,66%,.25)"
-  },
-  "pre>code.diff-highlight .token.token.deleted:not(.prefix) ::-moz-selection": {
-    "backgroundColor": "hsla(353,95%,66%,.25)"
-  },
-  "pre>code.diff-highlight .token.token.deleted:not(.prefix)::-moz-selection": {
-    "backgroundColor": "hsla(353,95%,66%,.25)"
-  },
-  "pre.diff-highlight>code .token.token.deleted:not(.prefix) ::selection": {
-    "backgroundColor": "hsla(353,95%,66%,.25)"
-  },
-  "pre.diff-highlight>code .token.token.deleted:not(.prefix)::selection": {
-    "backgroundColor": "hsla(353,95%,66%,.25)"
-  },
-  "pre>code.diff-highlight .token.token.deleted:not(.prefix) ::selection": {
-    "backgroundColor": "hsla(353,95%,66%,.25)"
-  },
-  "pre>code.diff-highlight .token.token.deleted:not(.prefix)::selection": {
-    "backgroundColor": "hsla(353,95%,66%,.25)"
-  },
-  "pre.diff-highlight>code .token.token.inserted:not(.prefix)": {
-    "backgroundColor": "hsla(137,100%,55%,.15)"
-  },
-  "pre>code.diff-highlight .token.token.inserted:not(.prefix)": {
-    "backgroundColor": "hsla(137,100%,55%,.15)"
-  },
-  "pre.diff-highlight>code .token.token.inserted:not(.prefix) ::-moz-selection": {
-    "backgroundColor": "hsla(135,73%,55%,.25)"
-  },
-  "pre.diff-highlight>code .token.token.inserted:not(.prefix)::-moz-selection": {
-    "backgroundColor": "hsla(135,73%,55%,.25)"
-  },
-  "pre>code.diff-highlight .token.token.inserted:not(.prefix) ::-moz-selection": {
-    "backgroundColor": "hsla(135,73%,55%,.25)"
-  },
-  "pre>code.diff-highlight .token.token.inserted:not(.prefix)::-moz-selection": {
-    "backgroundColor": "hsla(135,73%,55%,.25)"
-  },
-  "pre.diff-highlight>code .token.token.inserted:not(.prefix) ::selection": {
-    "backgroundColor": "hsla(135,73%,55%,.25)"
-  },
-  "pre.diff-highlight>code .token.token.inserted:not(.prefix)::selection": {
-    "backgroundColor": "hsla(135,73%,55%,.25)"
-  },
-  "pre>code.diff-highlight .token.token.inserted:not(.prefix) ::selection": {
-    "backgroundColor": "hsla(135,73%,55%,.25)"
-  },
-  "pre>code.diff-highlight .token.token.inserted:not(.prefix)::selection": {
-    "backgroundColor": "hsla(135,73%,55%,.25)"
-  },
-  ".prism-previewer-gradient.prism-previewer-gradient div": {
-    "borderColor": "#252830",
-    "borderRadius": ".3em"
-  },
-  ".prism-previewer.prism-previewer:before": {
-    "borderColor": "#252830"
-  },
-  ".prism-previewer-color.prism-previewer-color:before": {
-    "borderRadius": ".3em"
-  },
-  ".prism-previewer-easing.prism-previewer-easing:before": {
-    "borderRadius": ".3em"
-  },
-  ".prism-previewer.prism-previewer:after": {
-    "borderTopColor": "#252830"
-  },
-  ".prism-previewer-flipped.prism-previewer-flipped.after": {
-    "borderBottomColor": "#252830"
-  },
-  ".prism-previewer-angle.prism-previewer-angle:before": {
-    "background": "#30353f"
-  },
-  ".prism-previewer-easing.prism-previewer-easing": {
-    "background": "#30353f"
-  },
-  ".prism-previewer-time.prism-previewer-time:before": {
-    "background": "#30353f"
-  },
-  ".prism-previewer-angle.prism-previewer-angle circle": {
-    "stroke": "#aab1bf",
-    "strokeOpacity": "1"
-  },
-  ".prism-previewer-time.prism-previewer-time circle": {
-    "stroke": "#aab1bf",
-    "strokeOpacity": "1"
-  },
-  ".prism-previewer-easing.prism-previewer-easing circle": {
-    "stroke": "#aab1bf",
-    "fill": "transparent"
-  },
-  ".prism-previewer-easing.prism-previewer-easing line": {
-    "stroke": "#aab1bf"
-  },
-  ".prism-previewer-easing.prism-previewer-easing path": {
-    "stroke": "#aab1bf"
-  }
-});
-
-/***/ }),
-
 /***/ "./src/styles/prism/one-light.js":
 /*!***************************************!*\
   !*** ./src/styles/prism/one-light.js ***!
@@ -71523,507 +70442,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/styles/prism/one-light.min.js":
-/*!*******************************************!*\
-  !*** ./src/styles/prism/one-light.min.js ***!
-  \*******************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "background": "#f9f9f9",
-    "color": "#383942",
-    "fontFamily": "\"Fira Code\",\"Fira Mono\",Menlo,Consolas,\"DejaVu Sans Mono\",monospace",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "2",
-    "OTabSize": "2",
-    "tabSize": "2",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none"
-  },
-  "pre[class*=language-]": {
-    "background": "#f9f9f9",
-    "color": "#383942",
-    "fontFamily": "\"Fira Code\",\"Fira Mono\",Menlo,Consolas,\"DejaVu Sans Mono\",monospace",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "2",
-    "OTabSize": "2",
-    "tabSize": "2",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "padding": "1em",
-    "margin": ".5em 0",
-    "overflow": "auto",
-    "borderRadius": ".3em"
-  },
-  "code[class*=language-] ::-moz-selection": {
-    "background": "#e5e5e5",
-    "color": "inherit"
-  },
-  "code[class*=language-]::-moz-selection": {
-    "background": "#e5e5e5",
-    "color": "inherit"
-  },
-  "pre[class*=language-] ::-moz-selection": {
-    "background": "#e5e5e5",
-    "color": "inherit"
-  },
-  "code[class*=language-] ::selection": {
-    "background": "#e5e5e5",
-    "color": "inherit"
-  },
-  "code[class*=language-]::selection": {
-    "background": "#e5e5e5",
-    "color": "inherit"
-  },
-  "pre[class*=language-] ::selection": {
-    "background": "#e5e5e5",
-    "color": "inherit"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "padding": ".2em .3em",
-    "borderRadius": ".3em",
-    "whiteSpace": "normal"
-  },
-  "cdata": {
-    "color": "#9fa0a6"
-  },
-  "comment": {
-    "color": "#9fa0a6",
-    "fontStyle": "italic"
-  },
-  "prolog": {
-    "color": "#9fa0a6"
-  },
-  "doctype": {
-    "color": "#383942"
-  },
-  "entity": {
-    "color": "#383942",
-    "cursor": "help"
-  },
-  "punctuation": {
-    "color": "#383942"
-  },
-  "atrule": {
-    "color": "#b66a00"
-  },
-  "attr-name": {
-    "color": "#b66a00"
-  },
-  "boolean": {
-    "color": "#b66a00"
-  },
-  "class-name": {
-    "color": "#b66a00"
-  },
-  "constant": {
-    "color": "#b66a00"
-  },
-  "number": {
-    "color": "#b66a00"
-  },
-  "keyword": {
-    "color": "#a625a4"
-  },
-  "deleted": {
-    "color": "#e35549"
-  },
-  "important": {
-    "color": "#e35549"
-  },
-  "property": {
-    "color": "#e35549"
-  },
-  "symbol": {
-    "color": "#e35549"
-  },
-  "tag": {
-    "color": "#e35549"
-  },
-  "attr-value": {
-    "color": "#50a04f"
-  },
-  "attr-value>.token.punctuation": {
-    "color": "#50a04f"
-  },
-  "builtin": {
-    "color": "#50a04f"
-  },
-  "char": {
-    "color": "#50a04f"
-  },
-  "inserted": {
-    "color": "#50a04f"
-  },
-  "regex": {
-    "color": "#50a04f"
-  },
-  "selector": {
-    "color": "#50a04f"
-  },
-  "string": {
-    "color": "#50a04f"
-  },
-  "function": {
-    "color": "#4078f1"
-  },
-  "operator": {
-    "color": "#4078f1"
-  },
-  "variable": {
-    "color": "#4078f1"
-  },
-  "url": {
-    "color": "#0083bb"
-  },
-  "attr-value>.token.punctuation.attr-equals": {
-    "color": "#383942"
-  },
-  "special-attr>.token.attr-value>.token.value.css": {
-    "color": "#383942"
-  },
-  ".language-css .token.selector": {
-    "color": "#e35549"
-  },
-  ".language-css .token.property": {
-    "color": "#383942"
-  },
-  ".language-css .token.function": {
-    "color": "#0083bb"
-  },
-  ".language-css .token.url>.token.function": {
-    "color": "#0083bb"
-  },
-  ".language-css .token.url>.token.string.url": {
-    "color": "#50a04f"
-  },
-  ".language-css .token.atrule .token.rule": {
-    "color": "#a625a4"
-  },
-  ".language-css .token.important": {
-    "color": "#a625a4"
-  },
-  ".language-javascript .token.operator": {
-    "color": "#a625a4"
-  },
-  ".language-javascript .token.template-string>.token.interpolation>.token.interpolation-punctuation.punctuation": {
-    "color": "#c91142"
-  },
-  ".language-json .token.operator": {
-    "color": "#383942"
-  },
-  ".language-json .token.null.keyword": {
-    "color": "#b66a00"
-  },
-  ".language-markdown .token.url": {
-    "color": "#383942"
-  },
-  ".language-markdown .token.url-reference.url>.token.string": {
-    "color": "#383942"
-  },
-  ".language-markdown .token.url>.token.operator": {
-    "color": "#383942"
-  },
-  ".language-markdown .token.url>.token.content": {
-    "color": "#4078f1"
-  },
-  ".language-markdown .token.url-reference.url": {
-    "color": "#0083bb"
-  },
-  ".language-markdown .token.url>.token.url": {
-    "color": "#0083bb"
-  },
-  ".language-markdown .token.blockquote.punctuation": {
-    "color": "#9fa0a6",
-    "fontStyle": "italic"
-  },
-  ".language-markdown .token.hr.punctuation": {
-    "color": "#9fa0a6",
-    "fontStyle": "italic"
-  },
-  ".language-markdown .token.code-snippet": {
-    "color": "#50a04f"
-  },
-  ".language-markdown .token.bold .token.content": {
-    "color": "#b66a00"
-  },
-  ".language-markdown .token.italic .token.content": {
-    "color": "#a625a4"
-  },
-  ".language-markdown .token.list.punctuation": {
-    "color": "#e35549"
-  },
-  ".language-markdown .token.strike .token.content": {
-    "color": "#e35549"
-  },
-  ".language-markdown .token.strike .token.punctuation": {
-    "color": "#e35549"
-  },
-  ".language-markdown .token.title.important>.token.punctuation": {
-    "color": "#e35549"
-  },
-  "bold": {
-    "fontWeight": "700"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  },
-  "namespace": {
-    "Opacity": ".8"
-  },
-  "token.cr:before": {
-    "color": "hsla(230,8%,24%,.2)"
-  },
-  "token.lf:before": {
-    "color": "hsla(230,8%,24%,.2)"
-  },
-  "token.space:before": {
-    "color": "hsla(230,8%,24%,.2)"
-  },
-  "token.tab:not(:empty):before": {
-    "color": "hsla(230,8%,24%,.2)"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item": {
-    "marginRight": ".4em"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>a": {
-    "background": "#e5e5e5",
-    "color": "#696b76",
-    "padding": ".1em .4em",
-    "borderRadius": ".3em"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>button": {
-    "background": "#e5e5e5",
-    "color": "#696b76",
-    "padding": ".1em .4em",
-    "borderRadius": ".3em"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>span": {
-    "background": "#e5e5e5",
-    "color": "#696b76",
-    "padding": ".1em .4em",
-    "borderRadius": ".3em"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>a:focus": {
-    "background": "#c6c6c7",
-    "color": "#383942"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>a:hover": {
-    "background": "#c6c6c7",
-    "color": "#383942"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>button:focus": {
-    "background": "#c6c6c7",
-    "color": "#383942"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>button:hover": {
-    "background": "#c6c6c7",
-    "color": "#383942"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>span:focus": {
-    "background": "#c6c6c7",
-    "color": "#383942"
-  },
-  "div.code-toolbar>.toolbar.toolbar>.toolbar-item>span:hover": {
-    "background": "#c6c6c7",
-    "color": "#383942"
-  },
-  ".line-highlight.line-highlight": {
-    "background": "hsla(230,8%,24%,.05)"
-  },
-  ".line-highlight.line-highlight:before": {
-    "background": "#e5e5e5",
-    "color": "#383942",
-    "padding": ".1em .6em",
-    "borderRadius": ".3em",
-    "boxShadow": "0 2px 0 0 rgba(0,0,0,.2)"
-  },
-  ".line-highlight.line-highlight[data-end]:after": {
-    "background": "#e5e5e5",
-    "color": "#383942",
-    "padding": ".1em .6em",
-    "borderRadius": ".3em",
-    "boxShadow": "0 2px 0 0 rgba(0,0,0,.2)"
-  },
-  "pre[id].linkable-line-numbers.linkable-line-numbers span.line-numbers-rows>span:hover:before": {
-    "backgroundColor": "hsla(230,8%,24%,.05)"
-  },
-  ".command-line .command-line-prompt": {
-    "borderRightColor": "hsla(230,8%,24%,.2)"
-  },
-  ".line-numbers.line-numbers .line-numbers-rows": {
-    "borderRightColor": "hsla(230,8%,24%,.2)"
-  },
-  ".command-line .command-line-prompt>span:before": {
-    "color": "#9d9d9f"
-  },
-  ".line-numbers .line-numbers-rows>span:before": {
-    "color": "#9d9d9f"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-1": {
-    "color": "#e35549"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-5": {
-    "color": "#e35549"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-9": {
-    "color": "#e35549"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-10": {
-    "color": "#50a04f"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-2": {
-    "color": "#50a04f"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-6": {
-    "color": "#50a04f"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-11": {
-    "color": "#4078f1"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-3": {
-    "color": "#4078f1"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-7": {
-    "color": "#4078f1"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-12": {
-    "color": "#a625a4"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-4": {
-    "color": "#a625a4"
-  },
-  ".rainbow-braces .token.token.punctuation.brace-level-8": {
-    "color": "#a625a4"
-  },
-  "pre.diff-highlight>code .token.token.deleted:not(.prefix)": {
-    "backgroundColor": "hsla(353,100%,66%,.15)"
-  },
-  "pre>code.diff-highlight .token.token.deleted:not(.prefix)": {
-    "backgroundColor": "hsla(353,100%,66%,.15)"
-  },
-  "pre.diff-highlight>code .token.token.deleted:not(.prefix) ::-moz-selection": {
-    "backgroundColor": "hsla(353,95%,66%,.25)"
-  },
-  "pre.diff-highlight>code .token.token.deleted:not(.prefix)::-moz-selection": {
-    "backgroundColor": "hsla(353,95%,66%,.25)"
-  },
-  "pre>code.diff-highlight .token.token.deleted:not(.prefix) ::-moz-selection": {
-    "backgroundColor": "hsla(353,95%,66%,.25)"
-  },
-  "pre>code.diff-highlight .token.token.deleted:not(.prefix)::-moz-selection": {
-    "backgroundColor": "hsla(353,95%,66%,.25)"
-  },
-  "pre.diff-highlight>code .token.token.deleted:not(.prefix) ::selection": {
-    "backgroundColor": "hsla(353,95%,66%,.25)"
-  },
-  "pre.diff-highlight>code .token.token.deleted:not(.prefix)::selection": {
-    "backgroundColor": "hsla(353,95%,66%,.25)"
-  },
-  "pre>code.diff-highlight .token.token.deleted:not(.prefix) ::selection": {
-    "backgroundColor": "hsla(353,95%,66%,.25)"
-  },
-  "pre>code.diff-highlight .token.token.deleted:not(.prefix)::selection": {
-    "backgroundColor": "hsla(353,95%,66%,.25)"
-  },
-  "pre.diff-highlight>code .token.token.inserted:not(.prefix)": {
-    "backgroundColor": "hsla(137,100%,55%,.15)"
-  },
-  "pre>code.diff-highlight .token.token.inserted:not(.prefix)": {
-    "backgroundColor": "hsla(137,100%,55%,.15)"
-  },
-  "pre.diff-highlight>code .token.token.inserted:not(.prefix) ::-moz-selection": {
-    "backgroundColor": "hsla(135,73%,55%,.25)"
-  },
-  "pre.diff-highlight>code .token.token.inserted:not(.prefix)::-moz-selection": {
-    "backgroundColor": "hsla(135,73%,55%,.25)"
-  },
-  "pre>code.diff-highlight .token.token.inserted:not(.prefix) ::-moz-selection": {
-    "backgroundColor": "hsla(135,73%,55%,.25)"
-  },
-  "pre>code.diff-highlight .token.token.inserted:not(.prefix)::-moz-selection": {
-    "backgroundColor": "hsla(135,73%,55%,.25)"
-  },
-  "pre.diff-highlight>code .token.token.inserted:not(.prefix) ::selection": {
-    "backgroundColor": "hsla(135,73%,55%,.25)"
-  },
-  "pre.diff-highlight>code .token.token.inserted:not(.prefix)::selection": {
-    "backgroundColor": "hsla(135,73%,55%,.25)"
-  },
-  "pre>code.diff-highlight .token.token.inserted:not(.prefix) ::selection": {
-    "backgroundColor": "hsla(135,73%,55%,.25)"
-  },
-  "pre>code.diff-highlight .token.token.inserted:not(.prefix)::selection": {
-    "backgroundColor": "hsla(135,73%,55%,.25)"
-  },
-  ".prism-previewer-gradient.prism-previewer-gradient div": {
-    "borderColor": "#f2f2f2",
-    "borderRadius": ".3em"
-  },
-  ".prism-previewer.prism-previewer:before": {
-    "borderColor": "#f2f2f2"
-  },
-  ".prism-previewer-color.prism-previewer-color:before": {
-    "borderRadius": ".3em"
-  },
-  ".prism-previewer-easing.prism-previewer-easing:before": {
-    "borderRadius": ".3em"
-  },
-  ".prism-previewer.prism-previewer:after": {
-    "borderTopColor": "#f2f2f2"
-  },
-  ".prism-previewer-flipped.prism-previewer-flipped.after": {
-    "borderBottomColor": "#f2f2f2"
-  },
-  ".prism-previewer-angle.prism-previewer-angle:before": {
-    "background": "#fff"
-  },
-  ".prism-previewer-easing.prism-previewer-easing": {
-    "background": "#fff"
-  },
-  ".prism-previewer-time.prism-previewer-time:before": {
-    "background": "#fff"
-  },
-  ".prism-previewer-angle.prism-previewer-angle circle": {
-    "stroke": "#383942",
-    "strokeOpacity": "1"
-  },
-  ".prism-previewer-time.prism-previewer-time circle": {
-    "stroke": "#383942",
-    "strokeOpacity": "1"
-  },
-  ".prism-previewer-easing.prism-previewer-easing circle": {
-    "stroke": "#383942",
-    "fill": "transparent"
-  },
-  ".prism-previewer-easing.prism-previewer-easing line": {
-    "stroke": "#383942"
-  },
-  ".prism-previewer-easing.prism-previewer-easing path": {
-    "stroke": "#383942"
-  }
-});
-
-/***/ }),
-
 /***/ "./src/styles/prism/pojoaque.js":
 /*!**************************************!*\
   !*** ./src/styles/prism/pojoaque.js ***!
@@ -72189,179 +70607,6 @@ __webpack_require__.r(__webpack_exports__);
   },
   "bold": {
     "fontWeight": "bold"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  }
-});
-
-/***/ }),
-
-/***/ "./src/styles/prism/pojoaque.min.js":
-/*!******************************************!*\
-  !*** ./src/styles/prism/pojoaque.min.js ***!
-  \******************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "whiteSpace": "pre-wrap",
-    "wordBreak": "break-all",
-    "wordWrap": "break-word",
-    "fontFamily": "Menlo,Monaco,\"Courier New\",monospace",
-    "fontSize": "15px",
-    "lineHeight": "1.5",
-    "color": "#dccf8f",
-    "textShadow": "0"
-  },
-  "pre[class*=language-]": {
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "whiteSpace": "pre-wrap",
-    "wordBreak": "break-all",
-    "wordWrap": "break-word",
-    "fontFamily": "Menlo,Monaco,\"Courier New\",monospace",
-    "fontSize": "15px",
-    "lineHeight": "1.5",
-    "color": "#dccf8f",
-    "textShadow": "0",
-    "borderRadius": "5px",
-    "border": "1px solid #000",
-    "background": "#181914 url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAAMAAA/+4ADkFkb2JlAGTAAAAAAf/bAIQACQYGBgcGCQcHCQ0IBwgNDwsJCQsPEQ4ODw4OERENDg4ODg0RERQUFhQUERoaHBwaGiYmJiYmKysrKysrKysrKwEJCAgJCgkMCgoMDwwODA8TDg4ODhMVDg4PDg4VGhMRERERExoXGhYWFhoXHR0aGh0dJCQjJCQrKysrKysrKysr/8AAEQgAjACMAwEiAAIRAQMRAf/EAF4AAQEBAAAAAAAAAAAAAAAAAAABBwEBAQAAAAAAAAAAAAAAAAAAAAIQAAEDAwIHAQEAAAAAAAAAAADwAREhYaExkUFRcYGxwdHh8REBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AyGFEjHaBS2fDDs2zkhKmBKktb7km+ZwwCnXPkLVmCTMItj6AXFxRS465/BTnkAJvkLkJe+7AKKoi2AtRS2zuAWsCb5GOlBN8gKfmuGHZ8MFqIth3ALmFoFwbwKWyAlTAp17uKqBvgBD8sM4fTjhvAhkzhaRkBMKBrfs7jGPIpzy7gFrAqnC0C0gB0EWwBDW2cBVQwm+QtPpa3wBO3sVvszCnLAhkzgL5/RLf13cLQd8/AGlu0Cb5HTx9KuAEieGJEdcehS3eRTp2ATdt3CpIm+QtZwAhROXFeb7swp/ahaM3kBE/jSIUBc/AWrgBN8uNFAl+b7sAXFxFn2YLUU5Ns7gFX8C4ib+hN8gFWXwK3bZglxEJm+gKdciLPsFV/TClsgJUwKJ5FVA7tvIFrfZhVfGJDcsCKaYgAqv6YRbE+RWOWBtu7+AL3yRalXLyKqAIIfk+zARbDgFyEsncYwJvlgFRW+GEWntIi2P0BooyFxcNr8Ep3+ANLbMO+QyhvbiqdgC0kVvgUUiLYgBS2QtPbiVI1/sgOmG9uO+Y8DW+7jS2zAOnj6O2BndwuIAUtkdRN8gFoK3wwXMQyZwHVbClsuNLd4E3yAUR6FVDBR+BafQGt93LVMxJTv8ABts4CVLhcfYWsCb5kC9/BHdU8CLYFY5bMAd+eX9MGthhpbA1vu4B7+RKkaW2Yq4AQtVBBFsAJU/AuIXBhN8gGWnstefhiZyWvLAEnbYS1uzSFP6Jvn4Baxx70JKkQojLib5AVTey1jjgkKJGO0AKWyOm7N7cSpgSpAdPH0Tfd/gp1z5C1ZgKqN9J2wFxcUUuAFLZAm+QC0Fb4YUVRFsAOvj4KW2dwtYE3yAWk/wS/PLMKfmuGHZ8MAXF/Ja32Yi5haAKWz4Ydm2cSpgU693Atb7km+Zwwh+WGcPpxw3gAkzCLY+iYUDW/Z3Adc/gpzyFrAqnALkJe+7DoItgAtRS2zuKqGE3yAx0oJvkdvYrfZmALURbDuL5/RLf13cAuDeBS2RpbtAm+QFVA3wR+3fUtFHoBDJnC0jIXH0HWsgMY8inPLuOkd9chp4z20ALQLSA8cI9jYAIa2zjzjBd8gRafS1vgiUho/kAKcsCGTOGWvoOpkAtB3z8Hm8x2Ff5ADp4+lXAlIvcmwH/2Q==) repeat left top",
-    "padding": "12px",
-    "overflow": "auto"
-  },
-  "pre>code[class*=language-]": {
-    "fontSize": "1em"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "borderRadius": "5px",
-    "border": "1px solid #000",
-    "color": "#dccf8f",
-    "background": "#181914 url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAAMAAA/+4ADkFkb2JlAGTAAAAAAf/bAIQACQYGBgcGCQcHCQ0IBwgNDwsJCQsPEQ4ODw4OERENDg4ODg0RERQUFhQUERoaHBwaGiYmJiYmKysrKysrKysrKwEJCAgJCgkMCgoMDwwODA8TDg4ODhMVDg4PDg4VGhMRERERExoXGhYWFhoXHR0aGh0dJCQjJCQrKysrKysrKysr/8AAEQgAjACMAwEiAAIRAQMRAf/EAF4AAQEBAAAAAAAAAAAAAAAAAAABBwEBAQAAAAAAAAAAAAAAAAAAAAIQAAEDAwIHAQEAAAAAAAAAAADwAREhYaExkUFRcYGxwdHh8REBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AyGFEjHaBS2fDDs2zkhKmBKktb7km+ZwwCnXPkLVmCTMItj6AXFxRS465/BTnkAJvkLkJe+7AKKoi2AtRS2zuAWsCb5GOlBN8gKfmuGHZ8MFqIth3ALmFoFwbwKWyAlTAp17uKqBvgBD8sM4fTjhvAhkzhaRkBMKBrfs7jGPIpzy7gFrAqnC0C0gB0EWwBDW2cBVQwm+QtPpa3wBO3sVvszCnLAhkzgL5/RLf13cLQd8/AGlu0Cb5HTx9KuAEieGJEdcehS3eRTp2ATdt3CpIm+QtZwAhROXFeb7swp/ahaM3kBE/jSIUBc/AWrgBN8uNFAl+b7sAXFxFn2YLUU5Ns7gFX8C4ib+hN8gFWXwK3bZglxEJm+gKdciLPsFV/TClsgJUwKJ5FVA7tvIFrfZhVfGJDcsCKaYgAqv6YRbE+RWOWBtu7+AL3yRalXLyKqAIIfk+zARbDgFyEsncYwJvlgFRW+GEWntIi2P0BooyFxcNr8Ep3+ANLbMO+QyhvbiqdgC0kVvgUUiLYgBS2QtPbiVI1/sgOmG9uO+Y8DW+7jS2zAOnj6O2BndwuIAUtkdRN8gFoK3wwXMQyZwHVbClsuNLd4E3yAUR6FVDBR+BafQGt93LVMxJTv8ABts4CVLhcfYWsCb5kC9/BHdU8CLYFY5bMAd+eX9MGthhpbA1vu4B7+RKkaW2Yq4AQtVBBFsAJU/AuIXBhN8gGWnstefhiZyWvLAEnbYS1uzSFP6Jvn4Baxx70JKkQojLib5AVTey1jjgkKJGO0AKWyOm7N7cSpgSpAdPH0Tfd/gp1z5C1ZgKqN9J2wFxcUUuAFLZAm+QC0Fb4YUVRFsAOvj4KW2dwtYE3yAWk/wS/PLMKfmuGHZ8MAXF/Ja32Yi5haAKWz4Ydm2cSpgU693Atb7km+Zwwh+WGcPpxw3gAkzCLY+iYUDW/Z3Adc/gpzyFrAqnALkJe+7DoItgAtRS2zuKqGE3yAx0oJvkdvYrfZmALURbDuL5/RLf13cAuDeBS2RpbtAm+QFVA3wR+3fUtFHoBDJnC0jIXH0HWsgMY8inPLuOkd9chp4z20ALQLSA8cI9jYAIa2zjzjBd8gRafS1vgiUho/kAKcsCGTOGWvoOpkAtB3z8Hm8x2Ff5ADp4+lXAlIvcmwH/2Q==) repeat left top",
-    "padding": "2px 6px"
-  },
-  "namespace": {
-    "Opacity": ".7"
-  },
-  "cdata": {
-    "color": "#586e75",
-    "fontStyle": "italic"
-  },
-  "comment": {
-    "color": "#586e75",
-    "fontStyle": "italic"
-  },
-  "doctype": {
-    "color": "#586e75",
-    "fontStyle": "italic"
-  },
-  "prolog": {
-    "color": "#586e75",
-    "fontStyle": "italic"
-  },
-  "builtin": {
-    "color": "#468966"
-  },
-  "char": {
-    "color": "#468966"
-  },
-  "inserted": {
-    "color": "#468966"
-  },
-  "number": {
-    "color": "#b89859"
-  },
-  "string": {
-    "color": "#468966"
-  },
-  "attr-name": {
-    "color": "#b89859"
-  },
-  ".language-css .token.string": {
-    "color": "#dccf8f"
-  },
-  ".style .token.string": {
-    "color": "#dccf8f"
-  },
-  "entity": {
-    "color": "#dccf8f",
-    "cursor": "help"
-  },
-  "operator": {
-    "color": "#dccf8f"
-  },
-  "url": {
-    "color": "#dccf8f"
-  },
-  "regex": {
-    "color": "#859900"
-  },
-  "selector": {
-    "color": "#859900"
-  },
-  "atrule": {
-    "color": "#cb4b16"
-  },
-  "keyword": {
-    "color": "#cb4b16"
-  },
-  "attr-value": {
-    "color": "#468966"
-  },
-  "function": {
-    "color": "#b58900"
-  },
-  "placeholder": {
-    "color": "#b58900"
-  },
-  "variable": {
-    "color": "#b58900"
-  },
-  "boolean": {
-    "color": "#b89859"
-  },
-  "constant": {
-    "color": "#b89859"
-  },
-  "property": {
-    "color": "#b89859"
-  },
-  "symbol": {
-    "color": "#b89859"
-  },
-  "tag": {
-    "color": "#ffb03b"
-  },
-  "deleted": {
-    "color": "#dc322f"
-  },
-  "important": {
-    "color": "#dc322f"
-  },
-  "statement": {
-    "color": "#dc322f"
-  },
-  "punctuation": {
-    "color": "#dccf8f"
-  },
-  "bold": {
-    "fontWeight": "700"
   },
   "italic": {
     "fontStyle": "italic"
@@ -72566,210 +70811,6 @@ __webpack_require__.r(__webpack_exports__);
   },
   "bold": {
     "fontWeight": "bold"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  }
-});
-
-/***/ }),
-
-/***/ "./src/styles/prism/prism.min.js":
-/*!***************************************!*\
-  !*** ./src/styles/prism/prism.min.js ***!
-  \***************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "color": "#000",
-    "background": "0 0",
-    "textShadow": "0 1px #fff",
-    "fontFamily": "Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace",
-    "fontSize": "1em",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none"
-  },
-  "pre[class*=language-]": {
-    "color": "#000",
-    "background": "#f5f2f0",
-    "textShadow": "0 1px #fff",
-    "fontFamily": "Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace",
-    "fontSize": "1em",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "padding": "1em",
-    "margin": ".5em 0",
-    "overflow": "auto"
-  },
-  "code[class*=language-] ::-moz-selection": {
-    "textShadow": "none",
-    "background": "#b3d4fc"
-  },
-  "code[class*=language-]::-moz-selection": {
-    "textShadow": "none",
-    "background": "#b3d4fc"
-  },
-  "pre[class*=language-] ::-moz-selection": {
-    "textShadow": "none",
-    "background": "#b3d4fc"
-  },
-  "pre[class*=language-]::-moz-selection": {
-    "textShadow": "none",
-    "background": "#b3d4fc"
-  },
-  "code[class*=language-] ::selection": {
-    "textShadow": "none",
-    "background": "#b3d4fc"
-  },
-  "code[class*=language-]::selection": {
-    "textShadow": "none",
-    "background": "#b3d4fc"
-  },
-  "pre[class*=language-] ::selection": {
-    "textShadow": "none",
-    "background": "#b3d4fc"
-  },
-  "pre[class*=language-]::selection": {
-    "textShadow": "none",
-    "background": "#b3d4fc"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "background": "#f5f2f0",
-    "padding": ".1em",
-    "borderRadius": ".3em",
-    "whiteSpace": "normal"
-  },
-  "cdata": {
-    "color": "#708090"
-  },
-  "comment": {
-    "color": "#708090"
-  },
-  "doctype": {
-    "color": "#708090"
-  },
-  "prolog": {
-    "color": "#708090"
-  },
-  "punctuation": {
-    "color": "#999"
-  },
-  "namespace": {
-    "Opacity": ".7"
-  },
-  "boolean": {
-    "color": "#905"
-  },
-  "constant": {
-    "color": "#905"
-  },
-  "deleted": {
-    "color": "#905"
-  },
-  "number": {
-    "color": "#905"
-  },
-  "property": {
-    "color": "#905"
-  },
-  "symbol": {
-    "color": "#905"
-  },
-  "tag": {
-    "color": "#905"
-  },
-  "attr-name": {
-    "color": "#690"
-  },
-  "builtin": {
-    "color": "#690"
-  },
-  "char": {
-    "color": "#690"
-  },
-  "inserted": {
-    "color": "#690"
-  },
-  "selector": {
-    "color": "#690"
-  },
-  "string": {
-    "color": "#690"
-  },
-  ".language-css .token.string": {
-    "color": "#9a6e3a",
-    "background": "hsla(0,0%,100%,.5)"
-  },
-  ".style .token.string": {
-    "color": "#9a6e3a",
-    "background": "hsla(0,0%,100%,.5)"
-  },
-  "entity": {
-    "color": "#9a6e3a",
-    "background": "hsla(0,0%,100%,.5)",
-    "cursor": "help"
-  },
-  "operator": {
-    "color": "#9a6e3a",
-    "background": "hsla(0,0%,100%,.5)"
-  },
-  "url": {
-    "color": "#9a6e3a",
-    "background": "hsla(0,0%,100%,.5)"
-  },
-  "atrule": {
-    "color": "#07a"
-  },
-  "attr-value": {
-    "color": "#07a"
-  },
-  "keyword": {
-    "color": "#07a"
-  },
-  "class-name": {
-    "color": "#dd4a68"
-  },
-  "function": {
-    "color": "#dd4a68"
-  },
-  "important": {
-    "color": "#e90",
-    "fontWeight": "700"
-  },
-  "regex": {
-    "color": "#e90"
-  },
-  "variable": {
-    "color": "#e90"
-  },
-  "bold": {
-    "fontWeight": "700"
   },
   "italic": {
     "fontStyle": "italic"
@@ -73024,252 +71065,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/styles/prism/shades-of-purple.min.js":
-/*!**************************************************!*\
-  !*** ./src/styles/prism/shades-of-purple.min.js ***!
-  \**************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "color": "#9efeff",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "fontFamily": "'Operator Mono','Fira Code',Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace",
-    "fontWeight": "400",
-    "fontSize": "17px",
-    "lineHeight": "25px",
-    "letterSpacing": ".5px",
-    "textShadow": "0 1px #222245"
-  },
-  "pre[class*=language-]": {
-    "color": "#9efeff",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "fontFamily": "'Operator Mono','Fira Code',Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace",
-    "fontWeight": "400",
-    "fontSize": "17px",
-    "lineHeight": "25px",
-    "letterSpacing": ".5px",
-    "textShadow": "0 1px #222245",
-    "padding": "2em",
-    "margin": ".5em 0",
-    "overflow": "auto",
-    "background": "#1e1e3f"
-  },
-  "code[class*=language-] ::-moz-selection": {
-    "color": "inherit",
-    "background": "#a599e9"
-  },
-  "code[class*=language-] ::selection": {
-    "color": "inherit",
-    "background": "#a599e9"
-  },
-  "code[class*=language-]::-moz-selection": {
-    "color": "inherit",
-    "background": "#a599e9"
-  },
-  "code[class*=language-]::selection": {
-    "color": "inherit",
-    "background": "#a599e9"
-  },
-  "pre[class*=language-] ::-moz-selection": {
-    "color": "inherit",
-    "background": "#a599e9"
-  },
-  "pre[class*=language-] ::selection": {
-    "color": "inherit",
-    "background": "#a599e9"
-  },
-  "pre[class*=language-]::-moz-selection": {
-    "color": "inherit",
-    "background": "#a599e9"
-  },
-  "pre[class*=language-]::selection": {
-    "color": "inherit",
-    "background": "#a599e9"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "background": "#1e1e3f",
-    "padding": ".1em",
-    "borderRadius": ".3em"
-  },
-  "": {
-    "fontWeight": "400"
-  },
-  "cdata": {
-    "color": "#b362ff"
-  },
-  "comment": {
-    "color": "#b362ff"
-  },
-  "prolog": {
-    "color": "#b362ff"
-  },
-  "atrule": {
-    "color": "#ff9d00"
-  },
-  "delimiter": {
-    "color": "#ff9d00"
-  },
-  "important": {
-    "color": "#ff9d00"
-  },
-  "keyword": {
-    "color": "#ff9d00"
-  },
-  "selector": {
-    "color": "#ff9d00"
-  },
-  "attr-name": {
-    "color": "#ffb454"
-  },
-  "operator": {
-    "color": "#ffb454",
-    "background": "0 0"
-  },
-  "punctuation": {
-    "color": "#fff"
-  },
-  "boolean": {
-    "color": "#ff628c"
-  },
-  "builtin": {
-    "color": "#ff9d00"
-  },
-  "doctype": {
-    "color": "#ff9d00"
-  },
-  "tag": {
-    "color": "#ff9d00"
-  },
-  "tag.punctuation": {
-    "color": "#ff9d00"
-  },
-  "entity": {
-    "color": "#6897bb",
-    "background": "0 0"
-  },
-  "symbol": {
-    "color": "#6897bb"
-  },
-  "number": {
-    "color": "#ff628c"
-  },
-  "constant": {
-    "color": "#ff628c"
-  },
-  "property": {
-    "color": "#ff628c"
-  },
-  "variable": {
-    "color": "#ff628c"
-  },
-  "char": {
-    "color": "#a5ff90"
-  },
-  "string": {
-    "color": "#a5ff90"
-  },
-  "attr-value": {
-    "color": "#a5c261"
-  },
-  "attr-value.punctuation": {
-    "color": "#a5c261"
-  },
-  "attr-value.punctuation:first-child": {
-    "color": "#a9b7c6"
-  },
-  "url": {
-    "color": "#287bde",
-    "textDecoration": "underline",
-    "background": "0 0"
-  },
-  "function": {
-    "color": "#fad000"
-  },
-  "regex": {
-    "background": "#364135"
-  },
-  "bold": {
-    "fontWeight": "700"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  },
-  "inserted": {
-    "background": "#0f0"
-  },
-  "deleted": {
-    "background": "#ff000d"
-  },
-  "code.language-css .token.property": {
-    "color": "#a9b7c6"
-  },
-  "code.language-css .token.property+.token.punctuation": {
-    "color": "#a9b7c6"
-  },
-  "code.language-css .token.id": {
-    "color": "#ffc66d"
-  },
-  "code.language-css .token.selector>.token.attribute": {
-    "color": "#ffc66d"
-  },
-  "code.language-css .token.selector>.token.class": {
-    "color": "#ffc66d"
-  },
-  "code.language-css .token.selector>.token.pseudo-class": {
-    "color": "#ffc66d"
-  },
-  "code.language-css .token.selector>.token.pseudo-element": {
-    "color": "#ffc66d"
-  },
-  "class-name": {
-    "color": "#fb94ff"
-  },
-  ".language-css .token.string": {
-    "background": "0 0"
-  },
-  ".style .token.string": {
-    "background": "0 0"
-  },
-  ".line-highlight.line-highlight": {
-    "marginTop": "36px",
-    "background": "linear-gradient(to right,rgba(179,98,255,.17),transparent)"
-  },
-  ".line-highlight.line-highlight:before": {
-    "content": "''"
-  },
-  ".line-highlight.line-highlight[data-end]:after": {
-    "content": "''"
-  }
-});
-
-/***/ }),
-
 /***/ "./src/styles/prism/solarized-dark-atom.js":
 /*!*************************************************!*\
   !*** ./src/styles/prism/solarized-dark-atom.js ***!
@@ -73430,171 +71225,6 @@ __webpack_require__.r(__webpack_exports__);
   },
   "attr-value": {
     "color": "#F9EE98"
-  }
-});
-
-/***/ }),
-
-/***/ "./src/styles/prism/solarized-dark-atom.min.js":
-/*!*****************************************************!*\
-  !*** ./src/styles/prism/solarized-dark-atom.min.js ***!
-  \*****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "color": "#839496",
-    "textShadow": "0 1px rgba(0,0,0,.3)",
-    "fontFamily": "Inconsolata,Monaco,Consolas,'Courier New',Courier,monospace",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none"
-  },
-  "pre[class*=language-]": {
-    "color": "#839496",
-    "textShadow": "0 1px rgba(0,0,0,.3)",
-    "fontFamily": "Inconsolata,Monaco,Consolas,'Courier New',Courier,monospace",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "padding": "1em",
-    "margin": ".5em 0",
-    "overflow": "auto",
-    "borderRadius": ".3em",
-    "background": "#002b36"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "background": "#002b36",
-    "padding": ".1em",
-    "borderRadius": ".3em"
-  },
-  "cdata": {
-    "color": "#586e75"
-  },
-  "comment": {
-    "color": "#586e75"
-  },
-  "doctype": {
-    "color": "#586e75"
-  },
-  "prolog": {
-    "color": "#586e75"
-  },
-  "punctuation": {
-    "color": "#93a1a1"
-  },
-  ".namespace": {
-    "Opacity": ".7"
-  },
-  "keyword": {
-    "color": "#268bd2"
-  },
-  "property": {
-    "color": "#268bd2"
-  },
-  "tag": {
-    "color": "#268bd2"
-  },
-  "class-name": {
-    "color": "#ffffb6",
-    "textDecoration": "underline"
-  },
-  "boolean": {
-    "color": "#b58900"
-  },
-  "constant": {
-    "color": "#b58900"
-  },
-  "deleted": {
-    "color": "#dc322f"
-  },
-  "symbol": {
-    "color": "#dc322f"
-  },
-  "number": {
-    "color": "#859900"
-  },
-  "attr-name": {
-    "color": "#859900"
-  },
-  "builtin": {
-    "color": "#859900"
-  },
-  "char": {
-    "color": "#859900"
-  },
-  "inserted": {
-    "color": "#859900"
-  },
-  "selector": {
-    "color": "#859900"
-  },
-  "string": {
-    "color": "#859900"
-  },
-  "variable": {
-    "color": "#268bd2"
-  },
-  "operator": {
-    "color": "#ededed"
-  },
-  "function": {
-    "color": "#268bd2"
-  },
-  "regex": {
-    "color": "#e9c062"
-  },
-  "important": {
-    "color": "#fd971f",
-    "fontWeight": "700"
-  },
-  "entity": {
-    "color": "#ffffb6",
-    "cursor": "help"
-  },
-  "url": {
-    "color": "#96cbfe"
-  },
-  ".language-css .token.string": {
-    "color": "#87c38a"
-  },
-  ".style .token.string": {
-    "color": "#87c38a"
-  },
-  "bold": {
-    "fontWeight": "700"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  },
-  "atrule": {
-    "color": "#f9ee98"
-  },
-  "attr-value": {
-    "color": "#f9ee98"
   }
 });
 
@@ -73772,186 +71402,6 @@ __webpack_require__.r(__webpack_exports__);
   },
   "bold": {
     "fontWeight": "bold"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  }
-});
-
-/***/ }),
-
-/***/ "./src/styles/prism/solarizedlight.min.js":
-/*!************************************************!*\
-  !*** ./src/styles/prism/solarizedlight.min.js ***!
-  \************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "color": "#657b83",
-    "fontFamily": "Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace",
-    "fontSize": "1em",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none"
-  },
-  "pre[class*=language-]": {
-    "color": "#657b83",
-    "fontFamily": "Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace",
-    "fontSize": "1em",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "padding": "1em",
-    "margin": ".5em 0",
-    "overflow": "auto",
-    "borderRadius": ".3em",
-    "backgroundColor": "#fdf6e3"
-  },
-  "code[class*=language-] ::-moz-selection": {
-    "background": "#073642"
-  },
-  "code[class*=language-]::-moz-selection": {
-    "background": "#073642"
-  },
-  "pre[class*=language-] ::-moz-selection": {
-    "background": "#073642"
-  },
-  "pre[class*=language-]::-moz-selection": {
-    "background": "#073642"
-  },
-  "code[class*=language-] ::selection": {
-    "background": "#073642"
-  },
-  "code[class*=language-]::selection": {
-    "background": "#073642"
-  },
-  "pre[class*=language-] ::selection": {
-    "background": "#073642"
-  },
-  "pre[class*=language-]::selection": {
-    "background": "#073642"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "backgroundColor": "#fdf6e3",
-    "padding": ".1em",
-    "borderRadius": ".3em"
-  },
-  "cdata": {
-    "color": "#93a1a1"
-  },
-  "comment": {
-    "color": "#93a1a1"
-  },
-  "doctype": {
-    "color": "#93a1a1"
-  },
-  "prolog": {
-    "color": "#93a1a1"
-  },
-  "punctuation": {
-    "color": "#586e75"
-  },
-  "namespace": {
-    "Opacity": ".7"
-  },
-  "boolean": {
-    "color": "#268bd2"
-  },
-  "constant": {
-    "color": "#268bd2"
-  },
-  "deleted": {
-    "color": "#268bd2"
-  },
-  "number": {
-    "color": "#268bd2"
-  },
-  "property": {
-    "color": "#268bd2"
-  },
-  "symbol": {
-    "color": "#268bd2"
-  },
-  "tag": {
-    "color": "#268bd2"
-  },
-  "attr-name": {
-    "color": "#2aa198"
-  },
-  "builtin": {
-    "color": "#2aa198"
-  },
-  "char": {
-    "color": "#2aa198"
-  },
-  "inserted": {
-    "color": "#2aa198"
-  },
-  "selector": {
-    "color": "#2aa198"
-  },
-  "string": {
-    "color": "#2aa198"
-  },
-  "url": {
-    "color": "#2aa198"
-  },
-  "entity": {
-    "color": "#657b83",
-    "background": "#eee8d5",
-    "cursor": "help"
-  },
-  "atrule": {
-    "color": "#859900"
-  },
-  "attr-value": {
-    "color": "#859900"
-  },
-  "keyword": {
-    "color": "#859900"
-  },
-  "class-name": {
-    "color": "#b58900"
-  },
-  "function": {
-    "color": "#b58900"
-  },
-  "important": {
-    "color": "#cb4b16",
-    "fontWeight": "700"
-  },
-  "regex": {
-    "color": "#cb4b16"
-  },
-  "variable": {
-    "color": "#cb4b16"
-  },
-  "bold": {
-    "fontWeight": "700"
   },
   "italic": {
     "fontStyle": "italic"
@@ -74155,201 +71605,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/styles/prism/synthwave84.min.js":
-/*!*********************************************!*\
-  !*** ./src/styles/prism/synthwave84.min.js ***!
-  \*********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "color": "#f92aad",
-    "textShadow": "0 0 2px #100c0f,0 0 5px #dc078e33,0 0 10px #fff3",
-    "background": "0 0",
-    "fontFamily": "Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace",
-    "fontSize": "1em",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none"
-  },
-  "pre[class*=language-]": {
-    "color": "#f92aad",
-    "textShadow": "0 0 2px #100c0f,0 0 5px #dc078e33,0 0 10px #fff3",
-    "background": "0 0",
-    "fontFamily": "Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace",
-    "fontSize": "1em",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "padding": "1em",
-    "margin": ".5em 0",
-    "overflow": "auto",
-    "backgroundColor": "transparent!important",
-    "backgroundImage": "linear-gradient(to bottom,#2a2139 75%,#34294f)"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "backgroundColor": "transparent!important",
-    "backgroundImage": "linear-gradient(to bottom,#2a2139 75%,#34294f)",
-    "padding": ".1em",
-    "borderRadius": ".3em",
-    "whiteSpace": "normal"
-  },
-  "block-comment": {
-    "color": "#8e8e8e"
-  },
-  "cdata": {
-    "color": "#8e8e8e"
-  },
-  "comment": {
-    "color": "#8e8e8e"
-  },
-  "doctype": {
-    "color": "#8e8e8e"
-  },
-  "prolog": {
-    "color": "#8e8e8e"
-  },
-  "punctuation": {
-    "color": "#ccc"
-  },
-  "attr-name": {
-    "color": "#e2777a"
-  },
-  "deleted": {
-    "color": "#e2777a"
-  },
-  "hexcode": {
-    "color": "#e2777a"
-  },
-  "namespace": {
-    "color": "#e2777a"
-  },
-  "number": {
-    "color": "#e2777a"
-  },
-  "tag": {
-    "color": "#e2777a"
-  },
-  "unit": {
-    "color": "#e2777a"
-  },
-  "property": {
-    "color": "#72f1b8",
-    "textShadow": "0 0 2px #100c0f,0 0 10px #257c5575,0 0 35px #21272475"
-  },
-  "selector": {
-    "color": "#72f1b8",
-    "textShadow": "0 0 2px #100c0f,0 0 10px #257c5575,0 0 35px #21272475"
-  },
-  "function-name": {
-    "color": "#6196cc"
-  },
-  "boolean": {
-    "color": "#fdfdfd",
-    "textShadow": "0 0 2px #001716,0 0 3px #03edf975,0 0 5px #03edf975,0 0 8px #03edf975"
-  },
-  "function": {
-    "color": "#fdfdfd",
-    "textShadow": "0 0 2px #001716,0 0 3px #03edf975,0 0 5px #03edf975,0 0 8px #03edf975"
-  },
-  "selector.id": {
-    "color": "#fdfdfd",
-    "textShadow": "0 0 2px #001716,0 0 3px #03edf975,0 0 5px #03edf975,0 0 8px #03edf975"
-  },
-  "class-name": {
-    "color": "#fff5f6",
-    "textShadow": "0 0 2px #000,0 0 10px #fc1f2c75,0 0 5px #fc1f2c75,0 0 25px #fc1f2c75"
-  },
-  "constant": {
-    "color": "#f92aad",
-    "textShadow": "0 0 2px #100c0f,0 0 5px #dc078e33,0 0 10px #fff3"
-  },
-  "symbol": {
-    "color": "#f92aad",
-    "textShadow": "0 0 2px #100c0f,0 0 5px #dc078e33,0 0 10px #fff3"
-  },
-  "atrule": {
-    "color": "#f4eee4",
-    "textShadow": "0 0 2px #393a33,0 0 8px #f39f0575,0 0 2px #f39f0575"
-  },
-  "builtin": {
-    "color": "#f4eee4",
-    "textShadow": "0 0 2px #393a33,0 0 8px #f39f0575,0 0 2px #f39f0575"
-  },
-  "important": {
-    "color": "#f4eee4",
-    "textShadow": "0 0 2px #393a33,0 0 8px #f39f0575,0 0 2px #f39f0575",
-    "fontWeight": "700"
-  },
-  "keyword": {
-    "color": "#f4eee4",
-    "textShadow": "0 0 2px #393a33,0 0 8px #f39f0575,0 0 2px #f39f0575"
-  },
-  "selector.class": {
-    "color": "#f4eee4",
-    "textShadow": "0 0 2px #393a33,0 0 8px #f39f0575,0 0 2px #f39f0575"
-  },
-  "attr-value": {
-    "color": "#f87c32"
-  },
-  "char": {
-    "color": "#f87c32"
-  },
-  "regex": {
-    "color": "#f87c32"
-  },
-  "string": {
-    "color": "#f87c32"
-  },
-  "variable": {
-    "color": "#f87c32"
-  },
-  "entity": {
-    "color": "#67cdcc",
-    "cursor": "help"
-  },
-  "operator": {
-    "color": "#67cdcc"
-  },
-  "url": {
-    "color": "#67cdcc"
-  },
-  "bold": {
-    "fontWeight": "700"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  },
-  "inserted": {
-    "color": "green"
-  }
-});
-
-/***/ }),
-
 /***/ "./src/styles/prism/tomorrow.js":
 /*!**************************************!*\
   !*** ./src/styles/prism/tomorrow.js ***!
@@ -74504,171 +71759,6 @@ __webpack_require__.r(__webpack_exports__);
   },
   "bold": {
     "fontWeight": "bold"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  },
-  "inserted": {
-    "color": "green"
-  }
-});
-
-/***/ }),
-
-/***/ "./src/styles/prism/tomorrow.min.js":
-/*!******************************************!*\
-  !*** ./src/styles/prism/tomorrow.min.js ***!
-  \******************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "color": "#ccc",
-    "background": "0 0",
-    "fontFamily": "Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace",
-    "fontSize": "1em",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none"
-  },
-  "pre[class*=language-]": {
-    "color": "#ccc",
-    "background": "#2d2d2d",
-    "fontFamily": "Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace",
-    "fontSize": "1em",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "padding": "1em",
-    "margin": ".5em 0",
-    "overflow": "auto"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "background": "#2d2d2d",
-    "padding": ".1em",
-    "borderRadius": ".3em",
-    "whiteSpace": "normal"
-  },
-  "block-comment": {
-    "color": "#999"
-  },
-  "cdata": {
-    "color": "#999"
-  },
-  "comment": {
-    "color": "#999"
-  },
-  "doctype": {
-    "color": "#999"
-  },
-  "prolog": {
-    "color": "#999"
-  },
-  "punctuation": {
-    "color": "#ccc"
-  },
-  "attr-name": {
-    "color": "#e2777a"
-  },
-  "deleted": {
-    "color": "#e2777a"
-  },
-  "namespace": {
-    "color": "#e2777a"
-  },
-  "tag": {
-    "color": "#e2777a"
-  },
-  "function-name": {
-    "color": "#6196cc"
-  },
-  "boolean": {
-    "color": "#f08d49"
-  },
-  "function": {
-    "color": "#f08d49"
-  },
-  "number": {
-    "color": "#f08d49"
-  },
-  "class-name": {
-    "color": "#f8c555"
-  },
-  "constant": {
-    "color": "#f8c555"
-  },
-  "property": {
-    "color": "#f8c555"
-  },
-  "symbol": {
-    "color": "#f8c555"
-  },
-  "atrule": {
-    "color": "#cc99cd"
-  },
-  "builtin": {
-    "color": "#cc99cd"
-  },
-  "important": {
-    "color": "#cc99cd",
-    "fontWeight": "700"
-  },
-  "keyword": {
-    "color": "#cc99cd"
-  },
-  "selector": {
-    "color": "#cc99cd"
-  },
-  "attr-value": {
-    "color": "#7ec699"
-  },
-  "char": {
-    "color": "#7ec699"
-  },
-  "regex": {
-    "color": "#7ec699"
-  },
-  "string": {
-    "color": "#7ec699"
-  },
-  "variable": {
-    "color": "#7ec699"
-  },
-  "entity": {
-    "color": "#67cdcc",
-    "cursor": "help"
-  },
-  "operator": {
-    "color": "#67cdcc"
-  },
-  "url": {
-    "color": "#67cdcc"
-  },
-  "bold": {
-    "fontWeight": "700"
   },
   "italic": {
     "fontStyle": "italic"
@@ -74901,232 +71991,6 @@ __webpack_require__.r(__webpack_exports__);
   ".line-highlight.line-highlight[data-end]:after": {
     "backgroundColor": "hsl(215, 15%, 59%)",
     "color": "hsl(24, 20%, 95%)"
-  }
-});
-
-/***/ }),
-
-/***/ "./src/styles/prism/twilight.min.js":
-/*!******************************************!*\
-  !*** ./src/styles/prism/twilight.min.js ***!
-  \******************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "color": "#fff",
-    "background": "0 0",
-    "fontFamily": "Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace",
-    "fontSize": "1em",
-    "textAlign": "left",
-    "textShadow": "0 -.1em .2em #000",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none"
-  },
-  "pre[class*=language-]": {
-    "color": "#fff",
-    "background": "#141414",
-    "fontFamily": "Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace",
-    "fontSize": "1em",
-    "textAlign": "left",
-    "textShadow": "0 -.1em .2em #000",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "borderRadius": ".5em",
-    "border": ".3em solid #545454",
-    "boxShadow": "1px 1px .5em #000 inset",
-    "margin": ".5em 0",
-    "overflow": "auto",
-    "padding": "1em"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "background": "#141414",
-    "borderRadius": ".3em",
-    "border": ".13em solid #545454",
-    "boxShadow": "1px 1px .3em -.1em #000 inset",
-    "padding": ".15em .2em .05em",
-    "whiteSpace": "normal"
-  },
-  "pre[class*=language-]::-moz-selection": {
-    "background": "hsla(0,0%,93%,.15)",
-    "textShadow": "none"
-  },
-  "pre[class*=language-]::selection": {
-    "background": "hsla(0,0%,93%,.15)",
-    "textShadow": "none"
-  },
-  "code[class*=language-] ::-moz-selection": {
-    "textShadow": "none",
-    "background": "hsla(0,0%,93%,.15)"
-  },
-  "code[class*=language-]::-moz-selection": {
-    "textShadow": "none",
-    "background": "hsla(0,0%,93%,.15)"
-  },
-  "pre[class*=language-] ::-moz-selection": {
-    "textShadow": "none",
-    "background": "hsla(0,0%,93%,.15)"
-  },
-  "code[class*=language-] ::selection": {
-    "textShadow": "none",
-    "background": "hsla(0,0%,93%,.15)"
-  },
-  "code[class*=language-]::selection": {
-    "textShadow": "none",
-    "background": "hsla(0,0%,93%,.15)"
-  },
-  "pre[class*=language-] ::selection": {
-    "textShadow": "none",
-    "background": "hsla(0,0%,93%,.15)"
-  },
-  "cdata": {
-    "color": "#777"
-  },
-  "comment": {
-    "color": "#777"
-  },
-  "doctype": {
-    "color": "#777"
-  },
-  "prolog": {
-    "color": "#777"
-  },
-  "punctuation": {
-    "Opacity": ".7"
-  },
-  "namespace": {
-    "Opacity": ".7"
-  },
-  "boolean": {
-    "color": "#ce6849"
-  },
-  "deleted": {
-    "color": "#ce6849"
-  },
-  "number": {
-    "color": "#ce6849"
-  },
-  "tag": {
-    "color": "#ce6849"
-  },
-  "builtin": {
-    "color": "#f9ed99"
-  },
-  "constant": {
-    "color": "#f9ed99"
-  },
-  "keyword": {
-    "color": "#f9ed99"
-  },
-  "property": {
-    "color": "#f9ed99"
-  },
-  "selector": {
-    "color": "#f9ed99"
-  },
-  "symbol": {
-    "color": "#f9ed99"
-  },
-  ".language-css .token.string": {
-    "color": "#909e6a"
-  },
-  ".style .token.string": {
-    "color": "#909e6a"
-  },
-  "attr-name": {
-    "color": "#909e6a"
-  },
-  "attr-value": {
-    "color": "#909e6a"
-  },
-  "char": {
-    "color": "#909e6a"
-  },
-  "entity": {
-    "color": "#909e6a",
-    "cursor": "help"
-  },
-  "inserted": {
-    "color": "#909e6a"
-  },
-  "operator": {
-    "color": "#909e6a"
-  },
-  "string": {
-    "color": "#909e6a"
-  },
-  "url": {
-    "color": "#909e6a"
-  },
-  "variable": {
-    "color": "#909e6a"
-  },
-  "atrule": {
-    "color": "#7385a5"
-  },
-  "important": {
-    "color": "#e8c062",
-    "fontWeight": "700"
-  },
-  "regex": {
-    "color": "#e8c062"
-  },
-  "bold": {
-    "fontWeight": "700"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  },
-  ".language-markup .token.attr-name": {
-    "color": "#ac885c"
-  },
-  ".language-markup .token.punctuation": {
-    "color": "#ac885c"
-  },
-  ".language-markup .token.tag": {
-    "color": "#ac885c"
-  },
-  "": {
-    "position": "relative",
-    "zIndex": "1"
-  },
-  ".line-highlight.line-highlight": {
-    "background": "linear-gradient(to right,hsla(0,0%,33%,.1) 70%,hsla(0,0%,33%,0))",
-    "borderBottom": "1px dashed #545454",
-    "borderTop": "1px dashed #545454",
-    "marginTop": ".75em",
-    "zIndex": "0"
-  },
-  ".line-highlight.line-highlight:before": {
-    "backgroundColor": "#8693a6",
-    "color": "#f4f1ef"
-  },
-  ".line-highlight.line-highlight[data-end]:after": {
-    "backgroundColor": "#8693a6",
-    "color": "#f4f1ef"
   }
 });
 
@@ -75517,224 +72381,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/styles/prism/vs.min.js":
-/*!************************************!*\
-  !*** ./src/styles/prism/vs.min.js ***!
-  \************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "color": "#393a34",
-    "fontFamily": "Consolas,\"Bitstream Vera Sans Mono\",\"Courier New\",Courier,monospace",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "fontSize": ".9em",
-    "lineHeight": "1.2em",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none"
-  },
-  "pre[class*=language-]": {
-    "color": "#393a34",
-    "fontFamily": "Consolas,\"Bitstream Vera Sans Mono\",\"Courier New\",Courier,monospace",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "fontSize": ".9em",
-    "lineHeight": "1.2em",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "padding": "1em",
-    "margin": ".5em 0",
-    "overflow": "auto",
-    "border": "1px solid #ddd",
-    "backgroundColor": "#fff"
-  },
-  "pre>code[class*=language-]": {
-    "fontSize": "1em"
-  },
-  "code[class*=language-] ::-moz-selection": {
-    "background": "#c1def1"
-  },
-  "code[class*=language-]::-moz-selection": {
-    "background": "#c1def1"
-  },
-  "pre[class*=language-] ::-moz-selection": {
-    "background": "#c1def1"
-  },
-  "pre[class*=language-]::-moz-selection": {
-    "background": "#c1def1"
-  },
-  "code[class*=language-] ::selection": {
-    "background": "#c1def1"
-  },
-  "code[class*=language-]::selection": {
-    "background": "#c1def1"
-  },
-  "pre[class*=language-] ::selection": {
-    "background": "#c1def1"
-  },
-  "pre[class*=language-]::selection": {
-    "background": "#c1def1"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "padding": ".2em",
-    "paddingTop": "1px",
-    "paddingBottom": "1px",
-    "background": "#f8f8f8",
-    "border": "1px solid #ddd"
-  },
-  "cdata": {
-    "color": "green",
-    "fontStyle": "italic"
-  },
-  "comment": {
-    "color": "green",
-    "fontStyle": "italic"
-  },
-  "doctype": {
-    "color": "green",
-    "fontStyle": "italic"
-  },
-  "prolog": {
-    "color": "green",
-    "fontStyle": "italic"
-  },
-  "namespace": {
-    "Opacity": ".7"
-  },
-  "string": {
-    "color": "#a31515"
-  },
-  "operator": {
-    "color": "#393a34"
-  },
-  "punctuation": {
-    "color": "#393a34"
-  },
-  "boolean": {
-    "color": "#36acaa"
-  },
-  "constant": {
-    "color": "#36acaa"
-  },
-  "inserted": {
-    "color": "#36acaa"
-  },
-  "number": {
-    "color": "#36acaa"
-  },
-  "symbol": {
-    "color": "#36acaa"
-  },
-  "url": {
-    "color": "#36acaa"
-  },
-  "variable": {
-    "color": "#36acaa"
-  },
-  ".language-autohotkey .token.selector": {
-    "color": "#00f"
-  },
-  ".language-json .token.boolean": {
-    "color": "#00f"
-  },
-  ".language-json .token.number": {
-    "color": "#00f"
-  },
-  "atrule": {
-    "color": "#00f"
-  },
-  "attr-value": {
-    "color": "#00f"
-  },
-  "keyword": {
-    "color": "#00f"
-  },
-  "code[class*=language-css]": {
-    "color": "#00f"
-  },
-  "function": {
-    "color": "#393a34"
-  },
-  ".language-autohotkey .token.tag": {
-    "color": "#9a050f"
-  },
-  "deleted": {
-    "color": "#9a050f"
-  },
-  ".language-autohotkey .token.keyword": {
-    "color": "#00009f"
-  },
-  "selector": {
-    "color": "maroon"
-  },
-  "important": {
-    "color": "#e90",
-    "fontWeight": "700"
-  },
-  "bold": {
-    "fontWeight": "700"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  },
-  ".language-json .token.property": {
-    "color": "#2b91af"
-  },
-  "class-name": {
-    "color": "#2b91af"
-  },
-  "tag": {
-    "color": "maroon"
-  },
-  "attr-name": {
-    "color": "red"
-  },
-  "entity": {
-    "color": "red"
-  },
-  "property": {
-    "color": "red"
-  },
-  "regex": {
-    "color": "red"
-  },
-  "directive.tag.tag": {
-    "background": "#ff0",
-    "color": "#393a34"
-  },
-  ".line-numbers.line-numbers .line-numbers-rows": {
-    "borderRightColor": "#a5a5a5"
-  },
-  ".line-numbers .line-numbers-rows>span:before": {
-    "color": "#2b91af"
-  },
-  ".line-highlight.line-highlight": {
-    "background": "linear-gradient(to right,rgba(193,222,241,.2) 70%,rgba(221,222,241,0))"
-  }
-});
-
-/***/ }),
-
 /***/ "./src/styles/prism/vsc-dark-plus.js":
 /*!*******************************************!*\
   !*** ./src/styles/prism/vsc-dark-plus.js ***!
@@ -76029,300 +72675,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/styles/prism/vsc-dark-plus.min.js":
-/*!***********************************************!*\
-  !*** ./src/styles/prism/vsc-dark-plus.min.js ***!
-  \***********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "color": "#d4d4d4",
-    "fontSize": "13px",
-    "textShadow": "none",
-    "fontFamily": "Menlo,Monaco,Consolas,\"Andale Mono\",\"Ubuntu Mono\",\"Courier New\",monospace",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none"
-  },
-  "pre[class*=language-]": {
-    "color": "#d4d4d4",
-    "fontSize": "13px",
-    "textShadow": "none",
-    "fontFamily": "Menlo,Monaco,Consolas,\"Andale Mono\",\"Ubuntu Mono\",\"Courier New\",monospace",
-    "direction": "ltr",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "lineHeight": "1.5",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "padding": "1em",
-    "margin": ".5em 0",
-    "overflow": "auto",
-    "background": "#1e1e1e"
-  },
-  "code[class*=language-] ::selection": {
-    "textShadow": "none",
-    "background": "#264f78"
-  },
-  "code[class*=language-]::selection": {
-    "textShadow": "none",
-    "background": "#264f78"
-  },
-  "pre[class*=language-] ::selection": {
-    "textShadow": "none",
-    "background": "#264f78"
-  },
-  "pre[class*=language-]::selection": {
-    "textShadow": "none",
-    "background": "#264f78"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "padding": ".1em .3em",
-    "borderRadius": ".3em",
-    "color": "#db4c69",
-    "background": "#1e1e1e"
-  },
-  ".namespace": {
-    "Opacity": ".7"
-  },
-  "doctype.doctype-tag": {
-    "color": "#569cd6"
-  },
-  "doctype.name": {
-    "color": "#9cdcfe"
-  },
-  "comment": {
-    "color": "#6a9955"
-  },
-  "prolog": {
-    "color": "#6a9955"
-  },
-  ".language-html .language-css .token.punctuation": {
-    "color": "#d4d4d4"
-  },
-  ".language-html .language-javascript .token.punctuation": {
-    "color": "#d4d4d4"
-  },
-  "punctuation": {
-    "color": "#d4d4d4"
-  },
-  "boolean": {
-    "color": "#569cd6"
-  },
-  "constant": {
-    "color": "#9cdcfe"
-  },
-  "inserted": {
-    "color": "#b5cea8"
-  },
-  "number": {
-    "color": "#b5cea8"
-  },
-  "property": {
-    "color": "#9cdcfe"
-  },
-  "symbol": {
-    "color": "#b5cea8"
-  },
-  "tag": {
-    "color": "#569cd6"
-  },
-  "unit": {
-    "color": "#b5cea8"
-  },
-  "attr-name": {
-    "color": "#9cdcfe"
-  },
-  "builtin": {
-    "color": "#ce9178"
-  },
-  "char": {
-    "color": "#ce9178"
-  },
-  "deleted": {
-    "color": "#ce9178"
-  },
-  "selector": {
-    "color": "#d7ba7d"
-  },
-  "string": {
-    "color": "#ce9178"
-  },
-  ".language-css .token.string.url": {
-    "textDecoration": "underline"
-  },
-  "entity": {
-    "color": "#569cd6"
-  },
-  "operator": {
-    "color": "#d4d4d4"
-  },
-  "operator.arrow": {
-    "color": "#569cd6"
-  },
-  "atrule": {
-    "color": "#ce9178"
-  },
-  "atrule.rule": {
-    "color": "#c586c0"
-  },
-  "atrule.url": {
-    "color": "#9cdcfe"
-  },
-  "atrule.url.function": {
-    "color": "#dcdcaa"
-  },
-  "atrule.url.punctuation": {
-    "color": "#d4d4d4"
-  },
-  "keyword": {
-    "color": "#569cd6"
-  },
-  "keyword.control-flow": {
-    "color": "#c586c0"
-  },
-  "keyword.module": {
-    "color": "#c586c0"
-  },
-  "function": {
-    "color": "#dcdcaa"
-  },
-  "function.maybe-class-name": {
-    "color": "#dcdcaa"
-  },
-  "regex": {
-    "color": "#d16969"
-  },
-  "important": {
-    "color": "#569cd6"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  },
-  "class-name": {
-    "color": "#4ec9b0"
-  },
-  "maybe-class-name": {
-    "color": "#4ec9b0"
-  },
-  "console": {
-    "color": "#9cdcfe"
-  },
-  "parameter": {
-    "color": "#9cdcfe"
-  },
-  "interpolation": {
-    "color": "#9cdcfe"
-  },
-  "punctuation.interpolation-punctuation": {
-    "color": "#569cd6"
-  },
-  "exports.maybe-class-name": {
-    "color": "#9cdcfe"
-  },
-  "imports.maybe-class-name": {
-    "color": "#9cdcfe"
-  },
-  "variable": {
-    "color": "#9cdcfe"
-  },
-  "escape": {
-    "color": "#d7ba7d"
-  },
-  "tag.punctuation": {
-    "color": "grey"
-  },
-  "cdata": {
-    "color": "grey"
-  },
-  "attr-value": {
-    "color": "#ce9178"
-  },
-  "attr-value.punctuation": {
-    "color": "#ce9178"
-  },
-  "attr-value.punctuation.attr-equals": {
-    "color": "#d4d4d4"
-  },
-  "namespace": {
-    "color": "#4ec9b0"
-  },
-  "code[class*=language-javascript]": {
-    "color": "#9cdcfe"
-  },
-  "code[class*=language-jsx]": {
-    "color": "#9cdcfe"
-  },
-  "code[class*=language-tsx]": {
-    "color": "#9cdcfe"
-  },
-  "code[class*=language-typescript]": {
-    "color": "#9cdcfe"
-  },
-  "pre[class*=language-javascript]": {
-    "color": "#9cdcfe"
-  },
-  "pre[class*=language-jsx]": {
-    "color": "#9cdcfe"
-  },
-  "pre[class*=language-tsx]": {
-    "color": "#9cdcfe"
-  },
-  "pre[class*=language-typescript]": {
-    "color": "#9cdcfe"
-  },
-  "code[class*=language-css]": {
-    "color": "#ce9178"
-  },
-  "pre[class*=language-css]": {
-    "color": "#ce9178"
-  },
-  "code[class*=language-html]": {
-    "color": "#d4d4d4"
-  },
-  "pre[class*=language-html]": {
-    "color": "#d4d4d4"
-  },
-  ".language-regex .token.anchor": {
-    "color": "#dcdcaa"
-  },
-  ".language-html .token.punctuation": {
-    "color": "grey"
-  },
-  "pre[class*=language-]>code[class*=language-]": {
-    "position": "relative",
-    "zIndex": "1"
-  },
-  ".line-highlight.line-highlight": {
-    "background": "#f7ebc6",
-    "boxShadow": "inset 5px 0 0 #f7d87c",
-    "zIndex": "0"
-  }
-});
-
-/***/ }),
-
 /***/ "./src/styles/prism/xonokai.js":
 /*!*************************************!*\
   !*** ./src/styles/prism/xonokai.js ***!
@@ -76510,198 +72862,6 @@ __webpack_require__.r(__webpack_exports__);
     "height": "1em",
     "lineHeight": "1em",
     "boxShadow": "0 1px 1px rgba(255, 255, 255, 0.7)"
-  }
-});
-
-/***/ }),
-
-/***/ "./src/styles/prism/xonokai.min.js":
-/*!*****************************************!*\
-  !*** ./src/styles/prism/xonokai.min.js ***!
-  \*****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "MozTabSize": "2",
-    "OTabSize": "2",
-    "tabSize": "2",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "whiteSpace": "pre-wrap",
-    "wordWrap": "normal",
-    "fontFamily": "Menlo,Monaco,\"Courier New\",monospace",
-    "fontSize": "14px",
-    "color": "#76d9e6",
-    "textShadow": "none"
-  },
-  "pre[class*=language-]": {
-    "MozTabSize": "2",
-    "OTabSize": "2",
-    "tabSize": "2",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "whiteSpace": "pre-wrap",
-    "wordWrap": "normal",
-    "fontFamily": "Menlo,Monaco,\"Courier New\",monospace",
-    "fontSize": "14px",
-    "color": "#76d9e6",
-    "textShadow": "none",
-    "background": "#2a2a2a",
-    "padding": "15px",
-    "borderRadius": "4px",
-    "border": "1px solid #e1e1e8",
-    "overflow": "auto",
-    "position": "relative"
-  },
-  "pre>code[class*=language-]": {
-    "fontSize": "1em"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "background": "#2a2a2a",
-    "padding": ".15em .2em .05em",
-    "borderRadius": ".3em",
-    "border": ".13em solid #7a6652",
-    "boxShadow": "1px 1px .3em -.1em #000 inset"
-  },
-  "pre[class*=language-] code": {
-    "whiteSpace": "pre",
-    "display": "block"
-  },
-  "namespace": {
-    "Opacity": ".7"
-  },
-  "cdata": {
-    "color": "#6f705e"
-  },
-  "comment": {
-    "color": "#6f705e"
-  },
-  "doctype": {
-    "color": "#6f705e"
-  },
-  "prolog": {
-    "color": "#6f705e"
-  },
-  "boolean": {
-    "color": "#a77afe"
-  },
-  "number": {
-    "color": "#a77afe"
-  },
-  "operator": {
-    "color": "#a77afe"
-  },
-  "attr-name": {
-    "color": "#e6d06c"
-  },
-  "string": {
-    "color": "#e6d06c"
-  },
-  ".language-css .token.string": {
-    "color": "#e6d06c"
-  },
-  ".style .token.string": {
-    "color": "#e6d06c"
-  },
-  "entity": {
-    "color": "#e6d06c",
-    "cursor": "help"
-  },
-  "url": {
-    "color": "#e6d06c"
-  },
-  "inserted": {
-    "color": "#a6e22d"
-  },
-  "selector": {
-    "color": "#a6e22d"
-  },
-  "atrule": {
-    "color": "#ef3b7d"
-  },
-  "attr-value": {
-    "color": "#ef3b7d"
-  },
-  "deleted": {
-    "color": "#ef3b7d"
-  },
-  "important": {
-    "color": "#ef3b7d",
-    "fontWeight": "700"
-  },
-  "keyword": {
-    "color": "#ef3b7d"
-  },
-  "regex": {
-    "color": "#76d9e6"
-  },
-  "statement": {
-    "color": "#76d9e6",
-    "fontWeight": "700"
-  },
-  "placeholder": {
-    "color": "#fff"
-  },
-  "variable": {
-    "color": "#fff"
-  },
-  "bold": {
-    "fontWeight": "700"
-  },
-  "punctuation": {
-    "color": "#bebec5"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  },
-  "code.language-markup": {
-    "color": "#f9f9f9"
-  },
-  "code.language-markup .token.tag": {
-    "color": "#ef3b7d"
-  },
-  "code.language-markup .token.attr-name": {
-    "color": "#a6e22d"
-  },
-  "code.language-markup .token.attr-value": {
-    "color": "#e6d06c"
-  },
-  "code.language-markup .token.script": {
-    "color": "#76d9e6"
-  },
-  "code.language-markup .token.style": {
-    "color": "#76d9e6"
-  },
-  "code.language-markup .token.script .token.keyword": {
-    "color": "#76d9e6"
-  },
-  ".line-highlight.line-highlight": {
-    "padding": "0",
-    "background": "rgba(255,255,255,.08)"
-  },
-  ".line-highlight.line-highlight:before": {
-    "padding": ".2em .5em",
-    "backgroundColor": "rgba(255,255,255,.4)",
-    "color": "#000",
-    "height": "1em",
-    "lineHeight": "1em",
-    "boxShadow": "0 1px 1px rgba(255,255,255,.7)"
-  },
-  ".line-highlight.line-highlight[data-end]:after": {
-    "padding": ".2em .5em",
-    "backgroundColor": "rgba(255,255,255,.4)",
-    "color": "#000",
-    "height": "1em",
-    "lineHeight": "1em",
-    "boxShadow": "0 1px 1px rgba(255,255,255,.7)"
   }
 });
 
@@ -76907,214 +73067,6 @@ __webpack_require__.r(__webpack_exports__);
   },
   "bold": {
     "fontWeight": "bold"
-  },
-  "italic": {
-    "fontStyle": "italic"
-  }
-});
-
-/***/ }),
-
-/***/ "./src/styles/prism/z-touch.min.js":
-/*!*****************************************!*\
-  !*** ./src/styles/prism/z-touch.min.js ***!
-  \*****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-  "code[class*=language-]": {
-    "color": "#22da17",
-    "fontFamily": "monospace",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "lineHeight": "25px",
-    "fontSize": "18px",
-    "margin": "5px 0"
-  },
-  "pre[class*=language-]": {
-    "color": "#fff",
-    "fontFamily": "monospace",
-    "textAlign": "left",
-    "whiteSpace": "pre",
-    "wordSpacing": "normal",
-    "wordBreak": "normal",
-    "wordWrap": "normal",
-    "MozTabSize": "4",
-    "OTabSize": "4",
-    "tabSize": "4",
-    "WebkitHyphens": "none",
-    "MozHyphens": "none",
-    "msHyphens": "none",
-    "hyphens": "none",
-    "lineHeight": "25px",
-    "fontSize": "18px",
-    "margin": ".5em 0",
-    "background": "#0a143c",
-    "padding": "1em",
-    "overflow": "auto"
-  },
-  "pre[class*=language-] *": {
-    "fontFamily": "monospace"
-  },
-  ":not(pre)>code[class*=language-]": {
-    "color": "#fff",
-    "background": "#0a143c",
-    "padding": ".1em",
-    "borderRadius": ".3em",
-    "whiteSpace": "normal"
-  },
-  "code[class*=language-] ::-moz-selection": {
-    "textShadow": "none",
-    "background": "rgba(29,59,83,.99)"
-  },
-  "code[class*=language-]::-moz-selection": {
-    "textShadow": "none",
-    "background": "rgba(29,59,83,.99)"
-  },
-  "pre[class*=language-] ::-moz-selection": {
-    "textShadow": "none",
-    "background": "rgba(29,59,83,.99)"
-  },
-  "pre[class*=language-]::-moz-selection": {
-    "textShadow": "none",
-    "background": "rgba(29,59,83,.99)"
-  },
-  "code[class*=language-] ::selection": {
-    "textShadow": "none",
-    "background": "rgba(29,59,83,.99)"
-  },
-  "code[class*=language-]::selection": {
-    "textShadow": "none",
-    "background": "rgba(29,59,83,.99)"
-  },
-  "pre[class*=language-] ::selection": {
-    "textShadow": "none",
-    "background": "rgba(29,59,83,.99)"
-  },
-  "pre[class*=language-]::selection": {
-    "textShadow": "none",
-    "background": "rgba(29,59,83,.99)"
-  },
-  "cdata": {
-    "color": "#637777",
-    "fontStyle": "italic"
-  },
-  "comment": {
-    "color": "#637777",
-    "fontStyle": "italic"
-  },
-  "prolog": {
-    "color": "#637777",
-    "fontStyle": "italic"
-  },
-  "punctuation": {
-    "color": "#c792ea"
-  },
-  ".namespace": {
-    "color": "#b2ccd6"
-  },
-  "deleted": {
-    "color": "rgba(239,83,80,.56)",
-    "fontStyle": "italic"
-  },
-  "property": {
-    "color": "#80cbc4"
-  },
-  "symbol": {
-    "color": "#80cbc4"
-  },
-  "keyword": {
-    "color": "#7fdbca"
-  },
-  "operator": {
-    "color": "#7fdbca"
-  },
-  "tag": {
-    "color": "#7fdbca"
-  },
-  "boolean": {
-    "color": "#ff5874"
-  },
-  "number": {
-    "color": "#f78c6c"
-  },
-  "builtin": {
-    "color": "rgb(34 183 199)"
-  },
-  "char": {
-    "color": "rgb(34 183 199)"
-  },
-  "constant": {
-    "color": "rgb(34 183 199)"
-  },
-  "function": {
-    "color": "rgb(34 183 199)"
-  },
-  "doctype": {
-    "color": "#c792ea",
-    "fontStyle": "italic"
-  },
-  "selector": {
-    "color": "#c792ea",
-    "fontStyle": "italic"
-  },
-  "attr-name": {
-    "color": "#addb67",
-    "fontStyle": "italic"
-  },
-  "inserted": {
-    "color": "#addb67",
-    "fontStyle": "italic"
-  },
-  ".language-css .token.string": {
-    "color": "#addb67"
-  },
-  ".style .token.string": {
-    "color": "#addb67"
-  },
-  "entity": {
-    "color": "#addb67"
-  },
-  "string": {
-    "color": "#addb67"
-  },
-  "url": {
-    "color": "#addb67"
-  },
-  "atrule": {
-    "color": "#ffcb8b"
-  },
-  "attr-value": {
-    "color": "#ffcb8b"
-  },
-  "class-name": {
-    "color": "#ffcb8b"
-  },
-  "important": {
-    "color": "#d6deeb",
-    "fontWeight": "700"
-  },
-  "regex": {
-    "color": "#d6deeb"
-  },
-  "variable": {
-    "color": "#d6deeb"
-  },
-  "bold": {
-    "fontWeight": "700"
   },
   "italic": {
     "fontStyle": "italic"

@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import SyntaxHighlighter from '../src/prism-async-light';
+import SyntaxHighlighter from 'src/prism-async-light';
 import prismStyles from './styles/prism';
 import ExamplesLinks from './examples-links';
 

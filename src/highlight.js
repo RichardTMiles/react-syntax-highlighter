@@ -1,6 +1,6 @@
 import React from 'react';
-import createElement from './create-element';
-import checkForListedLanguage from './checkForListedLanguage';
+import createElement from 'src/create-element';
+import checkForListedLanguage from 'src/checkForListedLanguage';
 
 const newLineRegex = /\n/g;
 function getNewLines(str) {

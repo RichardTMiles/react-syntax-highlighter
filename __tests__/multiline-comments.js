@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import SyntaxHighlighter from '../src';
+import SyntaxHighlighter from 'src';
 
 const code = `
 /* This is a multi-

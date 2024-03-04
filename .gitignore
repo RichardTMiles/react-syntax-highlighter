@@ -8,3 +8,4 @@ demo/**/*.map
 npm-debug.log
 .history
 .idea/
+*.iml

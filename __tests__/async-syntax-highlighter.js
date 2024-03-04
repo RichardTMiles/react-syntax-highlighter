@@ -1,4 +1,4 @@
-import AsyncSyntaxHighlighter from '../src/async-syntax-highlighter';
+import AsyncSyntaxHighlighter from 'src/async-syntax-highlighter';
 
 test('AsyncSyntaxHighlighter registerLanguage when registerLanguage is undefined', () => {
   const SyntaxHighlighter = AsyncSyntaxHighlighter({});

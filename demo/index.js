@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import SyntaxHighlighter from '../src/index';
+import SyntaxHighlighter from 'src';
 import ExamplesLinks from './examples-links';
 import hljsStyles from './styles/hljs';
 import hljsLanguages from '../src/languages/hljs/supported-languages';

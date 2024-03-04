@@ -5,7 +5,7 @@ module.exports = {
     '@babel/syntax-dynamic-import',
     '@babel/transform-runtime'
   ],
-  presets: ['@babel/react', '@babel/env'],
+  presets: ['@babel/react', '@babel/env', '@babel/preset-typescript'],
   env: {
     cjs: {
       plugins: ['@babel/transform-runtime', 'transform-dynamic-import'],

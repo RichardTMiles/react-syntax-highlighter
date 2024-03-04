@@ -2,9 +2,9 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 
 // Tree-shaking doesn't work in testing and loads all the languages
-import SyntaxHighlighter from '../src/prism-async-light';
+import SyntaxHighlighter from 'src/prism-async-light';
 import prism from '../src/styles/prism/prism';
-import languageLoaders from '../src/async-languages/prism';
+import languageLoaders from 'src/async-languages/prism';
 
 test('SyntaxHighlighter renders jsx highlighted text', () => {
   const tree = renderer

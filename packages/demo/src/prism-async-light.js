@@ -1,11 +1,11 @@
 import React from 'react';
 import { render } from 'react-dom';
-import SyntaxHighlighter from 'packages/demo/prism-async-light';
-import prismStyles from 'packages/demo/styles/prism';
-import ExamplesLinks from 'packages/demo/examples-links';
+import SyntaxHighlighter from './prism-async-light';
+import prismStyles from './styles/prism';
+import ExamplesLinks from './examples-links';
 
-import clike from '.././languages/prism/clike';
-import javascript from '.././languages/prism/javascript';
+import { clike } from '@milessystems/react-syntax-highlighter';
+import javascript from '@milessystems/react-syntax-highlighter';
 import jsx from '.././languages/prism/jsx';
 import markup from '.././languages/prism/markup';
 import markupTemplating from '.././languages/prism/markup-templating';
@@ -77,7 +77,7 @@ function createElement({ node, style, useInlineStyles, key }) {
       showLineNumbers: false,
       wrapLongLines: false,
       style: 'atom-dark',
-      styleSrc: require('.././styles/prism/atom-dark').default,
+      styleSrc: require('./styles/prism/atom-dark').default,
       language: 'jsx',
       languageSrc: require(`../src/languages/prism/jsx`).default
     };

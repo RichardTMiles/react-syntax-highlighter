@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from 'react-dom';
-import SyntaxHighlighter from 'packages/demo/prism';
-import ExamplesLinks from 'packages/demo/examples-links';
-import prismStyles from 'packages/demo/styles/prism';
-import prismLanguages from '.././languages/prism/supported-languages';
+import SyntaxHighlighter from './prism';
+import ExamplesLinks from './examples-links';
+import prismStyles from './styles/prism';
+import prismLanguages from '@milessystems/react-syntax-highlighter';
 
 const availableStyles = prismStyles;
 const availableLanguages = prismLanguages;

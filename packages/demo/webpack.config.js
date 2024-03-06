@@ -1,5 +1,5 @@
-var path = require('path');
-var webpack = require('webpack');
+const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   context: path.join(__dirname),
@@ -28,14 +28,14 @@ module.exports = {
     }
   },
   entry: {
-    demo: './demo/index.js',
-    prism: './demo/prism.js',
-    diff: './demo/diff.js',
-    virtualized: './demo/virtualized.js',
-    prismAsyncLight: './demo/prism-async-light.js'
+    demo: './src/index.js',
+    prism: './src/prism.js',
+    diff: './src/diff.js',
+    virtualized: './src/virtualized.js',
+    prismAsyncLight: './src/prism-async-light.js'
   },
   output: {
-    path: path.resolve(__dirname, 'demo/build'),
+    path: path.resolve(__dirname, 'src/build'),
     publicPath: 'build/',
     filename: '[name]-build.js',
     chunkFilename: '[name].js'
@@ -43,9 +43,12 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js?$/,
+        test: /\.jsx?$/,
         loader: 'babel-loader',
-        exclude: [/node_modules/]
+        exclude: [/node_modules/],
+        options: {
+          presets: ['@babel/preset-env', '@babel/preset-react']
+        }
       },
       { test: /\.css$/,  use: [
           'style-loader',

@@ -1,10 +1,10 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import languageLoaders from 'src/async-languages/prism';
+import languageLoaders from './async-languages/prism';
 
 // Tree-shaking doesn't work in testing and loads all the languages
-import SyntaxHighlighter from 'src/light-async';
-import prism from '../src/styles/prism/prism';
+import SyntaxHighlighter from './light-async';
+import prism from '.././styles/prism/prism';
 
 test('SyntaxHighlighter renders javascript highlighted text', async () => {
   await SyntaxHighlighter.preload();

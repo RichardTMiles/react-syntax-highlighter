@@ -1,8 +1,8 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { PrismLight as SyntaxHighlighter } from 'src';
-import jsx from '../src/languages/prism/jsx';
-import prism from '../src/styles/prism/prism';
+import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
+import jsx from '.././languages/prism/jsx';
+import prism from '.././styles/prism/prism';
 
 SyntaxHighlighter.registerLanguage('jsx', jsx);
 

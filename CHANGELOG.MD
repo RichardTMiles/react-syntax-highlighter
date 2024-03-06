@@ -58,7 +58,7 @@
 - Brought back `createElement` that went missing as of version 13.5.
 
 ```js
-import createElement from "react-syntax-highlighter/create-element";
+import createElement from "./create-element";
 ```
 
 ## 13.5.0 / 2020-08-17

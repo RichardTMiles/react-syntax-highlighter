@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { PrismAsync as SyntaxHighlighter } from 'src';
-import prism from '../src/styles/prism/prism';
+import { PrismAsync as SyntaxHighlighter } from 'react-syntax-highlighter';
+import prism from '.././styles/prism/prism';
 
 test('SyntaxHighlighter renders jsx highlighted text', () => {
   const tree = renderer

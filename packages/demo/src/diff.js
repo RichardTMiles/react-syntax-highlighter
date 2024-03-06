@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { docco, SyntaxHighlighter as PrismSyntaxHighlighter } from '@milessystems/react-syntax-highlighter';
-import ExamplesLinks from 'packages/demo/examples-links';
+import ExamplesLinks from './examples-links';
 
 const CODE = `const woah = fun => fun + 1;
 const dude = woah(2) + 3;
@@ -55,7 +55,7 @@ function DiffHighlight() {
               {`import React from 'react';
   import { render } from 'react-dom';
   import SyntaxHighlighter from 'dist/types/index';
-  import docco from '../styles/docco';
+  import docco from './styles/docco';
 
   const CODE = \`const woah = fun => fun + 1;
   const dude = woah(2) + 3;

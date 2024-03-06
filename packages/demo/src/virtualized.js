@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from 'react-dom';
-import SyntaxHighlighter from 'packages/demo/index';
+import SyntaxHighlighter from '@milessystems/react-syntax-highlighter';
 import virtualizedRenderer from 'react-syntax-highlighter-virtualized-renderer';
-import ExamplesLinks from 'packages/demo/examples-links';
-import hljsStyles from 'packages/demo/styles/hljs';
+import ExamplesLinks from '@milessystems/react-syntax-highlighter';
+import hljsStyles from '@milessystems/react-syntax-highlighter';
 
 const availableStyles = hljsStyles;
 

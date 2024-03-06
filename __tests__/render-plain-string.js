@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { Light as SyntaxHighlighter } from 'src';
+import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
 import objc from 'highlight.js/lib/languages/objectivec';
 
 SyntaxHighlighter.registerLanguage('objc', objc);

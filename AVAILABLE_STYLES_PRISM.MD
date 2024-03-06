@@ -1,12 +1,4 @@
 ## Available `stylesheet` props 
-* coy
-* dark
-* funky
-* okaidia
-* solarizedlight
-* tomorrow
-* twilight
-* prism
 * a11yDark
 * atomDark
 * base16AteliersulphurpoolLight
@@ -43,3 +35,11 @@
 * vscDarkPlus
 * xonokai
 * zTouch
+* coy
+* dark
+* funky
+* okaidia
+* solarizedlight
+* tomorrow
+* twilight
+* prism

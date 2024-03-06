@@ -1,0 +1,66 @@
+{
+  "name": "demo",
+  "private": false,
+  "version": "15.5.6",
+  "description": "syntax highlighting component for react with prismjs or highlightjs ast using inline styles",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "@babel/runtime": "^7.3.1",
+    "highlight.js": "^10.4.1",
+    "lowlight": "^1.17.0",
+    "prismjs": "^1.27.0",
+    "refractor": "^3.6.0"
+  },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
+  },
+  "peerDependencies": {
+    "react": ">= 0.14.0"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --hot --inline",
+    "build": "webpack",
+    "prepare": "npm run build-styles-hljs && npm run build-languages-hljs && npm run build-styles-prism && npm run build-languages-prism && npm run build",
+    "test": "jest",
+    "test-ci": "jest && codecov",
+    "publish-coverage": "codecov",
+    "format": "npm run prettier",
+    "prettier": "prettier --write --no-editorconfig \"{src,scripts,__tests__}/**/*.(t|j)s\"",
+    "lint": "eslint --ext .js,.jsx packages/@milessystems/react-syntax-highlighter packages/@milessystems/react-syntax-highlighter/scripts ./__tests__"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/react-syntax-highlighter/react-syntax-highlighter.git"
+  },
+  "keywords": [
+    "react",
+    "syntax",
+    "lowlight",
+    "highlighting",
+    "ast"
+  ],
+  "author": "Conor Hastings",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/react-syntax-highlighter/react-syntax-highlighter/issues"
+  },
+  "homepage": "https://github.com/react-syntax-highlighter/react-syntax-highlighter#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
